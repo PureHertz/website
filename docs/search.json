@@ -154,13 +154,6 @@
     "text": "PureHertz Labratory\nPureHertzウェブサイトのリポジトリ。\nhttps://purehertz.github.io/website/"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to PureHertz Laboratory",
-    "section": "",
-    "text": "Magic of Frequency —Optics, Electronics, and Music\n\nレーザー物理の研究のために開発・製作した回路・装置\n趣味で制作した楽曲\nその他、研究・趣味に役立つかもしれない情報"
-  },
-  {
     "objectID": "about/index.html",
     "href": "about/index.html",
     "title": "PureHertz",
@@ -182,25 +175,11 @@
     "text": "このサイトについて\n大学学部時代からレーザー物理分野で研究をしています。研究の過程でいろいろな回路や装置を作るうちに、回路作りが趣味になり、必要以上に(?)こだわるようになりました。作った装置には “PureHertz” というブランド名を勝手につけて自己満足しています。\n一方、中学生の頃から作曲・音楽制作を趣味にしており、最近は研究内容をテーマにして曲を作っています。\nせっかく作った作品たち、紹介できるものはこのサイトで紹介していこうと思います。"
   },
   {
-    "objectID": "issues.html",
-    "href": "issues.html",
-    "title": "PureHertz Labratory",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to PureHertz Laboratory",
     "section": "",
-    "text": "PureHertzウェブサイトのリポジトリ。\nhttps://purehertz.github.io/website/\n\n\n\nトップページの写真、もっと良いものに変更する。\nGitHubのアカウント名の変更。\nGitHub Pagesを使ったウェブサイト公開。 https://quarto.org/docs/publishing/github-pages.html\n\n\n\n\n\n図の拡大表示ができるようにlightboxを使う。 https://quarto.org/docs/output-formats/html-lightbox-figures.html\nPDFファイルの埋め込みが出来るようにする。 https://github.com/jmgirard/embedpdf\nPostが増えてきたら、ピックアップした記事をまとめるページを作る。\nCallout blockを使うようにする。 https://quarto.org/docs/authoring/callouts.html\n今のところの記事は製作記録にとどまるので、もう少し具体的に有用な情報を含むようにする。\nGoogle Analyticsの導入。"
-  },
-  {
-    "objectID": "issues.html#issues",
-    "href": "issues.html#issues",
-    "title": "PureHertz Labratory",
-    "section": "",
-    "text": "トップページの写真、もっと良いものに変更する。\nGitHubのアカウント名の変更。\nGitHub Pagesを使ったウェブサイト公開。 https://quarto.org/docs/publishing/github-pages.html"
-  },
-  {
-    "objectID": "issues.html#for-future",
-    "href": "issues.html#for-future",
-    "title": "PureHertz Labratory",
-    "section": "",
-    "text": "図の拡大表示ができるようにlightboxを使う。 https://quarto.org/docs/output-formats/html-lightbox-figures.html\nPDFファイルの埋め込みが出来るようにする。 https://github.com/jmgirard/embedpdf\nPostが増えてきたら、ピックアップした記事をまとめるページを作る。\nCallout blockを使うようにする。 https://quarto.org/docs/authoring/callouts.html\n今のところの記事は製作記録にとどまるので、もう少し具体的に有用な情報を含むようにする。\nGoogle Analyticsの導入。"
+    "text": "Magic of Frequency —Optics, Electronics, and Music\n\nレーザー物理の研究のために開発・製作した回路・装置\n趣味で制作した楽曲\nその他、研究・趣味に役立つかもしれない情報"
   },
   {
     "objectID": "works/index.html",

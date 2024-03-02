@@ -4,9 +4,9 @@ project:
 
 website:
   title: "PureHertz Laboratory"
-  site-url: https://purehertz.github.io/website/
+  site-url: https://purehertz.github.io/
   navbar:
-    logo: staffs/logo.png
+    logo: common/logo.png
     title: false
     left:
       - text: Home
