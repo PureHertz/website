@@ -19,7 +19,7 @@ website:
     center: "&copy;2024, PureHertz"
     right:
       - icon: github
-        href: https://researchmap.jp/s-okubo
+        href: https://github.com/PureHertz
 
 #  back-to-top-navigation: true
   bread-crumbs: true
