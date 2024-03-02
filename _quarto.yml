@@ -4,6 +4,7 @@ project:
 
 website:
   title: "PureHertz Laboratory"
+  site-url: https://github.com/PureHertz/website
   navbar:
     logo: staffs/logo.png
     title: false
