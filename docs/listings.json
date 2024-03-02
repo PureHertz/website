@@ -1,21 +1,5 @@
 [
   {
-    "listing": "/blog.html",
-    "items": [
-      "/posts/2024-03-02.html",
-      "/posts/2024-03-01.html",
-      "/posts/2024-02-27.html",
-      "/posts/SlowPD.html",
-      "/posts/Sweeper.html",
-      "/posts/colour-of-the-universe.html",
-      "/posts/dance-versatileness.html",
-      "/posts/your-space-our-place.html",
-      "/posts/goodbye-to-my-days.html",
-      "/posts/regrets.html",
-      "/posts/limit-breaker.html"
-    ]
-  },
-  {
     "listing": "/works/index.html",
     "items": [
       "/works/posts/2024-03-02/index.html",
@@ -29,15 +13,6 @@
       "/works/posts/goodbye-to-my-days/index.html",
       "/works/posts/regrets/index.html",
       "/works/posts/limit-breaker/index.html"
-    ]
-  },
-  {
-    "listing": "/products/index.html",
-    "items": [
-      "/works/posts/Sweeper/index.html",
-      "/works/posts/SlowPD/index.html",
-      "/works/posts/colour-of-the-universe/index.html",
-      "/works/posts/dance-versatileness/index.html"
     ]
   }
 ]
