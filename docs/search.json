@@ -522,7 +522,7 @@
     "href": "works/posts/2024-02-27/index.html",
     "title": "低雑音アンプ用の電源の中身を見てみる",
     "section": "",
-    "text": "某メーカーの低雑音アンプ用電源の中を覗いてみました。\n\n意外にも、電源トランスは普通のOIコア。磁場漏洩が少ないと言われているトロイダルコアとかRコアとかではなかったです。その代わりに巻いてあるのは、銅のショートリングですかね。コイルから出た磁束によってショートリングに渦電流が発生し、その電流がコイルを一周するように流れることで発生する磁束でコイルから出る磁束を打ち消して低減するらしいです。\nトランスと回路を離してあって、さらに回路が内箱に収められているのも、漏洩磁場を気にしてでしょうか。内箱の素材はアルミのように思いましたが、50 Hzや60 Hzに対しても十分な磁気シールドになるのでしょうか？回路を追うのは難しかったので、結局分からないところばかりでした。\nメーカーが測定した電圧雑音スペクトルでは、低周波側ではハムノイズがほとんど見えていないですし、高周波側は1 nV/Hz1/2を下回るほど相当に低いので、何か特別なことをやっているに違いない・・・。\nしかし、このクラスの低雑音がRFアンプに必須かどうかは、確認してみないと何とも言えない気もします。±15 V, 100 mAの電源にしては結構なお値段なので、安価な市販電源や自作電源で十分ならそれで済ませたいところではあります。\n\n\n\n Back to top"
+    "text": "某メーカーの低雑音アンプ用電源の中を覗いてみました。\n\n意外にも、電源トランスは普通のOIコア。磁場漏洩が少ないと言われているトロイダルコアとかRコアとかではなかったです。その代わりに巻いてあるのは、銅のショートリングですかね。コイルから出た磁束によってショートリングに渦電流が発生し、その電流がコイルを一周するように流れることで発生する磁束でコイルから出る磁束を打ち消して低減するらしいです。\nトランスと回路を離してあって、さらに回路が内箱に収められているのも、漏洩磁場を気にしてでしょうか。内箱の素材はアルミのように思いましたが、50 Hzや60 Hzに対しても十分な磁気シールドになるのでしょうか？回路を追うのは難しかったので、結局分からないところばかりでした。\nメーカーが測定した電圧雑音スペクトルでは、低周波側ではハムノイズがほとんど見えていないですし、高周波側は1 nV/Hz1/2を下回るほど相当に低いので、何か特別なことをやっているに違いない・・・。\nしかし、このクラスの低雑音がRFアンプに必須かどうかは、確認してみないと何とも言えない気もします。±15 V, 100 mAの電源にしては結構なお値段なので、安価な市販電源や自作電源で十分ならそれで済ませたいところではあります。"
   },
   {
     "objectID": "works/posts/2024-03-02/index.html",
@@ -627,7 +627,7 @@
     "href": "works/posts/SlowPD/index.html",
     "title": "低速受光器",
     "section": "",
-    "text": "CWレーザー分光やレーザーパワーモニターなどに使用する低速受光器です。\n\n回路説明\nDC測定用ですが、数10 kHz程度の帯域はあるので光チョッパーにも対応できます。適切に部品を選べば、適当な市販受光器よりも高性能が実現できます。\n回路図は下記の通りです。ごく普通のトランスインピーダンスアンプです。実際にはIC3のボルテージフォロワは実装せず、IC4の出力から直接R6を介してSMAコネクタに接続しています。\n\n\nフォトダイオード: InGaAs (Hamamatsu, G12180)\nオペアンプ: LMP7701\nトランスインピーダンス: 10 kΩ\n電源コネクタ: M8コネクタ 3極\n\nトランスインピーダンスアンプには、入力バイアス電流の小さなFET入力のオペアンプを使用するのが定石です。今回は入力オフセット電圧も小さなLMP7701を使用し、低オフセットを実現しています。\nフィードバック抵抗には、温度ドリフトの小さなアルファエレクトロニクス製の抵抗を使用しています。交換して電流電圧変換係数を変えられるようになっています。\n電源コネクタは、NewportやThorlabsと共通のM8コネクタです。同じ電源を使用できます。\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
+    "text": "CWレーザー分光やレーザーパワーモニターなどに使用する低速受光器です。\n\n回路説明\nDC測定用ですが、数10 kHz程度の帯域はあるので光チョッパーにも対応できます。適切に部品を選べば、適当な市販受光器よりも高性能が実現できます。\n回路図は下記の通りです。ごく普通のトランスインピーダンスアンプです。実際にはIC3のボルテージフォロワは実装せず、IC4の出力から直接R6を介してSMAコネクタに接続しています。\n\n\nフォトダイオード: InGaAs (Hamamatsu, G12180)\nオペアンプ: LMP7701\nトランスインピーダンス: 10 kΩ\n電源コネクタ: M8コネクタ 3極\n\nトランスインピーダンスアンプには、入力バイアス電流の小さなFET入力のオペアンプを使用するのが定石です。今回は入力オフセット電圧も小さなLMP7701を使用し、低オフセットを実現しています。\nフィードバック抵抗には、温度ドリフトの小さなアルファエレクトロニクス製の抵抗を使用しています。交換して電流電圧変換係数を変えられるようになっています。\n電源コネクタは、NewportやThorlabsと共通のM8コネクタです。同じ電源を使用できます。"
   },
   {
     "objectID": "works/posts/your-space-our-place/index.html",
@@ -704,7 +704,7 @@
     "href": "readme.html",
     "title": "PureHertz Labratory",
     "section": "",
-    "text": "PureHertzのウェブサイト。GitHub Pages上で公開する。\n\n\n\nGitHubのアカウント名の変更\nGitHub Pagesを使ったウェブサイト公開 https://quarto.org/docs/publishing/github-pages.html\n\n\n\n\n\n図の拡大表示ができるようにlightboxを使う https://quarto.org/docs/output-formats/html-lightbox-figures.html\nPDFファイルの埋め込みが出来るようにする https://github.com/jmgirard/embedpdf\nPostが増えてきたら、ピックアップした記事をまとめるページを作る"
+    "text": "PureHertzのウェブサイト。GitHub Pages上で公開する。\n\n\n\nGitHubのアカウント名の変更\nGitHub Pagesを使ったウェブサイト公開 https://quarto.org/docs/publishing/github-pages.html\n\n\n\n\n\n図の拡大表示ができるようにlightboxを使う https://quarto.org/docs/output-formats/html-lightbox-figures.html\nPDFファイルの埋め込みが出来るようにする https://github.com/jmgirard/embedpdf\nPostが増えてきたら、ピックアップした記事をまとめるページを作る\nCallout blockを使うようにする https://quarto.org/docs/authoring/callouts.html\n今のところの記事は製作記録にとどまるので、もう少し具体的に有用な情報を含むようにする。"
   },
   {
     "objectID": "readme.html#issues",
@@ -718,6 +718,6 @@
     "href": "readme.html#for-future",
     "title": "PureHertz Labratory",
     "section": "",
-    "text": "図の拡大表示ができるようにlightboxを使う https://quarto.org/docs/output-formats/html-lightbox-figures.html\nPDFファイルの埋め込みが出来るようにする https://github.com/jmgirard/embedpdf\nPostが増えてきたら、ピックアップした記事をまとめるページを作る"
+    "text": "図の拡大表示ができるようにlightboxを使う https://quarto.org/docs/output-formats/html-lightbox-figures.html\nPDFファイルの埋め込みが出来るようにする https://github.com/jmgirard/embedpdf\nPostが増えてきたら、ピックアップした記事をまとめるページを作る\nCallout blockを使うようにする https://quarto.org/docs/authoring/callouts.html\n今のところの記事は製作記録にとどまるので、もう少し具体的に有用な情報を含むようにする。"
   }
 ]

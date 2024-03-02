@@ -7,7 +7,7 @@ about:
     - icon: twitter-x
       href: https://x.com/s_works2013/
     - icon: github
-      href: https://researchmap.jp/s-okubo
+      href: https://github.com/PureHertz
 toc: false
 ---
 
