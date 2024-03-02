@@ -704,7 +704,7 @@
     "href": "readme.html",
     "title": "PureHertz Labratory",
     "section": "",
-    "text": "PureHertzのウェブサイト。GitHub Pages上で公開する。\n\n\n\nGitHubのアカウント名の変更\nGitHub Pagesを使ったウェブサイト公開 https://quarto.org/docs/publishing/github-pages.html\n\n\n\n\n\n図の拡大表示ができるようにlightboxを使う https://quarto.org/docs/output-formats/html-lightbox-figures.html\nPDFファイルの埋め込みが出来るようにする https://github.com/jmgirard/embedpdf\nPostが増えてきたら、ピックアップした記事をまとめるページを作る\nCallout blockを使うようにする https://quarto.org/docs/authoring/callouts.html\n今のところの記事は製作記録にとどまるので、もう少し具体的に有用な情報を含むようにする。"
+    "text": "PureHertz Labratory\nPureHertzウェブサイトのリポジトリ。\nhttps://purehertz.github.io/website/"
   },
   {
     "objectID": "readme.html#issues",
@@ -719,5 +719,26 @@
     "title": "PureHertz Labratory",
     "section": "",
     "text": "図の拡大表示ができるようにlightboxを使う https://quarto.org/docs/output-formats/html-lightbox-figures.html\nPDFファイルの埋め込みが出来るようにする https://github.com/jmgirard/embedpdf\nPostが増えてきたら、ピックアップした記事をまとめるページを作る\nCallout blockを使うようにする https://quarto.org/docs/authoring/callouts.html\n今のところの記事は製作記録にとどまるので、もう少し具体的に有用な情報を含むようにする。"
+  },
+  {
+    "objectID": "issues.html",
+    "href": "issues.html",
+    "title": "PureHertz Labratory",
+    "section": "",
+    "text": "PureHertzウェブサイトのリポジトリ。\nhttps://purehertz.github.io/website/\n\n\n\nトップページの写真、もっと良いものに変更する。\nGitHubのアカウント名の変更。\nGitHub Pagesを使ったウェブサイト公開。 https://quarto.org/docs/publishing/github-pages.html\n\n\n\n\n\n図の拡大表示ができるようにlightboxを使う。 https://quarto.org/docs/output-formats/html-lightbox-figures.html\nPDFファイルの埋め込みが出来るようにする。 https://github.com/jmgirard/embedpdf\nPostが増えてきたら、ピックアップした記事をまとめるページを作る。\nCallout blockを使うようにする。 https://quarto.org/docs/authoring/callouts.html\n今のところの記事は製作記録にとどまるので、もう少し具体的に有用な情報を含むようにする。\nGoogle Analyticsの導入。"
+  },
+  {
+    "objectID": "issues.html#issues",
+    "href": "issues.html#issues",
+    "title": "PureHertz Labratory",
+    "section": "",
+    "text": "トップページの写真、もっと良いものに変更する。\nGitHubのアカウント名の変更。\nGitHub Pagesを使ったウェブサイト公開。 https://quarto.org/docs/publishing/github-pages.html"
+  },
+  {
+    "objectID": "issues.html#for-future",
+    "href": "issues.html#for-future",
+    "title": "PureHertz Labratory",
+    "section": "",
+    "text": "図の拡大表示ができるようにlightboxを使う。 https://quarto.org/docs/output-formats/html-lightbox-figures.html\nPDFファイルの埋め込みが出来るようにする。 https://github.com/jmgirard/embedpdf\nPostが増えてきたら、ピックアップした記事をまとめるページを作る。\nCallout blockを使うようにする。 https://quarto.org/docs/authoring/callouts.html\n今のところの記事は製作記録にとどまるので、もう少し具体的に有用な情報を含むようにする。\nGoogle Analyticsの導入。"
   }
 ]
