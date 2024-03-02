@@ -1,0 +1,32 @@
+---
+title: "PureHertz"
+image: x_jacket.jpg
+about: 
+  template: trestles
+  links: 
+    - icon: twitter-x
+      href: https://x.com/s_works2013/
+    - icon: github
+      href: https://researchmap.jp/s-okubo
+toc: false
+---
+
+## Profile
+
+-   **Name:** Akira
+-   **Job:** Researcher of Laser Phyisics
+-   **Degree:** Ph.D in Science
+
+------------------------------------------------------------------------
+
+-   **名前:** アキラ
+-   **本職:** レーザー物理の研究者
+-   **学位:** 博士（理学）
+
+## このサイトについて
+
+大学学部時代からレーザー物理分野で研究をしています。研究の過程でいろいろな回路や装置を作るうちに、回路作りが趣味になり、必要以上に(?)こだわるようになりました。作った装置には "PureHertz" というブランド名を勝手につけて自己満足しています。
+
+一方、中学生の頃から作曲・音楽制作を趣味にしており、最近は研究内容をテーマにして曲を作っています。
+
+せっかく作った作品たち、紹介できるものはこのサイトで紹介していこうと思います。

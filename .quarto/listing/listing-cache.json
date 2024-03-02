@@ -1,0 +1,27 @@
+{
+  "listingMap": {
+    "blog.qmd": [
+      "posts"
+    ],
+    "works\\index.qmd": [
+      "posts"
+    ],
+    "products\\index.qmd": [
+      "B3049D40",
+      "pages",
+      "pages/*.qmd",
+      "../products/pages/*.qmd",
+      "../products/pages/**",
+      "../products/pages/*",
+      "../works/posts/*",
+      "../works/posts/2024-02-27/*",
+      "../works/posts/**",
+      "/../works/posts/**",
+      "/../works/posts/*/*.qmd",
+      "/../works/posts/Sweeper/*.qmd",
+      "/../works/posts/SlowPD/*.qmd",
+      "/../works/posts/colour-of-the-universe/*.qmd",
+      "/../works/posts/dance-versatileness/*.qmd"
+    ]
+  }
+}

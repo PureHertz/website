@@ -1,0 +1,18 @@
+---
+title: "Welcome to PureHertz Laboratory"
+title-block-banner: false
+toc: false
+---
+
+![](common/title.jpg)
+
+#### Magic of Frequency  *---Optics, Electronics, and Music*
+
+
+
+- レーザー物理の研究のために開発・製作した回路・装置
+- 趣味で制作した楽曲
+- その他、研究・趣味に役立つかもしれない情報
+
+
+

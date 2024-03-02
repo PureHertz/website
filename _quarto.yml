@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "PureHertz Laboratory"
+  navbar:
+    logo: staffs/logo.png
+    title: false
+    left:
+      - text: Home
+        file: index.qmd
+      - text: About
+        file: about/index.qmd
+      - works/index.qmd
+#      - products/index.qmd
+  page-footer:
+    left: "Built with [Quarto](https://quarto.org/)"
+    center: "&copy;2024, PureHertz"
+    right:
+      - icon: github
+        href: https://researchmap.jp/s-okubo
+
+#  back-to-top-navigation: true
+  bread-crumbs: true
+
+format:
+  html:
+    theme: spacelab
+    toc: true
+
+
+

@@ -1,0 +1,38 @@
+---
+title: "Colour of the Universe"
+date: "2023-06-03"
+date-modified: "2024-02-24"
+categories: [Music, Original song]
+image: "thumnail.jpg"
+toc: false
+---
+
+## Abstract
+
+天体が放つ光のドップラーシフトを利用した天体視線速度測定は、太陽型恒星の周りを公転する系外惑星が初めて発見された際に用いられた手法である。さらに精度を高めることで、地球型系外惑星発見、宇宙加速膨張の直接的実証、基礎物理定数の恒常性検証が可能になると期待されている。
+
+そして現在、光の波長の超高精度な「ものさし」である【光コム】を基準とした、究極的精度の視線速度測定を目指す研究が進められている...
+
+<audio controlslist="nodownload" controls>
+   <source src="Colour of the Universe_v1.05.mp3" type="audio/mp3">
+   <p>Your browser does not support the audio element.</p>
+</audio>
+
+
+## Information
+
+- **Vocal:** Miku Hatsune
+- **Music & Lyrics:** Sho Okubo
+
+歌詞全文は[Piapro](https://piapro.jp/t/gYd9)をご覧ください。
+
+
+## Movie
+
+<iframe width="312" height="176" src="https://ext.nicovideo.jp/thumb/sm42303594" scrolling="no" style="border:solid 1px #ccc;" frameborder="0"><a href="https://www.nicovideo.jp/watch/sm42303594">Colour of the Universe / 初音ミク</a></iframe>
+
+{{< video https://www.youtube.com/watch?v=AwFKwa4n-Ho  width="560" height="315">}}
+
+
+## 参考文献
+<https://doi.org/10.1364/OE.487279>
