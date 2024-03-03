@@ -14,7 +14,7 @@ toc: false
 切ない系のアップテンポな曲です。当時の売れ筋路線で作ってみました。研究室で曲を作ろう企画の第3弾です。作詞は第1弾、第2弾に引き続き、研究室の先輩が担当しました。
 
 
-<audio controlslist="nodownload" controls>
+<audio controlslist="nodownload" controls oncontextmenu="return false;">
    <source src="regrets.mp3" type="audio/mp3">
    <p>Your browser does not support the audio element.</p>
 </audio>

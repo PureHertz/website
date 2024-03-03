@@ -14,7 +14,7 @@ toc: false
 研究室で曲を作ろう企画の第5弾です。プロデューサー先輩が初めて歌詞を書いてくれました。
 
 
-<audio controlslist="nodownload" controls>
+<audio controlslist="nodownload" controls oncontextmenu="return false;">
    <source src="dance-versatileness.mp3" type="audio/mp3">
    <p>Your browser does not support the audio element.</p>
 </audio>

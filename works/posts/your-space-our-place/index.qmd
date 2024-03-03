@@ -13,7 +13,7 @@ toc: false
 
 震災直後、短期留学先だったドイツからの帰国便の中でメロディーとコードを作りました。歌詞は研究室の先輩にお願いしました。突然の出来事で大切な場所がなくなってしまったとしても、僕らはまた「いつもの場所」を作っていけるという希望を歌っています。
 
-<audio controlslist="nodownload" controls>
+<audio controlslist="nodownload" controls oncontextmenu="return false;">
    <source src="itsumono-basho.mp3" type="audio/mp3">
    <p>Your browser does not support the audio element.</p>
 </audio>

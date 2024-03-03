@@ -1,6 +1,6 @@
 PureHertz Labratory
 ===================
 
-PureHertzウェブサイトのリポジトリ。
+ Website repository of PureHertz.
 
 <https://purehertz.github.io/>

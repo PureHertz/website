@@ -14,7 +14,7 @@ toc: false
 JAM Projectのような熱い曲を作ろう！ということで始まった研究室で曲を作ろう企画の第2弾です。研究室の先輩が熱い歌詞を書いてくれました。
 
 
-<audio controlslist="nodownload" controls>
+<audio controlslist="nodownload" controls oncontextmenu="return false;">
    <source src="LB_Len_v3.mp3" type="audio/mp3">
    <p>Your browser does not support the audio element.</p>
 </audio>
