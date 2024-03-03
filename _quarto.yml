@@ -5,6 +5,7 @@ project:
 website:
   title: "PureHertz Laboratory"
   site-url: https://purehertz.github.io/
+  favicon: common/logo_small.png
   navbar:
     logo: common/logo.png
     title: false
