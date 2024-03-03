@@ -3,4 +3,4 @@ PureHertz Labratory
 
 PureHertzウェブサイトのリポジトリ。
 
-<https://purehertz.github.io/website/>
+<https://purehertz.github.io/>

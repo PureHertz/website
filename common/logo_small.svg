@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="54.215195mm"
+   height="54.215195mm"
+   viewBox="0 0 54.215194 54.215194"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="logo_small.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#8a8a8a"
+     borderopacity="0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.0151094"
+     inkscape:cx="133.98776"
+     inkscape:cy="138.95027"
+     inkscape:window-width="1409"
+     inkscape:window-height="1360"
+     inkscape:window-x="234"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     showborder="false" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient1"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop2" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="radialGradient2"
+       cx="49.560017"
+       cy="-365.15829"
+       fx="49.560017"
+       fy="-365.15829"
+       r="58.028481"
+       gradientTransform="matrix(0.78756256,0.45469946,-0.1218252,0.21100742,32.21799,20.188327)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-74.269409,0.89493942)">
+    <circle
+       style="fill:#002c66;fill-opacity:1;stroke:none;stroke-width:1.665;stroke-linecap:square;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:markers fill stroke"
+       id="path5-3"
+       cx="101.37701"
+       cy="26.212658"
+       r="27.107597" />
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4px;line-height:1.25;font-family:'Monotype Corsiva';-inkscape-font-specification:'Monotype Corsiva, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+       x="74.756836"
+       y="32.69347"
+       id="text1"
+       inkscape:export-filename="logo.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4px;font-family:'Monotype Corsiva';-inkscape-font-specification:'Monotype Corsiva, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         x="74.756836"
+         y="32.69347"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.3333px;font-family:'Monotype Corsiva';-inkscape-font-specification:'Monotype Corsiva, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1"
+           id="tspan2">P</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.665px;line-height:1.25;font-family:'Monotype Corsiva';-inkscape-font-specification:'Monotype Corsiva, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+       x="88.115456"
+       y="41.133244"
+       id="text1-3"
+       inkscape:export-filename="logo.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan1-5"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.665px;font-family:'Monotype Corsiva';-inkscape-font-specification:'Monotype Corsiva, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         x="88.115456"
+         y="41.133244"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.7749px;font-family:'Monotype Corsiva';-inkscape-font-specification:'Monotype Corsiva, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+           id="tspan2-8">H</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.6768px;line-height:1.25;font-family:'Monotype Corsiva';-inkscape-font-specification:'Monotype Corsiva, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+       x="111.7766"
+       y="41.330193"
+       id="text1-3-0"
+       inkscape:export-filename="logo.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan1-5-1"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.6768px;font-family:'Monotype Corsiva';-inkscape-font-specification:'Monotype Corsiva, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         x="111.7766"
+         y="41.330193">z<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:41.1279px;font-family:'Monotype Corsiva';-inkscape-font-specification:'Monotype Corsiva, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+   id="tspan2-8-3" /></tspan></text>
+  </g>
+</svg>
