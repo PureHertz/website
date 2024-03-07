@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2024-02-23">
 
-<title>PureHertz Laboratory - 掃引回路</title>
+<title>PureHertz Laboratory - 三角波発振器（掃引回路）</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -141,7 +141,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">掃引回路</h1>
+      <h1 class="title">三角波発振器（掃引回路）</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">電子回路</div>
               </div>
@@ -171,8 +171,7 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#概要" id="toc-概要" class="nav-link active" data-scroll-target="#概要">概要</a></li>
-  <li><a href="#回路説明" id="toc-回路説明" class="nav-link" data-scroll-target="#回路説明">回路説明</a></li>
+  <li><a href="#回路概要" id="toc-回路概要" class="nav-link active" data-scroll-target="#回路概要">回路概要</a></li>
   </ul>
 </nav>
     </div>
@@ -183,19 +182,16 @@ window.Quarto = {
 
 
 
-<section id="概要" class="level2">
-<h2 class="anchored" data-anchor-id="概要">概要</h2>
 <p>三角波と矩形波を出力する低速発振回路です。 三角波は掃引信号として、矩形波はそのトリガー信号として、さまざまな装置で便利に使用できます。</p>
-</section>
-<section id="回路説明" class="level2">
-<h2 class="anchored" data-anchor-id="回路説明">回路説明</h2>
+<section id="回路概要" class="level2">
+<h2 class="anchored" data-anchor-id="回路概要">回路概要</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Sweeper_1.svg" class="img-fluid figure-img" style="width:80.0%"></p>
 <figcaption>回路図</figcaption>
 </figure>
 </div>
-<p>OPアンプを2つ使用し、片方をシュミット回路として、もう片方を積分回路として動作させます。シュミット回路から矩形波が出力され、その出力を積分して三角波を作ります。</p>
+<p>2回路入りのOPアンプU1を使用し、U1Aをシュミットトリガー回路として、U1Bを積分回路として動作させます。シュミットトリガーから矩形波が出力され、その出力を積分して三角波を作ります。三角波がシュミットトリガーのスレッショルドを超えると、シュミットトリガーの出力電圧が反転します。</p>
 <ul>
 <li>発振動作をするための条件は R1 &gt; R2</li>
 <li>R4に比べてR3の値を小さくすると、出力電圧が小さくなる</li>
