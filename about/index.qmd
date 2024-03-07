@@ -1,6 +1,6 @@
 ---
 title: "PureHertz"
-image: x_jacket.jpg
+image: /common/logo_small.png
 about: 
   template: trestles
   links: 
