@@ -17,29 +17,36 @@
     "objectID": "works/posts/your-space-our-place/index.html#information",
     "href": "works/posts/your-space-our-place/index.html#information",
     "title": "いつもの場所",
-    "section": "Information",
-    "text": "Information\n\nVocal: Len Kagamine\nMusic: Sho Okubo\nLyrics: MICCHY"
+    "section": "2 Information",
+    "text": "2 Information\n\nVocal: Len Kagamine\nMusic: Sho Okubo\nLyrics: MICCHY"
   },
   {
     "objectID": "works/posts/your-space-our-place/index.html#movie",
     "href": "works/posts/your-space-our-place/index.html#movie",
     "title": "いつもの場所",
-    "section": "Movie",
-    "text": "Movie\n\n&lt;a href=\"https://www.nicovideo.jp/watch/sm14214918\"&gt;【鏡音レン】いつもの場所【オリジナル】&lt;/a&gt;"
+    "section": "3 Movie",
+    "text": "3 Movie\n\n&lt;a href=\"https://www.nicovideo.jp/watch/sm14214918\"&gt;【鏡音レン】いつもの場所【オリジナル】&lt;/a&gt;"
   },
   {
     "objectID": "works/posts/your-space-our-place/index.html#lyrics",
     "href": "works/posts/your-space-our-place/index.html#lyrics",
     "title": "いつもの場所",
-    "section": "Lyrics",
-    "text": "Lyrics\n当たり前だと思っていた景色 疑わなかった日常\n不意に崩れ去った今を 受け入れたくない気持ちがわきあがる\n悲しみに浸りたくなるだろう こんなの夢だと思いたい\nでもそんなことじゃ 何も始まらない\n前だけ見つめて 歩いていこうよ\nいつもの場所はどこにもないけれど\nI’m always with you ボクがそばにいよう\n明けない夜はないのだから 手を取り合って生きていこう\n幼いころから見ていた空 肌に感じていた風\nすべて流れ去った今が ボクたちの心を押しつぶす\n何を恨めばいいのだろう 誰かの所為にしてしまいたい\nでもそんなことに意味はない だから\nすべてを受け入れ 進んでいこうよ\nいつもの場所はどこにもないけれど\nI will smile at you ボクが笑いかけよう\n残酷な今に 逃げたくなるけど 未来(あす)を一緒に見にいこう\nすべてを包む暗い闇も いつか笑い飛ばせるように\nいつもの場所はどこにもないけれど\nI will smile at you ボクが笑いかけよう\n眠れぬ夜も 泣きたくなる朝も\nI’m always with you ボクがそばにいよう\nいつもの場所は壊れてしまったけど 「いつもの場所」を作っていこう\nまた作っていこう\nYou can make new space\nI will be with you\nWe can make our place\nIt’s for you and me"
+    "section": "4 Lyrics",
+    "text": "4 Lyrics\n当たり前だと思っていた景色 疑わなかった日常\n不意に崩れ去った今を 受け入れたくない気持ちがわきあがる\n悲しみに浸りたくなるだろう こんなの夢だと思いたい\nでもそんなことじゃ 何も始まらない\n前だけ見つめて 歩いていこうよ\nいつもの場所はどこにもないけれど\nI’m always with you ボクがそばにいよう\n明けない夜はないのだから 手を取り合って生きていこう\n幼いころから見ていた空 肌に感じていた風\nすべて流れ去った今が ボクたちの心を押しつぶす\n何を恨めばいいのだろう 誰かの所為にしてしまいたい\nでもそんなことに意味はない だから\nすべてを受け入れ 進んでいこうよ\nいつもの場所はどこにもないけれど\nI will smile at you ボクが笑いかけよう\n残酷な今に 逃げたくなるけど 未来(あす)を一緒に見にいこう\nすべてを包む暗い闇も いつか笑い飛ばせるように\nいつもの場所はどこにもないけれど\nI will smile at you ボクが笑いかけよう\n眠れぬ夜も 泣きたくなる朝も\nI’m always with you ボクがそばにいよう\nいつもの場所は壊れてしまったけど 「いつもの場所」を作っていこう\nまた作っていこう\nYou can make new space\nI will be with you\nWe can make our place\nIt’s for you and me"
   },
   {
     "objectID": "works/posts/SlowPD/index.html",
     "href": "works/posts/SlowPD/index.html",
     "title": "低速受光器",
     "section": "",
-    "text": "CWレーザー分光やレーザーパワーモニターなどに使用する低速受光器です。\n\n回路説明\nDC測定用ですが、数10 kHz程度の帯域はあるので光チョッパーにも対応できます。適切に部品を選べば、適当な市販受光器よりも高性能が実現できます。\n回路図は下記の通りです。ごく普通のトランスインピーダンスアンプです。実際にはIC3のボルテージフォロワは実装せず、IC4の出力から直接R6を介してSMAコネクタに接続しています。\n\n\nフォトダイオード: InGaAs (Hamamatsu, G12180)\nオペアンプ: LMP7701\nトランスインピーダンス: 10 kΩ\n電源コネクタ: M8コネクタ 3極\n\nトランスインピーダンスアンプには、入力バイアス電流の小さなFET入力のオペアンプを使用するのが定石です。今回は入力オフセット電圧も小さなLMP7701を使用し、低オフセットを実現しています。\nフィードバック抵抗には、温度ドリフトの小さなアルファエレクトロニクス製の抵抗を使用しています。交換して電流電圧変換係数を変えられるようになっています。\n電源コネクタは、NewportやThorlabsと共通のM8コネクタです。同じ電源を使用できます。"
+    "text": "CWレーザー分光やレーザーパワーモニターなどに使用する低速受光器です。"
+  },
+  {
+    "objectID": "works/posts/SlowPD/index.html#回路説明",
+    "href": "works/posts/SlowPD/index.html#回路説明",
+    "title": "低速受光器",
+    "section": "1 回路説明",
+    "text": "1 回路説明\nDC測定用ですが、数10 kHz程度の帯域はあるので光チョッパーにも対応できます。適切に部品を選べば、適当な市販受光器よりも高性能が実現できます。\n回路図は下記の通りです。ごく普通のトランスインピーダンスアンプです。実際にはIC3のボルテージフォロワは実装せず、IC4の出力から直接R6を介してSMAコネクタに接続しています。\n\n\nフォトダイオード: InGaAs (Hamamatsu, G12180)\nオペアンプ: LMP7701\nトランスインピーダンス: 10 kΩ\n電源コネクタ: M8コネクタ 3極\n\nトランスインピーダンスアンプには、入力バイアス電流の小さなFET入力のオペアンプを使用するのが定石です。今回は入力オフセット電圧も小さなLMP7701を使用し、低オフセットを実現しています。\nフィードバック抵抗には、温度ドリフトの小さなアルファエレクトロニクス製の抵抗を使用しています。交換して電流電圧変換係数を変えられるようになっています。\n電源コネクタは、NewportやThorlabsと共通のM8コネクタです。同じ電源を使用できます。"
   },
   {
     "objectID": "works/posts/limit-breaker/index.html",
@@ -59,22 +66,22 @@
     "objectID": "works/posts/limit-breaker/index.html#information",
     "href": "works/posts/limit-breaker/index.html#information",
     "title": "LIMIT BREAKER!!",
-    "section": "Information",
-    "text": "Information\n\nVocal: Len Kagamine, Rin Kagamine\nMusic: Sho Okubo\nLyrics: MICCHY"
+    "section": "2 Information",
+    "text": "2 Information\n\nVocal: Len Kagamine, Rin Kagamine\nMusic: Sho Okubo\nLyrics: MICCHY"
   },
   {
     "objectID": "works/posts/limit-breaker/index.html#movie",
     "href": "works/posts/limit-breaker/index.html#movie",
     "title": "LIMIT BREAKER!!",
-    "section": "Movie",
-    "text": "Movie\n\n&lt;a href=\"https://www.nicovideo.jp/watch/sm6810661\"&gt;【鏡音レン】LIMIT BREAKER !!【オリジナル】&lt;/a&gt;"
+    "section": "3 Movie",
+    "text": "3 Movie\n\n&lt;a href=\"https://www.nicovideo.jp/watch/sm6810661\"&gt;【鏡音レン】LIMIT BREAKER !!【オリジナル】&lt;/a&gt;"
   },
   {
     "objectID": "works/posts/limit-breaker/index.html#lyrics",
     "href": "works/posts/limit-breaker/index.html#lyrics",
     "title": "LIMIT BREAKER!!",
-    "section": "Lyrics",
-    "text": "Lyrics\n闇を切り裂く閃光が 俺の心を揺さぶる\nスキルを上げろ 神経を研ぎ澄ませ\nそこに答えがあるのさ\n高い壁が立ち塞がっても\n越えて行けるさ 全力なら\n限界超えろ！\nLimit breaker!! 全てを解き放て\nまだ力は残ってるさ だから\nLimit breaker!! 絶対諦めるな\n可能性を信じて そうさ\nLimit breaker!!\n荒野の果てに浮かぶ鏡が 俺の心を映し出す\n力を合わせろ 運命に立ち向かえ\nそこに答えがあるのさ\nノイズの雨に曝されても\n見つけられるさ 輝く明日\n限界超えろ！\nLimit breaker!! 俺たちはまだ\n倒れるわけにはいかない だから\nLimit breaker!! 刹那に賭けろ\n自分を今信じて そうさ\nLimit breaker!!\n異次元の断崖に 身を投じた\n俺たちに 未来（あす）はあるのか？\n俺の全て 燃やし尽くせ！\n限界超えろ！\nLimit breaker!! 全てを解き放て\nまだ力は残ってるさ だから\nLimit breaker!! 絶対諦めるな\n可能性を信じて そうさ\nLimit breaker!!"
+    "section": "4 Lyrics",
+    "text": "4 Lyrics\n闇を切り裂く閃光が 俺の心を揺さぶる\nスキルを上げろ 神経を研ぎ澄ませ\nそこに答えがあるのさ\n高い壁が立ち塞がっても\n越えて行けるさ 全力なら\n限界超えろ！\nLimit breaker!! 全てを解き放て\nまだ力は残ってるさ だから\nLimit breaker!! 絶対諦めるな\n可能性を信じて そうさ\nLimit breaker!!\n荒野の果てに浮かぶ鏡が 俺の心を映し出す\n力を合わせろ 運命に立ち向かえ\nそこに答えがあるのさ\nノイズの雨に曝されても\n見つけられるさ 輝く明日\n限界超えろ！\nLimit breaker!! 俺たちはまだ\n倒れるわけにはいかない だから\nLimit breaker!! 刹那に賭けろ\n自分を今信じて そうさ\nLimit breaker!!\n異次元の断崖に 身を投じた\n俺たちに 未来（あす）はあるのか？\n俺の全て 燃やし尽くせ！\n限界超えろ！\nLimit breaker!! 全てを解き放て\nまだ力は残ってるさ だから\nLimit breaker!! 絶対諦めるな\n可能性を信じて そうさ\nLimit breaker!!"
   },
   {
     "objectID": "works/posts/dance-versatileness/index.html",
@@ -94,22 +101,22 @@
     "objectID": "works/posts/dance-versatileness/index.html#information",
     "href": "works/posts/dance-versatileness/index.html#information",
     "title": "ダンス万能説 -Dance Versatileness-",
-    "section": "Information",
-    "text": "Information\n\nVocal: Rin Kagamine\nMusic: Sho Okubo\nLyrics: 提案型P"
+    "section": "2 Information",
+    "text": "2 Information\n\nVocal: Rin Kagamine\nMusic: Sho Okubo\nLyrics: 提案型P"
   },
   {
     "objectID": "works/posts/dance-versatileness/index.html#movie",
     "href": "works/posts/dance-versatileness/index.html#movie",
     "title": "ダンス万能説 -Dance Versatileness-",
-    "section": "Movie",
-    "text": "Movie\n\n&lt;a href=\"https://www.nicovideo.jp/watch/sm16464295\"&gt;【鏡音リン】ダンス万能説 -Dance Versatileness-【オリジナル】&lt;/a&gt;"
+    "section": "3 Movie",
+    "text": "3 Movie\n\n&lt;a href=\"https://www.nicovideo.jp/watch/sm16464295\"&gt;【鏡音リン】ダンス万能説 -Dance Versatileness-【オリジナル】&lt;/a&gt;"
   },
   {
     "objectID": "works/posts/dance-versatileness/index.html#lyrics",
     "href": "works/posts/dance-versatileness/index.html#lyrics",
     "title": "ダンス万能説 -Dance Versatileness-",
-    "section": "Lyrics",
-    "text": "Lyrics\n今宵差し込むこの月明かりが\n僕を照らすスポットライト\n静まり返った無機質なオフィスが\n最高の舞台に早変わり\n誰にも見せない本当の姿は\nほかでもないここにあるんだ\n仕事と言う名の鎖が解けたら\nダンスショーの始まりの合図なのさ\nファンの鳴らないPCの隣で\n華麗なタップが鳴り響く\n小さなデスクと\n薄暗いモニターに\n閉じ込められていた\n本当の自分を さあ今解き放つのさ\n鼓動の高まり ビートを感じて\n子供のように自由なステップ\nモノクロのビル その灯りを受けて\n揺らめき映るよ シルエット\n誰も知らない本当の姿は\nほかでもないここにあるんだ\n世界が回るスピンを決めたら\n湧きあがるアンコールに応えるのさ\n音を無くした電話機の隣で\n内なる叫びがこだまする\n月を歩くような\nスリルを感じたら\n僕のダンスを\nこのフロアに世界に刻みつけるのさ\n観客なんてさ 誰もいないけど\n僕は最後まで踊ろう\n空を飛ぶように\n重力を無視して\n僕のダンスを\nこのフロアに世界に刻みつけるのさ\n自分を感じて\n世界にダイブして\n探し求めていた\n真実の愛を さあ今見つけに行こう"
+    "section": "4 Lyrics",
+    "text": "4 Lyrics\n今宵差し込むこの月明かりが\n僕を照らすスポットライト\n静まり返った無機質なオフィスが\n最高の舞台に早変わり\n誰にも見せない本当の姿は\nほかでもないここにあるんだ\n仕事と言う名の鎖が解けたら\nダンスショーの始まりの合図なのさ\nファンの鳴らないPCの隣で\n華麗なタップが鳴り響く\n小さなデスクと\n薄暗いモニターに\n閉じ込められていた\n本当の自分を さあ今解き放つのさ\n鼓動の高まり ビートを感じて\n子供のように自由なステップ\nモノクロのビル その灯りを受けて\n揺らめき映るよ シルエット\n誰も知らない本当の姿は\nほかでもないここにあるんだ\n世界が回るスピンを決めたら\n湧きあがるアンコールに応えるのさ\n音を無くした電話機の隣で\n内なる叫びがこだまする\n月を歩くような\nスリルを感じたら\n僕のダンスを\nこのフロアに世界に刻みつけるのさ\n観客なんてさ 誰もいないけど\n僕は最後まで踊ろう\n空を飛ぶように\n重力を無視して\n僕のダンスを\nこのフロアに世界に刻みつけるのさ\n自分を感じて\n世界にダイブして\n探し求めていた\n真実の愛を さあ今見つけに行こう"
   },
   {
     "objectID": "works/posts/2024-03-02/index.html",
@@ -129,15 +136,15 @@
     "objectID": "works/posts/2024-03-02/index.html#構成",
     "href": "works/posts/2024-03-02/index.html#構成",
     "title": "共振器コントローラー",
-    "section": "構成",
-    "text": "構成\nエラー信号を入力して共振器をPI制御します。共振器の2枚のミラーのうち、片方はストロークの大きいPZTで、もう片方はストロークは小さいが高速なPZTで制御することを前提としています。小さいPZTはオペアンプで直接駆動、大きいPZTは組み込みタイプのPZTドライバー（メステック製 M-2691, 最大150 V）を駆動します。\n筐体の中には\n\nPI制御回路\nリロック用マイコン回路\n掃引回路\nトロイダルコアトランス電源\nPZTドライバ\n\nを詰め込んでいます。\n\nフロントパネルはアナログメータが場所をとって混み合ってしまいました。アナログメータはPZTドライバー出力電圧のモニタリング用です。操作系とオシロスコープ用信号の出力端子をフロントパネルに持ってきて、エラー信号の入力端子やPZTへの出力端子はリアパネルです。"
+    "section": "2 構成",
+    "text": "2 構成\nエラー信号を入力して共振器をPI制御します。共振器の2枚のミラーのうち、片方はストロークの大きいPZTで、もう片方はストロークは小さいが高速なPZTで制御することを前提としています。小さいPZTはオペアンプで直接駆動、大きいPZTは組み込みタイプのPZTドライバー（メステック製 M-2691, 最大150 V）を駆動します。\n筐体の中には\n\nPI制御回路\nリロック用マイコン回路\n掃引回路\nトロイダルコアトランス電源\nPZTドライバ\n\nを詰め込んでいます。\n\nフロントパネルはアナログメータが場所をとって混み合ってしまいました。アナログメータはPZTドライバー出力電圧のモニタリング用です。操作系とオシロスコープ用信号の出力端子をフロントパネルに持ってきて、エラー信号の入力端子やPZTへの出力端子はリアパネルです。"
   },
   {
     "objectID": "works/posts/2024-03-02/index.html#その他",
     "href": "works/posts/2024-03-02/index.html#その他",
     "title": "共振器コントローラー",
-    "section": "その他",
-    "text": "その他\n機能ごとに基板が分かれてしまっているので、それらを繋ぐ配線がごちゃごちゃしてしまいます。配線作業も時間がかかるので何かもう一工夫したいところ。"
+    "section": "3 その他",
+    "text": "3 その他\n機能ごとに基板が分かれてしまっているので、それらを繋ぐ配線がごちゃごちゃしてしまいます。配線作業も時間がかかるので何かもう一工夫したいところ。"
   },
   {
     "objectID": "works/posts/2024-02-27/index.html",
@@ -149,9 +156,9 @@
   {
     "objectID": "readme.html",
     "href": "readme.html",
-    "title": "PureHertz Labratory",
+    "title": "1 PureHertz Labratory",
     "section": "",
-    "text": "PureHertz Labratory\nWebsite repository of PureHertz.\nhttps://purehertz.github.io/"
+    "text": "1 PureHertz Labratory\nWebsite repository of PureHertz.\nhttps://purehertz.github.io/"
   },
   {
     "objectID": "about/index.html",
@@ -171,8 +178,15 @@
     "objectID": "about/index.html#このサイトについて",
     "href": "about/index.html#このサイトについて",
     "title": "PureHertz",
-    "section": "このサイトについて",
-    "text": "このサイトについて\n大学学部時代からレーザー物理分野で研究をしています。研究の過程でいろいろな回路や装置を作るうちに、回路作りが趣味になり、必要以上に(?)こだわるようになりました。作った装置には “PureHertz” というブランド名を勝手につけて自己満足しています。\n一方、中学生の頃から作曲・音楽制作を趣味にしており、最近は研究内容をテーマにして曲を作っています。\nせっかく作った作品たち、紹介できるものはこのサイトで紹介していこうと思います。"
+    "section": "2 このサイトについて",
+    "text": "2 このサイトについて\n大学学部時代からレーザー物理分野で研究をしています。研究の過程でいろいろな回路や装置を作るうちに、回路作りが趣味になり、必要以上に(?)こだわるようになりました。作った装置には “PureHertz” というブランド名を勝手につけて自己満足しています。\n一方、中学生の頃から作曲・音楽制作を趣味にしており、最近は研究内容をテーマにして曲を作っています。\nせっかく作った作品たち、紹介できるものはこのサイトで紹介していこうと思います。"
+  },
+  {
+    "objectID": "about/index.html#その他の楽曲置き場",
+    "href": "about/index.html#その他の楽曲置き場",
+    "title": "PureHertz",
+    "section": "3 その他の楽曲置き場",
+    "text": "3 その他の楽曲置き場\n\nニコニコ動画"
   },
   {
     "objectID": "index.html",
@@ -186,7 +200,7 @@
     "href": "works/index.html",
     "title": "Works",
     "section": "",
-    "text": "共振器コントローラー\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\n光共振器\n\n\n\n\n\n\n\n\n\nMar 2, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n温度コントローラー\n\n\n\n\n\n\n電子回路\n\n\n温度制御\n\n\n\n\n\n\n\n\n\nMar 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n低雑音アンプ用の電源の中身を見てみる\n\n\n\n\n\n\n電子回路\n\n\n低雑音電源\n\n\n\n\n\n\n\n\n\nFeb 27, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n低速受光器\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\n\n\n\n\n\n\n\nFeb 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n三角波発振器（掃引回路）\n\n\n\n\n\n\n電子回路\n\n\n\n\n\n\n\n\n\nFeb 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nColour of the Universe\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\nJun 3, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nダンス万能説 -Dance Versatileness-\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\nDec 19, 2011\n\n\n\n\n\n\n\n\n\n\n\n\nいつもの場所\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\nApr 20, 2011\n\n\n\n\n\n\n\n\n\n\n\n\nGoodbye to My Days\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\nMar 2, 2010\n\n\n\n\n\n\n\n\n\n\n\n\nRegrets\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\nAug 4, 2009\n\n\n\n\n\n\n\n\n\n\n\n\nLIMIT BREAKER!!\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\nApr 21, 2009\n\n\n\n\n\n\nNo matching items"
+    "text": "共振器コントローラー\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\n光共振器\n\n\n\n\n\n\n\n\n\n2024-03-02\n\n\n\n\n\n\n\n\n\n\n\n\n温度コントローラー\n\n\n\n\n\n\n電子回路\n\n\n温度制御\n\n\n\n\n\n\n\n\n\n2024-03-01\n\n\n\n\n\n\n\n\n\n\n\n\n低雑音アンプ用の電源の中身を見てみる\n\n\n\n\n\n\n電子回路\n\n\n低雑音電源\n\n\n\n\n\n\n\n\n\n2024-02-27\n\n\n\n\n\n\n\n\n\n\n\n\n低速受光器\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\n\n\n\n\n\n\n\n2024-02-23\n\n\n\n\n\n\n\n\n\n\n\n\n三角波発振器（掃引回路）\n\n\n\n\n\n\n電子回路\n\n\n\n\n\n\n\n\n\n2024-02-23\n\n\n\n\n\n\n\n\n\n\n\n\nColour of the Universe\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2023-06-03\n\n\n\n\n\n\n\n\n\n\n\n\nダンス万能説 -Dance Versatileness-\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2011-12-19\n\n\n\n\n\n\n\n\n\n\n\n\nいつもの場所\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2011-04-20\n\n\n\n\n\n\n\n\n\n\n\n\nGoodbye to My Days\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2010-03-02\n\n\n\n\n\n\n\n\n\n\n\n\nRegrets\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2009-08-04\n\n\n\n\n\n\n\n\n\n\n\n\nLIMIT BREAKER!!\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2009-04-21\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "works/posts/2024-03-01/index.html",
@@ -206,15 +220,15 @@
     "objectID": "works/posts/2024-03-01/index.html#構成",
     "href": "works/posts/2024-03-01/index.html#構成",
     "title": "温度コントローラー",
-    "section": "構成",
-    "text": "構成\n温調のコア部分はWavelength ElectronicsのWTC32NDを使用しています。温度調整つまみや外部制御入力を追加し、全体のコントロールにはマイコンボード（Teensy LC）を使用しています。\n\n外部制御入力は基本フィードバック制御にしか使わないので、積分器を通って温度設定電圧に加える形になっています。本当は温度制御のエラー信号を直接置き換えたかったのですが、WTC32NDにそういう入力端子は無いのでこうしています。制御がカスケードになってしまうので、それが問題にならないかどうかは検証する必要があります。積分の時定数を十分遅くしておけば大丈夫なはず。場合によっては、積分はアナログ回路ではなくマイコン上でやるというのも手ですね。その方がいいかもしれません。\n表示ディスプレイは、秋月で買ってきたOLEDのキャラクタディスプレイを使ってみました。128×64のディスプレイでも良かったのですが、ややレトロな蛍光表示管 (VFD) の雰囲気を出したかったので緑色のキャラクタディスプレイにしてみました。\n当初設計から変更したのは電源トランス。在庫があった7 V × 2, 15 VAのトロイダルコアトランスから±5 Vを作ってみたのですが、ペルチェに1 Aも流すと電圧降下を起こしてしまい、しまいにはOLEDが消えてしまいました。ギリギリいけるという計算でしたが、ダメでしたね。おとなしく9 V × 2, 25 VAのトランスに変えて、大丈夫になりました。\n筐体のサイズはThorlabsのTED200Cより横幅が少し大きい程度。ファンレスなので放熱は少し心配。使ってみて様子見です。\nペルチェとサーミスタケーブル用のコネクタも迷いました。本当は普段使っている温度コントローラと同じヒロセのRM12, 6極にしようと考えていたのですが、世界的なコネクタ供給不足で手に入らず（もしくはめちゃくちゃ高く）、仕方なくヒロセのHR10の6極にして、ペルチェには信号とGNDで2極ずつ使うという形にしました。"
+    "section": "2 構成",
+    "text": "2 構成\n温調のコア部分はWavelength ElectronicsのWTC32NDを使用しています。温度調整つまみや外部制御入力を追加し、全体のコントロールにはマイコンボード（Teensy LC）を使用しています。\n\n外部制御入力は基本フィードバック制御にしか使わないので、積分器を通って温度設定電圧に加える形になっています。本当は温度制御のエラー信号を直接置き換えたかったのですが、WTC32NDにそういう入力端子は無いのでこうしています。制御がカスケードになってしまうので、それが問題にならないかどうかは検証する必要があります。積分の時定数を十分遅くしておけば大丈夫なはず。場合によっては、積分はアナログ回路ではなくマイコン上でやるというのも手ですね。その方がいいかもしれません。\n表示ディスプレイは、秋月で買ってきたOLEDのキャラクタディスプレイを使ってみました。128×64のディスプレイでも良かったのですが、ややレトロな蛍光表示管 (VFD) の雰囲気を出したかったので緑色のキャラクタディスプレイにしてみました。\n当初設計から変更したのは電源トランス。在庫があった7 V × 2, 15 VAのトロイダルコアトランスから±5 Vを作ってみたのですが、ペルチェに1 Aも流すと電圧降下を起こしてしまい、しまいにはOLEDが消えてしまいました。ギリギリいけるという計算でしたが、ダメでしたね。おとなしく9 V × 2, 25 VAのトランスに変えて、大丈夫になりました。\n筐体のサイズはThorlabsのTED200Cより横幅が少し大きい程度。ファンレスなので放熱は少し心配。使ってみて様子見です。\nペルチェとサーミスタケーブル用のコネクタも迷いました。本当は普段使っている温度コントローラと同じヒロセのRM12, 6極にしようと考えていたのですが、世界的なコネクタ供給不足で手に入らず（もしくはめちゃくちゃ高く）、仕方なくヒロセのHR10の6極にして、ペルチェには信号とGNDで2極ずつ使うという形にしました。"
   },
   {
     "objectID": "works/posts/2024-03-01/index.html#その他",
     "href": "works/posts/2024-03-01/index.html#その他",
     "title": "温度コントローラー",
-    "section": "その他",
-    "text": "その他\nそういえばいつも買っている温度コントローラも、RM12の6極が手に入らなかったのかRM12の7極になっていました。これまでの製品とケーブルの互換性がなくなっとるやないか！"
+    "section": "3 その他",
+    "text": "3 その他\nそういえばいつも買っている温度コントローラも、RM12の6極が手に入らなかったのかRM12の7極になっていました。これまでの製品とケーブルの互換性がなくなっとるやないか！"
   },
   {
     "objectID": "works/posts/colour-of-the-universe/index.html",
@@ -234,22 +248,22 @@
     "objectID": "works/posts/colour-of-the-universe/index.html#information",
     "href": "works/posts/colour-of-the-universe/index.html#information",
     "title": "Colour of the Universe",
-    "section": "Information",
-    "text": "Information\n\nVocal: Miku Hatsune\nMusic & Lyrics: Sho Okubo\n\n歌詞全文はPiaproをご覧ください。"
+    "section": "2 Information",
+    "text": "2 Information\n\nVocal: Miku Hatsune\nMusic & Lyrics: Sho Okubo\n\n歌詞全文はPiaproをご覧ください。"
   },
   {
     "objectID": "works/posts/colour-of-the-universe/index.html#movie",
     "href": "works/posts/colour-of-the-universe/index.html#movie",
     "title": "Colour of the Universe",
-    "section": "Movie",
-    "text": "Movie\n\n&lt;a href=\"https://www.nicovideo.jp/watch/sm42303594\"&gt;Colour of the Universe / 初音ミク&lt;/a&gt;"
+    "section": "3 Movie",
+    "text": "3 Movie\n\n&lt;a href=\"https://www.nicovideo.jp/watch/sm42303594\"&gt;Colour of the Universe / 初音ミク&lt;/a&gt;"
   },
   {
     "objectID": "works/posts/colour-of-the-universe/index.html#参考文献",
     "href": "works/posts/colour-of-the-universe/index.html#参考文献",
     "title": "Colour of the Universe",
-    "section": "参考文献",
-    "text": "参考文献\nhttps://doi.org/10.1364/OE.487279"
+    "section": "4 参考文献",
+    "text": "4 参考文献\nhttps://doi.org/10.1364/OE.487279"
   },
   {
     "objectID": "works/posts/goodbye-to-my-days/index.html",
@@ -269,15 +283,15 @@
     "objectID": "works/posts/goodbye-to-my-days/index.html#information",
     "href": "works/posts/goodbye-to-my-days/index.html#information",
     "title": "Goodbye to My Days",
-    "section": "Information",
-    "text": "Information\n\nVocal: Len Kagamine\nMusic & Lyrics: Sho Okubo\n\n歌詞全文はPiaproをご覧ください。"
+    "section": "2 Information",
+    "text": "2 Information\n\nVocal: Len Kagamine\nMusic & Lyrics: Sho Okubo\n\n歌詞全文はPiaproをご覧ください。"
   },
   {
     "objectID": "works/posts/goodbye-to-my-days/index.html#movie",
     "href": "works/posts/goodbye-to-my-days/index.html#movie",
     "title": "Goodbye to My Days",
-    "section": "Movie",
-    "text": "Movie\n\n&lt;a href=\"https://www.nicovideo.jp/watch/sm9891167\"&gt;【鏡音レン】Goodbye to My Days【オリジナル】&lt;/a&gt;"
+    "section": "3 Movie",
+    "text": "3 Movie\n\n&lt;a href=\"https://www.nicovideo.jp/watch/sm9891167\"&gt;【鏡音レン】Goodbye to My Days【オリジナル】&lt;/a&gt;"
   },
   {
     "objectID": "works/posts/regrets/index.html",
@@ -297,22 +311,22 @@
     "objectID": "works/posts/regrets/index.html#information",
     "href": "works/posts/regrets/index.html#information",
     "title": "Regrets",
-    "section": "Information",
-    "text": "Information\n\nVocal: Rin Kagamine\nMusic: Sho Okubo\nLyrics: MICCHY"
+    "section": "2 Information",
+    "text": "2 Information\n\nVocal: Rin Kagamine\nMusic: Sho Okubo\nLyrics: MICCHY"
   },
   {
     "objectID": "works/posts/regrets/index.html#movie",
     "href": "works/posts/regrets/index.html#movie",
     "title": "Regrets",
-    "section": "Movie",
-    "text": "Movie\n\n&lt;a href=\"https://www.nicovideo.jp/watch/sm7834682\"&gt;【鏡音リン】 regrets 【オリジナル】&lt;/a&gt;"
+    "section": "3 Movie",
+    "text": "3 Movie\n\n&lt;a href=\"https://www.nicovideo.jp/watch/sm7834682\"&gt;【鏡音リン】 regrets 【オリジナル】&lt;/a&gt;"
   },
   {
     "objectID": "works/posts/regrets/index.html#lyrics",
     "href": "works/posts/regrets/index.html#lyrics",
     "title": "Regrets",
-    "section": "Lyrics",
-    "text": "Lyrics\n差し込むひだまりの温かさに 寂しさを感じた\nもう君の影がないことに気づいたからかな？\n君に謝りたいことがたくさんあったけど\n「ごめんね」よりも伝えたいことがあるんだ\n素直に言葉にできなかった ただ「好き」の一言だけ\nお願いだから 一度だけでも奇跡を起こして\n神様なんかいないなんて 子供でも知ってるよね\nでも祈らずにいられないよ 君の顔が浮かぶから\n少しだけでも叶えて\n離れられなくなるなんて 考えてなかったよ\n君を忘れてしまいたいよ 自分が自分でいられないから\n知らなかった雨の冷たさに ぬくもりを感じた\n一緒に差した傘を思い出したからかな？\n君と紡いだ思い出が忘れられないよ\n後悔だけが私に残っているんだ\nもう一度やり直したいよ 必ずうまくいくよね\nお願いだから 一度だけでも奇跡を起こして\n悪魔でもね 構わないよ この願いを叶えて\n忘れることはできないんだ ずっと苦しむしかないんだ\n夢にまで君を見るから\nもう君には会えないんだ それは分かってるんだよ\nどうしようもないこの思いを 今すぐに消して欲しいよ\nずっとこの思いを引きずるの？ そんなの嫌だよ辛いよ\n後悔だけはもうしない 私は変わるから\n神様なんかいないなんて 子供でも知ってるでしょ\nだからもう祈らないよ 君を忘れもしないよ\nそんなことできないから\n「さよなら」をやっと言えるよ ちょっと遅くなったけど\n新しい扉を開くんだ きっとできるから\n君と過ごした思い出を 強さに変えていくんだ"
+    "section": "4 Lyrics",
+    "text": "4 Lyrics\n差し込むひだまりの温かさに 寂しさを感じた\nもう君の影がないことに気づいたからかな？\n君に謝りたいことがたくさんあったけど\n「ごめんね」よりも伝えたいことがあるんだ\n素直に言葉にできなかった ただ「好き」の一言だけ\nお願いだから 一度だけでも奇跡を起こして\n神様なんかいないなんて 子供でも知ってるよね\nでも祈らずにいられないよ 君の顔が浮かぶから\n少しだけでも叶えて\n離れられなくなるなんて 考えてなかったよ\n君を忘れてしまいたいよ 自分が自分でいられないから\n知らなかった雨の冷たさに ぬくもりを感じた\n一緒に差した傘を思い出したからかな？\n君と紡いだ思い出が忘れられないよ\n後悔だけが私に残っているんだ\nもう一度やり直したいよ 必ずうまくいくよね\nお願いだから 一度だけでも奇跡を起こして\n悪魔でもね 構わないよ この願いを叶えて\n忘れることはできないんだ ずっと苦しむしかないんだ\n夢にまで君を見るから\nもう君には会えないんだ それは分かってるんだよ\nどうしようもないこの思いを 今すぐに消して欲しいよ\nずっとこの思いを引きずるの？ そんなの嫌だよ辛いよ\n後悔だけはもうしない 私は変わるから\n神様なんかいないなんて 子供でも知ってるでしょ\nだからもう祈らないよ 君を忘れもしないよ\nそんなことできないから\n「さよなら」をやっと言えるよ ちょっと遅くなったけど\n新しい扉を開くんだ きっとできるから\n君と過ごした思い出を 強さに変えていくんだ"
   },
   {
     "objectID": "works/posts/Sweeper/index.html",
@@ -322,38 +336,10 @@
     "text": "三角波と矩形波を出力する低速発振回路です。 三角波は掃引信号として、矩形波はそのトリガー信号として、さまざまな装置で便利に使用できます。"
   },
   {
-    "objectID": "works/posts/Sweeper/index.html#回路説明",
-    "href": "works/posts/Sweeper/index.html#回路説明",
-    "title": "掃引回路",
-    "section": "回路説明",
-    "text": "回路説明\n\n\n\n回路図\n\n\nOPアンプを2つ使用し、片方をシュミット回路として、もう片方を積分回路として動作させます。シュミット回路から矩形波が出力され、その出力を積分して三角波を作ります。\n\n発振動作をするための条件は R1 &gt; R2\nR4に比べてR3の値を小さくすると、出力電圧が小さくなる\nR1とR2の値は近い方が良い\nOPアンプはTL082あたりが丁度良い\nR4とR5は矩形波出力の振幅を抑えるための分圧回路（周波数にも影響するので注意）\n\n発振周波数は、以下の式で計算できます。\n\\[\nf=\\frac{1}{4CR_3}\\frac{R_1}{R_2}\\frac{R_5}{R_4+R_5}\n\\]\nここで、RV1の半固定抵抗も含めてR3と考え、R4がR3より十分小さいとする。\nオペアンプには2回路入りで安定なオペアンプを使用するのが良いです。ここでは安価でユニティゲイン安定のTL082を使用しています。"
-  },
-  {
-    "objectID": "works/posts/Sweeper/index.html#概要",
-    "href": "works/posts/Sweeper/index.html#概要",
-    "title": "掃引回路",
-    "section": "",
-    "text": "三角波と矩形波を出力する低速発振回路です。 三角波は掃引信号として、矩形波はそのトリガー信号として、さまざまな装置で便利に使用できます。"
-  },
-  {
-    "objectID": "about/index.html#その他の作品置き場",
-    "href": "about/index.html#その他の作品置き場",
-    "title": "PureHertz",
-    "section": "その他の作品置き場",
-    "text": "その他の作品置き場\n\nニコニコ動画"
-  },
-  {
-    "objectID": "about/index.html#その他の楽曲置き場",
-    "href": "about/index.html#その他の楽曲置き場",
-    "title": "PureHertz",
-    "section": "その他の楽曲置き場",
-    "text": "その他の楽曲置き場\n\nニコニコ動画"
-  },
-  {
     "objectID": "works/posts/Sweeper/index.html#回路概要",
     "href": "works/posts/Sweeper/index.html#回路概要",
     "title": "三角波発振器（掃引回路）",
-    "section": "回路概要",
-    "text": "回路概要\n\n\n\n回路図\n\n\n2回路入りのOPアンプU1を使用し、U1Aをシュミットトリガー回路として、U1Bを積分回路として動作させます。シュミットトリガーから矩形波が出力され、その出力を積分して三角波を作ります。三角波がシュミットトリガーのスレッショルドを超えると、シュミットトリガーの出力電圧が反転します。\n\n発振動作をするための条件は R1 &gt; R2\nR4に比べてR3の値を小さくすると、出力電圧が小さくなる\nR1とR2の値は近い方が良い\nOPアンプはTL082あたりが丁度良い\nR4とR5は矩形波出力の振幅を抑えるための分圧回路（周波数にも影響するので注意）\n\n発振周波数は、以下の式で計算できます。\n\\[\nf=\\frac{1}{4CR_3}\\frac{R_1}{R_2}\\frac{R_5}{R_4+R_5}\n\\]\nここで、RV1の半固定抵抗も含めてR3と考え、R4がR3より十分小さいとする。\nオペアンプには2回路入りで安定なオペアンプを使用するのが良いです。ここでは安価でユニティゲイン安定のTL082を使用しています。"
+    "section": "1 回路概要",
+    "text": "1 回路概要\n\n\n\n回路図\n\n\n2回路入りのOPアンプU1を使用し、U1Aをシュミットトリガー回路として、U1Bを積分回路として動作させます。シュミットトリガーから矩形波が出力され、その出力を積分して三角波を作ります。三角波がシュミットトリガーのスレッショルドを超えると、シュミットトリガーの出力電圧が反転します。\n\n発振動作をするための条件は R1 &gt; R2\nR4に比べてR3の値を小さくすると、出力電圧が小さくなる\nR1とR2の値は近い方が良い\nOPアンプはTL082あたりが丁度良い\nR4とR5は矩形波出力の振幅を抑えるための分圧回路（周波数にも影響するので注意）\n\n発振周波数は、以下の式で計算できます。\n\\[\nf=\\frac{1}{4CR_3}\\frac{R_1}{R_2}\\frac{R_5}{R_4+R_5}\n\\]\nここで、RV1の半固定抵抗も含めてR3と考え、R4がR3より十分小さいとする。\nオペアンプには2回路入りで安定なオペアンプを使用するのが良いです。ここでは安価でユニティゲイン安定のTL082を使用しています。"
   }
 ]

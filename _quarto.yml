@@ -31,6 +31,8 @@ format:
     theme: spacelab
     toc: true
     link-external-newwindow: true
+    number-sections: true
+    number-depth: 3
 
 
 

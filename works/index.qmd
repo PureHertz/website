@@ -3,6 +3,7 @@ title: "Works"
 listing:
   id: works-listings
   contents: posts
+  date-format: iso
   sort: "date desc"
   type: default
   categories: true
