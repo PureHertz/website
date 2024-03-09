@@ -14,7 +14,7 @@ toc: false
 ## Profile
 
 -   **Name:** Akira
--   **Job:** Researcher of Laser Phyisics
+-   **Job:** Researcher of Laser Physics
 -   **Degree:** Ph.D in Science
 
 ------------------------------------------------------------------------
