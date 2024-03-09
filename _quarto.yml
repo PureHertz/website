@@ -25,6 +25,8 @@ website:
 
 #  back-to-top-navigation: true
   bread-crumbs: true
+#  Google analytics: true
+  google-analytics: G-WS9ZCFP70B
 
 format:
   html:
