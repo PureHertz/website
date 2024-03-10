@@ -126,11 +126,11 @@
     "text": "3 Lyrics\nCan you hear it?\n宇宙 [そら] の彼方から届くメッセージ\nCan you see it?\n星の鼓動が彩る1ページ\n近づくほどに青く 静かに燃える情熱\n遠ざかるほどに赤く 逢いたいと願う微熱\n100億光年の孤独に 終わりを告げる時が来る\n混ざりあう全ての色から 答えを掬い上げるのさ\nColour of the universe\nCan you feel it?\n加速するほどに広がり続ける世界\nCan you believe it?\n本当の形はまだ誰も見たことがない\nおどけ顔の君が残した 奇妙な置き土産\nその意味を探すように 今夜も空を見上げ\n100億光年の孤独に 終わりを告げるとき時が来る\n混ざりあう全ての色から 答えを掬い上げるのさ\nColour of the universe\n決して辿り着けない 遥かなる星雲\nそれでもここから見つけ出せる New horizons\n呼ぶ声に導かれて 踏み出す闇の向こう側\n虹色の瞳で 見つめる先は\nColour of the universe\nA light in the black night\n答えは遠くない もう怖くない\nLike a rainbow in the dark\nこの胸に抱く まだ見ぬ地平を\nWe can resolve the spectre from the space\nSearching for the new horizons from this place\nThat’s why we’re here\n降り注ぐ光を集めて\nIt will be near\n混ざりあう全ての色から\n君の印をきっと見つけ出すのさ\nColour of the universe\nThat’s how we’ll shine"
   },
   {
-    "objectID": "works/posts/colour-of-the-universe/index.html#参考文献",
-    "href": "works/posts/colour-of-the-universe/index.html#参考文献",
+    "objectID": "works/posts/colour-of-the-universe/index.html#references",
+    "href": "works/posts/colour-of-the-universe/index.html#references",
     "title": "Colour of the Universe",
-    "section": "4 参考文献",
-    "text": "4 参考文献\nhttps://doi.org/10.1364/OE.487279"
+    "section": "4 References",
+    "text": "4 References\n\nhttps://doi.org/10.1364/OE.487279"
   },
   {
     "objectID": "works/posts/2024-03-01/index.html",
@@ -172,7 +172,7 @@
     "href": "index.html",
     "title": "Welcome to PureHertz Laboratory",
     "section": "",
-    "text": "Magic of Frequency —Optics, Electronics, and Music\n\nレーザー物理の研究のために開発・製作した回路・装置\n趣味で制作した楽曲\nその他、研究・趣味に役立つかもしれない情報"
+    "text": "Magic of Frequency —Optics, Electronics, and Music\n\nレーザー物理の研究のために開発・製作した回路・装置\n趣味で制作した楽曲\nその他、研究・趣味に役立つかもしれない情報\n\n\n\n\n\n\n\nNew\n\n\n\n\n2024-03-10: Worksに記事を投稿\n2024-03-02: ウェブサイトを公開"
   },
   {
     "objectID": "about/index.html",
@@ -259,11 +259,11 @@
     "text": "踊るときにあれこれ考えるのは大きなミス。感じることが大切だよ。\n研究室で曲を作ろう企画の第5弾です。プロデューサー先輩が初めて歌詞を書いてくれました。\n\n\nVocal\n\nRin Kagamine\n\nMusic\n\nSho Okubo\n\nLyrics\n\n提案型P\n\nLicense"
   },
   {
-    "objectID": "works/posts/dance-versatileness/index.html#movie",
-    "href": "works/posts/dance-versatileness/index.html#movie",
+    "objectID": "works/posts/dance-versatileness/index.html#play",
+    "href": "works/posts/dance-versatileness/index.html#play",
     "title": "ダンス万能説 -Dance Versatileness-",
-    "section": "2 Movie",
-    "text": "2 Movie\n\n\n&lt;a href=\"https://www.nicovideo.jp/watch/sm16464295\"&gt;【鏡音リン】ダンス万能説 -Dance Versatileness-【オリジナル】&lt;/a&gt;"
+    "section": "2 Play",
+    "text": "2 Play\n\n\n&lt;a href=\"https://www.nicovideo.jp/watch/sm16464295\"&gt;【鏡音リン】ダンス万能説 -Dance Versatileness-【オリジナル】&lt;/a&gt;"
   },
   {
     "objectID": "works/posts/dance-versatileness/index.html#lyrics",
@@ -308,18 +308,18 @@
     "text": "CWレーザー分光やレーザーパワーモニターなどに使用する低速受光器です。"
   },
   {
-    "objectID": "works/posts/SlowPD/index.html#回路説明",
-    "href": "works/posts/SlowPD/index.html#回路説明",
+    "objectID": "works/posts/SlowPD/index.html#回路概要",
+    "href": "works/posts/SlowPD/index.html#回路概要",
     "title": "低速受光器",
-    "section": "1 回路説明",
-    "text": "1 回路説明\nDC測定用ですが、数10 kHz程度の帯域はあるので光チョッパーにも対応できます。適切に部品を選べば、適当な市販受光器よりも高性能が実現できます。\n回路図は下記の通りです。ごく普通のトランスインピーダンスアンプです。実際にはIC3のボルテージフォロワは実装せず、IC4の出力から直接R6を介してSMAコネクタに接続しています。\n\n\nフォトダイオード: InGaAs (Hamamatsu, G12180)\nオペアンプ: LMP7701\nトランスインピーダンス: 10 kΩ\n電源コネクタ: M8コネクタ 3極\n\nトランスインピーダンスアンプには、入力バイアス電流の小さなFET入力のオペアンプを使用するのが定石です。今回は入力オフセット電圧も小さなLMP7701を使用し、低オフセットを実現しています。\nフィードバック抵抗には、温度ドリフトの小さなアルファエレクトロニクス製の抵抗を使用しています。交換して電流電圧変換係数を変えられるようになっています。\n電源コネクタは、NewportやThorlabsと共通のM8コネクタです。同じ電源を使用できます。"
+    "section": "1 回路概要",
+    "text": "1 回路概要\nDC測定用ですが、数10 kHz程度の帯域はあるので光チョッパーにも対応できます。適切に部品を選べば、適当な市販受光器よりも高性能が実現できます。\n回路図は下記の通りです。ごく普通のトランスインピーダンスアンプです。実際にはIC3のボルテージフォロワは実装せず、IC4の出力から直接R6を介してSMAコネクタに接続しています。\n\n\nフォトダイオード: InGaAs (Hamamatsu, G12180)\nオペアンプ: LMP7701\nトランスインピーダンス: 10 kΩ\n電源コネクタ: M8コネクタ 3極\n\nトランスインピーダンスアンプには、入力バイアス電流の小さなFET入力のオペアンプを使用するのが定石です。今回は入力オフセット電圧も小さなLMP7701を使用し、低オフセットを実現しています。\nフィードバック抵抗には、温度ドリフトの小さなアルファエレクトロニクス製の抵抗を使用しています。交換して電流電圧変換係数を変えられるようになっています。\n電源コネクタは、NewportやThorlabsと共通のM8コネクタです。同じ電源を使用できます。"
   },
   {
     "objectID": "works/posts/website_quatro_github/index.html",
     "href": "works/posts/website_quatro_github/index.html",
     "title": "Quartoでウェブサイトを作ってGitHubで公開する",
     "section": "",
-    "text": "簡単にウェブサイトを作成・公開・維持する方法はないかと模索していたところ、QuartoとGitHub Pagesを使った方法にたどり着きました。これなら楽そうと思い、10年くらい手つかずだった個人ウェブサイトを刷新しました。ここでは、備忘録も兼ねて手順を簡単に解説します。\n\nQuarto\n\nMarkdownベースでウェブサイトを作成します。\n\nGitHub Pages\n\nGitでウェブサイトの更新を管理し公開します。\n\n\n\n\nQuartoとは、拡張Markdown形式データ（拡張子は.qmd）を作成し、それを基にpandocによってHTMLファイル、PDFファイルなど様々な形式に変換して文書を構築するアプリケーションです。Jupyter notebookのように、文書内でコードを実行しその結果を表示することもできます。\nQuartoを使ったウェブサイト構築のメリットは以下の通り。\n\nMarkdownで比較的簡単に記述できる。HTMLを編集するのに比べて、更新がだいぶ楽。\nブログ形式のサイトも作成できる。\nテンプレートでもそれなりのデザイン。\n\n\n\n\n\n\nQuartoウェブサイトのトップページからGet Startedボタンをクリックしてダウンロードサイトに飛びます。OSに合わせたバージョンをインストールします。\n\n\n\nMarkdownの編集、GitHubとの連携に使います。VS Codeウェブサイトからインストールします。\nVS Codeを立ち上げ、Quartoの拡張機能 (Extentions) でQuartを検索し、インストールします。\nQuartoのダウンロードサイトでも手順を解説しているので参考にしてください。\n\n\n\n更新の管理とGitHubへのアップロードに使います。VS Codeと連携して使います。まず、GitウェブサイトからOSに合わせてインストールします。\n\nChoosing the default editor used by Gitでは、VS Codeを選択します。\nAdjusting the name of the initial branch in new repositoriesでは、初期ブランチ名をどうするか選択します。GitHubは “main” を採用しているのでOverride the deault branch name for new repositoriesを選択し、初期ブランチ名にmainと入力します。\n\nあとはデフォルトの設定で良いかと思います。変更する場合は各自調べてください。\n\n\n\nGitHubでアカウントを作成します。\nアカウントを作ったら、ウェブサイト公開用のリポジトリを作成します。このとき、リポジトリ名を&lt;username&gt;.github.ioとすると、ウェブサイトURLは\nhttps://&lt;Username&gt;.github.io/\nになります。\n\n\n\n\n\n\nhttps://quarto.org/docs/websites/を参考にウェブサイトのテンプレートを作成します。\n\nウェブサイト作成用のフォルダを用意します。\nVS Codeを起動してCtrl + Shift + Pでコマンドパレットを開き、Quarto: Create Projectと入力します。\nWebsite Projectを選択し、1.で作ったフォルダを選択してChoose Project Directoryを押します。\nフォルダの中に、index.qmdや_qualt.ymlといったテンプレートファイル一式が作られます。\n\n\n\n\nテンプレートファイルを編集したり、新しいファイルを追加したりしてウェブサイトを作成していきます。ウェブサイト全体の設定は_quarto.ymlに記述します。初期状態では\nproject:\n  type: website\n\nwebsite:\n  title: \"&lt;website title&gt;\"\n  navbar: #ページナビの設定\n    left: #左詰め\n      - href: index.qmd #1つめのリンク先\n        text: Home #1つ目のリンク先のテキスト（設定しないとリンク先のタイトルが使われる）\n      - about.qmd #2つ目のリンク先\n\nformat:\n  html:\n    theme: cosmo #ページデザイン\n    css: styles.css #CSSファイル（使わないなら消してよい）\n    toc: true #ページ内目次のON/OFF（ページごとの設定も可）\nとなっています。\n詳しい作成方法については、Quatro &gt; Websitesを参照してください。\n\n\n\nindex.qmdなど作成・編集したファイルを開き、VS Code右上のPreviewボタンをクリックすると、ウェブサイトのプレビューを表示できます。Ctrl + Shift + Kでも可能です。\n\n全ページをレンダリングする場合は、\n&gt; quarto render\nを実行してください。\nレンダリングで作成されたファイルは/Docs/フォルダに置かれます。ウェブサイトを公開する際は、このフォルダを指定します。\n\n\n\n\n\n\nフォルダのリポジトリ登録とGitHubへの公開を同時に行います。\nVS CodeのSoruce Controlをクリックし、GitHubに公開をクリックします。\n\nGitHubへのサインインを求められるので、許可をクリックしてブラウザからGitHubにサインインし、Authorize-Visual-Studio-Codeをクリックし、VS CodeとGitHubを連携させます。\n\nVS Codeに戻り、Publish to GitHub public repositoryを選択し、リポジトリに含めるファイルを選択してOKをクリックします1。これで、Gitリポジトリの作成とGitHubリモートリポジトリ登録が完了しました。\n\n\n\nGitHubのアカウントページで、右上のアカウントメニューからSettingsページに飛びます。Pagesの項目で、Branchをmain、フォルダをdocsに設定し、Saveをクリックします。しばらく待ち、https://&lt;Username&gt;.github.io/にアクセスして公開されたウェブサイトを確認してください。\n\n\n\nウェブサイトのソースファイル（.qmdファイルなど）をVS Codeで編集した際は、\n\nプレビューかレンダリング2でHTMLを更新\nVS CodeのSoruce Controlから変更の横の+ボタンをクリックして、変更を”add”\nコミットメッセージを記入してコミットをクリックしローカルリポジトリに”commit”\n“変更の同期”をクリックしてGitHubに”push”\n\nで更新できます。\n\n\n\n\n\nQuatro &gt; Websites\n気軽にウェブサイト"
+    "text": "簡単にウェブサイトを作成・公開・維持する方法はないかと模索していたところ、QuartoとGitHub Pagesを使った方法にたどり着きました。これなら楽そうと思い、10年くらい手つかずだった個人ウェブサイトを刷新しました。ここでは、備忘録も兼ねて手順を簡単に解説します。\n\nQuarto\n\nMarkdownベースでウェブサイトを作成します。\n\nGitHub Pages\n\nGitでウェブサイトの更新を管理し公開します。\n\n\n\n\nQuartoとは、拡張Markdown形式データ（拡張子は.qmd）を作成し、それを基にpandocによってHTMLファイル、PDFファイルなど様々な形式に変換して文書を構築するアプリケーションです。Jupyter notebookのように、文書内でコードを実行しその結果を表示することもできます。\nQuartoを使ったウェブサイト構築のメリットは以下の通り。\n\nMarkdownで比較的簡単に記述できる。HTMLを編集するのに比べて、更新がだいぶ楽。\nブログ形式のサイトも作成できる。\nテンプレートでもそれなりのデザイン。\n\n\n\n\n\n\nQuartoウェブサイトのトップページからGet Startedボタンをクリックしてダウンロードサイトに飛びます。OSに合わせたバージョンをインストールします。\n\n\n\nMarkdownの編集、GitHubとの連携に使います。VS Codeウェブサイトからインストールします。\nVS Codeを立ち上げ、Quartoの拡張機能 (Extentions) でQuartを検索し、インストールします。\nQuartoのダウンロードサイトでも手順を解説しているので参考にしてください。\n\n\n\n更新の管理とGitHubへのアップロードに使います。VS Codeと連携して使います。まず、GitウェブサイトからOSに合わせてインストールします。\n\nChoosing the default editor used by Gitでは、VS Codeを選択します。\nAdjusting the name of the initial branch in new repositoriesでは、初期ブランチ名をどうするか選択します。GitHubは “main” を採用しているのでOverride the deault branch name for new repositoriesを選択し、初期ブランチ名にmainと入力します。\n\nあとはデフォルトの設定で良いかと思います。変更する場合は各自調べてください。\n\n\n\nGitHubでアカウントを作成します。\nアカウントを作ったら、ウェブサイト公開用のリポジトリを作成します。このとき、リポジトリ名を&lt;username&gt;.github.ioとすると、ウェブサイトURLは\nhttps://&lt;Username&gt;.github.io/\nになります。\n\n\n\n\n\n\nQuartoのウェブサイトテンプレートを使って作成を始めます。\n\nウェブサイト作成用のフォルダを用意します。\nVS Codeを起動してCtrl + Shift + Pでコマンドパレットを開き、Quarto: Create Projectと入力します。\nWebsite Projectを選択し、1.で作ったフォルダを選択してChoose Project Directoryを押します。\nフォルダの中に、index.qmdや_qualt.ymlといったテンプレートファイル一式が作られます。\n\n\n\n\nテンプレートファイルを編集したり、新しいファイルを追加したりしてウェブサイトを作成していきます。ウェブサイト全体の設定は_quarto.ymlに記述します。初期状態では\nproject:\n  type: website\n\nwebsite:\n  title: \"&lt;website title&gt;\"\n  navbar: #ページナビの設定\n    left: #左詰め\n      - href: index.qmd #1つめのリンク先\n        text: Home #1つ目のリンク先のテキスト（設定しないとリンク先のタイトルが使われる）\n      - about.qmd #2つ目のリンク先\n\nformat:\n  html:\n    theme: cosmo #ページデザイン\n    css: styles.css #CSSファイル（使わないなら消してよい）\n    toc: true #ページ内目次のON/OFF（ページごとの設定も可）\nとなっています。\n詳しい作成方法については、Quatro &gt; Websitesを参照してください。\n\n\n\nindex.qmdなど作成・編集したファイルを開き、VS Code右上のPreviewボタンをクリックすると、ウェブサイトのプレビューを表示できます。Ctrl + Shift + Kでも可能です。\n\n全ページをレンダリングする場合は、\n&gt; quarto render\nを実行してください。\nレンダリングで作成されたファイルは/Docs/フォルダに置かれます。ウェブサイトを公開する際は、このフォルダを指定します。\n\n\n\n\n\n\nフォルダのリポジトリ登録とGitHubへの公開を同時に行います。\nVS CodeのSoruce Controlをクリックし、GitHubに公開をクリックします。\n\nGitHubへのサインインを求められるので、許可をクリックしてブラウザからGitHubにサインインし、Authorize-Visual-Studio-Codeをクリックし、VS CodeとGitHubを連携させます。\n\nVS Codeに戻り、Publish to GitHub public repositoryを選択し、リポジトリに含めるファイルを選択してOKをクリックします1。これで、Gitリポジトリの作成とGitHubリモートリポジトリ登録が完了しました。\n\n\n\nGitHubのリポジトリページで、リポジトリメニューからSettingsページに飛びます。Pagesの項目で、Branchをmain、フォルダをdocsに設定し、Saveをクリックします。しばらく待ち、https://&lt;Username&gt;.github.io/にアクセスして公開されたウェブサイトを確認してください。\n\n\n\n\nウェブサイトのソースファイル（.qmdファイルなど）をVS Codeで編集した際は、\n\nプレビューかレンダリング2でHTMLを更新\nVS CodeのSoruce Controlから変更の横の+ボタンをクリックして、変更を”add”\nコミットメッセージを記入してコミットをクリックしローカルリポジトリに”commit”\n“変更の同期”をクリックしてGitHubに”push”\n\nで更新できます。\n\n\n\n\n\nQuatro &gt; Websites\n気軽にウェブサイト"
   },
   {
     "objectID": "works/posts/website_quatro_github/index.html#quartoとは",
@@ -340,14 +340,14 @@
     "href": "works/posts/website_quatro_github/index.html#ウェブサイトの作成",
     "title": "Quartoでウェブサイトを作ってGitHubで公開する",
     "section": "",
-    "text": "https://quarto.org/docs/websites/を参考にウェブサイトのテンプレートを作成します。\n\nウェブサイト作成用のフォルダを用意します。\nVS Codeを起動してCtrl + Shift + Pでコマンドパレットを開き、Quarto: Create Projectと入力します。\nWebsite Projectを選択し、1.で作ったフォルダを選択してChoose Project Directoryを押します。\nフォルダの中に、index.qmdや_qualt.ymlといったテンプレートファイル一式が作られます。\n\n\n\n\nテンプレートファイルを編集したり、新しいファイルを追加したりしてウェブサイトを作成していきます。ウェブサイト全体の設定は_quarto.ymlに記述します。初期状態では\nproject:\n  type: website\n\nwebsite:\n  title: \"&lt;website title&gt;\"\n  navbar: #ページナビの設定\n    left: #左詰め\n      - href: index.qmd #1つめのリンク先\n        text: Home #1つ目のリンク先のテキスト（設定しないとリンク先のタイトルが使われる）\n      - about.qmd #2つ目のリンク先\n\nformat:\n  html:\n    theme: cosmo #ページデザイン\n    css: styles.css #CSSファイル（使わないなら消してよい）\n    toc: true #ページ内目次のON/OFF（ページごとの設定も可）\nとなっています。\n詳しい作成方法については、Quatro &gt; Websitesを参照してください。\n\n\n\nindex.qmdなど作成・編集したファイルを開き、VS Code右上のPreviewボタンをクリックすると、ウェブサイトのプレビューを表示できます。Ctrl + Shift + Kでも可能です。\n\n全ページをレンダリングする場合は、\n&gt; quarto render\nを実行してください。\nレンダリングで作成されたファイルは/Docs/フォルダに置かれます。ウェブサイトを公開する際は、このフォルダを指定します。"
+    "text": "Quartoのウェブサイトテンプレートを使って作成を始めます。\n\nウェブサイト作成用のフォルダを用意します。\nVS Codeを起動してCtrl + Shift + Pでコマンドパレットを開き、Quarto: Create Projectと入力します。\nWebsite Projectを選択し、1.で作ったフォルダを選択してChoose Project Directoryを押します。\nフォルダの中に、index.qmdや_qualt.ymlといったテンプレートファイル一式が作られます。\n\n\n\n\nテンプレートファイルを編集したり、新しいファイルを追加したりしてウェブサイトを作成していきます。ウェブサイト全体の設定は_quarto.ymlに記述します。初期状態では\nproject:\n  type: website\n\nwebsite:\n  title: \"&lt;website title&gt;\"\n  navbar: #ページナビの設定\n    left: #左詰め\n      - href: index.qmd #1つめのリンク先\n        text: Home #1つ目のリンク先のテキスト（設定しないとリンク先のタイトルが使われる）\n      - about.qmd #2つ目のリンク先\n\nformat:\n  html:\n    theme: cosmo #ページデザイン\n    css: styles.css #CSSファイル（使わないなら消してよい）\n    toc: true #ページ内目次のON/OFF（ページごとの設定も可）\nとなっています。\n詳しい作成方法については、Quatro &gt; Websitesを参照してください。\n\n\n\nindex.qmdなど作成・編集したファイルを開き、VS Code右上のPreviewボタンをクリックすると、ウェブサイトのプレビューを表示できます。Ctrl + Shift + Kでも可能です。\n\n全ページをレンダリングする場合は、\n&gt; quarto render\nを実行してください。\nレンダリングで作成されたファイルは/Docs/フォルダに置かれます。ウェブサイトを公開する際は、このフォルダを指定します。"
   },
   {
     "objectID": "works/posts/website_quatro_github/index.html#ウェブサイトの公開",
     "href": "works/posts/website_quatro_github/index.html#ウェブサイトの公開",
     "title": "Quartoでウェブサイトを作ってGitHubで公開する",
     "section": "",
-    "text": "フォルダのリポジトリ登録とGitHubへの公開を同時に行います。\nVS CodeのSoruce Controlをクリックし、GitHubに公開をクリックします。\n\nGitHubへのサインインを求められるので、許可をクリックしてブラウザからGitHubにサインインし、Authorize-Visual-Studio-Codeをクリックし、VS CodeとGitHubを連携させます。\n\nVS Codeに戻り、Publish to GitHub public repositoryを選択し、リポジトリに含めるファイルを選択してOKをクリックします1。これで、Gitリポジトリの作成とGitHubリモートリポジトリ登録が完了しました。\n\n\n\nGitHubのアカウントページで、右上のアカウントメニューからSettingsページに飛びます。Pagesの項目で、Branchをmain、フォルダをdocsに設定し、Saveをクリックします。しばらく待ち、https://&lt;Username&gt;.github.io/にアクセスして公開されたウェブサイトを確認してください。\n\n\n\nウェブサイトのソースファイル（.qmdファイルなど）をVS Codeで編集した際は、\n\nプレビューかレンダリング2でHTMLを更新\nVS CodeのSoruce Controlから変更の横の+ボタンをクリックして、変更を”add”\nコミットメッセージを記入してコミットをクリックしローカルリポジトリに”commit”\n“変更の同期”をクリックしてGitHubに”push”\n\nで更新できます。"
+    "text": "フォルダのリポジトリ登録とGitHubへの公開を同時に行います。\nVS CodeのSoruce Controlをクリックし、GitHubに公開をクリックします。\n\nGitHubへのサインインを求められるので、許可をクリックしてブラウザからGitHubにサインインし、Authorize-Visual-Studio-Codeをクリックし、VS CodeとGitHubを連携させます。\n\nVS Codeに戻り、Publish to GitHub public repositoryを選択し、リポジトリに含めるファイルを選択してOKをクリックします1。これで、Gitリポジトリの作成とGitHubリモートリポジトリ登録が完了しました。\n\n\n\nGitHubのリポジトリページで、リポジトリメニューからSettingsページに飛びます。Pagesの項目で、Branchをmain、フォルダをdocsに設定し、Saveをクリックします。しばらく待ち、https://&lt;Username&gt;.github.io/にアクセスして公開されたウェブサイトを確認してください。\n\n\n\n\nウェブサイトのソースファイル（.qmdファイルなど）をVS Codeで編集した際は、\n\nプレビューかレンダリング2でHTMLを更新\nVS CodeのSoruce Controlから変更の横の+ボタンをクリックして、変更を”add”\nコミットメッセージを記入してコミットをクリックしローカルリポジトリに”commit”\n“変更の同期”をクリックしてGitHubに”push”\n\nで更新できます。"
   },
   {
     "objectID": "works/posts/website_quatro_github/index.html#参考",
