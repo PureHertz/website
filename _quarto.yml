@@ -27,9 +27,6 @@ website:
   bread-crumbs: true
   google-analytics: "G-WS9ZCFP70B"
 
-  search:
-    type: textbox
-
 format:
   html:
     theme: spacelab
