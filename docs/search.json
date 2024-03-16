@@ -172,7 +172,7 @@
     "href": "index.html",
     "title": "Welcome to PureHertz Laboratory",
     "section": "",
-    "text": "Magic of Frequency —Optics, Electronics, and Music\n\nレーザー物理の研究のために開発・製作した回路・装置\n趣味で制作した楽曲\nその他、研究・趣味に役立つかもしれない情報\n\n\n\n\n\n\n\nNew\n\n\n\n\n2024-03-10: Worksに記事を投稿\n2024-03-02: ウェブサイトを公開"
+    "text": "Magic of Frequency —Optics, Electronics, and Music\n\nレーザー物理の研究のために開発・製作した周辺回路・装置\n趣味で制作した楽曲\nその他、研究・趣味に役立つかもしれない情報\n\n\n\n\n\n\nRecent posts\n\n\n\n\n\nTitle\n\n\nDate\n\n\nModified\n\n\n\n\n\n\nQuartoでウェブサイトを作ってGitHubで公開する\n\n\n2024-03-10\n\n\n2024-03-10\n\n\n\n\n共振器コントローラー\n\n\n2024-03-02\n\n\n2024-03-02\n\n\n\n\n温度コントローラー\n\n\n2024-03-01\n\n\n2024-03-01\n\n\n\n\n低雑音アンプ用の電源の中身を見てみる\n\n\n2024-02-27\n\n\n2024-02-27\n\n\n\n\nダンス万能説 -Dance Versatileness-\n\n\n2011-12-19\n\n\n2024-02-25\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about/index.html",
@@ -362,5 +362,33 @@
     "title": "Quartoでウェブサイトを作ってGitHubで公開する",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nこの方法では、ソースファイルもGitHubリポジトリ上で公開されます。ソースファイルを非公開にするには、.gitignoreファイルを設定します。↩︎\nプレビューの場合は、編集中のページのみがレンダリングされるようです。プレビュー内のリンクをクリックすると、開かれたページもレンダリングされるようです。↩︎"
+  },
+  {
+    "objectID": "index.html#resect-posts",
+    "href": "index.html#resect-posts",
+    "title": "Welcome to PureHertz Laboratory",
+    "section": "1 Resect Posts",
+    "text": "1 Resect Posts"
+  },
+  {
+    "objectID": "index.html#resent-posts",
+    "href": "index.html#resent-posts",
+    "title": "Welcome to PureHertz Laboratory",
+    "section": "Resent Posts",
+    "text": "Resent Posts\n\n\n\n\n\nDate\n\n\nTitle\n\n\nModified\n\n\n\n\n\n\n2024-02-23\n\n\n三角波発振器（掃引回路）\n\n\n2024-03-17\n\n\n\n\n2024-03-10\n\n\nQuartoでウェブサイトを作ってGitHubで公開する\n\n\n2024-03-16\n\n\n\n\n2024-03-02\n\n\n共振器コントローラー\n\n\n2024-03-02\n\n\n\n\n2024-03-01\n\n\n温度コントローラー\n\n\n2024-03-01\n\n\n\n\n2024-02-27\n\n\n低雑音アンプ用の電源の中身を見てみる\n\n\n2024-02-27\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#recent-posts",
+    "href": "index.html#recent-posts",
+    "title": "Welcome to PureHertz Laboratory",
+    "section": "Recent posts",
+    "text": "Recent posts\n\n\n\n\n\nTitle\n\n\nDate\n\n\nModified\n\n\n\n\n\n\nQuartoでウェブサイトを作ってGitHubで公開する\n\n\n2024-03-10\n\n\n2024-03-10\n\n\n\n\n共振器コントローラー\n\n\n2024-03-02\n\n\n2024-03-02\n\n\n\n\n温度コントローラー\n\n\n2024-03-01\n\n\n2024-03-01\n\n\n\n\n低雑音アンプ用の電源の中身を見てみる\n\n\n2024-02-27\n\n\n2024-02-27\n\n\n\n\nダンス万能説 -Dance Versatileness-\n\n\n2011-12-19\n\n\n2024-02-25\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#news",
+    "href": "index.html#news",
+    "title": "Welcome to PureHertz Laboratory",
+    "section": "News",
+    "text": "News\n\n\n\n\n\n\n2024-03-02: ウェブサイトを公開\n\n\n\n\nRecent posts\n\n\n\n\n\nTitle\n\n\nDate\n\n\nModified\n\n\n\n\n\n\nQuartoでウェブサイトを作ってGitHubで公開する\n\n\n2024-03-10\n\n\n2024-03-10\n\n\n\n\n共振器コントローラー\n\n\n2024-03-02\n\n\n2024-03-02\n\n\n\n\n温度コントローラー\n\n\n2024-03-01\n\n\n2024-03-01\n\n\n\n\n低雑音アンプ用の電源の中身を見てみる\n\n\n2024-02-27\n\n\n2024-02-27\n\n\n\n\nダンス万能説 -Dance Versatileness-\n\n\n2011-12-19\n\n\n2024-02-25\n\n\n\n\n\nNo matching items"
   }
 ]

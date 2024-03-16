@@ -6,7 +6,7 @@ listing:
   date-format: iso
   sort: "date desc"
   type: default
-  categories: true
+  categories: numbered
   sort-ui: false
   filter-ui: false
 page-layout: article
