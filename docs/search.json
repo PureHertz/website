@@ -340,7 +340,7 @@
     "href": "works/posts/website_quatro_github/index.html#ウェブサイトの作成",
     "title": "Quartoでウェブサイトを作ってGitHubで公開する",
     "section": "3 ウェブサイトの作成",
-    "text": "3 ウェブサイトの作成\n\n3.1 テンプレートから作成\nQuartoのウェブサイトテンプレートを使って作成を始めます。\n\nウェブサイト作成用のフォルダを用意します。\nVS Codeを起動してCtrl + Shift + Pでコマンドパレットを開き、Quarto: Create Projectと入力します。\nWebsite Projectを選択し、1.で作ったフォルダを選択してChoose Project Directoryを押します。\nフォルダの中に、index.qmdや_qualt.ymlといったテンプレートファイル一式が作られます。\n\n\n\n3.2 テンプレートの編集\nテンプレートファイルを編集したり、新しいファイルを追加したりしてウェブサイトを作成していきます。ウェブサイト全体の設定は_quarto.ymlに記述します。初期状態では\nproject:\n  type: website\n\nwebsite:\n  title: \"&lt;website title&gt;\"\n  navbar: #ページナビの設定\n    left: #左詰め\n      - href: index.qmd #1つめのリンク先\n        text: Home #1つ目のリンク先のテキスト（設定しないとリンク先のタイトルが使われる）\n      - about.qmd #2つ目のリンク先\n\nformat:\n  html:\n    theme: cosmo #ページデザイン\n    css: styles.css #CSSファイル（使わないなら消してよい）\n    toc: true #ページ内目次のON/OFF（ページごとの設定も可）\nとなっています。（コメントは筆者の追記）\n詳しい作成方法については、Quatro &gt; Websitesを参照してください。\n\n\n3.3 プレビューとレンダリング\nindex.qmdなど作成・編集したファイルを開き、VS Code右上のPreviewボタンをクリックすると、ウェブサイトのプレビューを表示できます。Ctrl-Shift-KCtrl-Shift-Kでも可能です。\n\n全ページをレンダリングする場合は、\n&gt; quarto render\nを実行してください。\nレンダリングで作成されたファイルは/Docs/フォルダに置かれます。ウェブサイトを公開する際は、このフォルダを指定します。"
+    "text": "3 ウェブサイトの作成\n\n3.1 テンプレートから作成\nQuartoのウェブサイトテンプレートを使って作成を始めます。\n\nウェブサイト作成用のフォルダを用意します。\nVS Codeを起動してCtrl-Shift-PCtrl-Shift-Pでコマンドパレットを開き、Quarto: Create Projectと入力します。\nWebsite Projectを選択し、1.で作ったフォルダを選択してChoose Project Directoryを押します。\nフォルダの中に、index.qmdや_qualt.ymlといったテンプレートファイル一式が作られます。\n\n\n\n3.2 テンプレートの編集\nテンプレートファイルを編集したり、新しいファイルを追加したりしてウェブサイトを作成していきます。ウェブサイト全体の設定は_quarto.ymlに記述します。初期状態では\nproject:\n  type: website\n\nwebsite:\n  title: \"&lt;website title&gt;\"\n  navbar: #ページナビの設定\n    left: #左詰め\n      - href: index.qmd #1つめのリンク先\n        text: Home #1つ目のリンク先のテキスト（設定しないとリンク先のタイトルが使われる）\n      - about.qmd #2つ目のリンク先\n\nformat:\n  html:\n    theme: cosmo #ページデザイン\n    css: styles.css #CSSファイル（使わないなら消してよい）\n    toc: true #ページ内目次のON/OFF（ページごとの設定も可）\nとなっています。（コメントは筆者の追記）\n詳しい作成方法については、Quatro &gt; Websitesを参照してください。\n\n\n3.3 プレビューとレンダリング\nindex.qmdなど作成・編集したファイルを開き、VS Code右上のPreviewボタンをクリックすると、ウェブサイトのプレビューを表示できます。Ctrl-Shift-KCtrl-Shift-Kでも可能です。\n\n全ページをレンダリングする場合は、\n&gt; quarto render\nを実行してください。\nレンダリングで作成されたファイルは/Docs/フォルダに置かれます。ウェブサイトを公開する際は、このフォルダを指定します。"
   },
   {
     "objectID": "works/posts/website_quatro_github/index.html#ウェブサイトの公開",
@@ -389,7 +389,7 @@
     "href": "works/posts/RS232C_USB/index.html#ドライバのインストール",
     "title": "RS232C-USB変換",
     "section": "3 ドライバのインストール",
-    "text": "3 ドライバのインストール\nFTDIのチップを使用している場合のドライバのインストール手順を説明します。\n\n3.1 FTDI公式サイトからインストーラをダウンロードする方法\nFTDIのウェブサイト &gt; Drivers &gt; VCP-drivers からOSに合わせたドライバを選択します。\nWindowsの場合は、下図の赤丸を付けたリンクからインストーラをダウンロードして実行します。インストール後は再起動が必要なようです。\n\n\n\n（2024/03/17 確認）\n\n\n\n\n3.2 その他のインストール方法\n各装置の制御ソフトウェア等をインストールする際に、一緒にインストールされることがあります。とりあえず、Arduino IDEを入れるのが手っ取り早かったです。\nRS232C-USB変換ケーブルにインストール用CDが付属している場合は、それでもインストールできます。"
+    "text": "3 ドライバのインストール\nFTDIのチップを使用している場合のドライバのインストール手順は以下の通り。\n\n3.1 FTDI公式サイトからインストーラをダウンロードする方法\nFTDIのウェブサイト &gt; Drivers &gt; VCP-drivers からOSに合わせたドライバを選択します。\nWindowsの場合は、下図の赤丸を付けたリンクからインストーラをダウンロードして実行します。インストール後は再起動が必要なようです。\n\n\n\n（2024/03/17 確認）\n\n\n\n\n3.2 その他のインストール方法\n各装置の制御ソフトウェア等をインストールする際に、一緒にインストールされることがあります。とりあえず、Arduino IDEを入れるのが手っ取り早かったです。\nRS232C-USB変換ケーブルにインストール用CDが付属している場合は、それでもインストールできます。"
   },
   {
     "objectID": "works/posts/RS232C_USB/index.html#通信の確認",
