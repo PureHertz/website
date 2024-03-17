@@ -18,7 +18,7 @@
     "href": "works/posts/your-space-our-place/index.html#play",
     "title": "いつもの場所",
     "section": "2 Play",
-    "text": "2 Play\n\n\n&lt;a href=\"https://www.nicovideo.jp/watch/sm14214918\"&gt;【鏡音レン】いつもの場所【オリジナル】&lt;/a&gt;"
+    "text": "2 Play\n\n\n\n【鏡音レン】いつもの場所【オリジナル】"
   },
   {
     "objectID": "works/posts/your-space-our-place/index.html#lyrics",
@@ -60,7 +60,7 @@
     "href": "works/posts/regrets/index.html#play",
     "title": "Regrets",
     "section": "2 Play",
-    "text": "2 Play\n\n\n&lt;a href=\"https://www.nicovideo.jp/watch/sm7834682\"&gt;【鏡音リン】 regrets 【オリジナル】&lt;/a&gt;"
+    "text": "2 Play\n\n\n\n【鏡音リン】 regrets 【オリジナル】"
   },
   {
     "objectID": "works/posts/regrets/index.html#lyrics",
@@ -88,7 +88,7 @@
     "href": "works/posts/goodbye-to-my-days/index.html#play",
     "title": "Goodbye to My Days",
     "section": "2 Play",
-    "text": "2 Play\n\n\n&lt;a href=\"https://www.nicovideo.jp/watch/sm9891167\"&gt;【鏡音レン】Goodbye to My Days【オリジナル】&lt;/a&gt;"
+    "text": "2 Play\n\n\n\n【鏡音レン】Goodbye to My Days【オリジナル】"
   },
   {
     "objectID": "works/posts/goodbye-to-my-days/index.html#lyrics",
@@ -116,7 +116,7 @@
     "href": "works/posts/colour-of-the-universe/index.html#play",
     "title": "Colour of the Universe",
     "section": "2 Play",
-    "text": "2 Play\n\n\n&lt;a href=\"https://www.nicovideo.jp/watch/sm42303594\"&gt;Colour of the Universe / 初音ミク&lt;/a&gt;"
+    "text": "2 Play\n\n\n\nColour of the Universe / 初音ミク"
   },
   {
     "objectID": "works/posts/colour-of-the-universe/index.html#lyrics",
@@ -131,90 +131,6 @@
     "title": "Colour of the Universe",
     "section": "4 References",
     "text": "4 References\n\nhttps://doi.org/10.1364/OE.487279"
-  },
-  {
-    "objectID": "works/posts/2024-03-01/index.html",
-    "href": "works/posts/2024-03-01/index.html",
-    "title": "温度コントローラー",
-    "section": "",
-    "text": "温度コントローラーを作ってみました。 普段は製品を購入していますが、一度自作してみようということで。自作経験があれば、予算不足に陥ったときも怖くない？ペルチェとサーミスタで制御する仕様です。"
-  },
-  {
-    "objectID": "works/posts/2024-03-01/index.html#概要",
-    "href": "works/posts/2024-03-01/index.html#概要",
-    "title": "温度コントローラー",
-    "section": "",
-    "text": "温度コントローラーを作ってみました。 普段は製品を購入していますが、一度自作してみようということで。自作経験があれば、予算不足に陥ったときも怖くない？ペルチェとサーミスタで制御する仕様です。"
-  },
-  {
-    "objectID": "works/posts/2024-03-01/index.html#構成",
-    "href": "works/posts/2024-03-01/index.html#構成",
-    "title": "温度コントローラー",
-    "section": "2 構成",
-    "text": "2 構成\n温調のコア部分はWavelength ElectronicsのWTC32NDを使用しています。温度調整つまみや外部制御入力を追加し、全体のコントロールにはマイコンボード（Teensy LC）を使用しています。\n\n外部制御入力は基本フィードバック制御にしか使わないので、積分器を通って温度設定電圧に加える形になっています。本当は温度制御のエラー信号を直接置き換えたかったのですが、WTC32NDにそういう入力端子は無いのでこうしています。制御がカスケードになってしまうので、それが問題にならないかどうかは検証する必要があります。積分の時定数を十分遅くしておけば大丈夫なはず。場合によっては、積分はアナログ回路ではなくマイコン上でやるというのも手ですね。その方がいいかもしれません。\n表示ディスプレイは、秋月で買ってきたOLEDのキャラクタディスプレイを使ってみました。128×64のディスプレイでも良かったのですが、ややレトロな蛍光表示管 (VFD) の雰囲気を出したかったので緑色のキャラクタディスプレイにしてみました。\n当初設計から変更したのは電源トランス。在庫があった7 V × 2, 15 VAのトロイダルコアトランスから±5 Vを作ってみたのですが、ペルチェに1 Aも流すと電圧降下を起こしてしまい、しまいにはOLEDが消えてしまいました。ギリギリいけるという計算でしたが、ダメでしたね。おとなしく9 V × 2, 25 VAのトランスに変えて、大丈夫になりました。\n筐体のサイズはThorlabsのTED200Cより横幅が少し大きい程度。ファンレスなので放熱は少し心配。使ってみて様子見です。\nペルチェとサーミスタケーブル用のコネクタも迷いました。本当は普段使っている温度コントローラと同じヒロセのRM12, 6極にしようと考えていたのですが、世界的なコネクタ供給不足で手に入らず（もしくはめちゃくちゃ高く）、仕方なくヒロセのHR10の6極にして、ペルチェには信号とGNDで2極ずつ使うという形にしました。"
-  },
-  {
-    "objectID": "works/posts/2024-03-01/index.html#その他",
-    "href": "works/posts/2024-03-01/index.html#その他",
-    "title": "温度コントローラー",
-    "section": "3 その他",
-    "text": "3 その他\nそういえばいつも買っている温度コントローラも、RM12の6極が手に入らなかったのかRM12の7極になっていました。これまでの製品とケーブルの互換性がなくなっとるやないか！"
-  },
-  {
-    "objectID": "works/index.html",
-    "href": "works/index.html",
-    "title": "Works",
-    "section": "",
-    "text": "Quartoでウェブサイトを作ってGitHubで公開する\n\n\n\n\n\n\nウェブサイト\n\n\nQuarto\n\n\nGitHub\n\n\n\n\n\n\n\n\n\n2024-03-10\n\n\n\n\n\n\n\n\n\n\n\n\n共振器コントローラー\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\n光共振器\n\n\n\n\n\n\n\n\n\n2024-03-02\n\n\n\n\n\n\n\n\n\n\n\n\n温度コントローラー\n\n\n\n\n\n\n電子回路\n\n\n温度制御\n\n\n\n\n\n\n\n\n\n2024-03-01\n\n\n\n\n\n\n\n\n\n\n\n\n低雑音アンプ用の電源の中身を見てみる\n\n\n\n\n\n\n電子回路\n\n\n低雑音電源\n\n\n\n\n\n\n\n\n\n2024-02-27\n\n\n\n\n\n\n\n\n\n\n\n\n低速受光器\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\n\n\n\n\n\n\n\n2024-02-23\n\n\n\n\n\n\n\n\n\n\n\n\n三角波発振器（掃引回路）\n\n\n\n\n\n\n電子回路\n\n\n\n\n\n\n\n\n\n2024-02-23\n\n\n\n\n\n\n\n\n\n\n\n\nColour of the Universe\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2023-06-03\n\n\n\n\n\n\n\n\n\n\n\n\nダンス万能説 -Dance Versatileness-\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2011-12-19\n\n\n\n\n\n\n\n\n\n\n\n\nいつもの場所\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2011-04-20\n\n\n\n\n\n\n\n\n\n\n\n\nGoodbye to My Days\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2010-03-02\n\n\n\n\n\n\n\n\n\n\n\n\nRegrets\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2009-08-04\n\n\n\n\n\n\n\n\n\n\n\n\nLIMIT BREAKER!!\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2009-04-21\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to PureHertz Laboratory",
-    "section": "",
-    "text": "Magic of Frequency —Optics, Electronics, and Music\n\nレーザー物理の研究のために開発・製作した周辺回路・装置\n趣味で制作した楽曲\nその他、研究・趣味に役立つかもしれない情報\n\n\n\n\n\n\nRecent posts\n\n\n\n\n\nTitle\n\n\nDate\n\n\nModified\n\n\n\n\n\n\nQuartoでウェブサイトを作ってGitHubで公開する\n\n\n2024-03-10\n\n\n2024-03-10\n\n\n\n\n共振器コントローラー\n\n\n2024-03-02\n\n\n2024-03-02\n\n\n\n\n温度コントローラー\n\n\n2024-03-01\n\n\n2024-03-01\n\n\n\n\n低雑音アンプ用の電源の中身を見てみる\n\n\n2024-02-27\n\n\n2024-02-27\n\n\n\n\nダンス万能説 -Dance Versatileness-\n\n\n2011-12-19\n\n\n2024-02-25\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about/index.html",
-    "href": "about/index.html",
-    "title": "PureHertz",
-    "section": "",
-    "text": "Name: Akira\nJob: Researcher of Laser Physics\nDegree: Ph.D in Science\n\n\n\n名前: アキラ\n本職: レーザー物理の研究者\n学位: 博士（理学）"
-  },
-  {
-    "objectID": "about/index.html#profile",
-    "href": "about/index.html#profile",
-    "title": "PureHertz",
-    "section": "",
-    "text": "Name: Akira\nJob: Researcher of Laser Physics\nDegree: Ph.D in Science\n\n\n\n名前: アキラ\n本職: レーザー物理の研究者\n学位: 博士（理学）"
-  },
-  {
-    "objectID": "about/index.html#このサイトについて",
-    "href": "about/index.html#このサイトについて",
-    "title": "PureHertz",
-    "section": "2 このサイトについて",
-    "text": "2 このサイトについて\n大学学部時代からレーザー物理分野で研究をしています。研究の過程でいろいろな回路や装置を作るうちに、回路作りが趣味になり、必要以上に(?)こだわるようになりました。作った装置には “PureHertz” というブランド名を勝手につけて自己満足しています。\n一方、中学生の頃から作曲・音楽制作を趣味にしており、最近は研究内容をテーマにして曲を作っています。\nせっかく作った作品たち、紹介できるものはこのサイトで紹介していこうと思います。"
-  },
-  {
-    "objectID": "about/index.html#その他の楽曲置き場",
-    "href": "about/index.html#その他の楽曲置き場",
-    "title": "PureHertz",
-    "section": "3 その他の楽曲置き場",
-    "text": "3 その他の楽曲置き場\n\nPiapro\nニコニコ動画"
-  },
-  {
-    "objectID": "readme.html",
-    "href": "readme.html",
-    "title": "1 PureHertz Labratory",
-    "section": "",
-    "text": "1 PureHertz Labratory\nWebsite repository of PureHertz.\nhttps://purehertz.github.io/"
-  },
-  {
-    "objectID": "works/posts/2024-02-27/index.html",
-    "href": "works/posts/2024-02-27/index.html",
-    "title": "低雑音アンプ用の電源の中身を見てみる",
-    "section": "",
-    "text": "某メーカーの低雑音アンプ用電源の中を覗いてみました。\n\n意外にも、電源トランスは普通のOIコア。磁場漏洩が少ないと言われているトロイダルコアとかRコアとかではなかったです。その代わりに巻いてあるのは、銅のショートリングですかね。コイルから出た磁束によってショートリングに渦電流が発生し、その電流がコイルを一周するように流れることで発生する磁束でコイルから出る磁束を打ち消して低減するらしいです。\nトランスと回路を離してあって、さらに回路が内箱に収められているのも、漏洩磁場を気にしてでしょうか。内箱の素材はアルミのように思いましたが、50 Hzや60 Hzに対しても十分な磁気シールドになるのでしょうか？回路を追うのは難しかったので、結局分からないところばかりでした。\nメーカーが測定した電圧雑音スペクトルでは、低周波側ではハムノイズがほとんど見えていないですし、高周波側は1 nV/Hz1/2を下回るほど相当に低いので、何か特別なことをやっているに違いない・・・。\nしかし、このクラスの低雑音がRFアンプに必須かどうかは、確認してみないと何とも言えない気もします。±15 V, 100 mAの電源にしては結構なお値段なので、安価な市販電源や自作電源で十分ならそれで済ませたいところではあります。"
   },
   {
     "objectID": "works/posts/2024-03-02/index.html",
@@ -245,6 +161,90 @@
     "text": "3 その他\n機能ごとに基板が分かれてしまっているので、それらを繋ぐ配線がごちゃごちゃしてしまいます。配線作業も時間がかかるので何かもう一工夫したいところ。"
   },
   {
+    "objectID": "works/posts/2024-02-27/index.html",
+    "href": "works/posts/2024-02-27/index.html",
+    "title": "低雑音アンプ用の電源の中身を見てみる",
+    "section": "",
+    "text": "某メーカーの低雑音アンプ用電源の中を覗いてみました。\n\n意外にも、電源トランスは普通のOIコア。磁場漏洩が少ないと言われているトロイダルコアとかRコアとかではなかったです。その代わりに巻いてあるのは、銅のショートリングですかね。コイルから出た磁束によってショートリングに渦電流が発生し、その電流がコイルを一周するように流れることで発生する磁束でコイルから出る磁束を打ち消して低減するらしいです。\nトランスと回路を離してあって、さらに回路が内箱に収められているのも、漏洩磁場を気にしてでしょうか。内箱の素材はアルミのように思いましたが、50 Hzや60 Hzに対しても十分な磁気シールドになるのでしょうか？回路を追うのは難しかったので、結局分からないところばかりでした。\nメーカーが測定した電圧雑音スペクトルでは、低周波側ではハムノイズがほとんど見えていないですし、高周波側は1 nV/Hz1/2を下回るほど相当に低いので、何か特別なことをやっているに違いない・・・。\nしかし、このクラスの低雑音がRFアンプに必須かどうかは、確認してみないと何とも言えない気もします。±15 V, 100 mAの電源にしては結構なお値段なので、安価な市販電源や自作電源で十分ならそれで済ませたいところではあります。"
+  },
+  {
+    "objectID": "readme.html",
+    "href": "readme.html",
+    "title": "1 PureHertz Labratory",
+    "section": "",
+    "text": "1 PureHertz Labratory\nWebsite repository of PureHertz.\nhttps://purehertz.github.io/"
+  },
+  {
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "PureHertz",
+    "section": "",
+    "text": "Name: Akira\nJob: Researcher of Laser Physics\nDegree: Ph.D in Science\n\n\n\n名前: アキラ\n本職: レーザー物理の研究者\n学位: 博士（理学）"
+  },
+  {
+    "objectID": "about/index.html#profile",
+    "href": "about/index.html#profile",
+    "title": "PureHertz",
+    "section": "",
+    "text": "Name: Akira\nJob: Researcher of Laser Physics\nDegree: Ph.D in Science\n\n\n\n名前: アキラ\n本職: レーザー物理の研究者\n学位: 博士（理学）"
+  },
+  {
+    "objectID": "about/index.html#このサイトについて",
+    "href": "about/index.html#このサイトについて",
+    "title": "PureHertz",
+    "section": "2 このサイトについて",
+    "text": "2 このサイトについて\n大学学部時代からレーザー物理分野で研究をしています。研究の過程でいろいろな回路や装置を作るうちに、回路作りが趣味になり、必要以上に(?)こだわるようになりました。作った装置には “PureHertz” というブランド名を勝手につけて自己満足しています。\n一方、中学生の頃から作曲・音楽制作を趣味にしており、最近は研究内容をテーマにして曲を作っています。\nせっかく作った作品たち、紹介できるものはこのサイトで紹介していこうと思います。"
+  },
+  {
+    "objectID": "about/index.html#その他の楽曲置き場",
+    "href": "about/index.html#その他の楽曲置き場",
+    "title": "PureHertz",
+    "section": "3 その他の楽曲置き場",
+    "text": "3 その他の楽曲置き場\n\nPiapro\nニコニコ動画"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to PureHertz Laboratory",
+    "section": "",
+    "text": "Magic of Frequency —Optics, Electronics, and Music\n\nレーザー物理の研究のために開発・製作した周辺回路・装置\n趣味で制作した楽曲\nその他、研究・趣味に役立つかもしれない情報\n\n\n\n\n\n\nRecent posts\n\n\n\n\n\nTitle\n\n\nDate\n\n\nModified\n\n\n\n\n\n\nQuartoでウェブサイトを作ってGitHubで公開する\n\n\n2024-03-10\n\n\n2024-03-10\n\n\n\n\n共振器コントローラー\n\n\n2024-03-02\n\n\n2024-03-02\n\n\n\n\n温度コントローラー\n\n\n2024-03-01\n\n\n2024-03-01\n\n\n\n\n低雑音アンプ用の電源の中身を見てみる\n\n\n2024-02-27\n\n\n2024-02-27\n\n\n\n\nダンス万能説 -Dance Versatileness-\n\n\n2011-12-19\n\n\n2024-02-25\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "works/index.html",
+    "href": "works/index.html",
+    "title": "Works",
+    "section": "",
+    "text": "Quartoでウェブサイトを作ってGitHubで公開する\n\n\n\n\n\n\nウェブサイト\n\n\nQuarto\n\n\nGitHub\n\n\n\n\n\n\n\n\n\n2024-03-10\n\n\n\n\n\n\n\n\n\n\n\n\n共振器コントローラー\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\n光共振器\n\n\n\n\n\n\n\n\n\n2024-03-02\n\n\n\n\n\n\n\n\n\n\n\n\n温度コントローラー\n\n\n\n\n\n\n電子回路\n\n\n温度制御\n\n\n\n\n\n\n\n\n\n2024-03-01\n\n\n\n\n\n\n\n\n\n\n\n\n低雑音アンプ用の電源の中身を見てみる\n\n\n\n\n\n\n電子回路\n\n\n低雑音電源\n\n\n\n\n\n\n\n\n\n2024-02-27\n\n\n\n\n\n\n\n\n\n\n\n\n低速受光器\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\n\n\n\n\n\n\n\n2024-02-23\n\n\n\n\n\n\n\n\n\n\n\n\n三角波発振器（掃引回路）\n\n\n\n\n\n\n電子回路\n\n\n\n\n\n\n\n\n\n2024-02-23\n\n\n\n\n\n\n\n\n\n\n\n\nColour of the Universe\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2023-06-03\n\n\n\n\n\n\n\n\n\n\n\n\nダンス万能説 -Dance Versatileness-\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2011-12-19\n\n\n\n\n\n\n\n\n\n\n\n\nいつもの場所\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2011-04-20\n\n\n\n\n\n\n\n\n\n\n\n\nGoodbye to My Days\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2010-03-02\n\n\n\n\n\n\n\n\n\n\n\n\nRegrets\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2009-08-04\n\n\n\n\n\n\n\n\n\n\n\n\nLIMIT BREAKER!!\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2009-04-21\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "works/posts/2024-03-01/index.html",
+    "href": "works/posts/2024-03-01/index.html",
+    "title": "温度コントローラー",
+    "section": "",
+    "text": "温度コントローラーを作ってみました。 普段は製品を購入していますが、一度自作してみようということで。自作経験があれば、予算不足に陥ったときも怖くない？ペルチェとサーミスタで制御する仕様です。"
+  },
+  {
+    "objectID": "works/posts/2024-03-01/index.html#概要",
+    "href": "works/posts/2024-03-01/index.html#概要",
+    "title": "温度コントローラー",
+    "section": "",
+    "text": "温度コントローラーを作ってみました。 普段は製品を購入していますが、一度自作してみようということで。自作経験があれば、予算不足に陥ったときも怖くない？ペルチェとサーミスタで制御する仕様です。"
+  },
+  {
+    "objectID": "works/posts/2024-03-01/index.html#構成",
+    "href": "works/posts/2024-03-01/index.html#構成",
+    "title": "温度コントローラー",
+    "section": "2 構成",
+    "text": "2 構成\n温調のコア部分はWavelength ElectronicsのWTC32NDを使用しています。温度調整つまみや外部制御入力を追加し、全体のコントロールにはマイコンボード（Teensy LC）を使用しています。\n\n外部制御入力は基本フィードバック制御にしか使わないので、積分器を通って温度設定電圧に加える形になっています。本当は温度制御のエラー信号を直接置き換えたかったのですが、WTC32NDにそういう入力端子は無いのでこうしています。制御がカスケードになってしまうので、それが問題にならないかどうかは検証する必要があります。積分の時定数を十分遅くしておけば大丈夫なはず。場合によっては、積分はアナログ回路ではなくマイコン上でやるというのも手ですね。その方がいいかもしれません。\n表示ディスプレイは、秋月で買ってきたOLEDのキャラクタディスプレイを使ってみました。128×64のディスプレイでも良かったのですが、ややレトロな蛍光表示管 (VFD) の雰囲気を出したかったので緑色のキャラクタディスプレイにしてみました。\n当初設計から変更したのは電源トランス。在庫があった7 V × 2, 15 VAのトロイダルコアトランスから±5 Vを作ってみたのですが、ペルチェに1 Aも流すと電圧降下を起こしてしまい、しまいにはOLEDが消えてしまいました。ギリギリいけるという計算でしたが、ダメでしたね。おとなしく9 V × 2, 25 VAのトランスに変えて、大丈夫になりました。\n筐体のサイズはThorlabsのTED200Cより横幅が少し大きい程度。ファンレスなので放熱は少し心配。使ってみて様子見です。\nペルチェとサーミスタケーブル用のコネクタも迷いました。本当は普段使っている温度コントローラと同じヒロセのRM12, 6極にしようと考えていたのですが、世界的なコネクタ供給不足で手に入らず（もしくはめちゃくちゃ高く）、仕方なくヒロセのHR10の6極にして、ペルチェには信号とGNDで2極ずつ使うという形にしました。"
+  },
+  {
+    "objectID": "works/posts/2024-03-01/index.html#その他",
+    "href": "works/posts/2024-03-01/index.html#その他",
+    "title": "温度コントローラー",
+    "section": "3 その他",
+    "text": "3 その他\nそういえばいつも買っている温度コントローラも、RM12の6極が手に入らなかったのかRM12の7極になっていました。これまでの製品とケーブルの互換性がなくなっとるやないか！"
+  },
+  {
     "objectID": "works/posts/dance-versatileness/index.html",
     "href": "works/posts/dance-versatileness/index.html",
     "title": "ダンス万能説 -Dance Versatileness-",
@@ -263,7 +263,7 @@
     "href": "works/posts/dance-versatileness/index.html#play",
     "title": "ダンス万能説 -Dance Versatileness-",
     "section": "2 Play",
-    "text": "2 Play\n\n\n&lt;a href=\"https://www.nicovideo.jp/watch/sm16464295\"&gt;【鏡音リン】ダンス万能説 -Dance Versatileness-【オリジナル】&lt;/a&gt;"
+    "text": "2 Play\n\n\n\n【鏡音リン】ダンス万能説 -Dance Versatileness-【オリジナル】"
   },
   {
     "objectID": "works/posts/dance-versatileness/index.html#lyrics",
@@ -291,7 +291,7 @@
     "href": "works/posts/limit-breaker/index.html#play",
     "title": "LIMIT BREAKER!!",
     "section": "2 Play",
-    "text": "2 Play\n\n&lt;a href=\"https://www.nicovideo.jp/watch/sm6810661\"&gt;【鏡音レン】LIMIT BREAKER !!【オリジナル】&lt;/a&gt;"
+    "text": "2 Play\n\n\n【鏡音レン】LIMIT BREAKER !!【オリジナル】"
   },
   {
     "objectID": "works/posts/limit-breaker/index.html#lyrics",
@@ -362,33 +362,5 @@
     "title": "Quartoでウェブサイトを作ってGitHubで公開する",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nこの方法では、ソースファイルもGitHubリポジトリ上で公開されます。ソースファイルを非公開にするには、.gitignoreファイルを設定します。↩︎\nプレビューの場合は、編集中のページのみがレンダリングされるようです。プレビュー内のリンクをクリックすると、開かれたページもレンダリングされるようです。↩︎"
-  },
-  {
-    "objectID": "index.html#resect-posts",
-    "href": "index.html#resect-posts",
-    "title": "Welcome to PureHertz Laboratory",
-    "section": "1 Resect Posts",
-    "text": "1 Resect Posts"
-  },
-  {
-    "objectID": "index.html#resent-posts",
-    "href": "index.html#resent-posts",
-    "title": "Welcome to PureHertz Laboratory",
-    "section": "Resent Posts",
-    "text": "Resent Posts\n\n\n\n\n\nDate\n\n\nTitle\n\n\nModified\n\n\n\n\n\n\n2024-02-23\n\n\n三角波発振器（掃引回路）\n\n\n2024-03-17\n\n\n\n\n2024-03-10\n\n\nQuartoでウェブサイトを作ってGitHubで公開する\n\n\n2024-03-16\n\n\n\n\n2024-03-02\n\n\n共振器コントローラー\n\n\n2024-03-02\n\n\n\n\n2024-03-01\n\n\n温度コントローラー\n\n\n2024-03-01\n\n\n\n\n2024-02-27\n\n\n低雑音アンプ用の電源の中身を見てみる\n\n\n2024-02-27\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html#recent-posts",
-    "href": "index.html#recent-posts",
-    "title": "Welcome to PureHertz Laboratory",
-    "section": "Recent posts",
-    "text": "Recent posts\n\n\n\n\n\nTitle\n\n\nDate\n\n\nModified\n\n\n\n\n\n\nQuartoでウェブサイトを作ってGitHubで公開する\n\n\n2024-03-10\n\n\n2024-03-10\n\n\n\n\n共振器コントローラー\n\n\n2024-03-02\n\n\n2024-03-02\n\n\n\n\n温度コントローラー\n\n\n2024-03-01\n\n\n2024-03-01\n\n\n\n\n低雑音アンプ用の電源の中身を見てみる\n\n\n2024-02-27\n\n\n2024-02-27\n\n\n\n\nダンス万能説 -Dance Versatileness-\n\n\n2011-12-19\n\n\n2024-02-25\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html#news",
-    "href": "index.html#news",
-    "title": "Welcome to PureHertz Laboratory",
-    "section": "News",
-    "text": "News\n\n\n\n\n\n\n2024-03-02: ウェブサイトを公開\n\n\n\n\nRecent posts\n\n\n\n\n\nTitle\n\n\nDate\n\n\nModified\n\n\n\n\n\n\nQuartoでウェブサイトを作ってGitHubで公開する\n\n\n2024-03-10\n\n\n2024-03-10\n\n\n\n\n共振器コントローラー\n\n\n2024-03-02\n\n\n2024-03-02\n\n\n\n\n温度コントローラー\n\n\n2024-03-01\n\n\n2024-03-01\n\n\n\n\n低雑音アンプ用の電源の中身を見てみる\n\n\n2024-02-27\n\n\n2024-02-27\n\n\n\n\nダンス万能説 -Dance Versatileness-\n\n\n2011-12-19\n\n\n2024-02-25\n\n\n\n\n\nNo matching items"
   }
 ]
