@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-03-10">
+<meta name="dcterms.date" content="2024-03-20">
 
-<title>PureHertz Laboratory - Quartoでウェブサイトを作ってGitHubで公開する</title>
+<title>PureHertz Laboratory - RS232C-USB変換</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -75,8 +41,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="../../../site_libs/quarto-contrib/kbd/kbd.js"></script>
-<link href="../../../site_libs/quarto-contrib/kbd/kbd.css" rel="stylesheet">
+<script src="../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -157,11 +124,9 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Quartoでウェブサイトを作ってGitHubで公開する</h1>
+      <h1 class="title">RS232C-USB変換</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">ウェブサイト</div>
-                <div class="quarto-category">Quarto</div>
-                <div class="quarto-category">GitHub</div>
+                <div class="quarto-category">実験装置</div>
               </div>
                   </div>
   </div>
@@ -173,14 +138,14 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">2024-03-10</p>
+        <p class="date">2024-03-20</p>
       </div>
     </div>
     
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">2024-03-10</p>
+        <p class="date-modified">2024-03-20</p>
       </div>
     </div>
       
@@ -195,27 +160,14 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#quartoとは" id="toc-quartoとは" class="nav-link active" data-scroll-target="#quartoとは"><span class="header-section-number">1</span> Quartoとは</a></li>
-  <li><a href="#ツールのセットアップ" id="toc-ツールのセットアップ" class="nav-link" data-scroll-target="#ツールのセットアップ"><span class="header-section-number">2</span> ツールのセットアップ</a>
+  <li><a href="#rs232cとは" id="toc-rs232cとは" class="nav-link active" data-scroll-target="#rs232cとは"><span class="header-section-number">1</span> RS232Cとは</a></li>
+  <li><a href="#使用ケーブル" id="toc-使用ケーブル" class="nav-link" data-scroll-target="#使用ケーブル"><span class="header-section-number">2</span> 使用ケーブル</a></li>
+  <li><a href="#ドライバのインストール" id="toc-ドライバのインストール" class="nav-link" data-scroll-target="#ドライバのインストール"><span class="header-section-number">3</span> ドライバのインストール</a>
   <ul class="collapse">
-  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto"><span class="header-section-number">2.1</span> Quarto</a></li>
-  <li><a href="#visual-studio-code" id="toc-visual-studio-code" class="nav-link" data-scroll-target="#visual-studio-code"><span class="header-section-number">2.2</span> Visual Studio Code</a></li>
-  <li><a href="#git" id="toc-git" class="nav-link" data-scroll-target="#git"><span class="header-section-number">2.3</span> Git</a></li>
-  <li><a href="#github" id="toc-github" class="nav-link" data-scroll-target="#github"><span class="header-section-number">2.4</span> GitHub</a></li>
+  <li><a href="#ftdi公式サイトからインストーラをダウンロードする方法" id="toc-ftdi公式サイトからインストーラをダウンロードする方法" class="nav-link" data-scroll-target="#ftdi公式サイトからインストーラをダウンロードする方法"><span class="header-section-number">3.1</span> FTDI公式サイトからインストーラをダウンロードする方法</a></li>
+  <li><a href="#その他のインストール方法" id="toc-その他のインストール方法" class="nav-link" data-scroll-target="#その他のインストール方法"><span class="header-section-number">3.2</span> その他のインストール方法</a></li>
   </ul></li>
-  <li><a href="#ウェブサイトの作成" id="toc-ウェブサイトの作成" class="nav-link" data-scroll-target="#ウェブサイトの作成"><span class="header-section-number">3</span> ウェブサイトの作成</a>
-  <ul class="collapse">
-  <li><a href="#テンプレートから作成" id="toc-テンプレートから作成" class="nav-link" data-scroll-target="#テンプレートから作成"><span class="header-section-number">3.1</span> テンプレートから作成</a></li>
-  <li><a href="#テンプレートの編集" id="toc-テンプレートの編集" class="nav-link" data-scroll-target="#テンプレートの編集"><span class="header-section-number">3.2</span> テンプレートの編集</a></li>
-  <li><a href="#プレビューとレンダリング" id="toc-プレビューとレンダリング" class="nav-link" data-scroll-target="#プレビューとレンダリング"><span class="header-section-number">3.3</span> プレビューとレンダリング</a></li>
-  </ul></li>
-  <li><a href="#ウェブサイトの公開" id="toc-ウェブサイトの公開" class="nav-link" data-scroll-target="#ウェブサイトの公開"><span class="header-section-number">4</span> ウェブサイトの公開</a>
-  <ul class="collapse">
-  <li><a href="#gitのリポジトリ作成とgithubとの連携" id="toc-gitのリポジトリ作成とgithubとの連携" class="nav-link" data-scroll-target="#gitのリポジトリ作成とgithubとの連携"><span class="header-section-number">4.1</span> Gitのリポジトリ作成とGitHubとの連携</a></li>
-  <li><a href="#github-pagesの設定" id="toc-github-pagesの設定" class="nav-link" data-scroll-target="#github-pagesの設定"><span class="header-section-number">4.2</span> GitHub Pagesの設定</a></li>
-  <li><a href="#ウェブサイトの更新" id="toc-ウェブサイトの更新" class="nav-link" data-scroll-target="#ウェブサイトの更新"><span class="header-section-number">4.3</span> ウェブサイトの更新</a></li>
-  </ul></li>
-  <li><a href="#参考" id="toc-参考" class="nav-link" data-scroll-target="#参考"><span class="header-section-number">5</span> 参考</a></li>
+  <li><a href="#通信の確認" id="toc-通信の確認" class="nav-link" data-scroll-target="#通信の確認"><span class="header-section-number">4</span> 通信の確認</a></li>
   </ul>
 </nav>
     </div>
@@ -226,146 +178,59 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 
 
 
-<p>簡単にウェブサイトを作成・公開・維持する方法はないかと模索していたところ、QuartoとGitHub Pagesを使った方法にたどり着きました。これなら楽そうと思い、10年くらい手つかずだった個人ウェブサイトを刷新しました。ここでは、備忘録も兼ねて手順を簡単に解説します。</p>
-<dl>
-<dt><a href="https://quarto.org">Quarto</a></dt>
-<dd>
-Markdownベースでウェブサイトを作成します。
-</dd>
-<dt><a href="https://docs.github.com/ja/pages">GitHub Pages</a></dt>
-<dd>
-Gitでウェブサイトの更新を管理し公開します。
-</dd>
-</dl>
-<section id="quartoとは" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="quartoとは"><span class="header-section-number">1</span> Quartoとは</h2>
-<p>Quartoとは、拡張Markdown形式データ（拡張子は<code>.qmd</code>）を作成し、それを基に<a href="https://pandoc.org/">pandoc</a>によってHTMLファイル、PDFファイルなど様々な形式に変換して文書を構築するアプリケーションです。<a href="https://jupyter.org/">Jupyter notebook</a>のように、文書内でコードを実行しその結果を表示することもできます。</p>
-<p>Quartoを使ったウェブサイト構築のメリットは以下の通り。</p>
+<p>RS232CをUSBに変換し、RS232C対応の装置とPCの間で通信するための手順を解説します。PC側では変換ケーブル（変換用IC）が仮装COMポートとして認識されます。</p>
+<section id="rs232cとは" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="rs232cとは"><span class="header-section-number">1</span> RS232Cとは</h2>
+<p>RS-232C (Recommended Standard 232 version C) とは、電子機器間でシリアル通信を行うための接続規格のひとつです。コンピュータのシリアルポートと周辺機器（プリンター、モデム、スキャナーなど）を接続する仕様として、かつては広く普及していた・・・とのことですが、RS232C搭載の実験装置はまだまだ現役で使われています。PC側に装置毎の特別なドライバが不要なので、割と手堅い通信手段だと思います。</p>
+</section>
+<section id="使用ケーブル" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="使用ケーブル"><span class="header-section-number">2</span> 使用ケーブル</h2>
+<p>RS232C(D-sub 9ピン)-USB変換ケーブルを使用します。FTDI製のチップを使用したものが一般的です。いろいろなところから購入出来ます。</p>
 <ul>
-<li>Markdownで比較的簡単に記述できる。HTMLを編集するのに比べて、更新がだいぶ楽。</li>
-<li>ブログ形式のサイトも作成できる。</li>
-<li>テンプレートでもそれなりのデザイン。</li>
+<li><a href="https://jp.rs-online.com/web/p/interface-adapters-converters/2206494">RSオンライン</a></li>
+<li><a href="https://www.monotaro.com/g/04184844/">モノタロウ</a></li>
+<li><a href="https://akizukidenshi.com/catalog/g/g108343/">秋月電子</a></li>
 </ul>
+<p>（2024/03/17 確認）</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="RS232C_USB.jpg" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1" title="秋月電子のRS232C-USB変換ケーブル"><img src="RS232C_USB.jpg" class="img-fluid figure-img" style="width:50.0%" alt="秋月電子のRS232C-USB変換ケーブル"></a></p>
+<figcaption>秋月電子のRS232C-USB変換ケーブル</figcaption>
+</figure>
+</div>
 </section>
-<section id="ツールのセットアップ" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="ツールのセットアップ"><span class="header-section-number">2</span> ツールのセットアップ</h2>
-<section id="quarto" class="level3" data-number="2.1">
-<h3 data-number="2.1" class="anchored" data-anchor-id="quarto"><span class="header-section-number">2.1</span> Quarto</h3>
-<p><a href="https://quarto.org">Quarto</a>ウェブサイトのトップページから<code>Get Started</code>ボタンをクリックしてダウンロードサイトに飛びます。OSに合わせたバージョンをインストールします。</p>
+<section id="ドライバのインストール" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="ドライバのインストール"><span class="header-section-number">3</span> ドライバのインストール</h2>
+<p>FTDIのチップを使用している場合のドライバのインストール手順を説明します。</p>
+<section id="ftdi公式サイトからインストーラをダウンロードする方法" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="ftdi公式サイトからインストーラをダウンロードする方法"><span class="header-section-number">3.1</span> FTDI公式サイトからインストーラをダウンロードする方法</h3>
+<p>FTDIのウェブサイト &gt; Drivers &gt; <a href="https://ftdichip.com/drivers/vcp-drivers/">VCP-drivers</a> からOSに合わせたドライバを選択します。</p>
+<p>Windowsの場合は、下図の赤丸を付けたリンクからインストーラをダウンロードして実行します。インストール後は再起動が必要なようです。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="FTDI-driver_1.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2" title="（2024/03/17 確認）"><img src="FTDI-driver_1.png" class="img-fluid figure-img" alt="（2024/03/17 確認）"></a></p>
+<figcaption>（2024/03/17 確認）</figcaption>
+</figure>
+</div>
 </section>
-<section id="visual-studio-code" class="level3" data-number="2.2">
-<h3 data-number="2.2" class="anchored" data-anchor-id="visual-studio-code"><span class="header-section-number">2.2</span> Visual Studio Code</h3>
-<p>Markdownの編集、GitHubとの連携に使います。<a href="https://code.visualstudio.com/">VS Code</a>ウェブサイトからインストールします。</p>
-<p>VS Codeを立ち上げ、Quartoの拡張機能 (Extentions) で<code>Quart</code>を検索し、インストールします。</p>
-<p>Quartoのダウンロードサイトでも手順を解説しているので参考にしてください。</p>
-</section>
-<section id="git" class="level3" data-number="2.3">
-<h3 data-number="2.3" class="anchored" data-anchor-id="git"><span class="header-section-number">2.3</span> Git</h3>
-<p>更新の管理とGitHubへのアップロードに使います。VS Codeと連携して使います。まず、<a href="https://git-scm.com/">Git</a>ウェブサイトからOSに合わせてインストールします。</p>
-<ul>
-<li><p><strong>Choosing the default editor used by Git</strong>では、<code>VS Code</code>を選択します。</p></li>
-<li><p><strong>Adjusting the name of the initial branch in new repositories</strong>では、初期ブランチ名をどうするか選択します。GitHubは “main” を採用しているので<code>Override the deault branch name for new repositories</code>を選択し、初期ブランチ名に<code>main</code>と入力します。</p></li>
-</ul>
-<p>あとはデフォルトの設定で良いかと思います。変更する場合は各自調べてください。</p>
-</section>
-<section id="github" class="level3" data-number="2.4">
-<h3 data-number="2.4" class="anchored" data-anchor-id="github"><span class="header-section-number">2.4</span> GitHub</h3>
-<p><a href="https://github.com/">GitHub</a>でアカウントを作成します。</p>
-<p>アカウントを作ったら、ウェブサイト公開用のリポジトリを作成します。このとき、リポジトリ名を<code>&lt;username&gt;.github.io</code>とすると、ウェブサイトURLは</p>
-<p><code>https://&lt;Username&gt;.github.io/</code></p>
-<p>になります。</p>
+<section id="その他のインストール方法" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="その他のインストール方法"><span class="header-section-number">3.2</span> その他のインストール方法</h3>
+<p>各装置の制御ソフトウェア等をインストールする際に、一緒にインストールされることがあります。とりあえず、<a href="https://www.arduino.cc/en/software">Arduino IDE</a>を入れるのが手っ取り早かったです。</p>
+<p>RS232C-USB変換ケーブルにインストール用CDが付属している場合は、それでもインストールできます。</p>
 </section>
 </section>
-<section id="ウェブサイトの作成" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="ウェブサイトの作成"><span class="header-section-number">3</span> ウェブサイトの作成</h2>
-<section id="テンプレートから作成" class="level3" data-number="3.1">
-<h3 data-number="3.1" class="anchored" data-anchor-id="テンプレートから作成"><span class="header-section-number">3.1</span> テンプレートから作成</h3>
-<p>Quartoのウェブサイトテンプレートを使って作成を始めます。</p>
-<ol type="1">
-<li>ウェブサイト作成用のフォルダを用意します。</li>
-<li>VS Codeを起動して<code>Ctrl + Shift + P</code>でコマンドパレットを開き、<code>Quarto: Create Project</code>と入力します。</li>
-<li><code>Website Project</code>を選択し、1.で作ったフォルダを選択して<code>Choose Project Directory</code>を押します。</li>
-<li>フォルダの中に、<code>index.qmd</code>や<code>_qualt.yml</code>といったテンプレートファイル一式が作られます。</li>
-</ol>
-</section>
-<section id="テンプレートの編集" class="level3" data-number="3.2">
-<h3 data-number="3.2" class="anchored" data-anchor-id="テンプレートの編集"><span class="header-section-number">3.2</span> テンプレートの編集</h3>
-<p>テンプレートファイルを編集したり、新しいファイルを追加したりしてウェブサイトを作成していきます。ウェブサイト全体の設定は<code>_quarto.yml</code>に記述します。初期状態では</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"&lt;website title&gt;"</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span><span class="co"> #ページナビの設定</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span><span class="co"> #左詰め</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span><span class="co"> #1つめのリンク先</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span><span class="co"> #1つ目のリンク先のテキスト（設定しないとリンク先のタイトルが使われる）</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> about.qmd</span><span class="co"> #2つ目のリンク先</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> cosmo</span><span class="co"> #ページデザイン</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">css</span><span class="kw">:</span><span class="at"> styles.css</span><span class="co"> #CSSファイル（使わないなら消してよい）</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span><span class="co"> #ページ内目次のON/OFF（ページごとの設定も可）</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>となっています。（コメントは筆者の追記）</p>
-<p>詳しい作成方法については、<a href="https://quarto.org/docs/websites/">Quatro &gt; Websites</a>を参照してください。</p>
-</section>
-<section id="プレビューとレンダリング" class="level3" data-number="3.3">
-<h3 data-number="3.3" class="anchored" data-anchor-id="プレビューとレンダリング"><span class="header-section-number">3.3</span> プレビューとレンダリング</h3>
-<p><code>index.qmd</code>など作成・編集したファイルを開き、VS Code右上のPreviewボタンをクリックすると、ウェブサイトのプレビューを表示できます。<kbd aria-hidden="true">Ctrl-Shift-K</kbd><span class="visually-hidden">Ctrl-Shift-K</span>でも可能です。</p>
-<p><img src="quarto_preview.png" class="img-fluid"></p>
-<p>全ページをレンダリングする場合は、</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&gt; quarto render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>を実行してください。</p>
-<p>レンダリングで作成されたファイルは<code>/Docs/</code>フォルダに置かれます。ウェブサイトを公開する際は、このフォルダを指定します。</p>
-</section>
-</section>
-<section id="ウェブサイトの公開" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="ウェブサイトの公開"><span class="header-section-number">4</span> ウェブサイトの公開</h2>
-<section id="gitのリポジトリ作成とgithubとの連携" class="level3" data-number="4.1">
-<h3 data-number="4.1" class="anchored" data-anchor-id="gitのリポジトリ作成とgithubとの連携"><span class="header-section-number">4.1</span> Gitのリポジトリ作成とGitHubとの連携</h3>
-<p>フォルダのリポジトリ登録とGitHubへの公開を同時に行います。</p>
-<p>VS Codeの<code>Soruce Control</code>をクリックし、<code>GitHubに公開</code>をクリックします。</p>
-<p><img src="vscode_git_1.png" class="img-fluid"></p>
-<p>GitHubへのサインインを求められるので、<code>許可</code>をクリックしてブラウザからGitHubにサインインし、<code>Authorize-Visual-Studio-Code</code>をクリックし、VS CodeとGitHubを連携させます。</p>
-<p><img src="vscode_git_3.png" class="img-fluid"></p>
-<p>VS Codeに戻り、<code>Publish to GitHub public repository</code>を選択し、リポジトリに含めるファイルを選択してOKをクリックします<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>。これで、Gitリポジトリの作成とGitHubリモートリポジトリ登録が完了しました。</p>
-</section>
-<section id="github-pagesの設定" class="level3" data-number="4.2">
-<h3 data-number="4.2" class="anchored" data-anchor-id="github-pagesの設定"><span class="header-section-number">4.2</span> GitHub Pagesの設定</h3>
-<p>GitHubのリポジトリページで、リポジトリメニューから<code>Settings</code>ページに飛びます。<code>Pages</code>の項目で、Branchを<code>main</code>、フォルダを<code>docs</code>に設定し、<code>Save</code>をクリックします。しばらく待ち、<code>https://&lt;Username&gt;.github.io/</code>にアクセスして公開されたウェブサイトを確認してください。</p>
-<p><img src="github_pages.png" class="img-fluid"></p>
-</section>
-<section id="ウェブサイトの更新" class="level3" data-number="4.3">
-<h3 data-number="4.3" class="anchored" data-anchor-id="ウェブサイトの更新"><span class="header-section-number">4.3</span> ウェブサイトの更新</h3>
-<p>ウェブサイトのソースファイル（<code>.qmd</code>ファイルなど）をVS Codeで編集した際は、</p>
-<ol type="1">
-<li>プレビューかレンダリング<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>でHTMLを更新</li>
-<li>VS Codeの<code>Soruce Control</code>から<code>変更</code>の横の<code>+</code>ボタンをクリックして、変更を”add”</li>
-<li>コミットメッセージを記入して<code>コミット</code>をクリックしローカルリポジトリに”commit”</li>
-<li>“変更の同期”をクリックしてGitHubに”push”</li>
-</ol>
-<p>で更新できます。</p>
-</section>
-</section>
-<section id="参考" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="参考"><span class="header-section-number">5</span> 参考</h2>
-<ul>
-<li><a href="https://quarto.org/docs/websites/">Quatro &gt; Websites</a></li>
-<li><a href="https://shohei-doi.github.io/academic-website/">気軽にウェブサイト</a></li>
-</ul>
+<section id="通信の確認" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="通信の確認"><span class="header-section-number">4</span> 通信の確認</h2>
+<p><a href="https://forest.watch.impress.co.jp/library/software/utf8teraterm/">Teraterm</a>などのターミナルソフトを使ってシリアル通信を確認できます。</p>
 
 
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">秋月電子のRS232C-USB変換ケーブル</span>
+<span class="glightbox-desc lightbox-desc-2">（2024/03/17 確認）</span>
+</div>
 </section>
 
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>この方法では、ソースファイルもGitHubリポジトリ上で公開されます。ソースファイルを非公開にするには、<code>.gitignore</code>ファイルを設定します。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>プレビューの場合は、編集中のページのみがレンダリングされるようです。プレビュー内のリンクをクリックすると、開かれたページもレンダリングされるようです。<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -792,6 +657,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","closeEffect":"zoom","loop":false,"descPosition":"bottom","selector":".lightbox"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 
