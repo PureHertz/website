@@ -178,7 +178,7 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 
 
 
-<p>RS232CをUSBに変換し、RS232C対応の装置とPCの間で通信するための手順を解説します。PC側では変換ケーブル（変換用IC）が仮装COMポートとして認識されます。</p>
+<p>RS232CをUSBに変換し、RS232C対応の装置とPCの間で通信するための手順のメモです。PC側では変換ケーブル（変換用IC）が仮装COMポートとして認識されます。</p>
 <section id="rs232cとは" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="rs232cとは"><span class="header-section-number">1</span> RS232Cとは</h2>
 <p>RS-232C (Recommended Standard 232 version C) とは、電子機器間でシリアル通信を行うための接続規格のひとつです。コンピュータのシリアルポートと周辺機器（プリンター、モデム、スキャナーなど）を接続する仕様として、かつては広く普及していた・・・とのことですが、RS232C搭載の実験装置はまだまだ現役で使われています。PC側に装置毎の特別なドライバが不要なので、割と手堅い通信手段だと思います。</p>
@@ -657,7 +657,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","descPosition":"bottom","loop":false,"openEffect":"zoom","closeEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","closeEffect":"zoom","descPosition":"bottom","selector":".lightbox","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

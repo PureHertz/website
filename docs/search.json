@@ -368,7 +368,7 @@
     "href": "works/posts/RS232C_USB/index.html",
     "title": "RS232C-USB変換",
     "section": "",
-    "text": "RS232CをUSBに変換し、RS232C対応の装置とPCの間で通信するための手順を解説します。PC側では変換ケーブル（変換用IC）が仮装COMポートとして認識されます。"
+    "text": "RS232CをUSBに変換し、RS232C対応の装置とPCの間で通信するための手順のメモです。PC側では変換ケーブル（変換用IC）が仮装COMポートとして認識されます。"
   },
   {
     "objectID": "works/posts/RS232C_USB/index.html#rs232cとは",
