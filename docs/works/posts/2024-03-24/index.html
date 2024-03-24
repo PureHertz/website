@@ -299,39 +299,38 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <section id="操作用インターフェイス" class="level4">
 <h4 class="anchored" data-anchor-id="操作用インターフェイス">操作用インターフェイス</h4>
 <p>マイコン操作用のインターフェイスとして、ロータリーエンコーダ1個とタクトスイッチ2個を取り付けました。ロータリーエンコーダは初挑戦でしたが、Arduino用のライブラリをそのまま使ったらすぐできました。また、タクトスイッチのバウンス対策もライブラリのものをそのまま使っています。</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">// デバウンス</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;Bounce2.h&gt;</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> setup<span class="op">()</span> <span class="op">{</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  debSel<span class="op">.</span>attach<span class="op">(</span>D1<span class="op">,</span> INPUT_PULLUP<span class="op">);</span> <span class="co">//オブジェクト"debSel"を設定 </span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  debSel<span class="op">.</span>interval<span class="op">(</span><span class="dv">10</span><span class="op">);</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co">// デバウンスしたタクトスイッチの読み取り</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> loop<span class="op">()</span> <span class="op">{</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  debSel<span class="op">.</span>update<span class="op">();</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="op">(</span>debSel<span class="op">.</span>fell<span class="op">())</span> <span class="op">{</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    statePar<span class="op">++;</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">(</span>statePar <span class="op">&gt;=</span> <span class="dv">5</span><span class="op">)</span> <span class="op">{</span>statePar <span class="op">=</span> <span class="dv">0</span><span class="op">;}</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span>  </span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">// ロータリーエンコーダ</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;RotaryEncoder.h&gt;</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> setup<span class="op">()</span> <span class="op">{</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">// setup the rotary encoder functionality</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  encoder <span class="op">=</span> <span class="kw">new</span> RotaryEncoder<span class="op">(</span>rotA<span class="op">,</span> rotB<span class="op">,</span> RotaryEncoder<span class="op">::</span>LatchMode<span class="op">::</span>FOUR3<span class="op">);</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="co">// register interrupt routine</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  attachInterrupt<span class="op">(</span>digitalPinToInterrupt<span class="op">(</span>rotA<span class="op">),</span> checkPosition<span class="op">,</span> CHANGE<span class="op">);</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  attachInterrupt<span class="op">(</span>digitalPinToInterrupt<span class="op">(</span>rotB<span class="op">),</span> checkPosition<span class="op">,</span> CHANGE<span class="op">);</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> loop<span class="op">()</span> <span class="op">{</span></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  encoder<span class="op">-&gt;</span>tick<span class="op">();</span> <span class="co">// just call tick() to check the state.</span></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  I_set <span class="op">+=</span> I_resolution <span class="op">*</span> <span class="op">(</span><span class="dt">int</span><span class="op">)(</span>encoder<span class="op">-&gt;</span>getDirection<span class="op">());</span></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="デバウンス" class="level5">
+<h5 class="anchored" data-anchor-id="デバウンス">デバウンス</h5>
+<div class="sourceCode" id="cb3"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;Bounce2.h&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">// void setup() 内</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  debSel<span class="op">.</span>attach<span class="op">(</span>D1<span class="op">,</span> INPUT_PULLUP<span class="op">);</span> <span class="co">//オブジェクト"debSel"を設定 </span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  debSel<span class="op">.</span>interval<span class="op">(</span><span class="dv">10</span><span class="op">);</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">// void loop() 内</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  debSel<span class="op">.</span>update<span class="op">();</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="op">(</span>debSel<span class="op">.</span>fell<span class="op">())</span> <span class="op">{</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    statePar<span class="op">++;</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">(</span>statePar <span class="op">&gt;=</span> <span class="dv">5</span><span class="op">)</span> <span class="op">{</span>statePar <span class="op">=</span> <span class="dv">0</span><span class="op">;}</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="ロータリーエンコーダ" class="level5">
+<h5 class="anchored" data-anchor-id="ロータリーエンコーダ">ロータリーエンコーダ</h5>
+<div class="sourceCode" id="cb4"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;RotaryEncoder.h&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">// void setup() 内</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="co">// setup the rotary encoder functionality</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  encoder <span class="op">=</span> <span class="kw">new</span> RotaryEncoder<span class="op">(</span>rotA<span class="op">,</span> rotB<span class="op">,</span> RotaryEncoder<span class="op">::</span>LatchMode<span class="op">::</span>FOUR3<span class="op">);</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="co">// register interrupt routine</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  attachInterrupt<span class="op">(</span>digitalPinToInterrupt<span class="op">(</span>rotA<span class="op">),</span> checkPosition<span class="op">,</span> CHANGE<span class="op">);</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  attachInterrupt<span class="op">(</span>digitalPinToInterrupt<span class="op">(</span>rotB<span class="op">),</span> checkPosition<span class="op">,</span> CHANGE<span class="op">);</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">// void loop() 内</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  encoder<span class="op">-&gt;</span>tick<span class="op">();</span> <span class="co">// just call tick() to check the state.</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  I_set <span class="op">+=</span> I_resolution <span class="op">*</span> <span class="op">(</span><span class="dt">int</span><span class="op">)(</span>encoder<span class="op">-&gt;</span>getDirection<span class="op">());</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>ロータリーエンコーダは、割と回転を取りこぼす印象です。エンコーダ自体はALPS ALPINE製で変なメーカーのものではないです。マイコン側のループ速度のせいか、もしくはそもそもエンコーダはこんなものなのかもしれません。とりあえず使用上は問題ありません。</p>
+</section>
 </section>
 <section id="oled" class="level4">
 <h4 class="anchored" data-anchor-id="oled">OLED</h4>
