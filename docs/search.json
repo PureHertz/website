@@ -133,6 +133,41 @@
     "text": "3 Lyrics\n今宵差し込むこの月明かりが\n僕を照らすスポットライト\n静まり返った無機質なオフィスが\n最高の舞台に早変わり\n誰にも見せない本当の姿は\nほかでもないここにあるんだ\n仕事と言う名の鎖が解けたら\nダンスショーの始まりの合図なのさ\nファンの鳴らないPCの隣で\n華麗なタップが鳴り響く\n小さなデスクと\n薄暗いモニターに\n閉じ込められていた\n本当の自分を さあ今解き放つのさ\n鼓動の高まり ビートを感じて\n子供のように自由なステップ\nモノクロのビル その灯りを受けて\n揺らめき映るよ シルエット\n誰も知らない本当の姿は\nほかでもないここにあるんだ\n世界が回るスピンを決めたら\n湧きあがるアンコールに応えるのさ\n音を無くした電話機の隣で\n内なる叫びがこだまする\n月を歩くような\nスリルを感じたら\n僕のダンスを\nこのフロアに世界に刻みつけるのさ\n観客なんてさ 誰もいないけど\n僕は最後まで踊ろう\n空を飛ぶように\n重力を無視して\n僕のダンスを\nこのフロアに世界に刻みつけるのさ\n自分を感じて\n世界にダイブして\n探し求めていた\n真実の愛を さあ今見つけに行こう"
   },
   {
+    "objectID": "works/posts/2024-03-24/index.html",
+    "href": "works/posts/2024-03-24/index.html",
+    "title": "PC制御式LDドライバに物理インターフェイスを付けてみた",
+    "section": "",
+    "text": "将来的なLDのリモート制御のために、PCで制御するタイプのLDドライバを買ってみました。が、実験室で使うのにいちいちPCと接続しないといけないのは大変なので、ケースに入れてフロントパネルから簡単な操作ができるようにしました。"
+  },
+  {
+    "objectID": "works/posts/2024-03-24/index.html#概要",
+    "href": "works/posts/2024-03-24/index.html#概要",
+    "title": "PC制御式LDドライバに物理インターフェイスを付けてみた",
+    "section": "",
+    "text": "将来的なLDのリモート制御のために、PCで制御するタイプのLDドライバを買ってみました。が、実験室で使うのにいちいちPCと接続しないといけないのは大変なので、ケースに入れてフロントパネルから簡単な操作ができるようにしました。"
+  },
+  {
+    "objectID": "works/posts/2024-03-24/index.html#構成",
+    "href": "works/posts/2024-03-24/index.html#構成",
+    "title": "PC制御式LDドライバに物理インターフェイスを付けてみた",
+    "section": "2 構成",
+    "text": "2 構成\nケースの中には\n\nリニア電源\nPC制御LDドライバ（基板タイプ, Koheron: CTL-200）\nインターフェース用基板\n\nマイコン（Adafruit: Qt Py SAMD21）\nロータリーエンコーダー\nタクトスイッチ × 2\n\nOLED\n\nが入っています。\n\n\n\nケース内の様子。写真はテスト段階のものなので、まだフロントパネルにスイッチ類がついていません。\n\n\nリアパネルにUSB端子を引き出してあり、PCでの制御も引き続き可能です。が、フロントパネル操作とPC操作の競合については未検証。おそらくですが、致命的なことにはならないと思われます。\n\n2.1 電源\n7 V × 2, 15 VAのトロイダルコアトランスで作った+5 V電源を使っています。リニアレギュレータには、可変タイプのLD1085 (最大3 A)を使っています。\n当初、スイッチング電源を使っていたのですが、出力にスイッチング周波数のサイドバンドが発生していることが分かり、大人しくリニア電源を作りました。LDドライバにはスイッチングタイプのACアダプタが付属しているのですが、それで動かしたときはサイドバンドは出ないのだろうか？チャンスがあったらテストしてみようと思います。\n\n\n2.2 マイコン\n必要な入出力は多くないので、AdafruitのQt Py SAMD21を使いました。OLEDの動作をArduino IDE経由でしかやったことがなかったため、Arduino環境を優先してRP2040にはしませんでした。\nAdafruitのQt Py SAMD21は秋月で買ったのですが、今はもう在庫限りのようです。マイコンボードは安定供給でないものが多くて、たまにしか作らない自作装置はどうしても1点ものになりがちです。その話はまた別の機会に。\n\n\nLDドライバとの通信\nLDドライバとはUARTで通信しています。\n\n\n\nQt Py\n\nCTL-200\n\n\n\n\nTX\n←→\nRX\n\n\nRX\n←→\nTX\n\n\n\nという具合に、クロスで接続します。Qt Py SAMD21のArduino用ドライバでは、TX, RX端子を使ったシリアル通信にSerial1が割り当てられているようです。（USB端子を使ったシリアル通信にはSerialが割り当てられている。）なので、スケッチには\nSerial1.begin(115200);\nSerial1.setTimeout(3000);\nなどと記述します。\nLDドライバにコマンドを送るための関数を作り、LDの状態を読み取ったり、スイッチやロータリーエンコーダの操作を書き込んだりします。\n// 読み取り\nfloat readCmd(String cmd) {\n  Serial1.println(cmd);\n  delay(5);\n  if (Serial1.available() &gt; 0) {return Serial1.parseFloat();}\n  else {return 0;}\n  while (Serial1.available() &gt; 0) {char t = Serial1.read();} //シリアルバッファのクリア\n}\n\n// 書き込み\nvoid writeCmd(String cmd) {\n  Serial1.println(cmd);\n  delay(5);\n  while (Serial1.available() &gt; 0) {char t = Serial1.read();} //シリアルバッファのクリア\n}\n\n\n操作用インターフェイス\nマイコン操作用のインターフェイスとして、ロータリーエンコーダ1個とタクトスイッチ2個を取り付けました。ロータリーエンコーダは初挑戦でしたが、Arduino用のライブラリをそのまま使ったらすぐできました。また、タクトスイッチのバウンス対策もライブラリのものをそのまま使っています。\n// デバウンス\n#include &lt;Bounce2.h&gt;\n\nvoid setup() {\n  debSel.attach(D1, INPUT_PULLUP); //オブジェクト\"debSel\"を設定 \n  debSel.interval(10);\n}\n\n// デバウンスしたタクトスイッチの読み取り\nvoid loop() {\n  debSel.update();\n  if (debSel.fell()) {\n    statePar++;\n    if (statePar &gt;= 5) {statePar = 0;}\n  }  \n}\n// ロータリーエンコーダ\n#include &lt;RotaryEncoder.h&gt;\n\nvoid setup() {\n  // setup the rotary encoder functionality\n  encoder = new RotaryEncoder(rotA, rotB, RotaryEncoder::LatchMode::FOUR3);\n  \n  // register interrupt routine\n  attachInterrupt(digitalPinToInterrupt(rotA), checkPosition, CHANGE);\n  attachInterrupt(digitalPinToInterrupt(rotB), checkPosition, CHANGE);\n}\n\nvoid loop() {\n  encoder-&gt;tick(); // just call tick() to check the state.\n  I_set += I_resolution * (int)(encoder-&gt;getDirection());\n}\nロータリーエンコーダは、割と回転を取りこぼす印象です。エンコーダ自体はALPS ALPINE製で変なメーカーのものではないです。マイコン側のループ速度のせいか、もしくはそもそもエンコーダはこんなものなのかもしれません。とりあえず使用上は問題ありません。\n\n\nOLED\nLDのON/OFF、電流値、温度はいつでも見られるようにしたいので、OLEDも取り付けました。I2Cで通信しています。Qt PyにはI2C通信用の信号 (SCL, SDA, VCC, GND) がQwiic端子で出ているので、そこからOLEDに接続します。Qwiic端子の正体はJSTのSHコネクタ（4極）です。秋月でケーブル付きで買えます。\nOLEDを使うには画面表示用のライブラリAdafruit_SSD1306、文字列出力用ライブラリAdafruit_GFXが必要です。加えて、フォントライブラリを使っています。このあたりはネットでいろいろ調べ、ライブラリをコピペしつつ何とか使えるようにしたレベルなので、ちゃんと説明できません。。。\n#include &lt;Adafruit_SSD1306.h&gt;\n#include &lt;Adafruit_GFX.h&gt;\n#include &lt;Fonts/FreeSans24pt7b.h&gt;\n#include &lt;Fonts/FreeSerif9pt7b.h&gt;\n\n\n\n2.3 外部入力\n電流と温調には外部変調入力端子を用意し、フィードバック制御できるようしてあります。\n温調は、まず、レベル合わせをした上でマイコンのADCで読み取り、マイコン内で積分してLDドライバの設定温度をデジタル制御する形にしてみたのですが、まだ試験していません。デジタル制御の方が時定数を大きくしやすいのでやってみました。"
+  },
+  {
+    "objectID": "works/posts/2024-03-24/index.html#外観",
+    "href": "works/posts/2024-03-24/index.html#外観",
+    "title": "PC制御式LDドライバに物理インターフェイスを付けてみた",
+    "section": "3 外観",
+    "text": "3 外観\n\nフロントパネルは、なかなかよい感じではないでしょうか。写真の後、テプラでスイッチなどの表示を追加しています。\nファンレスなので、放熱対策にタカチのヒートシンクケースを使ってみましたが、ちょっと大袈裟でした。使ってみて、発熱はさほど気にならないので普通のケースで良かったかもしれません。電源トランス次第ですが、もう少し高さを抑えられたかもしれません。\nタクトスイッチは、一方でモードを選んで、もう一方でON/OFFしたりレンジを切り替えたりといった感じです。数値の操作はロータリーエンコーダで行います。"
+  },
+  {
+    "objectID": "works/posts/2024-03-24/index.html#まとめ",
+    "href": "works/posts/2024-03-24/index.html#まとめ",
+    "title": "PC制御式LDドライバに物理インターフェイスを付けてみた",
+    "section": "4 まとめ",
+    "text": "4 まとめ\nフロントパネルで電流のON/OFFと値の操作をするだけですが、とりあえず今のところちゃんと動いています。正直、インターフェイスを作らなかったら操作が面倒でレーザー自体あまり触っていなかったかもしれません。\n残る宿題は、\n\n付属ACアダプタ使用時のスイッチング雑音の影響を確認\n温調と電流のフィードバック制御を確認\nPC制御とフロントパネル操作の競合の有無を確認\n\nです。\n\n\n\n\nケース内の様子。写真はテスト段階のものなので、まだフロントパネルにスイッチ類がついていません。"
+  },
+  {
     "objectID": "works/posts/2024-03-01/index.html",
     "href": "works/posts/2024-03-01/index.html",
     "title": "温度コントローラー",
@@ -397,40 +432,5 @@
     "title": "Quartoでウェブサイトを作ってGitHubで公開する",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nこの方法では、ソースファイルもGitHubリポジトリ上で公開されます。ソースファイルを非公開にするには、.gitignoreファイルを設定します。↩︎\nプレビューの場合は、編集中のページのみがレンダリングされるようです。プレビュー内のリンクをクリックすると、開かれたページもレンダリングされるようです。↩︎"
-  },
-  {
-    "objectID": "works/posts/2024-03-24/index.html",
-    "href": "works/posts/2024-03-24/index.html",
-    "title": "PC制御式LDドライバに物理インターフェイスを付けてみた",
-    "section": "",
-    "text": "将来的なLDのリモート制御のために、PCで制御するタイプのLDドライバを買ってみました。が、実験室で使うのにいちいちPCと接続しないといけないのは大変なので、ケースに入れてフロントパネルから簡単な操作ができるようにしました。"
-  },
-  {
-    "objectID": "works/posts/2024-03-24/index.html#概要",
-    "href": "works/posts/2024-03-24/index.html#概要",
-    "title": "PC制御式LDドライバに物理インターフェイスを付けてみた",
-    "section": "",
-    "text": "将来的なLDのリモート制御のために、PCで制御するタイプのLDドライバを買ってみました。が、実験室で使うのにいちいちPCと接続しないといけないのは大変なので、ケースに入れてフロントパネルから簡単な操作ができるようにしました。"
-  },
-  {
-    "objectID": "works/posts/2024-03-24/index.html#構成",
-    "href": "works/posts/2024-03-24/index.html#構成",
-    "title": "PC制御式LDドライバに物理インターフェイスを付けてみた",
-    "section": "2 構成",
-    "text": "2 構成\nケースの中には\n\nリニア電源\nPC制御LDドライバ（基板タイプ, Koheron: CTL-200）\nインターフェース用基板\n\nマイコン（Adafruit: Qt Py SAMD21）\nロータリーエンコーダー\nタクトスイッチ × 2\n\nOLED\n\nが入っています。\n\n\n\nケース内の様子。写真はテスト段階のものなので、まだフロントパネルにスイッチ類がついていません。\n\n\nリアパネルにUSB端子を引き出してあり、PCでの制御も引き続き可能です。が、フロントパネル操作とPC操作の競合については未検証。おそらくですが、致命的なことにはならないと思われます。\n\n2.1 電源\n7 V × 2, 15 VAのトロイダルコアトランスで作った+5 V電源を使っています。リニアレギュレータには、可変タイプのLD1085 (最大3 A)を使っています。\n当初、スイッチング電源を使っていたのですが、出力にスイッチング周波数のサイドバンドが発生していることが分かり、大人しくリニア電源を作りました。LDドライバにはスイッチングタイプのACアダプタが付属しているのですが、それで動かしたときはサイドバンドは出ないのだろうか？チャンスがあったらテストしてみようと思います。\n\n\n2.2 マイコン\n必要な入出力は多くないので、AdafruitのQt Py SAMD21を使いました。OLEDの動作をArduino IDE経由でしかやったことがなかったため、Arduino環境を優先してRP2040にはしませんでした。\nAdafruitのQt Py SAMD21は秋月で買ったのですが、今はもう在庫限りのようです。マイコンボードは安定供給でないものが多くて、たまにしか作らない自作装置はどうしても1点ものになりがちです。その話はまた別の機会に。\n\n\nLDドライバとの通信\nLDドライバとはUARTで通信しています。\n\n\n\nQt Py\n\nCTL-200\n\n\n\n\nTX\n←→\nRX\n\n\nRX\n←→\nTX\n\n\n\nという具合に、クロスで接続します。Qt Py SAMD21のArduino用ドライバでは、TX, RX端子を使ったシリアル通信にSerial1が割り当てられているようです。（USB端子を使ったシリアル通信にはSerialが割り当てられている。）なので、スケッチには\nSerial1.begin(115200);\nSerial1.setTimeout(3000);\nなどと記述します。\nLDドライバにコマンドを送るための関数を作り、LDの状態を読み取ったり、スイッチやロータリーエンコーダの操作を書き込んだりします。\n// 読み取り\nfloat readCmd(String cmd) {\n  Serial1.println(cmd);\n  delay(5);\n  if (Serial1.available() &gt; 0) {return Serial1.parseFloat();}\n  else {return 0;}\n  while (Serial1.available() &gt; 0) {char t = Serial1.read();} //シリアルバッファのクリア\n}\n\n// 書き込み\nvoid writeCmd(String cmd) {\n  Serial1.println(cmd);\n  delay(5);\n  while (Serial1.available() &gt; 0) {char t = Serial1.read();} //シリアルバッファのクリア\n}\n\n\n操作用インターフェイス\nマイコン操作用のインターフェイスとして、ロータリーエンコーダ1個とタクトスイッチ2個を取り付けました。ロータリーエンコーダは初挑戦でしたが、Arduino用のライブラリをそのまま使ったらすぐできました。また、タクトスイッチのバウンス対策もライブラリのものをそのまま使っています。\n// デバウンス\n#include &lt;Bounce2.h&gt;\n\nvoid setup() {\n  debSel.attach(D1, INPUT_PULLUP); //オブジェクト\"debSel\"を設定 \n  debSel.interval(10);\n}\n\n// デバウンスしたタクトスイッチの読み取り\nvoid loop() {\n  debSel.update();\n  if (debSel.fell()) {\n    statePar++;\n    if (statePar &gt;= 5) {statePar = 0;}\n  }  \n}\n// ロータリーエンコーダ\n#include &lt;RotaryEncoder.h&gt;\n\nvoid setup() {\n  // setup the rotary encoder functionality\n  encoder = new RotaryEncoder(rotA, rotB, RotaryEncoder::LatchMode::FOUR3);\n  \n  // register interrupt routine\n  attachInterrupt(digitalPinToInterrupt(rotA), checkPosition, CHANGE);\n  attachInterrupt(digitalPinToInterrupt(rotB), checkPosition, CHANGE);\n}\n\nvoid loop() {\n  encoder-&gt;tick(); // just call tick() to check the state.\n  I_set += I_resolution * (int)(encoder-&gt;getDirection());\n}\nロータリーエンコーダは、割と回転を取りこぼす印象です。エンコーダ自体はALPS ALPINE製で変なメーカーのものではないです。マイコン側のループ速度のせいか、もしくはそもそもエンコーダはこんなものなのかもしれません。とりあえず使用上は問題ありません。\n\n\nOLED\nLDのON/OFF、電流値、温度はいつでも見られるようにしたいので、OLEDも取り付けました。I2Cで通信しています。Qt PyにはI2C通信用の信号 (SCL, SDA, VCC, GND) がQwiic端子で出ているので、そこからOLEDに接続します。Qwiic端子の正体はJSTのSHコネクタ（4極）です。秋月でケーブル付きで買えます。\nOLEDを使うには画面表示用のライブラリAdafruit_SSD1306、文字列出力用ライブラリAdafruit_GFXが必要です。加えて、フォントライブラリを使っています。このあたりはネットでいろいろ調べ、ライブラリをコピペしつつ何とか使えるようにしたレベルなので、ちゃんと説明できません。。。\n#include &lt;Adafruit_SSD1306.h&gt;\n#include &lt;Adafruit_GFX.h&gt;\n#include &lt;Fonts/FreeSans24pt7b.h&gt;\n#include &lt;Fonts/FreeSerif9pt7b.h&gt;\n\n\n\n2.3 外部入力\n電流と温調には外部変調入力端子を用意し、フィードバック制御できるようしてあります。\n温調は、まず、レベル合わせをした上でマイコンのADCで読み取り、マイコン内で積分してLDドライバの設定温度をデジタル制御する形にしてみたのですが、まだ試験していません。デジタル制御の方が時定数を大きくしやすいのでやってみました。"
-  },
-  {
-    "objectID": "works/posts/2024-03-24/index.html#外観",
-    "href": "works/posts/2024-03-24/index.html#外観",
-    "title": "PC制御式LDドライバに物理インターフェイスを付けてみた",
-    "section": "3 外観",
-    "text": "3 外観\n\nフロントパネルは、なかなかよい感じではないでしょうか。写真の後、テプラでスイッチなどの表示を追加しています。\nファンレスなので、放熱対策にタカチのヒートシンクケースを使ってみましたが、ちょっと大袈裟でした。使ってみて、発熱はさほど気にならないので普通のケースで良かったかもしれません。電源トランス次第ですが、もう少し高さを抑えられたかもしれません。\nタクトスイッチは、一方でモードを選んで、もう一方でON/OFFしたりレンジを切り替えたりといった感じです。数値の操作はロータリーエンコーダで行います。"
-  },
-  {
-    "objectID": "works/posts/2024-03-24/index.html#まとめ",
-    "href": "works/posts/2024-03-24/index.html#まとめ",
-    "title": "PC制御式LDドライバに物理インターフェイスを付けてみた",
-    "section": "4 まとめ",
-    "text": "4 まとめ\nフロントパネルで電流のON/OFFと値の操作をするだけですが、とりあえず今のところちゃんと動いています。正直、インターフェイスを作らなかったら操作が面倒でレーザー自体あまり触っていなかったかもしれません。\n残る宿題は、\n\n付属ACアダプタ使用時のスイッチング雑音の影響を確認\n温調と電流のフィードバック制御を確認\nPC制御とフロントパネル操作の競合の有無を確認\n\nです。\n\n\n\n\nケース内の様子。写真はテスト段階のものなので、まだフロントパネルにスイッチ類がついていません。"
   }
 ]
