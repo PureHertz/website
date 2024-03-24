@@ -42,6 +42,41 @@
     "text": "1 回路概要\n\n\n\n回路図\n\n\n2回路入りのOPアンプU1を使用し、U1Aをシュミットトリガー回路として、U1Bを積分回路として動作させます。シュミットトリガーから矩形波が出力され、その出力を積分して三角波を作ります。三角波がシュミットトリガーのスレッショルドを超えると、シュミットトリガーの出力電圧が反転します。\n\n発振動作をするための条件は R1 &gt; R2\nR4に比べてR3の値を小さくすると、出力電圧が小さくなる\nR1とR2の値は近い方が良い\nOPアンプはTL082あたりが丁度良い\nR4とR5は矩形波出力の振幅を抑えるための分圧回路（周波数にも影響するので注意）\n\n発振周波数は、以下の式で計算できます。\n\\[\nf=\\frac{1}{4CR_3}\\frac{R_1}{R_2}\\frac{R_5}{R_4+R_5}\n\\]\nここで、RV1の半固定抵抗も含めてR3と考え、R4がR3より十分小さいとする。\nオペアンプには2回路入りで安定なオペアンプを使用するのが良いです。ここでは安価でユニティゲイン安定のTL082を使用しています。"
   },
   {
+    "objectID": "works/posts/RS232C_USB/index.html",
+    "href": "works/posts/RS232C_USB/index.html",
+    "title": "RS232C-USB変換",
+    "section": "",
+    "text": "RS232CをUSBに変換し、RS232C対応の装置とPCの間で通信するための手順のメモです。PC側では変換ケーブル（変換用IC）が仮装COMポートとして認識されます。"
+  },
+  {
+    "objectID": "works/posts/RS232C_USB/index.html#rs232cとは",
+    "href": "works/posts/RS232C_USB/index.html#rs232cとは",
+    "title": "RS232C-USB変換",
+    "section": "1 RS232Cとは",
+    "text": "1 RS232Cとは\nRS-232C (Recommended Standard 232 version C) とは、電子機器間でシリアル通信を行うための接続規格のひとつです。コンピュータのシリアルポートと周辺機器（プリンター、モデム、スキャナーなど）を接続する仕様として、かつては広く普及していた・・・とのことですが、RS232C搭載の実験装置はまだまだ現役で使われています。\nPC側に装置毎の特別なドライバが不要なので、割と手堅い通信手段だと思います。"
+  },
+  {
+    "objectID": "works/posts/RS232C_USB/index.html#使用ケーブル",
+    "href": "works/posts/RS232C_USB/index.html#使用ケーブル",
+    "title": "RS232C-USB変換",
+    "section": "2 使用ケーブル",
+    "text": "2 使用ケーブル\nRS232C(D-sub 9ピン)-USB変換ケーブルを使用します。FTDI製のチップを使用したものが一般的です。いろいろなところから購入出来ます。\n\nRSオンライン\nモノタロウ\n秋月電子\n\n（2024/03/17 確認）\n\n\n\n秋月電子のRS232C-USB変換ケーブル"
+  },
+  {
+    "objectID": "works/posts/RS232C_USB/index.html#ドライバのインストール",
+    "href": "works/posts/RS232C_USB/index.html#ドライバのインストール",
+    "title": "RS232C-USB変換",
+    "section": "3 ドライバのインストール",
+    "text": "3 ドライバのインストール\nFTDIのチップを使用している場合のドライバのインストール手順は以下の通り。\n\n3.1 FTDI公式サイトからインストーラをダウンロードする方法\nFTDIのウェブサイト &gt; Drivers &gt; VCP-drivers からOSに合わせたドライバを選択します。\nWindowsの場合は、下図の赤丸を付けたリンクからインストーラをダウンロードして実行します。インストール後は再起動が必要なようです。\n\n\n\n（2024/03/17 確認）\n\n\n\n\n3.2 その他のインストール方法\n各装置の制御ソフトウェア等をインストールする際に、一緒にインストールされることがあります。とりあえず、Arduino IDEを入れるのが手っ取り早かったです。\nRS232C-USB変換ケーブルにインストール用CDが付属している場合は、それでもインストールできます。"
+  },
+  {
+    "objectID": "works/posts/RS232C_USB/index.html#通信の確認",
+    "href": "works/posts/RS232C_USB/index.html#通信の確認",
+    "title": "RS232C-USB変換",
+    "section": "4 通信の確認",
+    "text": "4 通信の確認\nTera Termなどのターミナルソフトを使ってシリアル通信を確認できます。\n\n\n\n秋月電子のRS232C-USB変換ケーブル\n（2024/03/17 確認）"
+  },
+  {
     "objectID": "works/posts/limit-breaker/index.html",
     "href": "works/posts/limit-breaker/index.html",
     "title": "LIMIT BREAKER!!",
@@ -362,40 +397,5 @@
     "title": "Quartoでウェブサイトを作ってGitHubで公開する",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nこの方法では、ソースファイルもGitHubリポジトリ上で公開されます。ソースファイルを非公開にするには、.gitignoreファイルを設定します。↩︎\nプレビューの場合は、編集中のページのみがレンダリングされるようです。プレビュー内のリンクをクリックすると、開かれたページもレンダリングされるようです。↩︎"
-  },
-  {
-    "objectID": "works/posts/RS232C_USB/index.html",
-    "href": "works/posts/RS232C_USB/index.html",
-    "title": "RS232C-USB変換",
-    "section": "",
-    "text": "RS232CをUSBに変換し、RS232C対応の装置とPCの間で通信するための手順のメモです。PC側では変換ケーブル（変換用IC）が仮装COMポートとして認識されます。"
-  },
-  {
-    "objectID": "works/posts/RS232C_USB/index.html#rs232cとは",
-    "href": "works/posts/RS232C_USB/index.html#rs232cとは",
-    "title": "RS232C-USB変換",
-    "section": "1 RS232Cとは",
-    "text": "1 RS232Cとは\nRS-232C (Recommended Standard 232 version C) とは、電子機器間でシリアル通信を行うための接続規格のひとつです。コンピュータのシリアルポートと周辺機器（プリンター、モデム、スキャナーなど）を接続する仕様として、かつては広く普及していた・・・とのことですが、RS232C搭載の実験装置はまだまだ現役で使われています。\nPC側に装置毎の特別なドライバが不要なので、割と手堅い通信手段だと思います。"
-  },
-  {
-    "objectID": "works/posts/RS232C_USB/index.html#使用ケーブル",
-    "href": "works/posts/RS232C_USB/index.html#使用ケーブル",
-    "title": "RS232C-USB変換",
-    "section": "2 使用ケーブル",
-    "text": "2 使用ケーブル\nRS232C(D-sub 9ピン)-USB変換ケーブルを使用します。FTDI製のチップを使用したものが一般的です。いろいろなところから購入出来ます。\n\nRSオンライン\nモノタロウ\n秋月電子\n\n（2024/03/17 確認）\n\n\n\n秋月電子のRS232C-USB変換ケーブル"
-  },
-  {
-    "objectID": "works/posts/RS232C_USB/index.html#ドライバのインストール",
-    "href": "works/posts/RS232C_USB/index.html#ドライバのインストール",
-    "title": "RS232C-USB変換",
-    "section": "3 ドライバのインストール",
-    "text": "3 ドライバのインストール\nFTDIのチップを使用している場合のドライバのインストール手順は以下の通り。\n\n3.1 FTDI公式サイトからインストーラをダウンロードする方法\nFTDIのウェブサイト &gt; Drivers &gt; VCP-drivers からOSに合わせたドライバを選択します。\nWindowsの場合は、下図の赤丸を付けたリンクからインストーラをダウンロードして実行します。インストール後は再起動が必要なようです。\n\n\n\n（2024/03/17 確認）\n\n\n\n\n3.2 その他のインストール方法\n各装置の制御ソフトウェア等をインストールする際に、一緒にインストールされることがあります。とりあえず、Arduino IDEを入れるのが手っ取り早かったです。\nRS232C-USB変換ケーブルにインストール用CDが付属している場合は、それでもインストールできます。"
-  },
-  {
-    "objectID": "works/posts/RS232C_USB/index.html#通信の確認",
-    "href": "works/posts/RS232C_USB/index.html#通信の確認",
-    "title": "RS232C-USB変換",
-    "section": "4 通信の確認",
-    "text": "4 通信の確認\nTera Termなどのターミナルソフトを使ってシリアル通信を確認できます。\n\n\n\n秋月電子のRS232C-USB変換ケーブル\n（2024/03/17 確認）"
   }
 ]
