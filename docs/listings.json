@@ -2,6 +2,7 @@
   {
     "listing": "/works/index.html",
     "items": [
+      "/works/posts/write_Lattice_FPGA/index.html",
       "/works/posts/you_go_we_go/index.html",
       "/works/posts/2024-03-24/index.html",
       "/works/posts/RS232C_USB/index.html",
@@ -22,6 +23,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/works/posts/write_Lattice_FPGA/index.html",
       "/works/posts/you_go_we_go/index.html",
       "/works/posts/2024-03-24/index.html",
       "/works/posts/RS232C_USB/index.html",

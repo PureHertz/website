@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://purehertz.github.io/works/posts/your-space-our-place/index.html</loc>
-    <lastmod>2024-04-10T23:54:04.219Z</lastmod>
+    <loc>https://purehertz.github.io/works/posts/you_go_we_go/index.html</loc>
+    <lastmod>2024-04-12T11:07:14.931Z</lastmod>
+  </url>
+  <url>
+    <loc>https://purehertz.github.io/works/posts/write_Lattice_FPGA/index.html</loc>
+    <lastmod>2024-04-28T05:04:57.338Z</lastmod>
   </url>
   <url>
     <loc>https://purehertz.github.io/works/posts/Sweeper/index.html</loc>
@@ -38,7 +42,7 @@
   </url>
   <url>
     <loc>https://purehertz.github.io/about/index.html</loc>
-    <lastmod>2024-03-10T06:20:55.626Z</lastmod>
+    <lastmod>2024-04-28T05:04:23.968Z</lastmod>
   </url>
   <url>
     <loc>https://purehertz.github.io/readme.html</loc>
@@ -73,7 +77,7 @@
     <lastmod>2024-03-17T14:49:26.840Z</lastmod>
   </url>
   <url>
-    <loc>https://purehertz.github.io/works/posts/you_go_we_go/index.html</loc>
-    <lastmod>2024-04-12T10:52:24.037Z</lastmod>
+    <loc>https://purehertz.github.io/works/posts/your-space-our-place/index.html</loc>
+    <lastmod>2024-04-10T23:54:04.219Z</lastmod>
   </url>
 </urlset>
