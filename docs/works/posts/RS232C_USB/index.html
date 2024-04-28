@@ -92,7 +92,7 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../common/logo.png" alt="" class="navbar-logo">
+    <img src="../../../common/logo_white.png" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -160,14 +160,14 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#rs232cとは" id="toc-rs232cとは" class="nav-link active" data-scroll-target="#rs232cとは"><span class="header-section-number">1</span> RS232Cとは</a></li>
-  <li><a href="#使用ケーブル" id="toc-使用ケーブル" class="nav-link" data-scroll-target="#使用ケーブル"><span class="header-section-number">2</span> 使用ケーブル</a></li>
-  <li><a href="#ドライバのインストール" id="toc-ドライバのインストール" class="nav-link" data-scroll-target="#ドライバのインストール"><span class="header-section-number">3</span> ドライバのインストール</a>
+  <li><a href="#rs232cとは" id="toc-rs232cとは" class="nav-link active" data-scroll-target="#rs232cとは">RS232Cとは</a></li>
+  <li><a href="#使用ケーブル" id="toc-使用ケーブル" class="nav-link" data-scroll-target="#使用ケーブル">使用ケーブル</a></li>
+  <li><a href="#ドライバのインストール" id="toc-ドライバのインストール" class="nav-link" data-scroll-target="#ドライバのインストール">ドライバのインストール</a>
   <ul class="collapse">
-  <li><a href="#ftdi公式サイトからインストーラをダウンロードする方法" id="toc-ftdi公式サイトからインストーラをダウンロードする方法" class="nav-link" data-scroll-target="#ftdi公式サイトからインストーラをダウンロードする方法"><span class="header-section-number">3.1</span> FTDI公式サイトからインストーラをダウンロードする方法</a></li>
-  <li><a href="#その他のインストール方法" id="toc-その他のインストール方法" class="nav-link" data-scroll-target="#その他のインストール方法"><span class="header-section-number">3.2</span> その他のインストール方法</a></li>
+  <li><a href="#ftdi公式サイトからインストーラをダウンロードする方法" id="toc-ftdi公式サイトからインストーラをダウンロードする方法" class="nav-link" data-scroll-target="#ftdi公式サイトからインストーラをダウンロードする方法">FTDI公式サイトからインストーラをダウンロードする方法</a></li>
+  <li><a href="#その他のインストール方法" id="toc-その他のインストール方法" class="nav-link" data-scroll-target="#その他のインストール方法">その他のインストール方法</a></li>
   </ul></li>
-  <li><a href="#通信の確認" id="toc-通信の確認" class="nav-link" data-scroll-target="#通信の確認"><span class="header-section-number">4</span> 通信の確認</a></li>
+  <li><a href="#通信の確認" id="toc-通信の確認" class="nav-link" data-scroll-target="#通信の確認">通信の確認</a></li>
   </ul>
 </nav>
     </div>
@@ -179,13 +179,13 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 
 
 <p>RS232CをUSBに変換し、RS232C対応の装置とPCの間で通信するための手順のメモです。PC側では変換ケーブル（変換用IC）が仮装COMポートとして認識されます。</p>
-<section id="rs232cとは" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="rs232cとは"><span class="header-section-number">1</span> RS232Cとは</h2>
+<section id="rs232cとは" class="level2">
+<h2 class="anchored" data-anchor-id="rs232cとは">RS232Cとは</h2>
 <p>RS-232C (Recommended Standard 232 version C) とは、電子機器間でシリアル通信を行うための接続規格のひとつです。コンピュータのシリアルポートと周辺機器（プリンター、モデム、スキャナーなど）を接続する仕様として、かつては広く普及していた・・・とのことですが、RS232C搭載の実験装置はまだまだ現役で使われています。</p>
 <p>PC側に装置毎の特別なドライバが不要なので、割と手堅い通信手段だと思います。</p>
 </section>
-<section id="使用ケーブル" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="使用ケーブル"><span class="header-section-number">2</span> 使用ケーブル</h2>
+<section id="使用ケーブル" class="level2">
+<h2 class="anchored" data-anchor-id="使用ケーブル">使用ケーブル</h2>
 <p>RS232C(D-sub 9ピン)-USB変換ケーブルを使用します。FTDI製のチップを使用したものが一般的です。いろいろなところから購入出来ます。</p>
 <ul>
 <li><a href="https://jp.rs-online.com/web/p/interface-adapters-converters/2206494">RSオンライン</a></li>
@@ -195,33 +195,33 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <p>（2024/03/17 確認）</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="RS232C_USB.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="秋月電子のRS232C-USB変換ケーブル"><img src="RS232C_USB.jpg" class="img-fluid figure-img" style="width:50.0%" alt="秋月電子のRS232C-USB変換ケーブル"></a></p>
+<p><a href="RS232C_USB.jpg" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1" title="秋月電子のRS232C-USB変換ケーブル"><img src="RS232C_USB.jpg" class="img-fluid figure-img" style="width:50.0%" alt="秋月電子のRS232C-USB変換ケーブル"></a></p>
 <figcaption>秋月電子のRS232C-USB変換ケーブル</figcaption>
 </figure>
 </div>
 </section>
-<section id="ドライバのインストール" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="ドライバのインストール"><span class="header-section-number">3</span> ドライバのインストール</h2>
+<section id="ドライバのインストール" class="level2">
+<h2 class="anchored" data-anchor-id="ドライバのインストール">ドライバのインストール</h2>
 <p>FTDIのチップを使用している場合のドライバのインストール手順は以下の通り。</p>
-<section id="ftdi公式サイトからインストーラをダウンロードする方法" class="level3" data-number="3.1">
-<h3 data-number="3.1" class="anchored" data-anchor-id="ftdi公式サイトからインストーラをダウンロードする方法"><span class="header-section-number">3.1</span> FTDI公式サイトからインストーラをダウンロードする方法</h3>
+<section id="ftdi公式サイトからインストーラをダウンロードする方法" class="level3">
+<h3 class="anchored" data-anchor-id="ftdi公式サイトからインストーラをダウンロードする方法">FTDI公式サイトからインストーラをダウンロードする方法</h3>
 <p>FTDIのウェブサイト &gt; Drivers &gt; <a href="https://ftdichip.com/drivers/vcp-drivers/">VCP-drivers</a> からOSに合わせたドライバを選択します。</p>
 <p>Windowsの場合は、下図の赤丸を付けたリンクからインストーラをダウンロードして実行します。インストール後は再起動が必要なようです。</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="FTDI-driver_1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2" title="（2024/03/17 確認）"><img src="FTDI-driver_1.png" class="img-fluid figure-img" alt="（2024/03/17 確認）"></a></p>
+<p><a href="FTDI-driver_1.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2" title="（2024/03/17 確認）"><img src="FTDI-driver_1.png" class="img-fluid figure-img" alt="（2024/03/17 確認）"></a></p>
 <figcaption>（2024/03/17 確認）</figcaption>
 </figure>
 </div>
 </section>
-<section id="その他のインストール方法" class="level3" data-number="3.2">
-<h3 data-number="3.2" class="anchored" data-anchor-id="その他のインストール方法"><span class="header-section-number">3.2</span> その他のインストール方法</h3>
+<section id="その他のインストール方法" class="level3">
+<h3 class="anchored" data-anchor-id="その他のインストール方法">その他のインストール方法</h3>
 <p>各装置の制御ソフトウェア等をインストールする際に、一緒にインストールされることがあります。とりあえず、<a href="https://www.arduino.cc/en/software">Arduino IDE</a>を入れるのが手っ取り早かったです。</p>
 <p>RS232C-USB変換ケーブルにインストール用CDが付属している場合は、それでもインストールできます。</p>
 </section>
 </section>
-<section id="通信の確認" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="通信の確認"><span class="header-section-number">4</span> 通信の確認</h2>
+<section id="通信の確認" class="level2">
+<h2 class="anchored" data-anchor-id="通信の確認">通信の確認</h2>
 <p><a href="https://teratermproject.github.io/">Tera Term</a>などのターミナルソフトを使ってシリアル通信を確認できます。</p>
 
 
@@ -658,7 +658,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","descPosition":"bottom","loop":false,"selector":".lightbox","closeEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","openEffect":"zoom","selector":".lightbox","closeEffect":"zoom","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

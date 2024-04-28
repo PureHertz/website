@@ -126,7 +126,7 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../common/logo.png" alt="" class="navbar-logo">
+    <img src="../../../common/logo_white.png" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -196,15 +196,15 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#概要" id="toc-概要" class="nav-link active" data-scroll-target="#概要"><span class="header-section-number">1</span> 概要</a></li>
-  <li><a href="#構成" id="toc-構成" class="nav-link" data-scroll-target="#構成"><span class="header-section-number">2</span> 構成</a>
+  <li><a href="#概要" id="toc-概要" class="nav-link active" data-scroll-target="#概要">概要</a></li>
+  <li><a href="#構成" id="toc-構成" class="nav-link" data-scroll-target="#構成">構成</a>
   <ul class="collapse">
-  <li><a href="#電源" id="toc-電源" class="nav-link" data-scroll-target="#電源"><span class="header-section-number">2.1</span> 電源</a></li>
-  <li><a href="#マイコン" id="toc-マイコン" class="nav-link" data-scroll-target="#マイコン"><span class="header-section-number">2.2</span> マイコン</a></li>
-  <li><a href="#外部入力" id="toc-外部入力" class="nav-link" data-scroll-target="#外部入力"><span class="header-section-number">2.3</span> 外部入力</a></li>
+  <li><a href="#電源" id="toc-電源" class="nav-link" data-scroll-target="#電源">電源</a></li>
+  <li><a href="#マイコン" id="toc-マイコン" class="nav-link" data-scroll-target="#マイコン">マイコン</a></li>
+  <li><a href="#外部入力" id="toc-外部入力" class="nav-link" data-scroll-target="#外部入力">外部入力</a></li>
   </ul></li>
-  <li><a href="#外観" id="toc-外観" class="nav-link" data-scroll-target="#外観"><span class="header-section-number">3</span> 外観</a></li>
-  <li><a href="#まとめ" id="toc-まとめ" class="nav-link" data-scroll-target="#まとめ"><span class="header-section-number">4</span> まとめ</a></li>
+  <li><a href="#外観" id="toc-外観" class="nav-link" data-scroll-target="#外観">外観</a></li>
+  <li><a href="#まとめ" id="toc-まとめ" class="nav-link" data-scroll-target="#まとめ">まとめ</a></li>
   </ul>
 </nav>
     </div>
@@ -215,12 +215,12 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 
 
 
-<section id="概要" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="概要"><span class="header-section-number">1</span> 概要</h2>
+<section id="概要" class="level2">
+<h2 class="anchored" data-anchor-id="概要">概要</h2>
 <p>将来的なLDのリモート制御のために、PCで制御するタイプのLDドライバを買ってみました。が、実験室で使うのにいちいちPCと接続しないといけないのは大変なので、ケースに入れてフロントパネルから簡単な操作ができるようにしました。</p>
 </section>
-<section id="構成" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="構成"><span class="header-section-number">2</span> 構成</h2>
+<section id="構成" class="level2">
+<h2 class="anchored" data-anchor-id="構成">構成</h2>
 <p>ケースの中には</p>
 <ul>
 <li>リニア電源</li>
@@ -241,13 +241,13 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 </figure>
 </div>
 <p>リアパネルにUSB端子を引き出してあり、PCでの制御も引き続き可能です。が、フロントパネル操作とPC操作の競合については未検証。おそらくですが、致命的なことにはならないと思われます。</p>
-<section id="電源" class="level3" data-number="2.1">
-<h3 data-number="2.1" class="anchored" data-anchor-id="電源"><span class="header-section-number">2.1</span> 電源</h3>
+<section id="電源" class="level3">
+<h3 class="anchored" data-anchor-id="電源">電源</h3>
 <p>7 V × 2, 15 VAのトロイダルコアトランスで作った+5 V電源を使っています。リニアレギュレータには、可変タイプのLD1085 (最大3 A)を使っています。</p>
 <p>当初、スイッチング電源を使っていたのですが、出力にスイッチング周波数のサイドバンドが発生していることが分かり、大人しくリニア電源を作りました。LDドライバにはスイッチングタイプのACアダプタが付属しているのですが、それで動かしたときはサイドバンドは出ないのだろうか？チャンスがあったらテストしてみようと思います。</p>
 </section>
-<section id="マイコン" class="level3" data-number="2.2">
-<h3 data-number="2.2" class="anchored" data-anchor-id="マイコン"><span class="header-section-number">2.2</span> マイコン</h3>
+<section id="マイコン" class="level3">
+<h3 class="anchored" data-anchor-id="マイコン">マイコン</h3>
 <p>必要な入出力は多くないので、AdafruitのQt Py SAMD21を使いました。OLEDの動作をArduino IDE経由でしかやったことがなかったため、Arduino環境を優先してRP2040にはしませんでした。</p>
 <p>AdafruitのQt Py SAMD21は秋月で買ったのですが、今はもう在庫限りのようです。マイコンボードは安定供給でないものが多くて、たまにしか作らない自作装置はどうしても1点ものになりがちです。その話はまた別の機会に。</p>
 <p><a href="QtPySAMD21.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="QtPySAMD21.png" class="img-fluid"></a></p>
@@ -342,21 +342,21 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;Fonts/FreeSerif9pt7b.h&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
-<section id="外部入力" class="level3" data-number="2.3">
-<h3 data-number="2.3" class="anchored" data-anchor-id="外部入力"><span class="header-section-number">2.3</span> 外部入力</h3>
+<section id="外部入力" class="level3">
+<h3 class="anchored" data-anchor-id="外部入力">外部入力</h3>
 <p>電流と温調には外部変調入力端子を用意し、フィードバック制御できるようしてあります。</p>
 <p>温調は、まず、レベル合わせをした上でマイコンのADCで読み取り、マイコン内で積分してLDドライバの設定温度をデジタル制御する形にしてみたのですが、まだ試験していません。デジタル制御の方が時定数を大きくしやすいのでやってみました。</p>
 </section>
 </section>
-<section id="外観" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="外観"><span class="header-section-number">3</span> 外観</h2>
+<section id="外観" class="level2">
+<h2 class="anchored" data-anchor-id="外観">外観</h2>
 <p><a href="IMG_2092.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="IMG_2092.jpg" class="img-fluid" style="width:50.0%"></a></p>
 <p>フロントパネルは、なかなかよい感じではないでしょうか。写真の後、テプラでスイッチなどの表示を追加しています。</p>
 <p>ファンレスなので、放熱対策にタカチのヒートシンクケースを使ってみましたが、ちょっと大袈裟でした。使ってみて、発熱はさほど気にならないので普通のケースで良かったかもしれません。電源トランス次第ですが、もう少し高さを抑えられたかもしれません。</p>
 <p>タクトスイッチは、一方でモードを選んで、もう一方でON/OFFしたりレンジを切り替えたりといった感じです。数値の操作はロータリーエンコーダで行います。</p>
 </section>
-<section id="まとめ" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="まとめ"><span class="header-section-number">4</span> まとめ</h2>
+<section id="まとめ" class="level2">
+<h2 class="anchored" data-anchor-id="まとめ">まとめ</h2>
 <p>フロントパネルで電流のON/OFFと値の操作をするだけですが、とりあえず今のところちゃんと動いています。正直、インターフェイスを作らなかったら操作が面倒でレーザー自体あまり触っていなかったかもしれません。</p>
 <p>残る宿題は、</p>
 <ul>
@@ -1128,7 +1128,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","loop":false});
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","loop":false,"closeEffect":"zoom","descPosition":"bottom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

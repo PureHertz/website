@@ -17,15 +17,15 @@
     "objectID": "works/posts/you_go_we_go/index.html#play",
     "href": "works/posts/you_go_we_go/index.html#play",
     "title": "You Go, We Go",
-    "section": "2 Play",
-    "text": "2 Play\n\n\n\nYou Go, We Go / 初音ミク"
+    "section": "Play",
+    "text": "Play\n\n\n\nYou Go, We Go / 初音ミク"
   },
   {
     "objectID": "works/posts/you_go_we_go/index.html#lyrics",
     "href": "works/posts/you_go_we_go/index.html#lyrics",
     "title": "You Go, We Go",
-    "section": "3 Lyrics",
-    "text": "3 Lyrics\nあの日見た 明日に僕ら立っている\n積み上げてきた 昨日で作る塔の上\n“AI”が紡いだ 言葉が時間を超えても\nその続きは 君に歌ってほしいんだ\n未だ見ぬ海原が Stage\n波が運んでくる Message\n縺れ合ういくつもの 糸が解けていく\nこの世界を変えていくために 僕ら何ができるだろう\n繋がって生まれる力を 君はもう知っている\n描いた未来へと続いていく 道はどこにあるのだろう\nともに挑み つぎを創る この手を掴んで\nYou go, we go\n限りなく 続いていく日々のために\n限りある 今を繋げて輪にする\n全てのことが Dream maker\n僕らを驚かせる Entertainer\n選り好みしていたら 置いていかれるだけさ\nこの世界を変えていくために 僕ら何ができるだろう\n種をまき花が開いたら 実をつけるまで\n遠回りで残した足跡は やがて虹を描くだろう\nともに挑み つぎを創る この手を離さず\nYou go, we go\nこの世界を変えていくために 僕ら何ができるだろう\n繋がって生まれる力で 時計の針は進む\n描いた未来へと続いていく 道を僕ら並んで歩いていこう\nもう迷わない 一歩ずつ前へ\nともに挑み つぎを創る この手を掴んで\nYou go, we go\nさあ、行こう\nその向こう\nYou go, we go"
+    "section": "Lyrics",
+    "text": "Lyrics\nあの日見た 明日に僕ら立っている\n積み上げてきた 昨日で作る塔の上\n“AI”が紡いだ 言葉が時間を超えても\nその続きは 君に歌ってほしいんだ\n未だ見ぬ海原が Stage\n波が運んでくる Message\n縺れ合ういくつもの 糸が解けていく\nこの世界を変えていくために 僕ら何ができるだろう\n繋がって生まれる力を 君はもう知っている\n描いた未来へと続いていく 道はどこにあるのだろう\nともに挑み つぎを創る この手を掴んで\nYou go, we go\n限りなく 続いていく日々のために\n限りある 今を繋げて輪にする\n全てのことが Dream maker\n僕らを驚かせる Entertainer\n選り好みしていたら 置いていかれるだけさ\nこの世界を変えていくために 僕ら何ができるだろう\n種をまき花が開いたら 実をつけるまで\n遠回りで残した足跡は やがて虹を描くだろう\nともに挑み つぎを創る この手を離さず\nYou go, we go\nこの世界を変えていくために 僕ら何ができるだろう\n繋がって生まれる力で 時計の針は進む\n描いた未来へと続いていく 道を僕ら並んで歩いていこう\nもう迷わない 一歩ずつ前へ\nともに挑み つぎを創る この手を掴んで\nYou go, we go\nさあ、行こう\nその向こう\nYou go, we go"
   },
   {
     "objectID": "works/posts/write_Lattice_FPGA/index.html",
@@ -38,57 +38,57 @@
     "objectID": "works/posts/write_Lattice_FPGA/index.html#はじめに",
     "href": "works/posts/write_Lattice_FPGA/index.html#はじめに",
     "title": "Lattice PFGAの書き込み",
-    "section": "1 はじめに",
-    "text": "1 はじめに\n\n1.1 動作確認環境\n\n\n\n\n環境 1a\n環境 2b\n\n\n\n\nOS\nWindows 11\nWindows 10\n\n\nCPU\nAMD, RIZEN 7 3700X\nIntel, Core i7-3770\n\n\n開発環境\nDiamond v3.12\nDiamond v3.12\n\n\n使用言語\nVerilog HDL\nVerilog HDL\n\n\n書込ケーブル\n\n秋月電子, AE-FT2232\n\n\n\n\na: Verilog HDLの編集とコンパイルまで\nb: Verilog HDLの編集とコンパイル、FPGAへの書き込みまで\n\n\n\n1.2 全体の流れ\n\nDiamondのインストール\nライセンス認証\nVerilog HDLファイル (***.v)の作成\n制約ファイル (***.ucf)の作成\n基板との接続\nプログラムの書き込み"
+    "section": "はじめに",
+    "text": "はじめに\n\n動作確認環境\n\n\n\n\n環境 1a\n環境 2b\n\n\n\n\nOS\nWindows 11\nWindows 10\n\n\nCPU\nAMD, RIZEN 7 3700X\nIntel, Core i7-3770\n\n\n開発環境\nDiamond v3.12\nDiamond v3.12\n\n\n使用言語\nVerilog HDL\nVerilog HDL\n\n\n書込ケーブル\n\n秋月電子, AE-FT2232\n\n\n\n\na: Verilog HDLの編集とコンパイルまで\nb: Verilog HDLの編集とコンパイル、FPGAへの書き込みまで\n\n\n\n全体の流れ\n\nDiamondのインストール\nライセンス認証\nVerilog HDLファイル (***.v)の作成\n制約ファイル (***.ucf)の作成\n基板との接続\nプログラムの書き込み"
   },
   {
     "objectID": "works/posts/write_Lattice_FPGA/index.html#diamondのインストール",
     "href": "works/posts/write_Lattice_FPGA/index.html#diamondのインストール",
     "title": "Lattice PFGAの書き込み",
-    "section": "2 Diamondのインストール",
-    "text": "2 Diamondのインストール\nインストーラは、Lattice Diamond設計ソフトウェアのページからDiamond 3.13 64-bit for WindowsなどOSに合わせてダウンロードします。執筆時のバージョンは3.13。\n\n\n\nLattice Diamondのダウンロードページ"
+    "section": "Diamondのインストール",
+    "text": "Diamondのインストール\nインストーラは、Lattice Diamond設計ソフトウェアのページからDiamond 3.13 64-bit for WindowsなどOSに合わせてダウンロードします。執筆時のバージョンは3.13。\n\n\n\nLattice Diamondのダウンロードページ"
   },
   {
     "objectID": "works/posts/write_Lattice_FPGA/index.html#ライセンス認証",
     "href": "works/posts/write_Lattice_FPGA/index.html#ライセンス認証",
     "title": "Lattice PFGAの書き込み",
-    "section": "3 ライセンス認証",
-    "text": "3 ライセンス認証\nまず、Latticeのウェブサイトのアカウント作成ページでアカウントを作成し、サインインします。\n次に、Lattice Diamond設計ソフトウェアのページでライセンスを取得をクリックしてページを移動します。さらに、‘’Request Diamond Free License’’の項目からRequest Node-locked Licenseを選択します。\n\n\n\nライセンス認証 1\n\n\n\n\n\nライセンス認証 2\n\n\n‘’Host NIC (physical address)’‘の入力欄に、PCの物理アドレス（MACアドレス）を12文字で入力（-や:は消す）。Windowsの場合は、コマンドプロンプトでipconfig/allと入力することで調べられます。’‘I verify that…’’にチェックを入れ、下の方にあるGenerate Licenseをクリックすることで、ライセンスファイルがメールで送られてきます。\nオプションでいくつかのフリーIPのライセンスも取得できるので、必要がある場合は選択します。私の場合は不要だったのでスルーです。\n\n\n\nライセンス認証 3\n\n\nライセンスファイルlicense.datは、インストールフォルダの中の~\\lscc\\diamond\\3.12\\licenseフォルダなどに置いておきます。Diamondの起動時にライセンスファイルのある場所を聞かれるので、答えると環境変数が設定されます。うまくいかない場合には、手動でシステム変数LM_LICENSE_FILEの値にライセンスファイルのパスを設定。\n\n\n\n\n\n\nWarning\n\n\n\nリモートデスクトップでは、正しい手順を踏んでもライセンスが認証されません。現段階では、Lattice Diamondはリモートデスクトップでは使用できないようです。"
+    "section": "ライセンス認証",
+    "text": "ライセンス認証\nまず、Latticeのウェブサイトのアカウント作成ページでアカウントを作成し、サインインします。\n次に、Lattice Diamond設計ソフトウェアのページでライセンスを取得をクリックしてページを移動します。さらに、‘’Request Diamond Free License’’の項目からRequest Node-locked Licenseを選択します。\n\n\n\nライセンス認証 1\n\n\n\n\n\nライセンス認証 2\n\n\n‘’Host NIC (physical address)’‘の入力欄に、PCの物理アドレス（MACアドレス）を12文字で入力（-や:は消す）。Windowsの場合は、コマンドプロンプトでipconfig/allと入力することで調べられます。’‘I verify that…’’にチェックを入れ、下の方にあるGenerate Licenseをクリックすることで、ライセンスファイルがメールで送られてきます。\nオプションでいくつかのフリーIPのライセンスも取得できるので、必要がある場合は選択します。私の場合は不要だったのでスルーです。\n\n\n\nライセンス認証 3\n\n\nライセンスファイルlicense.datは、インストールフォルダの中の~\\lscc\\diamond\\3.12\\licenseフォルダなどに置いておきます。Diamondの起動時にライセンスファイルのある場所を聞かれるので、答えると環境変数が設定されます。うまくいかない場合には、手動でシステム変数LM_LICENSE_FILEの値にライセンスファイルのパスを設定。\n\n\n\n\n\n\nWarning\n\n\n\nリモートデスクトップでは、正しい手順を踏んでもライセンスが認証されません。現段階では、Lattice Diamondはリモートデスクトップでは使用できないようです。"
   },
   {
     "objectID": "works/posts/write_Lattice_FPGA/index.html#新規プロジェクトの作成",
     "href": "works/posts/write_Lattice_FPGA/index.html#新規プロジェクトの作成",
     "title": "Lattice PFGAの書き込み",
-    "section": "4 新規プロジェクトの作成",
-    "text": "4 新規プロジェクトの作成\n\nメニューバーからFile→New→Projectの順に選択するか、スタートページ・ビュー左上部のProjectセクションでNew...を選択。\n指示に従ってデバイス等を選択。プロジェクト生成の際、プロジェクトフォルダは自動生成されないので、あらかじめ作業フォルダを作っておく。\nProjectセクションの入力。\n\nName → プロジェクト名（英数字とアンダースコアのみ可）\nLocation → プロジェクトフォルダの指定\n\nImplementationセクションの入力\n\nName → インプリメンテーション名。デフォルトはimpl1。\n\nソースファイルのインポート。必要なファイル（既存のHDLソースや制約ファイル）を選択する。Copy source to...にチェックを入れておくと、ファイルをプロジェクトフォルダにコピーしてそれをインポートする。ソースファイルのインポートはプロジェクト作成後でも可。\nデバイスの選択。デバイス、スピードグレード、パッケージを選択。プロジェクト作成後でも変更可。\n論理合成ツールの選択。デフォルトはLSE (Lattice Synthesis Engine)。プロジェクト作成後でも変更可。"
+    "section": "新規プロジェクトの作成",
+    "text": "新規プロジェクトの作成\n\nメニューバーからFile→New→Projectの順に選択するか、スタートページ・ビュー左上部のProjectセクションでNew...を選択。\n指示に従ってデバイス等を選択。プロジェクト生成の際、プロジェクトフォルダは自動生成されないので、あらかじめ作業フォルダを作っておく。\nProjectセクションの入力。\n\nName → プロジェクト名（英数字とアンダースコアのみ可）\nLocation → プロジェクトフォルダの指定\n\nImplementationセクションの入力\n\nName → インプリメンテーション名。デフォルトはimpl1。\n\nソースファイルのインポート。必要なファイル（既存のHDLソースや制約ファイル）を選択する。Copy source to...にチェックを入れておくと、ファイルをプロジェクトフォルダにコピーしてそれをインポートする。ソースファイルのインポートはプロジェクト作成後でも可。\nデバイスの選択。デバイス、スピードグレード、パッケージを選択。プロジェクト作成後でも変更可。\n論理合成ツールの選択。デフォルトはLSE (Lattice Synthesis Engine)。プロジェクト作成後でも変更可。"
   },
   {
     "objectID": "works/posts/write_Lattice_FPGA/index.html#verilog-hdlファイル-.v-の作成",
     "href": "works/posts/write_Lattice_FPGA/index.html#verilog-hdlファイル-.v-の作成",
     "title": "Lattice PFGAの書き込み",
-    "section": "5 Verilog HDLファイル (***.v) の作成",
-    "text": "5 Verilog HDLファイル (***.v) の作成\nFile Listタブの中のインプリメンテーションファイル名→Input Filesの中に置かれます。ダブルクリックするとエディタが開きます。"
+    "section": "Verilog HDLファイル (***.v) の作成",
+    "text": "Verilog HDLファイル (***.v) の作成\nFile Listタブの中のインプリメンテーションファイル名→Input Filesの中に置かれます。ダブルクリックするとエディタが開きます。"
   },
   {
     "objectID": "works/posts/write_Lattice_FPGA/index.html#制約ファイル-.lpf-の作成",
     "href": "works/posts/write_Lattice_FPGA/index.html#制約ファイル-.lpf-の作成",
     "title": "Lattice PFGAの書き込み",
-    "section": "6 制約ファイル (***.lpf) の作成",
-    "text": "6 制約ファイル (***.lpf) の作成\nFile Listタブの中の[インプリメンテーションファイル名]→[LPF Constraint Files]の中に置かれる。ダブルクリックするとテキストエディタが開く。\nLPF制約ファイルは、Spreadsheet View GUIで各種制約を設定することで、LPFに書き出せます。ユーザーI/O（RTL記述で宣言されたI/O）のピンアサインをする方法は、以下の通り。\n\nポート名に対してピン番号を指定（Port Assignmentsシートで行う）\nピン番号に対してポート名を指定（Pin Assignmentsシートで行う）"
+    "section": "制約ファイル (***.lpf) の作成",
+    "text": "制約ファイル (***.lpf) の作成\nFile Listタブの中の[インプリメンテーションファイル名]→[LPF Constraint Files]の中に置かれる。ダブルクリックするとテキストエディタが開く。\nLPF制約ファイルは、Spreadsheet View GUIで各種制約を設定することで、LPFに書き出せます。ユーザーI/O（RTL記述で宣言されたI/O）のピンアサインをする方法は、以下の通り。\n\nポート名に対してピン番号を指定（Port Assignmentsシートで行う）\nピン番号に対してポート名を指定（Pin Assignmentsシートで行う）"
   },
   {
     "objectID": "works/posts/write_Lattice_FPGA/index.html#基板との接続",
     "href": "works/posts/write_Lattice_FPGA/index.html#基板との接続",
     "title": "Lattice PFGAの書き込み",
-    "section": "7 基板との接続",
-    "text": "7 基板との接続\n純正のプログラマケーブル (HW-USBN-2B) は高価なので、最低限の機能を秋月電子のUSB-シリアル変換モジュールで実現します。\n\n\n\nHW-USBN-2B\n\n\n\n7.1 仕様部材\n\n秋月電子, FT2232D USBシリアル2ch変換モジュール\nUSBケーブル（Type A-mini B）\nブレッドボード\nブレッドボード用ジャンパーワイヤー\n\n\n\n\nAE-FT2232\n\n\n\n\n7.2 接続\nAE-FT2232のJTAGのピンアサインは以下の通り。\n\n\n\nAE-FT2232ピン名\n接続先JTAG信号名\n\n\n\n\nVCCIOA\nVCC\n\n\nVCCIOB\nVCC\n\n\nAD0\nTCK\n\n\nAD1\nTDI\n\n\nAD2\nTDO\n\n\nAD3\nTMS\n\n\nGND\nGND\n\n\n\n各信号のプルアップ/プルダウンは接続先の開発ボード/デバイスに合わせます。ここでは、接続先の基板においてTCK、TDI、TDO、TMSが10kΩで3.3 Vにプルアップされているとして、変換モジュール回路上では特に変更しません。\nまた、チャンネルAのロジックVCCには接続先の基板の3.3 Vを使用するとして、JP2Aジャンパーを外してVCCIOAに接続先基板のVCC 3.3 Vを繋ぎます。チャンネルBは使用しませんが、同様にJP2Bジャンパーも外してVCCIOBに接続先基板のVCC 3.3 Vに繋いでおきます。\n主電源にはUSBバスパワー5 Vを使用するので、JP1ジャンパーは取り付けたままにします。\n\n\n7.3 ドライバのインストール\nFTDIのサイトからドライバを入手。VCP Driversを選択して、OSに対応したドライバをダウンロードして流れに沿ってインストールします。\n※ Windows11 x64の場合、2023/1/8時点でのダウンロードファイル名はCDM212364_Setup.zipでした。\nインストールが完了すると、USBケーブルでPCに接続したときに、デバイスマネージャー上で2つのCOMポートが認識されます。\n\n\n7.4 Diamondでの設定\nモジュールのデータシートでは、保証されるTTLレベルの通信速度は最大3 Mbps。一方、Diamondの初期設定は6 Mbpsなので、Programmerウィンドウ右側のProgrmmer Speed Setting部、TCK Divider Settingで周波数を変更します。Use custom Clock Dividerをチェックし、Divider値を任意の値に変更することによって、周波数を下げられます。"
+    "section": "基板との接続",
+    "text": "基板との接続\n純正のプログラマケーブル (HW-USBN-2B) は高価なので、最低限の機能を秋月電子のUSB-シリアル変換モジュールで実現します。\n\n\n\nHW-USBN-2B\n\n\n\n仕様部材\n\n秋月電子, FT2232D USBシリアル2ch変換モジュール\nUSBケーブル（Type A-mini B）\nブレッドボード\nブレッドボード用ジャンパーワイヤー\n\n\n\n\nAE-FT2232\n\n\n\n\n接続\nAE-FT2232のJTAGのピンアサインは以下の通り。\n\n\n\nAE-FT2232ピン名\n接続先JTAG信号名\n\n\n\n\nVCCIOA\nVCC\n\n\nVCCIOB\nVCC\n\n\nAD0\nTCK\n\n\nAD1\nTDI\n\n\nAD2\nTDO\n\n\nAD3\nTMS\n\n\nGND\nGND\n\n\n\n各信号のプルアップ/プルダウンは接続先の開発ボード/デバイスに合わせます。ここでは、接続先の基板においてTCK、TDI、TDO、TMSが10kΩで3.3 Vにプルアップされているとして、変換モジュール回路上では特に変更しません。\nまた、チャンネルAのロジックVCCには接続先の基板の3.3 Vを使用するとして、JP2Aジャンパーを外してVCCIOAに接続先基板のVCC 3.3 Vを繋ぎます。チャンネルBは使用しませんが、同様にJP2Bジャンパーも外してVCCIOBに接続先基板のVCC 3.3 Vに繋いでおきます。\n主電源にはUSBバスパワー5 Vを使用するので、JP1ジャンパーは取り付けたままにします。\n\n\nドライバのインストール\nFTDIのサイトからドライバを入手。VCP Driversを選択して、OSに対応したドライバをダウンロードして流れに沿ってインストールします。\n※ Windows11 x64の場合、2023/1/8時点でのダウンロードファイル名はCDM212364_Setup.zipでした。\nインストールが完了すると、USBケーブルでPCに接続したときに、デバイスマネージャー上で2つのCOMポートが認識されます。\n\n\nDiamondでの設定\nモジュールのデータシートでは、保証されるTTLレベルの通信速度は最大3 Mbps。一方、Diamondの初期設定は6 Mbpsなので、Programmerウィンドウ右側のProgrmmer Speed Setting部、TCK Divider Settingで周波数を変更します。Use custom Clock Dividerをチェックし、Divider値を任意の値に変更することによって、周波数を下げられます。"
   },
   {
     "objectID": "works/posts/write_Lattice_FPGA/index.html#プログラムの書き込み",
     "href": "works/posts/write_Lattice_FPGA/index.html#プログラムの書き込み",
     "title": "Lattice PFGAの書き込み",
-    "section": "8 プログラムの書き込み",
-    "text": "8 プログラムの書き込み\n\n8.1 コンパイル\n\nProcessタブのExport Filesの下のJEDEC Fileにチェックを入れて、右クリックメニューからRunを実行\nMap Design → Place & Route Design → Export Files の順に実行されて、***.jedファイルが生成される\n\n\n\n8.2 生成されたJEDファイルの書き込み\n\nTools → Programmer を開くと、JTAGの接続を聞いてくるので、FTDIのデバイスを選択\nDetect Cable で USB2 - FTUSB-0 (Dual RS232 A Location 0000) の方を選択\nUse custom Clock Divider をチェックし、Divider値を任意の値に設定\n\nUSB-シリアル変換モジュールの仕様上は2以上であればOKですが、試してみたら10分周でようやく書き込めました。ブレッドボードとジャンパーケーブルで接続したのが良くなかったかもしれません。\n\nDevice Family Device File Nameの項目を正しく設定して、プログラムアイコンをクリックしてコンフィグレーション開始\n[Status]が[PASS]となれば完了\n\n\n\n\nLattice Diamondのダウンロードページ\nライセンス認証 1\nライセンス認証 2\nライセンス認証 3\nHW-USBN-2B\nAE-FT2232"
+    "section": "プログラムの書き込み",
+    "text": "プログラムの書き込み\n\nコンパイル\n\nProcessタブのExport Filesの下のJEDEC Fileにチェックを入れて、右クリックメニューからRunを実行\nMap Design → Place & Route Design → Export Files の順に実行されて、***.jedファイルが生成される\n\n\n\n生成されたJEDファイルの書き込み\n\nTools → Programmer を開くと、JTAGの接続を聞いてくるので、FTDIのデバイスを選択\nDetect Cable で USB2 - FTUSB-0 (Dual RS232 A Location 0000) の方を選択\nUse custom Clock Divider をチェックし、Divider値を任意の値に設定\n\nUSB-シリアル変換モジュールの仕様上は2以上であればOKですが、試してみたら10分周でようやく書き込めました。ブレッドボードとジャンパーケーブルで接続したのが良くなかったかもしれません。\n\nDevice Family Device File Nameの項目を正しく設定して、プログラムアイコンをクリックしてコンフィグレーション開始\n[Status]が[PASS]となれば完了\n\n\n\n\nLattice Diamondのダウンロードページ\nライセンス認証 1\nライセンス認証 2\nライセンス認証 3\nHW-USBN-2B\nAE-FT2232"
   },
   {
     "objectID": "works/posts/Sweeper/index.html",
@@ -101,8 +101,8 @@
     "objectID": "works/posts/Sweeper/index.html#回路概要",
     "href": "works/posts/Sweeper/index.html#回路概要",
     "title": "三角波発振器（掃引回路）",
-    "section": "1 回路概要",
-    "text": "1 回路概要\n\n\n\n回路図\n\n\n2回路入りのOPアンプU1を使用し、U1Aをシュミットトリガー回路として、U1Bを積分回路として動作させます。シュミットトリガーから矩形波が出力され、その出力を積分して三角波を作ります。三角波がシュミットトリガーのスレッショルドを超えると、シュミットトリガーの出力電圧が反転します。\n\n発振動作をするための条件は R1 &gt; R2\nR4に比べてR3の値を小さくすると、出力電圧が小さくなる\nR1とR2の値は近い方が良い\nOPアンプはTL082あたりが丁度良い\nR4とR5は矩形波出力の振幅を抑えるための分圧回路（周波数にも影響するので注意）\n\n発振周波数は、以下の式で計算できます。\n\\[\nf=\\frac{1}{4CR_3}\\frac{R_1}{R_2}\\frac{R_5}{R_4+R_5}\n\\]\nここで、RV1の半固定抵抗も含めてR3と考え、R4がR3より十分小さいとする。\nオペアンプには2回路入りで安定なオペアンプを使用するのが良いです。ここでは安価でユニティゲイン安定のTL082を使用しています。"
+    "section": "回路概要",
+    "text": "回路概要\n\n\n\n回路図\n\n\n2回路入りのOPアンプU1を使用し、U1Aをシュミットトリガー回路として、U1Bを積分回路として動作させます。シュミットトリガーから矩形波が出力され、その出力を積分して三角波を作ります。三角波がシュミットトリガーのスレッショルドを超えると、シュミットトリガーの出力電圧が反転します。\n\n発振動作をするための条件は R1 &gt; R2\nR4に比べてR3の値を小さくすると、出力電圧が小さくなる\nR1とR2の値は近い方が良い\nOPアンプはTL082あたりが丁度良い\nR4とR5は矩形波出力の振幅を抑えるための分圧回路（周波数にも影響するので注意）\n\n発振周波数は、以下の式で計算できます。\n\\[\nf=\\frac{1}{4CR_3}\\frac{R_1}{R_2}\\frac{R_5}{R_4+R_5}\n\\]\nここで、RV1の半固定抵抗も含めてR3と考え、R4がR3より十分小さいとする。\nオペアンプには2回路入りで安定なオペアンプを使用するのが良いです。ここでは安価でユニティゲイン安定のTL082を使用しています。"
   },
   {
     "objectID": "works/posts/RS232C_USB/index.html",
@@ -115,29 +115,29 @@
     "objectID": "works/posts/RS232C_USB/index.html#rs232cとは",
     "href": "works/posts/RS232C_USB/index.html#rs232cとは",
     "title": "RS232C-USB変換",
-    "section": "1 RS232Cとは",
-    "text": "1 RS232Cとは\nRS-232C (Recommended Standard 232 version C) とは、電子機器間でシリアル通信を行うための接続規格のひとつです。コンピュータのシリアルポートと周辺機器（プリンター、モデム、スキャナーなど）を接続する仕様として、かつては広く普及していた・・・とのことですが、RS232C搭載の実験装置はまだまだ現役で使われています。\nPC側に装置毎の特別なドライバが不要なので、割と手堅い通信手段だと思います。"
+    "section": "RS232Cとは",
+    "text": "RS232Cとは\nRS-232C (Recommended Standard 232 version C) とは、電子機器間でシリアル通信を行うための接続規格のひとつです。コンピュータのシリアルポートと周辺機器（プリンター、モデム、スキャナーなど）を接続する仕様として、かつては広く普及していた・・・とのことですが、RS232C搭載の実験装置はまだまだ現役で使われています。\nPC側に装置毎の特別なドライバが不要なので、割と手堅い通信手段だと思います。"
   },
   {
     "objectID": "works/posts/RS232C_USB/index.html#使用ケーブル",
     "href": "works/posts/RS232C_USB/index.html#使用ケーブル",
     "title": "RS232C-USB変換",
-    "section": "2 使用ケーブル",
-    "text": "2 使用ケーブル\nRS232C(D-sub 9ピン)-USB変換ケーブルを使用します。FTDI製のチップを使用したものが一般的です。いろいろなところから購入出来ます。\n\nRSオンライン\nモノタロウ\n秋月電子\n\n（2024/03/17 確認）\n\n\n\n秋月電子のRS232C-USB変換ケーブル"
+    "section": "使用ケーブル",
+    "text": "使用ケーブル\nRS232C(D-sub 9ピン)-USB変換ケーブルを使用します。FTDI製のチップを使用したものが一般的です。いろいろなところから購入出来ます。\n\nRSオンライン\nモノタロウ\n秋月電子\n\n（2024/03/17 確認）\n\n\n\n秋月電子のRS232C-USB変換ケーブル"
   },
   {
     "objectID": "works/posts/RS232C_USB/index.html#ドライバのインストール",
     "href": "works/posts/RS232C_USB/index.html#ドライバのインストール",
     "title": "RS232C-USB変換",
-    "section": "3 ドライバのインストール",
-    "text": "3 ドライバのインストール\nFTDIのチップを使用している場合のドライバのインストール手順は以下の通り。\n\n3.1 FTDI公式サイトからインストーラをダウンロードする方法\nFTDIのウェブサイト &gt; Drivers &gt; VCP-drivers からOSに合わせたドライバを選択します。\nWindowsの場合は、下図の赤丸を付けたリンクからインストーラをダウンロードして実行します。インストール後は再起動が必要なようです。\n\n\n\n（2024/03/17 確認）\n\n\n\n\n3.2 その他のインストール方法\n各装置の制御ソフトウェア等をインストールする際に、一緒にインストールされることがあります。とりあえず、Arduino IDEを入れるのが手っ取り早かったです。\nRS232C-USB変換ケーブルにインストール用CDが付属している場合は、それでもインストールできます。"
+    "section": "ドライバのインストール",
+    "text": "ドライバのインストール\nFTDIのチップを使用している場合のドライバのインストール手順は以下の通り。\n\nFTDI公式サイトからインストーラをダウンロードする方法\nFTDIのウェブサイト &gt; Drivers &gt; VCP-drivers からOSに合わせたドライバを選択します。\nWindowsの場合は、下図の赤丸を付けたリンクからインストーラをダウンロードして実行します。インストール後は再起動が必要なようです。\n\n\n\n（2024/03/17 確認）\n\n\n\n\nその他のインストール方法\n各装置の制御ソフトウェア等をインストールする際に、一緒にインストールされることがあります。とりあえず、Arduino IDEを入れるのが手っ取り早かったです。\nRS232C-USB変換ケーブルにインストール用CDが付属している場合は、それでもインストールできます。"
   },
   {
     "objectID": "works/posts/RS232C_USB/index.html#通信の確認",
     "href": "works/posts/RS232C_USB/index.html#通信の確認",
     "title": "RS232C-USB変換",
-    "section": "4 通信の確認",
-    "text": "4 通信の確認\nTera Termなどのターミナルソフトを使ってシリアル通信を確認できます。\n\n\n\n秋月電子のRS232C-USB変換ケーブル\n（2024/03/17 確認）"
+    "section": "通信の確認",
+    "text": "通信の確認\nTera Termなどのターミナルソフトを使ってシリアル通信を確認できます。\n\n\n\n秋月電子のRS232C-USB変換ケーブル\n（2024/03/17 確認）"
   },
   {
     "objectID": "works/posts/limit-breaker/index.html",
@@ -157,15 +157,15 @@
     "objectID": "works/posts/limit-breaker/index.html#play",
     "href": "works/posts/limit-breaker/index.html#play",
     "title": "LIMIT BREAKER!!",
-    "section": "2 Play",
-    "text": "2 Play\n\n\n【鏡音レン】LIMIT BREAKER !!【オリジナル】"
+    "section": "Play",
+    "text": "Play\n\n\n【鏡音レン】LIMIT BREAKER !!【オリジナル】"
   },
   {
     "objectID": "works/posts/limit-breaker/index.html#lyrics",
     "href": "works/posts/limit-breaker/index.html#lyrics",
     "title": "LIMIT BREAKER!!",
-    "section": "3 Lyrics",
-    "text": "3 Lyrics\n闇を切り裂く閃光が 俺の心を揺さぶる\nスキルを上げろ 神経を研ぎ澄ませ\nそこに答えがあるのさ\n高い壁が立ち塞がっても\n越えて行けるさ 全力なら\n限界超えろ！\nLimit breaker!! 全てを解き放て\nまだ力は残ってるさ だから\nLimit breaker!! 絶対諦めるな\n可能性を信じて そうさ\nLimit breaker!!\n荒野の果てに浮かぶ鏡が 俺の心を映し出す\n力を合わせろ 運命に立ち向かえ\nそこに答えがあるのさ\nノイズの雨に曝されても\n見つけられるさ 輝く明日\n限界超えろ！\nLimit breaker!! 俺たちはまだ\n倒れるわけにはいかない だから\nLimit breaker!! 刹那に賭けろ\n自分を今信じて そうさ\nLimit breaker!!\n異次元の断崖に 身を投じた\n俺たちに 未来（あす）はあるのか？\n俺の全て 燃やし尽くせ！\n限界超えろ！\nLimit breaker!! 全てを解き放て\nまだ力は残ってるさ だから\nLimit breaker!! 絶対諦めるな\n可能性を信じて そうさ\nLimit breaker!!"
+    "section": "Lyrics",
+    "text": "Lyrics\n闇を切り裂く閃光が 俺の心を揺さぶる\nスキルを上げろ 神経を研ぎ澄ませ\nそこに答えがあるのさ\n高い壁が立ち塞がっても\n越えて行けるさ 全力なら\n限界超えろ！\nLimit breaker!! 全てを解き放て\nまだ力は残ってるさ だから\nLimit breaker!! 絶対諦めるな\n可能性を信じて そうさ\nLimit breaker!!\n荒野の果てに浮かぶ鏡が 俺の心を映し出す\n力を合わせろ 運命に立ち向かえ\nそこに答えがあるのさ\nノイズの雨に曝されても\n見つけられるさ 輝く明日\n限界超えろ！\nLimit breaker!! 俺たちはまだ\n倒れるわけにはいかない だから\nLimit breaker!! 刹那に賭けろ\n自分を今信じて そうさ\nLimit breaker!!\n異次元の断崖に 身を投じた\n俺たちに 未来（あす）はあるのか？\n俺の全て 燃やし尽くせ！\n限界超えろ！\nLimit breaker!! 全てを解き放て\nまだ力は残ってるさ だから\nLimit breaker!! 絶対諦めるな\n可能性を信じて そうさ\nLimit breaker!!"
   },
   {
     "objectID": "works/posts/dance-versatileness/index.html",
@@ -185,15 +185,15 @@
     "objectID": "works/posts/dance-versatileness/index.html#play",
     "href": "works/posts/dance-versatileness/index.html#play",
     "title": "ダンス万能説 -Dance Versatileness-",
-    "section": "2 Play",
-    "text": "2 Play\n\n\n\n【鏡音リン】ダンス万能説 -Dance Versatileness-【オリジナル】"
+    "section": "Play",
+    "text": "Play\n\n\n\n【鏡音リン】ダンス万能説 -Dance Versatileness-【オリジナル】"
   },
   {
     "objectID": "works/posts/dance-versatileness/index.html#lyrics",
     "href": "works/posts/dance-versatileness/index.html#lyrics",
     "title": "ダンス万能説 -Dance Versatileness-",
-    "section": "3 Lyrics",
-    "text": "3 Lyrics\n今宵差し込むこの月明かりが\n僕を照らすスポットライト\n静まり返った無機質なオフィスが\n最高の舞台に早変わり\n誰にも見せない本当の姿は\nほかでもないここにあるんだ\n仕事と言う名の鎖が解けたら\nダンスショーの始まりの合図なのさ\nファンの鳴らないPCの隣で\n華麗なタップが鳴り響く\n小さなデスクと\n薄暗いモニターに\n閉じ込められていた\n本当の自分を さあ今解き放つのさ\n鼓動の高まり ビートを感じて\n子供のように自由なステップ\nモノクロのビル その灯りを受けて\n揺らめき映るよ シルエット\n誰も知らない本当の姿は\nほかでもないここにあるんだ\n世界が回るスピンを決めたら\n湧きあがるアンコールに応えるのさ\n音を無くした電話機の隣で\n内なる叫びがこだまする\n月を歩くような\nスリルを感じたら\n僕のダンスを\nこのフロアに世界に刻みつけるのさ\n観客なんてさ 誰もいないけど\n僕は最後まで踊ろう\n空を飛ぶように\n重力を無視して\n僕のダンスを\nこのフロアに世界に刻みつけるのさ\n自分を感じて\n世界にダイブして\n探し求めていた\n真実の愛を さあ今見つけに行こう"
+    "section": "Lyrics",
+    "text": "Lyrics\n今宵差し込むこの月明かりが\n僕を照らすスポットライト\n静まり返った無機質なオフィスが\n最高の舞台に早変わり\n誰にも見せない本当の姿は\nほかでもないここにあるんだ\n仕事と言う名の鎖が解けたら\nダンスショーの始まりの合図なのさ\nファンの鳴らないPCの隣で\n華麗なタップが鳴り響く\n小さなデスクと\n薄暗いモニターに\n閉じ込められていた\n本当の自分を さあ今解き放つのさ\n鼓動の高まり ビートを感じて\n子供のように自由なステップ\nモノクロのビル その灯りを受けて\n揺らめき映るよ シルエット\n誰も知らない本当の姿は\nほかでもないここにあるんだ\n世界が回るスピンを決めたら\n湧きあがるアンコールに応えるのさ\n音を無くした電話機の隣で\n内なる叫びがこだまする\n月を歩くような\nスリルを感じたら\n僕のダンスを\nこのフロアに世界に刻みつけるのさ\n観客なんてさ 誰もいないけど\n僕は最後まで踊ろう\n空を飛ぶように\n重力を無視して\n僕のダンスを\nこのフロアに世界に刻みつけるのさ\n自分を感じて\n世界にダイブして\n探し求めていた\n真実の愛を さあ今見つけに行こう"
   },
   {
     "objectID": "works/posts/2024-03-24/index.html",
@@ -213,22 +213,22 @@
     "objectID": "works/posts/2024-03-24/index.html#構成",
     "href": "works/posts/2024-03-24/index.html#構成",
     "title": "PC制御式LDドライバに物理インターフェイスを付けてみた",
-    "section": "2 構成",
-    "text": "2 構成\nケースの中には\n\nリニア電源\nPC制御LDドライバ（基板タイプ, Koheron: CTL-200）\nインターフェース用基板\n\nマイコン（Adafruit: Qt Py SAMD21）\nロータリーエンコーダー\nタクトスイッチ × 2\n\nOLED\n\nが入っています。\n\n\n\nケース内の様子。写真はテスト段階のものなので、まだフロントパネルにスイッチ類がついていません。\n\n\nリアパネルにUSB端子を引き出してあり、PCでの制御も引き続き可能です。が、フロントパネル操作とPC操作の競合については未検証。おそらくですが、致命的なことにはならないと思われます。\n\n2.1 電源\n7 V × 2, 15 VAのトロイダルコアトランスで作った+5 V電源を使っています。リニアレギュレータには、可変タイプのLD1085 (最大3 A)を使っています。\n当初、スイッチング電源を使っていたのですが、出力にスイッチング周波数のサイドバンドが発生していることが分かり、大人しくリニア電源を作りました。LDドライバにはスイッチングタイプのACアダプタが付属しているのですが、それで動かしたときはサイドバンドは出ないのだろうか？チャンスがあったらテストしてみようと思います。\n\n\n2.2 マイコン\n必要な入出力は多くないので、AdafruitのQt Py SAMD21を使いました。OLEDの動作をArduino IDE経由でしかやったことがなかったため、Arduino環境を優先してRP2040にはしませんでした。\nAdafruitのQt Py SAMD21は秋月で買ったのですが、今はもう在庫限りのようです。マイコンボードは安定供給でないものが多くて、たまにしか作らない自作装置はどうしても1点ものになりがちです。その話はまた別の機会に。\n\n\nLDドライバとの通信\nLDドライバとはUARTで通信しています。\n\n\n\nQt Py\n\nCTL-200\n\n\n\n\nTX\n←→\nRX\n\n\nRX\n←→\nTX\n\n\n\nという具合に、クロスで接続します。Qt Py SAMD21のArduino用ドライバでは、TX, RX端子を使ったシリアル通信にSerial1が割り当てられているようです。（USB端子を使ったシリアル通信にはSerialが割り当てられている。）なので、スケッチには\nSerial1.begin(115200);\nSerial1.setTimeout(3000);\nなどと記述します。\nLDドライバにコマンドを送るための関数を作り、LDの状態を読み取ったり、スイッチやロータリーエンコーダの操作を書き込んだりします。\n// 読み取り\nfloat readCmd(String cmd) {\n  Serial1.println(cmd);\n  delay(5);\n  if (Serial1.available() &gt; 0) {return Serial1.parseFloat();}\n  else {return 0;}\n  while (Serial1.available() &gt; 0) {char t = Serial1.read();} //シリアルバッファのクリア\n}\n\n// 書き込み\nvoid writeCmd(String cmd) {\n  Serial1.println(cmd);\n  delay(5);\n  while (Serial1.available() &gt; 0) {char t = Serial1.read();} //シリアルバッファのクリア\n}\n\n\n操作用インターフェイス\nマイコン操作用のインターフェイスとして、ロータリーエンコーダ1個とタクトスイッチ2個を取り付けました。ロータリーエンコーダは初挑戦でしたが、Arduino用のライブラリをそのまま使ったらすぐできました。また、タクトスイッチのバウンス対策もライブラリのものをそのまま使っています。\n\nデバウンス\n#include &lt;Bounce2.h&gt;\n\n// void setup() 内\n  debSel.attach(D1, INPUT_PULLUP); //オブジェクト\"debSel\"を設定 \n  debSel.interval(10);\n\n// void loop() 内\n  debSel.update();\n  if (debSel.fell()) {\n    statePar++;\n    if (statePar &gt;= 5) {statePar = 0;}\n  }  \n\n\nロータリーエンコーダ\n#include &lt;RotaryEncoder.h&gt;\n\n// void setup() 内\n  // setup the rotary encoder functionality\n  encoder = new RotaryEncoder(rotA, rotB, RotaryEncoder::LatchMode::FOUR3);\n  \n  // register interrupt routine\n  attachInterrupt(digitalPinToInterrupt(rotA), checkPosition, CHANGE);\n  attachInterrupt(digitalPinToInterrupt(rotB), checkPosition, CHANGE);\n\n// void loop() 内\n  encoder-&gt;tick(); // just call tick() to check the state.\n  I_set += I_resolution * (int)(encoder-&gt;getDirection());\nロータリーエンコーダは、割と回転を取りこぼす印象です。エンコーダ自体はALPS ALPINE製で変なメーカーのものではないです。マイコン側のループ速度のせいか、もしくはそもそもエンコーダはこんなものなのかもしれません。とりあえず使用上は問題ありません。\n\n\n\nOLED\nLDのON/OFF、電流値、温度はいつでも見られるようにしたいので、OLEDも取り付けました。I2Cで通信しています。Qt PyにはI2C通信用の信号 (SCL, SDA, VCC, GND) がQwiic端子で出ているので、そこからOLEDに接続します。Qwiic端子の正体はJSTのSHコネクタ（4極）です。秋月でケーブル付きで買えます。\nOLEDを使うには画面表示用のライブラリAdafruit_SSD1306、文字列出力用ライブラリAdafruit_GFXが必要です。加えて、フォントライブラリを使っています。このあたりはネットでいろいろ調べ、ライブラリをコピペしつつ何とか使えるようにしたレベルなので、ちゃんと説明できません。。。\n#include &lt;Adafruit_SSD1306.h&gt;\n#include &lt;Adafruit_GFX.h&gt;\n#include &lt;Fonts/FreeSans24pt7b.h&gt;\n#include &lt;Fonts/FreeSerif9pt7b.h&gt;\n\n\n\n2.3 外部入力\n電流と温調には外部変調入力端子を用意し、フィードバック制御できるようしてあります。\n温調は、まず、レベル合わせをした上でマイコンのADCで読み取り、マイコン内で積分してLDドライバの設定温度をデジタル制御する形にしてみたのですが、まだ試験していません。デジタル制御の方が時定数を大きくしやすいのでやってみました。"
+    "section": "構成",
+    "text": "構成\nケースの中には\n\nリニア電源\nPC制御LDドライバ（基板タイプ, Koheron: CTL-200）\nインターフェース用基板\n\nマイコン（Adafruit: Qt Py SAMD21）\nロータリーエンコーダー\nタクトスイッチ × 2\n\nOLED\n\nが入っています。\n\n\n\nケース内の様子。写真はテスト段階のものなので、まだフロントパネルにスイッチ類がついていません。\n\n\nリアパネルにUSB端子を引き出してあり、PCでの制御も引き続き可能です。が、フロントパネル操作とPC操作の競合については未検証。おそらくですが、致命的なことにはならないと思われます。\n\n電源\n7 V × 2, 15 VAのトロイダルコアトランスで作った+5 V電源を使っています。リニアレギュレータには、可変タイプのLD1085 (最大3 A)を使っています。\n当初、スイッチング電源を使っていたのですが、出力にスイッチング周波数のサイドバンドが発生していることが分かり、大人しくリニア電源を作りました。LDドライバにはスイッチングタイプのACアダプタが付属しているのですが、それで動かしたときはサイドバンドは出ないのだろうか？チャンスがあったらテストしてみようと思います。\n\n\nマイコン\n必要な入出力は多くないので、AdafruitのQt Py SAMD21を使いました。OLEDの動作をArduino IDE経由でしかやったことがなかったため、Arduino環境を優先してRP2040にはしませんでした。\nAdafruitのQt Py SAMD21は秋月で買ったのですが、今はもう在庫限りのようです。マイコンボードは安定供給でないものが多くて、たまにしか作らない自作装置はどうしても1点ものになりがちです。その話はまた別の機会に。\n\n\nLDドライバとの通信\nLDドライバとはUARTで通信しています。\n\n\n\nQt Py\n\nCTL-200\n\n\n\n\nTX\n←→\nRX\n\n\nRX\n←→\nTX\n\n\n\nという具合に、クロスで接続します。Qt Py SAMD21のArduino用ドライバでは、TX, RX端子を使ったシリアル通信にSerial1が割り当てられているようです。（USB端子を使ったシリアル通信にはSerialが割り当てられている。）なので、スケッチには\nSerial1.begin(115200);\nSerial1.setTimeout(3000);\nなどと記述します。\nLDドライバにコマンドを送るための関数を作り、LDの状態を読み取ったり、スイッチやロータリーエンコーダの操作を書き込んだりします。\n// 読み取り\nfloat readCmd(String cmd) {\n  Serial1.println(cmd);\n  delay(5);\n  if (Serial1.available() &gt; 0) {return Serial1.parseFloat();}\n  else {return 0;}\n  while (Serial1.available() &gt; 0) {char t = Serial1.read();} //シリアルバッファのクリア\n}\n\n// 書き込み\nvoid writeCmd(String cmd) {\n  Serial1.println(cmd);\n  delay(5);\n  while (Serial1.available() &gt; 0) {char t = Serial1.read();} //シリアルバッファのクリア\n}\n\n\n操作用インターフェイス\nマイコン操作用のインターフェイスとして、ロータリーエンコーダ1個とタクトスイッチ2個を取り付けました。ロータリーエンコーダは初挑戦でしたが、Arduino用のライブラリをそのまま使ったらすぐできました。また、タクトスイッチのバウンス対策もライブラリのものをそのまま使っています。\n\nデバウンス\n#include &lt;Bounce2.h&gt;\n\n// void setup() 内\n  debSel.attach(D1, INPUT_PULLUP); //オブジェクト\"debSel\"を設定 \n  debSel.interval(10);\n\n// void loop() 内\n  debSel.update();\n  if (debSel.fell()) {\n    statePar++;\n    if (statePar &gt;= 5) {statePar = 0;}\n  }  \n\n\nロータリーエンコーダ\n#include &lt;RotaryEncoder.h&gt;\n\n// void setup() 内\n  // setup the rotary encoder functionality\n  encoder = new RotaryEncoder(rotA, rotB, RotaryEncoder::LatchMode::FOUR3);\n  \n  // register interrupt routine\n  attachInterrupt(digitalPinToInterrupt(rotA), checkPosition, CHANGE);\n  attachInterrupt(digitalPinToInterrupt(rotB), checkPosition, CHANGE);\n\n// void loop() 内\n  encoder-&gt;tick(); // just call tick() to check the state.\n  I_set += I_resolution * (int)(encoder-&gt;getDirection());\nロータリーエンコーダは、割と回転を取りこぼす印象です。エンコーダ自体はALPS ALPINE製で変なメーカーのものではないです。マイコン側のループ速度のせいか、もしくはそもそもエンコーダはこんなものなのかもしれません。とりあえず使用上は問題ありません。\n\n\n\nOLED\nLDのON/OFF、電流値、温度はいつでも見られるようにしたいので、OLEDも取り付けました。I2Cで通信しています。Qt PyにはI2C通信用の信号 (SCL, SDA, VCC, GND) がQwiic端子で出ているので、そこからOLEDに接続します。Qwiic端子の正体はJSTのSHコネクタ（4極）です。秋月でケーブル付きで買えます。\nOLEDを使うには画面表示用のライブラリAdafruit_SSD1306、文字列出力用ライブラリAdafruit_GFXが必要です。加えて、フォントライブラリを使っています。このあたりはネットでいろいろ調べ、ライブラリをコピペしつつ何とか使えるようにしたレベルなので、ちゃんと説明できません。。。\n#include &lt;Adafruit_SSD1306.h&gt;\n#include &lt;Adafruit_GFX.h&gt;\n#include &lt;Fonts/FreeSans24pt7b.h&gt;\n#include &lt;Fonts/FreeSerif9pt7b.h&gt;\n\n\n\n外部入力\n電流と温調には外部変調入力端子を用意し、フィードバック制御できるようしてあります。\n温調は、まず、レベル合わせをした上でマイコンのADCで読み取り、マイコン内で積分してLDドライバの設定温度をデジタル制御する形にしてみたのですが、まだ試験していません。デジタル制御の方が時定数を大きくしやすいのでやってみました。"
   },
   {
     "objectID": "works/posts/2024-03-24/index.html#外観",
     "href": "works/posts/2024-03-24/index.html#外観",
     "title": "PC制御式LDドライバに物理インターフェイスを付けてみた",
-    "section": "3 外観",
-    "text": "3 外観\n\nフロントパネルは、なかなかよい感じではないでしょうか。写真の後、テプラでスイッチなどの表示を追加しています。\nファンレスなので、放熱対策にタカチのヒートシンクケースを使ってみましたが、ちょっと大袈裟でした。使ってみて、発熱はさほど気にならないので普通のケースで良かったかもしれません。電源トランス次第ですが、もう少し高さを抑えられたかもしれません。\nタクトスイッチは、一方でモードを選んで、もう一方でON/OFFしたりレンジを切り替えたりといった感じです。数値の操作はロータリーエンコーダで行います。"
+    "section": "外観",
+    "text": "外観\n\nフロントパネルは、なかなかよい感じではないでしょうか。写真の後、テプラでスイッチなどの表示を追加しています。\nファンレスなので、放熱対策にタカチのヒートシンクケースを使ってみましたが、ちょっと大袈裟でした。使ってみて、発熱はさほど気にならないので普通のケースで良かったかもしれません。電源トランス次第ですが、もう少し高さを抑えられたかもしれません。\nタクトスイッチは、一方でモードを選んで、もう一方でON/OFFしたりレンジを切り替えたりといった感じです。数値の操作はロータリーエンコーダで行います。"
   },
   {
     "objectID": "works/posts/2024-03-24/index.html#まとめ",
     "href": "works/posts/2024-03-24/index.html#まとめ",
     "title": "PC制御式LDドライバに物理インターフェイスを付けてみた",
-    "section": "4 まとめ",
-    "text": "4 まとめ\nフロントパネルで電流のON/OFFと値の操作をするだけですが、とりあえず今のところちゃんと動いています。正直、インターフェイスを作らなかったら操作が面倒でレーザー自体あまり触っていなかったかもしれません。\n残る宿題は、\n\n付属ACアダプタ使用時のスイッチング雑音の影響を確認\n温調と電流のフィードバック制御を確認\nPC制御とフロントパネル操作の競合の有無を確認\n\nです。\n\n\n\n\nケース内の様子。写真はテスト段階のものなので、まだフロントパネルにスイッチ類がついていません。"
+    "section": "まとめ",
+    "text": "まとめ\nフロントパネルで電流のON/OFFと値の操作をするだけですが、とりあえず今のところちゃんと動いています。正直、インターフェイスを作らなかったら操作が面倒でレーザー自体あまり触っていなかったかもしれません。\n残る宿題は、\n\n付属ACアダプタ使用時のスイッチング雑音の影響を確認\n温調と電流のフィードバック制御を確認\nPC制御とフロントパネル操作の競合の有無を確認\n\nです。\n\n\n\n\nケース内の様子。写真はテスト段階のものなので、まだフロントパネルにスイッチ類がついていません。"
   },
   {
     "objectID": "works/posts/2024-03-01/index.html",
@@ -248,15 +248,15 @@
     "objectID": "works/posts/2024-03-01/index.html#構成",
     "href": "works/posts/2024-03-01/index.html#構成",
     "title": "温度コントローラー",
-    "section": "2 構成",
-    "text": "2 構成\n温調のコア部分はWavelength ElectronicsのWTC32NDを使用しています。温度調整つまみや外部制御入力を追加し、全体のコントロールにはマイコンボード（Teensy LC）を使用しています。\n\n外部制御入力は基本フィードバック制御にしか使わないので、積分器を通って温度設定電圧に加える形になっています。本当は温度制御のエラー信号を直接置き換えたかったのですが、WTC32NDにそういう入力端子は無いのでこうしています。制御がカスケードになってしまうので、それが問題にならないかどうかは検証する必要があります。積分の時定数を十分遅くしておけば大丈夫なはず。場合によっては、積分はアナログ回路ではなくマイコン上でやるというのも手ですね。その方がいいかもしれません。\n表示ディスプレイは、秋月で買ってきたOLEDのキャラクタディスプレイを使ってみました。128×64のディスプレイでも良かったのですが、ややレトロな蛍光表示管 (VFD) の雰囲気を出したかったので緑色のキャラクタディスプレイにしてみました。\n当初設計から変更したのは電源トランス。在庫があった7 V × 2, 15 VAのトロイダルコアトランスから±5 Vを作ってみたのですが、ペルチェに1 Aも流すと電圧降下を起こしてしまい、しまいにはOLEDが消えてしまいました。ギリギリいけるという計算でしたが、ダメでしたね。おとなしく9 V × 2, 25 VAのトランスに変えて、大丈夫になりました。\n筐体のサイズはThorlabsのTED200Cより横幅が少し大きい程度。ファンレスなので放熱は少し心配。使ってみて様子見です。\nペルチェとサーミスタケーブル用のコネクタも迷いました。本当は普段使っている温度コントローラと同じヒロセのRM12, 6極にしようと考えていたのですが、世界的なコネクタ供給不足で手に入らず（もしくはめちゃくちゃ高く）、仕方なくヒロセのHR10の6極にして、ペルチェには信号とGNDで2極ずつ使うという形にしました。"
+    "section": "構成",
+    "text": "構成\n温調のコア部分はWavelength ElectronicsのWTC32NDを使用しています。温度調整つまみや外部制御入力を追加し、全体のコントロールにはマイコンボード（Teensy LC）を使用しています。\n\n外部制御入力は基本フィードバック制御にしか使わないので、積分器を通って温度設定電圧に加える形になっています。本当は温度制御のエラー信号を直接置き換えたかったのですが、WTC32NDにそういう入力端子は無いのでこうしています。制御がカスケードになってしまうので、それが問題にならないかどうかは検証する必要があります。積分の時定数を十分遅くしておけば大丈夫なはず。場合によっては、積分はアナログ回路ではなくマイコン上でやるというのも手ですね。その方がいいかもしれません。\n表示ディスプレイは、秋月で買ってきたOLEDのキャラクタディスプレイを使ってみました。128×64のディスプレイでも良かったのですが、ややレトロな蛍光表示管 (VFD) の雰囲気を出したかったので緑色のキャラクタディスプレイにしてみました。\n当初設計から変更したのは電源トランス。在庫があった7 V × 2, 15 VAのトロイダルコアトランスから±5 Vを作ってみたのですが、ペルチェに1 Aも流すと電圧降下を起こしてしまい、しまいにはOLEDが消えてしまいました。ギリギリいけるという計算でしたが、ダメでしたね。おとなしく9 V × 2, 25 VAのトランスに変えて、大丈夫になりました。\n筐体のサイズはThorlabsのTED200Cより横幅が少し大きい程度。ファンレスなので放熱は少し心配。使ってみて様子見です。\nペルチェとサーミスタケーブル用のコネクタも迷いました。本当は普段使っている温度コントローラと同じヒロセのRM12, 6極にしようと考えていたのですが、世界的なコネクタ供給不足で手に入らず（もしくはめちゃくちゃ高く）、仕方なくヒロセのHR10の6極にして、ペルチェには信号とGNDで2極ずつ使うという形にしました。"
   },
   {
     "objectID": "works/posts/2024-03-01/index.html#その他",
     "href": "works/posts/2024-03-01/index.html#その他",
     "title": "温度コントローラー",
-    "section": "3 その他",
-    "text": "3 その他\nそういえばいつも買っている温度コントローラも、RM12の6極が手に入らなかったのかRM12の7極になっていました。これまでの製品とケーブルの互換性がなくなっとるやないか！"
+    "section": "その他",
+    "text": "その他\nそういえばいつも買っている温度コントローラも、RM12の6極が手に入らなかったのかRM12の7極になっていました。これまでの製品とケーブルの互換性がなくなっとるやないか！"
   },
   {
     "objectID": "works/index.html",
@@ -290,22 +290,22 @@
     "objectID": "about/index.html#このサイトについて",
     "href": "about/index.html#このサイトについて",
     "title": "PureHertz",
-    "section": "2 このサイトについて",
-    "text": "2 このサイトについて\n大学学部時代からレーザー物理分野で研究をしています。研究の過程でいろいろな回路や装置を作るうちに、回路作りが趣味になり、必要以上に(?)こだわるようになりました。作った装置には “PureHertz” というブランド名を勝手につけて自己満足しています。\n一方、中学生の頃から作曲・音楽制作を趣味にしており、最近は研究内容をテーマにして曲を作っています。\nせっかく作った作品たち、紹介できるものはこのサイトで紹介していこうと思います。"
+    "section": "このサイトについて",
+    "text": "このサイトについて\n大学学部時代からレーザー物理分野で研究をしています。研究の過程でいろいろな回路や装置を作るうちに、回路作りが趣味になり、必要以上に(?)こだわるようになりました。作った装置には “PureHertz” というブランド名を勝手につけて自己満足しています。\n一方、中学生の頃から作曲・音楽制作を趣味にしており、最近は研究内容をテーマにして曲を作っています。\nせっかく作った作品たち、紹介できるものはこのサイトで紹介していこうと思います。"
   },
   {
     "objectID": "about/index.html#その他の楽曲置き場",
     "href": "about/index.html#その他の楽曲置き場",
     "title": "PureHertz",
-    "section": "3 その他の楽曲置き場",
-    "text": "3 その他の楽曲置き場\n\nPiapro\nニコニコ動画"
+    "section": "その他の楽曲置き場",
+    "text": "その他の楽曲置き場\n\nPiapro\nニコニコ動画"
   },
   {
     "objectID": "readme.html",
     "href": "readme.html",
-    "title": "1 PureHertz Labratory",
+    "title": "PureHertz Labratory",
     "section": "",
-    "text": "1 PureHertz Labratory\nWebsite repository of PureHertz.\nhttps://purehertz.github.io/"
+    "text": "PureHertz Labratory\nWebsite repository of PureHertz.\nhttps://purehertz.github.io/"
   },
   {
     "objectID": "works/posts/2024-02-27/index.html",
@@ -332,15 +332,15 @@
     "objectID": "works/posts/2024-03-02/index.html#構成",
     "href": "works/posts/2024-03-02/index.html#構成",
     "title": "共振器コントローラー",
-    "section": "2 構成",
-    "text": "2 構成\nエラー信号を入力して共振器をPI制御します。共振器の2枚のミラーのうち、片方はストロークの大きいPZTで、もう片方はストロークは小さいが高速なPZTで制御することを前提としています。小さいPZTはオペアンプで直接駆動、大きいPZTは組み込みタイプのPZTドライバー（メステック製 M-2691, 最大150 V）を駆動します。\n筐体の中には\n\nPI制御回路\nリロック用マイコン回路\n掃引回路\nトロイダルコアトランス電源\nPZTドライバ\n\nを詰め込んでいます。\n\nフロントパネルはアナログメータが場所をとって混み合ってしまいました。アナログメータはPZTドライバー出力電圧のモニタリング用です。操作系とオシロスコープ用信号の出力端子をフロントパネルに持ってきて、エラー信号の入力端子やPZTへの出力端子はリアパネルです。"
+    "section": "構成",
+    "text": "構成\nエラー信号を入力して共振器をPI制御します。共振器の2枚のミラーのうち、片方はストロークの大きいPZTで、もう片方はストロークは小さいが高速なPZTで制御することを前提としています。小さいPZTはオペアンプで直接駆動、大きいPZTは組み込みタイプのPZTドライバー（メステック製 M-2691, 最大150 V）を駆動します。\n筐体の中には\n\nPI制御回路\nリロック用マイコン回路\n掃引回路\nトロイダルコアトランス電源\nPZTドライバ\n\nを詰め込んでいます。\n\nフロントパネルはアナログメータが場所をとって混み合ってしまいました。アナログメータはPZTドライバー出力電圧のモニタリング用です。操作系とオシロスコープ用信号の出力端子をフロントパネルに持ってきて、エラー信号の入力端子やPZTへの出力端子はリアパネルです。"
   },
   {
     "objectID": "works/posts/2024-03-02/index.html#その他",
     "href": "works/posts/2024-03-02/index.html#その他",
     "title": "共振器コントローラー",
-    "section": "3 その他",
-    "text": "3 その他\n機能ごとに基板が分かれてしまっているので、それらを繋ぐ配線がごちゃごちゃしてしまいます。配線作業も時間がかかるので何かもう一工夫したいところ。"
+    "section": "その他",
+    "text": "その他\n機能ごとに基板が分かれてしまっているので、それらを繋ぐ配線がごちゃごちゃしてしまいます。配線作業も時間がかかるので何かもう一工夫したいところ。"
   },
   {
     "objectID": "works/posts/colour-of-the-universe/index.html",
@@ -360,22 +360,22 @@
     "objectID": "works/posts/colour-of-the-universe/index.html#play",
     "href": "works/posts/colour-of-the-universe/index.html#play",
     "title": "Colour of the Universe",
-    "section": "2 Play",
-    "text": "2 Play\n\n\n\nColour of the Universe / 初音ミク"
+    "section": "Play",
+    "text": "Play\n\n\n\nColour of the Universe / 初音ミク"
   },
   {
     "objectID": "works/posts/colour-of-the-universe/index.html#lyrics",
     "href": "works/posts/colour-of-the-universe/index.html#lyrics",
     "title": "Colour of the Universe",
-    "section": "3 Lyrics",
-    "text": "3 Lyrics\nCan you hear it?\n宇宙 [そら] の彼方から届くメッセージ\nCan you see it?\n星の鼓動が彩る1ページ\n近づくほどに青く 静かに燃える情熱\n遠ざかるほどに赤く 逢いたいと願う微熱\n100億光年の孤独に 終わりを告げる時が来る\n混ざりあう全ての色から 答えを掬い上げるのさ\nColour of the universe\nCan you feel it?\n加速するほどに広がり続ける世界\nCan you believe it?\n本当の形はまだ誰も見たことがない\nおどけ顔の君が残した 奇妙な置き土産\nその意味を探すように 今夜も空を見上げ\n100億光年の孤独に 終わりを告げるとき時が来る\n混ざりあう全ての色から 答えを掬い上げるのさ\nColour of the universe\n決して辿り着けない 遥かなる星雲\nそれでもここから見つけ出せる New horizons\n呼ぶ声に導かれて 踏み出す闇の向こう側\n虹色の瞳で 見つめる先は\nColour of the universe\nA light in the black night\n答えは遠くない もう怖くない\nLike a rainbow in the dark\nこの胸に抱く まだ見ぬ地平を\nWe can resolve the spectre from the space\nSearching for the new horizons from this place\nThat’s why we’re here\n降り注ぐ光を集めて\nIt will be near\n混ざりあう全ての色から\n君の印をきっと見つけ出すのさ\nColour of the universe\nThat’s how we’ll shine"
+    "section": "Lyrics",
+    "text": "Lyrics\nCan you hear it?\n宇宙 [そら] の彼方から届くメッセージ\nCan you see it?\n星の鼓動が彩る1ページ\n近づくほどに青く 静かに燃える情熱\n遠ざかるほどに赤く 逢いたいと願う微熱\n100億光年の孤独に 終わりを告げる時が来る\n混ざりあう全ての色から 答えを掬い上げるのさ\nColour of the universe\nCan you feel it?\n加速するほどに広がり続ける世界\nCan you believe it?\n本当の形はまだ誰も見たことがない\nおどけ顔の君が残した 奇妙な置き土産\nその意味を探すように 今夜も空を見上げ\n100億光年の孤独に 終わりを告げるとき時が来る\n混ざりあう全ての色から 答えを掬い上げるのさ\nColour of the universe\n決して辿り着けない 遥かなる星雲\nそれでもここから見つけ出せる New horizons\n呼ぶ声に導かれて 踏み出す闇の向こう側\n虹色の瞳で 見つめる先は\nColour of the universe\nA light in the black night\n答えは遠くない もう怖くない\nLike a rainbow in the dark\nこの胸に抱く まだ見ぬ地平を\nWe can resolve the spectre from the space\nSearching for the new horizons from this place\nThat’s why we’re here\n降り注ぐ光を集めて\nIt will be near\n混ざりあう全ての色から\n君の印をきっと見つけ出すのさ\nColour of the universe\nThat’s how we’ll shine"
   },
   {
     "objectID": "works/posts/colour-of-the-universe/index.html#references",
     "href": "works/posts/colour-of-the-universe/index.html#references",
     "title": "Colour of the Universe",
-    "section": "4 References",
-    "text": "4 References\n\nhttps://doi.org/10.1364/OE.487279"
+    "section": "References",
+    "text": "References\n\nhttps://doi.org/10.1364/OE.487279"
   },
   {
     "objectID": "works/posts/goodbye-to-my-days/index.html",
@@ -395,15 +395,15 @@
     "objectID": "works/posts/goodbye-to-my-days/index.html#play",
     "href": "works/posts/goodbye-to-my-days/index.html#play",
     "title": "Goodbye to My Days",
-    "section": "2 Play",
-    "text": "2 Play\n\n\n\n【鏡音レン】Goodbye to My Days【オリジナル】"
+    "section": "Play",
+    "text": "Play\n\n\n\n【鏡音レン】Goodbye to My Days【オリジナル】"
   },
   {
     "objectID": "works/posts/goodbye-to-my-days/index.html#lyrics",
     "href": "works/posts/goodbye-to-my-days/index.html#lyrics",
     "title": "Goodbye to My Days",
-    "section": "3 Lyrics",
-    "text": "3 Lyrics\n降り止まない雨 湿った壁の臭い\nモニターの光に 力なく揺れる影\nそこは夢の世界 望むものは何でも手に入る\n代わりに差し出したのは 今と未来\n明るく振る舞っても 夜が孤独になるだけ\n暗闇に浮かぶのは 見たくないものばかり\n僕のこの不安に 大した理由なんてないだろう\nでも確かにつらいんだ Ah…\nGoodbye to my days\nGoodbye to my friends\nゆっくり生きたいんだ\nGoodbye to my dreams and what I believe in\n全てを失ったとしても\n遠く聞こえる声が 夢の終わりを告げる\n声を上げ嘆いても 現実は何も変わらない\n僕のこの人生に これからも意味なんてないだろう\nだからもう逃げ出すんだ Ah…\nGoodbye to my days\nGoodbye to my friends\nゆっくり生きたいんだ\nGoodbye to my dreams and what I believe in\n全てを失ったとしても\n雨はもう上がった 風の匂いも柔らか\n何もない僕だけど まだ一人で立っている\nこれは終わりなのか それとも始まったばかりなのか\n答えはいつか出るのだろう Uh…\nGoodbye to my days\nGoodbye to my friends\nゆっくり生きたいんだ\nGoodbye to my dreams and what I believe in\n全てを失ったとしても\nGoodbye to my days\nGoodbye to my friends\nゆっくり生きたいんだ\nGoodbye to my dreams\nGoodbye to my love\nゆっくり ゆっくり 生きたいんだ\nゆっくり ゆっくり 答えはいつの日にか\nSomeday…"
+    "section": "Lyrics",
+    "text": "Lyrics\n降り止まない雨 湿った壁の臭い\nモニターの光に 力なく揺れる影\nそこは夢の世界 望むものは何でも手に入る\n代わりに差し出したのは 今と未来\n明るく振る舞っても 夜が孤独になるだけ\n暗闇に浮かぶのは 見たくないものばかり\n僕のこの不安に 大した理由なんてないだろう\nでも確かにつらいんだ Ah…\nGoodbye to my days\nGoodbye to my friends\nゆっくり生きたいんだ\nGoodbye to my dreams and what I believe in\n全てを失ったとしても\n遠く聞こえる声が 夢の終わりを告げる\n声を上げ嘆いても 現実は何も変わらない\n僕のこの人生に これからも意味なんてないだろう\nだからもう逃げ出すんだ Ah…\nGoodbye to my days\nGoodbye to my friends\nゆっくり生きたいんだ\nGoodbye to my dreams and what I believe in\n全てを失ったとしても\n雨はもう上がった 風の匂いも柔らか\n何もない僕だけど まだ一人で立っている\nこれは終わりなのか それとも始まったばかりなのか\n答えはいつか出るのだろう Uh…\nGoodbye to my days\nGoodbye to my friends\nゆっくり生きたいんだ\nGoodbye to my dreams and what I believe in\n全てを失ったとしても\nGoodbye to my days\nGoodbye to my friends\nゆっくり生きたいんだ\nGoodbye to my dreams\nGoodbye to my love\nゆっくり ゆっくり 生きたいんだ\nゆっくり ゆっくり 答えはいつの日にか\nSomeday…"
   },
   {
     "objectID": "works/posts/regrets/index.html",
@@ -423,15 +423,15 @@
     "objectID": "works/posts/regrets/index.html#play",
     "href": "works/posts/regrets/index.html#play",
     "title": "Regrets",
-    "section": "2 Play",
-    "text": "2 Play\n\n\n\n【鏡音リン】 regrets 【オリジナル】"
+    "section": "Play",
+    "text": "Play\n\n\n\n【鏡音リン】 regrets 【オリジナル】"
   },
   {
     "objectID": "works/posts/regrets/index.html#lyrics",
     "href": "works/posts/regrets/index.html#lyrics",
     "title": "Regrets",
-    "section": "3 Lyrics",
-    "text": "3 Lyrics\n差し込むひだまりの温かさに 寂しさを感じた\nもう君の影がないことに気づいたからかな？\n君に謝りたいことがたくさんあったけど\n「ごめんね」よりも伝えたいことがあるんだ\n素直に言葉にできなかった ただ「好き」の一言だけ\nお願いだから 一度だけでも奇跡を起こして\n神様なんかいないなんて 子供でも知ってるよね\nでも祈らずにいられないよ 君の顔が浮かぶから\n少しだけでも叶えて\n離れられなくなるなんて 考えてなかったよ\n君を忘れてしまいたいよ 自分が自分でいられないから\n知らなかった雨の冷たさに ぬくもりを感じた\n一緒に差した傘を思い出したからかな？\n君と紡いだ思い出が忘れられないよ\n後悔だけが私に残っているんだ\nもう一度やり直したいよ 必ずうまくいくよね\nお願いだから 一度だけでも奇跡を起こして\n悪魔でもね 構わないよ この願いを叶えて\n忘れることはできないんだ ずっと苦しむしかないんだ\n夢にまで君を見るから\nもう君には会えないんだ それは分かってるんだよ\nどうしようもないこの思いを 今すぐに消して欲しいよ\nずっとこの思いを引きずるの？ そんなの嫌だよ辛いよ\n後悔だけはもうしない 私は変わるから\n神様なんかいないなんて 子供でも知ってるでしょ\nだからもう祈らないよ 君を忘れもしないよ\nそんなことできないから\n「さよなら」をやっと言えるよ ちょっと遅くなったけど\n新しい扉を開くんだ きっとできるから\n君と過ごした思い出を 強さに変えていくんだ"
+    "section": "Lyrics",
+    "text": "Lyrics\n差し込むひだまりの温かさに 寂しさを感じた\nもう君の影がないことに気づいたからかな？\n君に謝りたいことがたくさんあったけど\n「ごめんね」よりも伝えたいことがあるんだ\n素直に言葉にできなかった ただ「好き」の一言だけ\nお願いだから 一度だけでも奇跡を起こして\n神様なんかいないなんて 子供でも知ってるよね\nでも祈らずにいられないよ 君の顔が浮かぶから\n少しだけでも叶えて\n離れられなくなるなんて 考えてなかったよ\n君を忘れてしまいたいよ 自分が自分でいられないから\n知らなかった雨の冷たさに ぬくもりを感じた\n一緒に差した傘を思い出したからかな？\n君と紡いだ思い出が忘れられないよ\n後悔だけが私に残っているんだ\nもう一度やり直したいよ 必ずうまくいくよね\nお願いだから 一度だけでも奇跡を起こして\n悪魔でもね 構わないよ この願いを叶えて\n忘れることはできないんだ ずっと苦しむしかないんだ\n夢にまで君を見るから\nもう君には会えないんだ それは分かってるんだよ\nどうしようもないこの思いを 今すぐに消して欲しいよ\nずっとこの思いを引きずるの？ そんなの嫌だよ辛いよ\n後悔だけはもうしない 私は変わるから\n神様なんかいないなんて 子供でも知ってるでしょ\nだからもう祈らないよ 君を忘れもしないよ\nそんなことできないから\n「さよなら」をやっと言えるよ ちょっと遅くなったけど\n新しい扉を開くんだ きっとできるから\n君と過ごした思い出を 強さに変えていくんだ"
   },
   {
     "objectID": "works/posts/SlowPD/index.html",
@@ -444,8 +444,8 @@
     "objectID": "works/posts/SlowPD/index.html#回路概要",
     "href": "works/posts/SlowPD/index.html#回路概要",
     "title": "低速受光器",
-    "section": "1 回路概要",
-    "text": "1 回路概要\nDC測定用ですが、数10 kHz程度の帯域はあるので光チョッパーにも対応できます。適切に部品を選べば、適当な市販受光器よりも高性能が実現できます。\n回路図は下記の通りです。ごく普通のトランスインピーダンスアンプです。実際にはIC3のボルテージフォロワは実装せず、IC4の出力から直接R6を介してSMAコネクタに接続しています。\n\n\nフォトダイオード: InGaAs (Hamamatsu, G12180)\nオペアンプ: LMP7701\nトランスインピーダンス: 10 kΩ\n電源コネクタ: M8コネクタ 3極\n\nトランスインピーダンスアンプには、入力バイアス電流の小さなFET入力のオペアンプを使用するのが定石です。今回は入力オフセット電圧も小さなLMP7701を使用し、低オフセットを実現しています。\nフィードバック抵抗には、温度ドリフトの小さなアルファエレクトロニクス製の抵抗を使用しています。交換して電流電圧変換係数を変えられるようになっています。\n電源コネクタは、NewportやThorlabsと共通のM8コネクタです。同じ電源を使用できます。"
+    "section": "回路概要",
+    "text": "回路概要\nDC測定用ですが、数10 kHz程度の帯域はあるので光チョッパーにも対応できます。適切に部品を選べば、適当な市販受光器よりも高性能が実現できます。\n回路図は下記の通りです。ごく普通のトランスインピーダンスアンプです。実際にはIC3のボルテージフォロワは実装せず、IC4の出力から直接R6を介してSMAコネクタに接続しています。\n\n\nフォトダイオード: InGaAs (Hamamatsu, G12180)\nオペアンプ: LMP7701\nトランスインピーダンス: 10 kΩ\n電源コネクタ: M8コネクタ 3極\n\nトランスインピーダンスアンプには、入力バイアス電流の小さなFET入力のオペアンプを使用するのが定石です。今回は入力オフセット電圧も小さなLMP7701を使用し、低オフセットを実現しています。\nフィードバック抵抗には、温度ドリフトの小さなアルファエレクトロニクス製の抵抗を使用しています。交換して電流電圧変換係数を変えられるようになっています。\n電源コネクタは、NewportやThorlabsと共通のM8コネクタです。同じ電源を使用できます。"
   },
   {
     "objectID": "works/posts/website_quatro_github/index.html",
@@ -458,36 +458,36 @@
     "objectID": "works/posts/website_quatro_github/index.html#quartoとは",
     "href": "works/posts/website_quatro_github/index.html#quartoとは",
     "title": "Quartoでウェブサイトを作ってGitHubで公開する",
-    "section": "1 Quartoとは",
-    "text": "1 Quartoとは\nQuartoとは、拡張Markdown形式データ（拡張子は.qmd）を作成し、それを基にpandocによってHTMLファイル、PDFファイルなど様々な形式に変換して文書を構築するアプリケーションです。Jupyter notebookのように、文書内でコードを実行しその結果を表示することもできます。\nQuartoを使ったウェブサイト構築のメリットは以下の通り。\n\nMarkdownで比較的簡単に記述できる。HTMLを編集するのに比べて、更新がだいぶ楽。\nブログ形式のサイトも作成できる。\nテンプレートでもそれなりのデザイン。"
+    "section": "Quartoとは",
+    "text": "Quartoとは\nQuartoとは、拡張Markdown形式データ（拡張子は.qmd）を作成し、それを基にpandocによってHTMLファイル、PDFファイルなど様々な形式に変換して文書を構築するアプリケーションです。Jupyter notebookのように、文書内でコードを実行しその結果を表示することもできます。\nQuartoを使ったウェブサイト構築のメリットは以下の通り。\n\nMarkdownで比較的簡単に記述できる。HTMLを編集するのに比べて、更新がだいぶ楽。\nブログ形式のサイトも作成できる。\nテンプレートでもそれなりのデザイン。"
   },
   {
     "objectID": "works/posts/website_quatro_github/index.html#ツールのセットアップ",
     "href": "works/posts/website_quatro_github/index.html#ツールのセットアップ",
     "title": "Quartoでウェブサイトを作ってGitHubで公開する",
-    "section": "2 ツールのセットアップ",
-    "text": "2 ツールのセットアップ\n\n2.1 Quarto\nQuartoウェブサイトのトップページからGet Startedボタンをクリックしてダウンロードサイトに飛びます。OSに合わせたバージョンをインストールします。\n\n\n2.2 Visual Studio Code\nMarkdownの編集、GitHubとの連携に使います。VS Codeウェブサイトからインストールします。\nVS Codeを立ち上げ、Quartoの拡張機能 (Extentions) でQuartを検索し、インストールします。\nQuartoのダウンロードサイトでも手順を解説しているので参考にしてください。\n\n\n2.3 Git\n更新の管理とGitHubへのアップロードに使います。VS Codeと連携して使います。まず、GitウェブサイトからOSに合わせてインストールします。\n\nChoosing the default editor used by Gitでは、VS Codeを選択します。\nAdjusting the name of the initial branch in new repositoriesでは、初期ブランチ名をどうするか選択します。GitHubは “main” を採用しているのでOverride the deault branch name for new repositoriesを選択し、初期ブランチ名にmainと入力します。\n\nあとはデフォルトの設定で良いかと思います。変更する場合は各自調べてください。\n\n\n2.4 GitHub\nGitHubでアカウントを作成します。\nアカウントを作ったら、ウェブサイト公開用のリポジトリを作成します。このとき、リポジトリ名を&lt;username&gt;.github.ioとすると、ウェブサイトURLは\nhttps://&lt;Username&gt;.github.io/\nになります。"
+    "section": "ツールのセットアップ",
+    "text": "ツールのセットアップ\n\nQuarto\nQuartoウェブサイトのトップページからGet Startedボタンをクリックしてダウンロードサイトに飛びます。OSに合わせたバージョンをインストールします。\n\n\nVisual Studio Code\nMarkdownの編集、GitHubとの連携に使います。VS Codeウェブサイトからインストールします。\nVS Codeを立ち上げ、Quartoの拡張機能 (Extentions) でQuartを検索し、インストールします。\nQuartoのダウンロードサイトでも手順を解説しているので参考にしてください。\n\n\nGit\n更新の管理とGitHubへのアップロードに使います。VS Codeと連携して使います。まず、GitウェブサイトからOSに合わせてインストールします。\n\nChoosing the default editor used by Gitでは、VS Codeを選択します。\nAdjusting the name of the initial branch in new repositoriesでは、初期ブランチ名をどうするか選択します。GitHubは “main” を採用しているのでOverride the deault branch name for new repositoriesを選択し、初期ブランチ名にmainと入力します。\n\nあとはデフォルトの設定で良いかと思います。変更する場合は各自調べてください。\n\n\nGitHub\nGitHubでアカウントを作成します。\nアカウントを作ったら、ウェブサイト公開用のリポジトリを作成します。このとき、リポジトリ名を&lt;username&gt;.github.ioとすると、ウェブサイトURLは\nhttps://&lt;Username&gt;.github.io/\nになります。"
   },
   {
     "objectID": "works/posts/website_quatro_github/index.html#ウェブサイトの作成",
     "href": "works/posts/website_quatro_github/index.html#ウェブサイトの作成",
     "title": "Quartoでウェブサイトを作ってGitHubで公開する",
-    "section": "3 ウェブサイトの作成",
-    "text": "3 ウェブサイトの作成\n\n3.1 テンプレートから作成\nQuartoのウェブサイトテンプレートを使って作成を始めます。\n\nウェブサイト作成用のフォルダを用意します。\nVS Codeを起動してCtrl-Shift-PCtrl-Shift-Pでコマンドパレットを開き、Quarto: Create Projectと入力します。\nWebsite Projectを選択し、1.で作ったフォルダを選択してChoose Project Directoryを押します。\nフォルダの中に、index.qmdや_qualt.ymlといったテンプレートファイル一式が作られます。\n\n\n\n3.2 テンプレートの編集\nテンプレートファイルを編集したり、新しいファイルを追加したりしてウェブサイトを作成していきます。ウェブサイト全体の設定は_quarto.ymlに記述します。初期状態では\nproject:\n  type: website\n\nwebsite:\n  title: \"&lt;website title&gt;\"\n  navbar: #ページナビの設定\n    left: #左詰め\n      - href: index.qmd #1つめのリンク先\n        text: Home #1つ目のリンク先のテキスト（設定しないとリンク先のタイトルが使われる）\n      - about.qmd #2つ目のリンク先\n\nformat:\n  html:\n    theme: cosmo #ページデザイン\n    css: styles.css #CSSファイル（使わないなら消してよい）\n    toc: true #ページ内目次のON/OFF（ページごとの設定も可）\nとなっています。（コメントは筆者の追記）\n詳しい作成方法については、Quatro &gt; Websitesを参照してください。\n\n\n3.3 プレビューとレンダリング\nindex.qmdなど作成・編集したファイルを開き、VS Code右上のPreviewボタンをクリックすると、ウェブサイトのプレビューを表示できます。Ctrl-Shift-KCtrl-Shift-Kでも可能です。\n\n全ページをレンダリングする場合は、\n&gt; quarto render\nを実行してください。\nレンダリングで作成されたファイルは/Docs/フォルダに置かれます。ウェブサイトを公開する際は、このフォルダを指定します。"
+    "section": "ウェブサイトの作成",
+    "text": "ウェブサイトの作成\n\nテンプレートから作成\nQuartoのウェブサイトテンプレートを使って作成を始めます。\n\nウェブサイト作成用のフォルダを用意します。\nVS Codeを起動してCtrl-Shift-PCtrl-Shift-Pでコマンドパレットを開き、Quarto: Create Projectと入力します。\nWebsite Projectを選択し、1.で作ったフォルダを選択してChoose Project Directoryを押します。\nフォルダの中に、index.qmdや_qualt.ymlといったテンプレートファイル一式が作られます。\n\n\n\nテンプレートの編集\nテンプレートファイルを編集したり、新しいファイルを追加したりしてウェブサイトを作成していきます。ウェブサイト全体の設定は_quarto.ymlに記述します。初期状態では\nproject:\n  type: website\n\nwebsite:\n  title: \"&lt;website title&gt;\"\n  navbar: #ページナビの設定\n    left: #左詰め\n      - href: index.qmd #1つめのリンク先\n        text: Home #1つ目のリンク先のテキスト（設定しないとリンク先のタイトルが使われる）\n      - about.qmd #2つ目のリンク先\n\nformat:\n  html:\n    theme: cosmo #ページデザイン\n    css: styles.css #CSSファイル（使わないなら消してよい）\n    toc: true #ページ内目次のON/OFF（ページごとの設定も可）\nとなっています。（コメントは筆者の追記）\n詳しい作成方法については、Quatro &gt; Websitesを参照してください。\n\n\nプレビューとレンダリング\nindex.qmdなど作成・編集したファイルを開き、VS Code右上のPreviewボタンをクリックすると、ウェブサイトのプレビューを表示できます。Ctrl-Shift-KCtrl-Shift-Kでも可能です。\n\n全ページをレンダリングする場合は、\n&gt; quarto render\nを実行してください。\nレンダリングで作成されたファイルは/Docs/フォルダに置かれます。ウェブサイトを公開する際は、このフォルダを指定します。"
   },
   {
     "objectID": "works/posts/website_quatro_github/index.html#ウェブサイトの公開",
     "href": "works/posts/website_quatro_github/index.html#ウェブサイトの公開",
     "title": "Quartoでウェブサイトを作ってGitHubで公開する",
-    "section": "4 ウェブサイトの公開",
-    "text": "4 ウェブサイトの公開\n\n4.1 Gitのリポジトリ作成とGitHubとの連携\nフォルダのリポジトリ登録とGitHubへの公開を同時に行います。\nVS CodeのSoruce Controlをクリックし、GitHubに公開をクリックします。\n\nGitHubへのサインインを求められるので、許可をクリックしてブラウザからGitHubにサインインし、Authorize-Visual-Studio-Codeをクリックし、VS CodeとGitHubを連携させます。\n\nVS Codeに戻り、Publish to GitHub public repositoryを選択し、リポジトリに含めるファイルを選択してOKをクリックします1。これで、Gitリポジトリの作成とGitHubリモートリポジトリ登録が完了しました。\n\n\n4.2 GitHub Pagesの設定\nGitHubのリポジトリページで、リポジトリメニューからSettingsページに飛びます。Pagesの項目で、Branchをmain、フォルダをdocsに設定し、Saveをクリックします。しばらく待ち、https://&lt;Username&gt;.github.io/にアクセスして公開されたウェブサイトを確認してください。\n\n\n\n4.3 ウェブサイトの更新\nウェブサイトのソースファイル（.qmdファイルなど）をVS Codeで編集した際は、\n\nプレビューかレンダリング2でHTMLを更新\nVS CodeのSoruce Controlから変更の横の+ボタンをクリックして、変更を”add”\nコミットメッセージを記入してコミットをクリックしローカルリポジトリに”commit”\n“変更の同期”をクリックしてGitHubに”push”\n\nで更新できます。"
+    "section": "ウェブサイトの公開",
+    "text": "ウェブサイトの公開\n\nGitのリポジトリ作成とGitHubとの連携\nフォルダのリポジトリ登録とGitHubへの公開を同時に行います。\nVS CodeのSoruce Controlをクリックし、GitHubに公開をクリックします。\n\nGitHubへのサインインを求められるので、許可をクリックしてブラウザからGitHubにサインインし、Authorize-Visual-Studio-Codeをクリックし、VS CodeとGitHubを連携させます。\n\nVS Codeに戻り、Publish to GitHub public repositoryを選択し、リポジトリに含めるファイルを選択してOKをクリックします1。これで、Gitリポジトリの作成とGitHubリモートリポジトリ登録が完了しました。\n\n\nGitHub Pagesの設定\nGitHubのリポジトリページで、リポジトリメニューからSettingsページに飛びます。Pagesの項目で、Branchをmain、フォルダをdocsに設定し、Saveをクリックします。しばらく待ち、https://&lt;Username&gt;.github.io/にアクセスして公開されたウェブサイトを確認してください。\n\n\n\nウェブサイトの更新\nウェブサイトのソースファイル（.qmdファイルなど）をVS Codeで編集した際は、\n\nプレビューかレンダリング2でHTMLを更新\nVS CodeのSoruce Controlから変更の横の+ボタンをクリックして、変更を”add”\nコミットメッセージを記入してコミットをクリックしローカルリポジトリに”commit”\n“変更の同期”をクリックしてGitHubに”push”\n\nで更新できます。"
   },
   {
     "objectID": "works/posts/website_quatro_github/index.html#参考",
     "href": "works/posts/website_quatro_github/index.html#参考",
     "title": "Quartoでウェブサイトを作ってGitHubで公開する",
-    "section": "5 参考",
-    "text": "5 参考\n\nQuatro &gt; Websites\n気軽にウェブサイト"
+    "section": "参考",
+    "text": "参考\n\nQuatro &gt; Websites\n気軽にウェブサイト"
   },
   {
     "objectID": "works/posts/website_quatro_github/index.html#footnotes",
@@ -514,14 +514,14 @@
     "objectID": "works/posts/your-space-our-place/index.html#play",
     "href": "works/posts/your-space-our-place/index.html#play",
     "title": "いつもの場所",
-    "section": "2 Play",
-    "text": "2 Play\n\n\n\n【鏡音レン】いつもの場所【オリジナル】"
+    "section": "Play",
+    "text": "Play\n\n\n\n【鏡音レン】いつもの場所【オリジナル】"
   },
   {
     "objectID": "works/posts/your-space-our-place/index.html#lyrics",
     "href": "works/posts/your-space-our-place/index.html#lyrics",
     "title": "いつもの場所",
-    "section": "3 Lyrics",
-    "text": "3 Lyrics\n当たり前だと思っていた景色 疑わなかった日常\n不意に崩れ去った今を 受け入れたくない気持ちがわきあがる\n悲しみに浸りたくなるだろう こんなの夢だと思いたい\nでもそんなことじゃ 何も始まらない\n前だけ見つめて 歩いていこうよ\nいつもの場所はどこにもないけれど\nI’m always with you ボクがそばにいよう\n明けない夜はないのだから\n手を取り合って生きていこう\n幼いころから見ていた空 肌に感じていた風\nすべて流れ去った今が ボクたちの心を押しつぶす\n何を恨めばいいのだろう 誰かの所為にしてしまいたい\nでもそんなことに意味はない だから\nすべてを受け入れ 進んでいこうよ\nいつもの場所はどこにもないけれど\nI will smile at you ボクが笑いかけよう\n残酷な今に 逃げたくなるけど\n未来(あす)を一緒に見にいこう\nすべてを包む暗い闇も いつか笑い飛ばせるように\nいつもの場所はどこにもないけれど\nI will smile at you ボクが笑いかけよう\n眠れぬ夜も 泣きたくなる朝も\nI’m always with you ボクがそばにいよう\nいつもの場所は壊れてしまったけど\n「いつもの場所」を作っていこう\nまた作っていこう\nYou can make new space\nI will be with you\nWe can make our place\nIt’s for you and me"
+    "section": "Lyrics",
+    "text": "Lyrics\n当たり前だと思っていた景色 疑わなかった日常\n不意に崩れ去った今を 受け入れたくない気持ちがわきあがる\n悲しみに浸りたくなるだろう こんなの夢だと思いたい\nでもそんなことじゃ 何も始まらない\n前だけ見つめて 歩いていこうよ\nいつもの場所はどこにもないけれど\nI’m always with you ボクがそばにいよう\n明けない夜はないのだから\n手を取り合って生きていこう\n幼いころから見ていた空 肌に感じていた風\nすべて流れ去った今が ボクたちの心を押しつぶす\n何を恨めばいいのだろう 誰かの所為にしてしまいたい\nでもそんなことに意味はない だから\nすべてを受け入れ 進んでいこうよ\nいつもの場所はどこにもないけれど\nI will smile at you ボクが笑いかけよう\n残酷な今に 逃げたくなるけど\n未来(あす)を一緒に見にいこう\nすべてを包む暗い闇も いつか笑い飛ばせるように\nいつもの場所はどこにもないけれど\nI will smile at you ボクが笑いかけよう\n眠れぬ夜も 泣きたくなる朝も\nI’m always with you ボクがそばにいよう\nいつもの場所は壊れてしまったけど\n「いつもの場所」を作っていこう\nまた作っていこう\nYou can make new space\nI will be with you\nWe can make our place\nIt’s for you and me"
   }
 ]

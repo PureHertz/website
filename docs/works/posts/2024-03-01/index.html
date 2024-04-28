@@ -89,7 +89,7 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../common/logo.png" alt="" class="navbar-logo">
+    <img src="../../../common/logo_white.png" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -158,9 +158,9 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#概要" id="toc-概要" class="nav-link active" data-scroll-target="#概要"><span class="header-section-number">1</span> 概要</a></li>
-  <li><a href="#構成" id="toc-構成" class="nav-link" data-scroll-target="#構成"><span class="header-section-number">2</span> 構成</a></li>
-  <li><a href="#その他" id="toc-その他" class="nav-link" data-scroll-target="#その他"><span class="header-section-number">3</span> その他</a></li>
+  <li><a href="#概要" id="toc-概要" class="nav-link active" data-scroll-target="#概要">概要</a></li>
+  <li><a href="#構成" id="toc-構成" class="nav-link" data-scroll-target="#構成">構成</a></li>
+  <li><a href="#その他" id="toc-その他" class="nav-link" data-scroll-target="#その他">その他</a></li>
   </ul>
 </nav>
     </div>
@@ -171,13 +171,13 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 
 
 
-<section id="概要" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="概要"><span class="header-section-number">1</span> 概要</h2>
+<section id="概要" class="level2">
+<h2 class="anchored" data-anchor-id="概要">概要</h2>
 <p>温度コントローラーを作ってみました。 普段は製品を購入していますが、一度自作してみようということで。自作経験があれば、予算不足に陥ったときも怖くない？ペルチェとサーミスタで制御する仕様です。</p>
 <p><img src="IMG_1979.jpg" class="img-fluid"></p>
 </section>
-<section id="構成" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="構成"><span class="header-section-number">2</span> 構成</h2>
+<section id="構成" class="level2">
+<h2 class="anchored" data-anchor-id="構成">構成</h2>
 <p>温調のコア部分はWavelength Electronicsの<a href="https://www.teamwavelength.com/product/wtc32nd-2-2-a-temperature-controller/">WTC32ND</a>を使用しています。温度調整つまみや外部制御入力を追加し、全体のコントロールにはマイコンボード（Teensy LC）を使用しています。</p>
 <p><img src="IMG_1978.jpg" class="img-fluid" style="width:80.0%"></p>
 <p>外部制御入力は基本フィードバック制御にしか使わないので、積分器を通って温度設定電圧に加える形になっています。本当は温度制御のエラー信号を直接置き換えたかったのですが、WTC32NDにそういう入力端子は無いのでこうしています。制御がカスケードになってしまうので、それが問題にならないかどうかは検証する必要があります。積分の時定数を十分遅くしておけば大丈夫なはず。場合によっては、積分はアナログ回路ではなくマイコン上でやるというのも手ですね。その方がいいかもしれません。</p>
@@ -186,8 +186,8 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <p>筐体のサイズはThorlabsのTED200Cより横幅が少し大きい程度。ファンレスなので放熱は少し心配。使ってみて様子見です。</p>
 <p>ペルチェとサーミスタケーブル用のコネクタも迷いました。本当は普段使っている温度コントローラと同じヒロセのRM12, 6極にしようと考えていたのですが、世界的なコネクタ供給不足で手に入らず（もしくはめちゃくちゃ高く）、仕方なくヒロセのHR10の6極にして、ペルチェには信号とGNDで2極ずつ使うという形にしました。</p>
 </section>
-<section id="その他" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="その他"><span class="header-section-number">3</span> その他</h2>
+<section id="その他" class="level2">
+<h2 class="anchored" data-anchor-id="その他">その他</h2>
 <p>そういえばいつも買っている温度コントローラも、RM12の6極が手に入らなかったのかRM12の7極になっていました。これまでの製品とケーブルの互換性がなくなっとるやないか！</p>
 
 
