@@ -7,7 +7,7 @@ website:
   site-url: https://purehertz.github.io/
   favicon: common/logo_small.png
   navbar:
-    logo: common/logo.png
+    logo: common/logo_white.png
     title: false
     left:
       - text: Home
@@ -29,11 +29,12 @@ website:
 
 format:
   html:
-    theme: spacelab
+    theme: default
+    margin-bottom: 20px
     toc: true
     link-external-newwindow: true
-    number-sections: true
-    number-depth: 3
+    # number-sections: true
+    # number-depth: 3
 
 
 
