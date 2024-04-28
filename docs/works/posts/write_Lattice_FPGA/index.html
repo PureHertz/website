@@ -262,7 +262,7 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <p>インストーラは、<a href="https://www.latticesemi.com/ja-JP/Products/DesignSoftwareAndIP/FPGAandLDS/LatticeDiamond">Lattice Diamond設計ソフトウェアのページ</a>から<code>Diamond 3.13 64-bit for Windows</code>などOSに合わせてダウンロードします。執筆時のバージョンは3.13。</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="Lattice-FPGA_1.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1" title="Lattice Diamondのダウンロードページ"><img src="Lattice-FPGA_1.png" class="img-fluid figure-img" alt="Lattice Diamondのダウンロードページ"></a></p>
+<p><a href="Lattice-FPGA_1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="Lattice Diamondのダウンロードページ"><img src="Lattice-FPGA_1.png" class="img-fluid figure-img" alt="Lattice Diamondのダウンロードページ"></a></p>
 <figcaption>Lattice Diamondのダウンロードページ</figcaption>
 </figure>
 </div>
@@ -273,13 +273,13 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <p>次に、<a href="https://www.latticesemi.com/ja-JP/Products/DesignSoftwareAndIP/FPGAandLDS/LatticeDiamond">Lattice Diamond設計ソフトウェアのページ</a>で<code>ライセンスを取得</code>をクリックしてページを移動します。さらに、‘’Request Diamond Free License’’の項目から<code>Request Node-locked License</code>を選択します。</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="Lattice-FPGA_2.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2" title="ライセンス認証 1"><img src="Lattice-FPGA_2.png" class="img-fluid figure-img" alt="ライセンス認証 1"></a></p>
+<p><a href="Lattice-FPGA_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2" title="ライセンス認証 1"><img src="Lattice-FPGA_2.png" class="img-fluid figure-img" alt="ライセンス認証 1"></a></p>
 <figcaption>ライセンス認証 1</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="Lattice-FPGA_3.png" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="quarto-lightbox-gallery-3" title="ライセンス認証 2"><img src="Lattice-FPGA_3.png" class="img-fluid figure-img" alt="ライセンス認証 2"></a></p>
+<p><a href="Lattice-FPGA_3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" data-glightbox="description: .lightbox-desc-3" title="ライセンス認証 2"><img src="Lattice-FPGA_3.png" class="img-fluid figure-img" alt="ライセンス認証 2"></a></p>
 <figcaption>ライセンス認証 2</figcaption>
 </figure>
 </div>
@@ -287,7 +287,7 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <p>オプションでいくつかのフリーIPのライセンスも取得できるので、必要がある場合は選択します。私の場合は不要だったのでスルーです。</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="Lattice-FPGA_4.png" class="lightbox" data-glightbox="description: .lightbox-desc-4" data-gallery="quarto-lightbox-gallery-4" title="ライセンス認証 3"><img src="Lattice-FPGA_4.png" class="img-fluid figure-img" alt="ライセンス認証 3"></a></p>
+<p><a href="Lattice-FPGA_4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-glightbox="description: .lightbox-desc-4" title="ライセンス認証 3"><img src="Lattice-FPGA_4.png" class="img-fluid figure-img" alt="ライセンス認証 3"></a></p>
 <figcaption>ライセンス認証 3</figcaption>
 </figure>
 </div>
@@ -331,8 +331,8 @@ Warning
 </section>
 <section id="制約ファイル-.lpf-の作成" class="level2">
 <h2 class="anchored" data-anchor-id="制約ファイル-.lpf-の作成">制約ファイル (***.lpf) の作成</h2>
-<p><code>File List</code>タブの中の[インプリメンテーションファイル名]→[LPF Constraint Files]の中に置かれる。ダブルクリックするとテキストエディタが開く。</p>
-<p>LPF制約ファイルは、<code>Spreadsheet View</code> GUIで各種制約を設定することで、LPFに書き出せます。ユーザーI/O（RTL記述で宣言されたI/O）のピンアサインをする方法は、以下の通り。</p>
+<p><code>File List</code>タブの中の<code>インプリメンテーションファイル名</code>→<code>LPF Constraint Files</code>の中に置かれる。ダブルクリックするとテキストエディタが開く。</p>
+<p>LPFは、<code>Spreadsheet View</code>のGUIで各種制約を設定することで書き出せます。ユーザーI/O（RTL記述で宣言されたI/O）のピンアサインをする方法は、以下の通り。</p>
 <ul>
 <li>ポート名に対してピン番号を指定（<code>Port Assignments</code>シートで行う）</li>
 <li>ピン番号に対してポート名を指定（<code>Pin Assignments</code>シートで行う）</li>
@@ -343,7 +343,7 @@ Warning
 <p>純正のプログラマケーブル (HW-USBN-2B) は高価なので、最低限の機能を秋月電子のUSB-シリアル変換モジュールで実現します。</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="Lattice-FPGA-cable.png" class="lightbox" data-glightbox="description: .lightbox-desc-5" data-gallery="quarto-lightbox-gallery-5" title="HW-USBN-2B"><img src="Lattice-FPGA-cable.png" class="img-fluid figure-img" alt="HW-USBN-2B"></a></p>
+<p><a href="Lattice-FPGA-cable.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" data-glightbox="description: .lightbox-desc-5" title="HW-USBN-2B"><img src="Lattice-FPGA-cable.png" class="img-fluid figure-img" alt="HW-USBN-2B"></a></p>
 <figcaption>HW-USBN-2B</figcaption>
 </figure>
 </div>
@@ -357,7 +357,7 @@ Warning
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="Lattice-FPGA-cable_2.png" class="lightbox" data-glightbox="description: .lightbox-desc-6" data-gallery="quarto-lightbox-gallery-6" title="AE-FT2232"><img src="Lattice-FPGA-cable_2.png" class="img-fluid figure-img" alt="AE-FT2232"></a></p>
+<p><a href="Lattice-FPGA-cable_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" data-glightbox="description: .lightbox-desc-6" title="AE-FT2232"><img src="Lattice-FPGA-cable_2.png" class="img-fluid figure-img" alt="AE-FT2232"></a></p>
 <figcaption>AE-FT2232</figcaption>
 </figure>
 </div>
@@ -879,7 +879,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","descPosition":"bottom","closeEffect":"zoom","loop":false});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","openEffect":"zoom","loop":false,"descPosition":"bottom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
