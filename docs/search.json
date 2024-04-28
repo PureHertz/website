@@ -74,7 +74,7 @@
     "href": "works/posts/write_Lattice_FPGA/index.html#制約ファイル-.lpf-の作成",
     "title": "Lattice PFGAの書き込み",
     "section": "制約ファイル (***.lpf) の作成",
-    "text": "制約ファイル (***.lpf) の作成\nFile Listタブの中のインプリメンテーションファイル名→LPF Constraint Filesの中に置かれる。ダブルクリックするとテキストエディタが開く。\nLPFは、Spreadsheet ViewのGUIで各種制約を設定することで書き出せます。ユーザーI/O（RTL記述で宣言されたI/O）のピンアサインをする方法は、以下の通り。\n\nポート名に対してピン番号を指定（Port Assignmentsシートで行う）\nピン番号に対してポート名を指定（Pin Assignmentsシートで行う）"
+    "text": "制約ファイル (***.lpf) の作成\nFile Listタブの中のインプリメンテーションファイル名→LPF Constraint Filesの中に置かれる。ダブルクリックするとテキストエディタが開く。\nLPF制約ファイルは、Spreadsheet ViewのGUIで各種制約を設定することで書き出せます。ユーザーI/O（RTL記述で宣言されたI/O）のピンアサインをする方法は、以下の通り。\n\nポート名に対してピン番号を指定（Port Assignmentsシートで行う）\nピン番号に対してポート名を指定（Pin Assignmentsシートで行う）"
   },
   {
     "objectID": "works/posts/write_Lattice_FPGA/index.html#基板との接続",
