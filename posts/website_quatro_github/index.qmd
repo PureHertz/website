@@ -1,0 +1,164 @@
+---
+title: "Quartoでウェブサイトを作ってGitHubで公開する"
+date: 2024-03-10
+date-modified: 2024-03-10
+categories: [ウェブサイト, Quarto, GitHub]
+image: /common/code.jpg
+---
+
+簡単にウェブサイトを作成・公開・維持する方法はないかと模索していたところ、QuartoとGitHub Pagesを使った方法にたどり着きました。これなら楽そうと思い、10年くらい手つかずだった個人ウェブサイトを刷新しました。ここでは、備忘録も兼ねて手順を簡単に解説します。
+
+[Quarto](https://quarto.org)
+: Markdownベースでウェブサイトを作成します。
+
+[GitHub Pages](https://docs.github.com/ja/pages)
+: Gitでウェブサイトの更新を管理し公開します。
+
+
+## Quartoとは
+
+Quartoとは、拡張Markdown形式データ（拡張子は`.qmd`）を作成し、それを基に[pandoc](https://pandoc.org/)によってHTMLファイル、PDFファイルなど様々な形式に変換して文書を構築するアプリケーションです。[Jupyter notebook](https://jupyter.org/)のように、文書内でコードを実行しその結果を表示することもできます。
+
+Quartoを使ったウェブサイト構築のメリットは以下の通り。
+
+- Markdownで比較的簡単に記述できる。HTMLを編集するのに比べて、更新がだいぶ楽。
+- ブログ形式のサイトも作成できる。
+- テンプレートでもそれなりのデザイン。
+
+
+## ツールのセットアップ
+
+
+### Quarto
+
+[Quarto](https://quarto.org)ウェブサイトのトップページから`Get Started`ボタンをクリックしてダウンロードサイトに飛びます。OSに合わせたバージョンをインストールします。
+
+### Visual Studio Code
+
+Markdownの編集、GitHubとの連携に使います。[VS Code](https://code.visualstudio.com/)ウェブサイトからインストールします。
+
+VS Codeを立ち上げ、Quartoの拡張機能 (Extentions) で`Quart`を検索し、インストールします。
+
+Quartoのダウンロードサイトでも手順を解説しているので参考にしてください。
+
+### Git
+
+更新の管理とGitHubへのアップロードに使います。VS Codeと連携して使います。まず、[Git](https://git-scm.com/)ウェブサイトからOSに合わせてインストールします。
+
+- **Choosing the default editor used by Git**では、`VS Code`を選択します。
+
+- **Adjusting the name of the initial branch in new repositories**では、初期ブランチ名をどうするか選択します。GitHubは "main" を採用しているので`Override the deault branch name for new repositories`を選択し、初期ブランチ名に`main`と入力します。
+
+あとはデフォルトの設定で良いかと思います。変更する場合は各自調べてください。
+
+
+### GitHub
+
+[GitHub](https://github.com/)でアカウントを作成します。
+
+アカウントを作ったら、ウェブサイト公開用のリポジトリを作成します。このとき、リポジトリ名を`<username>.github.io`とすると、ウェブサイトURLは
+
+`https://<Username>.github.io/`
+
+になります。
+
+
+## ウェブサイトの作成
+
+### テンプレートから作成
+
+Quartoのウェブサイトテンプレートを使って作成を始めます。
+
+1. ウェブサイト作成用のフォルダを用意します。
+2. VS Codeを起動して{{< kbd Ctrl-Shift-P >}}でコマンドパレットを開き、`Quarto: Create Project`と入力します。
+3. `Website Project`を選択し、1.で作ったフォルダを選択して`Choose Project Directory`を押します。
+4. フォルダの中に、`index.qmd`や`_qualt.yml`といったテンプレートファイル一式が作られます。
+
+### テンプレートの編集
+
+テンプレートファイルを編集したり、新しいファイルを追加したりしてウェブサイトを作成していきます。ウェブサイト全体の設定は`_quarto.yml`に記述します。初期状態では
+
+```yaml
+project:
+  type: website
+
+website:
+  title: "<website title>"
+  navbar: #ページナビの設定
+    left: #左詰め
+      - href: index.qmd #1つめのリンク先
+        text: Home #1つ目のリンク先のテキスト（設定しないとリンク先のタイトルが使われる）
+      - about.qmd #2つ目のリンク先
+
+format:
+  html:
+    theme: cosmo #ページデザイン
+    css: styles.css #CSSファイル（使わないなら消してよい）
+    toc: true #ページ内目次のON/OFF（ページごとの設定も可）
+```
+
+となっています。（コメントは筆者の追記）
+
+詳しい作成方法については、[Quatro > Websites](https://quarto.org/docs/websites/)を参照してください。
+
+
+### プレビューとレンダリング
+
+`index.qmd`など作成・編集したファイルを開き、VS Code右上のPreviewボタンをクリックすると、ウェブサイトのプレビューを表示できます。{{< kbd Ctrl-Shift-K >}}でも可能です。
+
+![](quarto_preview.png)
+
+全ページをレンダリングする場合は、
+
+```default
+> quarto render
+```
+
+を実行してください。
+
+レンダリングで作成されたファイルは`/Docs/`フォルダに置かれます。ウェブサイトを公開する際は、このフォルダを指定します。
+
+
+## ウェブサイトの公開
+
+### Gitのリポジトリ作成とGitHubとの連携
+
+フォルダのリポジトリ登録とGitHubへの公開を同時に行います。
+
+VS Codeの`Soruce Control`をクリックし、`GitHubに公開`をクリックします。
+
+![](vscode_git_1.png)
+
+GitHubへのサインインを求められるので、`許可`をクリックしてブラウザからGitHubにサインインし、`Authorize-Visual-Studio-Code`をクリックし、VS CodeとGitHubを連携させます。
+
+![](vscode_git_3.png)
+
+VS Codeに戻り、`Publish to GitHub public repository`を選択し、リポジトリに含めるファイルを選択してOKをクリックします[^gitignore]。これで、Gitリポジトリの作成とGitHubリモートリポジトリ登録が完了しました。
+
+[^gitignore]: この方法では、ソースファイルもGitHubリポジトリ上で公開されます。ソースファイルを非公開にするには、`.gitignore`ファイルを設定します。
+
+
+### GitHub Pagesの設定
+
+GitHubのリポジトリページで、リポジトリメニューから`Settings`ページに飛びます。`Pages`の項目で、Branchを`main`、フォルダを`docs`に設定し、`Save`をクリックします。しばらく待ち、`https://<Username>.github.io/`にアクセスして公開されたウェブサイトを確認してください。
+
+![](github_pages.png)
+
+### ウェブサイトの更新
+
+ウェブサイトのソースファイル（`.qmd`ファイルなど）をVS Codeで編集した際は、
+
+1. プレビューかレンダリング[^render]でHTMLを更新
+2. VS Codeの`Soruce Control`から`変更`の横の`+`ボタンをクリックして、変更を”add”
+3. コミットメッセージを記入して`コミット`をクリックしローカルリポジトリに"commit"
+4. "変更の同期"をクリックしてGitHubに"push"
+
+で更新できます。
+
+[^render]: プレビューの場合は、編集中のページのみがレンダリングされるようです。プレビュー内のリンクをクリックすると、開かれたページもレンダリングされるようです。
+
+
+## 参考
+
+- [Quatro > Websites](https://quarto.org/docs/websites/)
+- [気軽にウェブサイト](https://shohei-doi.github.io/academic-website/)

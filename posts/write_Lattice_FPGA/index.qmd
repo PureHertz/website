@@ -1,0 +1,166 @@
+---
+title: "FPGA (MachXO2) の書き込み"
+date: "2024-04-28"
+date-modified: "2024-04-28"
+categories: [電子回路, FPGA, Lattice Semiconductor]
+image: "/common/electric-board.webp"
+lightbox: true
+---
+
+Lattice SemiconductorのFPGA **LCMXO2-256HC** (MachXO2シリーズ) は、以下のような利点があります。
+
+- 秋月電子で安く購入できる（在庫限りになってしまったが）
+- 外付けのコンフィグレーションROMが不要で、ICひとつで完結する（CPLDのように使える）
+
+日本語資料があまり無いので、書き込んで動かせるようにするまでの一連の手順を解説します。
+
+
+## はじめに
+
+### 動作確認環境
+
+|              | 環境 1^a^          | 環境 2^b^                                                          |
+| ------------ | ------------------ | ------------------------------------------------------------------ |
+| OS           | Windows 11         | Windows 10                                                         |
+| CPU          | AMD, RIZEN 7 3700X | Intel, Core i7-3770                                                |
+| 開発環境     | Diamond v3.12      | Diamond v3.12                                                      |
+| 使用言語     | Verilog HDL        | Verilog HDL                                                        |
+| 書込ケーブル |                    | [秋月電子, AE-FT2232](https://akizukidenshi.com/catalog/g/g102990) |
+
+- a: Verilog HDLの編集とコンパイルまで
+- b: Verilog HDLの編集とコンパイル、FPGAへの書き込みまで
+
+### 全体の流れ
+
+1. Diamondのインストール
+2. ライセンス認証
+3. Verilog HDLファイル (***.v)の作成
+4. 制約ファイル (***.ucf)の作成
+5. 基板との接続
+6. プログラムの書き込み
+
+
+## Diamondのインストール
+
+インストーラは、[Lattice Diamond設計ソフトウェアのページ](https://www.latticesemi.com/ja-JP/Products/DesignSoftwareAndIP/FPGAandLDS/LatticeDiamond)から`Diamond 3.13 64-bit for Windows`などOSに合わせてダウンロードします。執筆時のバージョンは3.13。
+
+![Lattice Diamondのダウンロードページ](Lattice-FPGA_1.png)
+
+
+## ライセンス認証
+
+まず、Latticeのウェブサイトの[アカウント作成ページ](https://www.latticesemi.com/Accounts/AccountRegister)でアカウントを作成し、サインインします。
+
+次に、[Lattice Diamond設計ソフトウェアのページ](https://www.latticesemi.com/ja-JP/Products/DesignSoftwareAndIP/FPGAandLDS/LatticeDiamond)で`ライセンスを取得`をクリックしてページを移動します。さらに、''Request Diamond Free License''の項目から`Request Node-locked License`を選択します。
+
+![ライセンス認証 1](Lattice-FPGA_2.png)
+
+![ライセンス認証 2](Lattice-FPGA_3.png)
+
+''Host NIC (physical address)''の入力欄に、PCの物理アドレス（MACアドレス）を12文字で入力（`-`や`:`は消す）。Windowsの場合は、コマンドプロンプトで`ipconfig/all`と入力することで調べられます。''I verify that...''にチェックを入れ、下の方にある`Generate License`をクリックすることで、ライセンスファイルがメールで送られてきます。
+
+オプションでいくつかのフリーIPのライセンスも取得できるので、必要がある場合は選択します。私の場合は不要だったのでスルーです。
+
+![ライセンス認証 3](Lattice-FPGA_4.png)
+
+ライセンスファイル`license.dat`は、インストールフォルダの中の`~\lscc\diamond\3.12\license`フォルダなどに置いておきます。Diamondの起動時にライセンスファイルのある場所を聞かれるので、答えると環境変数が設定されます。うまくいかない場合には、手動でシステム変数`LM_LICENSE_FILE`の値にライセンスファイルのパスを設定。
+
+::: {.callout-warning}
+リモートデスクトップでは、正しい手順を踏んでもライセンスが認証されません。現段階では、Lattice Diamondはリモートデスクトップでは使用できないようです。
+:::
+
+
+## 新規プロジェクトの作成
+
+1. メニューバーから`File`→`New`→`Project`の順に選択するか、スタートページ・ビュー左上部の`Project`セクションで`New...`を選択。
+2. 指示に従ってデバイス等を選択。プロジェクト生成の際、プロジェクトフォルダは自動生成されないので、あらかじめ作業フォルダを作っておく。
+3. Projectセクションの入力。
+   1. Name → プロジェクト名（英数字とアンダースコアのみ可）
+   2. Location → プロジェクトフォルダの指定
+4. Implementationセクションの入力
+   1. Name → インプリメンテーション名。デフォルトはimpl1。
+5. ソースファイルのインポート。必要なファイル（既存のHDLソースや制約ファイル）を選択する。`Copy source to...`にチェックを入れておくと、ファイルをプロジェクトフォルダにコピーしてそれをインポートする。ソースファイルのインポートはプロジェクト作成後でも可。
+6. デバイスの選択。デバイス、スピードグレード、パッケージを選択。プロジェクト作成後でも変更可。
+7. 論理合成ツールの選択。デフォルトはLSE (Lattice Synthesis Engine)。プロジェクト作成後でも変更可。
+
+
+## Verilog HDLファイル (***.v) の作成
+
+`File List`タブの中の`インプリメンテーションファイル名`→`Input Files`の中に置かれます。ダブルクリックするとエディタが開きます。
+
+
+## 制約ファイル (***.lpf) の作成
+`File List`タブの中の`インプリメンテーションファイル名`→`LPF Constraint Files`の中に置かれる。ダブルクリックするとテキストエディタが開く。
+
+LPF制約ファイルは、`Spreadsheet View`のGUIで各種制約を設定することで書き出せます。ユーザーI/O（RTL記述で宣言されたI/O）のピンアサインをする方法は、以下の通り。
+
+- ポート名に対してピン番号を指定（`Port Assignments`シートで行う）
+- ピン番号に対してポート名を指定（`Pin Assignments`シートで行う）
+
+
+## 基板との接続
+
+純正のプログラマケーブル (HW-USBN-2B) は高価なので、最低限の機能を秋月電子のUSB-シリアル変換モジュールで実現します。
+
+![HW-USBN-2B](Lattice-FPGA-cable.png)
+
+
+### 仕様部材
+
+- 秋月電子, [FT2232D USBシリアル2ch変換モジュール](AE-FT2232|https://akizukidenshi.com/catalog/g/g102990)
+- USBケーブル（Type A-mini B）
+- ブレッドボード
+- ブレッドボード用ジャンパーワイヤー
+
+![AE-FT2232](Lattice-FPGA-cable_2.png)
+
+
+### 接続
+
+AE-FT2232のJTAGのピンアサインは以下の通り。
+
+| AE-FT2232ピン名 | 接続先JTAG信号名 |
+| --------------- | ---------------- |
+| VCCIOA          | VCC              |
+| VCCIOB          | VCC              |
+| AD0             | TCK              |
+| AD1             | TDI              |
+| AD2             | TDO              |
+| AD3             | TMS              |
+| GND             | GND              |
+
+各信号のプルアップ/プルダウンは接続先の開発ボード/デバイスに合わせます。ここでは、接続先の基板においてTCK、TDI、TDO、TMSが10kΩで3.3 Vにプルアップされているとして、変換モジュール回路上では特に変更しません。
+
+また、チャンネルAのロジックVCCには接続先の基板の3.3 Vを使用するとして、JP2Aジャンパーを外してVCCIOAに接続先基板のVCC 3.3 Vを繋ぎます。チャンネルBは使用しませんが、同様にJP2Bジャンパーも外してVCCIOBに接続先基板のVCC 3.3 Vに繋いでおきます。
+
+主電源にはUSBバスパワー5 Vを使用するので、JP1ジャンパーは取り付けたままにします。
+
+
+### ドライバのインストール
+
+[FTDIのサイト](https://ftdichip.com/drivers/)からドライバを入手。`VCP Drivers`を選択して、OSに対応したドライバをダウンロードして流れに沿ってインストールします。
+
+※ Windows11 x64の場合、2023/1/8時点でのダウンロードファイル名は`CDM212364_Setup.zip`でした。
+
+インストールが完了すると、USBケーブルでPCに接続したときに、デバイスマネージャー上で2つのCOMポートが認識されます。
+
+
+### Diamondでの設定
+
+モジュールのデータシートでは、保証されるTTLレベルの通信速度は最大3 Mbps。一方、Diamondの初期設定は6 Mbpsなので、Programmerウィンドウ右側の`Progrmmer Speed Setting`部、`TCK Divider Setting`で周波数を変更します。`Use custom Clock Divider`をチェックし、Divider値を任意の値に変更することによって、周波数を下げられます。
+
+
+## プログラムの書き込み
+
+### コンパイル
+1. `Process`タブの`Export Files`の下の`JEDEC File`にチェックを入れて、右クリックメニューから`Run`を実行
+2. `Map Design` → `Place & Route Design` → `Export Files` の順に実行されて、`***.jed`ファイルが生成される
+
+### 生成されたJEDファイルの書き込み
+
+1. `Tools` → `Programmer` を開くと、JTAGの接続を聞いてくるので、FTDIのデバイスを選択
+2. `Detect Cable` で `USB2 - FTUSB-0 (Dual RS232 A Location 0000)` の方を選択
+3. `Use custom Clock Divider` をチェックし、Divider値を任意の値に設定
+   1. USB-シリアル変換モジュールの仕様上は2以上であればOKですが、試してみたら10分周でようやく書き込めました。ブレッドボードとジャンパーケーブルで接続したのが良くなかったかもしれません。
+4. `Device Family` `Device` `File Name`の項目を正しく設定して、プログラムアイコンをクリックしてコンフィグレーション開始
+5. [Status]が[PASS]となれば完了

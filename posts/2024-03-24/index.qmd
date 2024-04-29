@@ -1,0 +1,500 @@
+---
+title: "PC制御式LDドライバに物理インターフェイスを付けてみた"
+date: 2024-03-24
+date-modified: 2024-03-24
+categories: [電子回路,レーザー,マイコン]
+image: "IMG_2092.jpg"
+lightbox: true
+format:
+  html:
+    code-fold: true
+    code-summary: "コードを表示する"
+---
+
+## 概要
+
+将来的なLDのリモート制御のために、PCで制御するタイプのLDドライバを買ってみました。が、実験室で使うのにいちいちPCと接続しないといけないのは大変なので、ケースに入れてフロントパネルから簡単な操作ができるようにしました。
+
+## 構成
+
+ケースの中には
+
+- リニア電源
+- PC制御LDドライバ（基板タイプ, Koheron: CTL-200）
+- インターフェース用基板
+  -   マイコン（Adafruit: Qt Py SAMD21）
+  -   ロータリーエンコーダー
+  -   タクトスイッチ × 2
+- OLED
+
+が入っています。
+
+![ケース内の様子。写真はテスト段階のものなので、まだフロントパネルにスイッチ類がついていません。](IMG_2069.jpg){width="80%"}
+
+リアパネルにUSB端子を引き出してあり、PCでの制御も引き続き可能です。が、フロントパネル操作とPC操作の競合については未検証。おそらくですが、致命的なことにはならないと思われます。
+
+### 電源
+
+7 V × 2, 15 VAのトロイダルコアトランスで作った+5 V電源を使っています。リニアレギュレータには、可変タイプのLD1085 (最大3 A)を使っています。
+
+当初、スイッチング電源を使っていたのですが、出力にスイッチング周波数のサイドバンドが発生していることが分かり、大人しくリニア電源を作りました。LDドライバにはスイッチングタイプのACアダプタが付属しているのですが、それで動かしたときはサイドバンドは出ないのだろうか？チャンスがあったらテストしてみようと思います。
+
+### マイコン
+
+必要な入出力は多くないので、AdafruitのQt Py SAMD21を使いました。OLEDの動作をArduino IDE経由でしかやったことがなかったため、Arduino環境を優先してRP2040にはしませんでした。
+
+AdafruitのQt Py SAMD21は秋月で買ったのですが、今はもう在庫限りのようです。マイコンボードは安定供給でないものが多くて、たまにしか作らない自作装置はどうしても1点ものになりがちです。その話はまた別の機会に。
+
+![](QtPySAMD21.png)
+
+#### LDドライバとの通信
+
+LDドライバとはUARTで通信しています。
+
+| Qt Py |     | CTL-200 |
+| :---: | :-: | :-----: |
+|  TX   | ←→  |   RX    |
+|  RX   | ←→  |   TX    |
+
+
+という具合に、クロスで接続します。Qt Py SAMD21のArduino用ドライバでは、TX, RX端子を使ったシリアル通信に`Serial1`が割り当てられているようです。（USB端子を使ったシリアル通信には`Serial`が割り当てられている。）なので、スケッチには
+
+``` cpp
+Serial1.begin(115200);
+Serial1.setTimeout(3000);
+```
+
+などと記述します。
+
+LDドライバにコマンドを送るための関数を作り、LDの状態を読み取ったり、スイッチやロータリーエンコーダの操作を書き込んだりします。
+
+```cpp
+// 読み取り
+float readCmd(String cmd) {
+  Serial1.println(cmd);
+  delay(5);
+  if (Serial1.available() > 0) {return Serial1.parseFloat();}
+  else {return 0;}
+  while (Serial1.available() > 0) {char t = Serial1.read();} //シリアルバッファのクリア
+}
+
+// 書き込み
+void writeCmd(String cmd) {
+  Serial1.println(cmd);
+  delay(5);
+  while (Serial1.available() > 0) {char t = Serial1.read();} //シリアルバッファのクリア
+}
+```
+
+
+#### 操作用インターフェイス
+
+マイコン操作用のインターフェイスとして、ロータリーエンコーダ1個とタクトスイッチ2個を取り付けました。ロータリーエンコーダは初挑戦でしたが、Arduino用のライブラリをそのまま使ったらすぐできました。また、タクトスイッチのバウンス対策もライブラリのものをそのまま使っています。
+
+##### デバウンス
+``` cpp
+#include <Bounce2.h>
+
+// void setup() 内
+  debSel.attach(D1, INPUT_PULLUP); //オブジェクト"debSel"を設定 
+  debSel.interval(10);
+
+// void loop() 内
+  debSel.update();
+  if (debSel.fell()) {
+    statePar++;
+    if (statePar >= 5) {statePar = 0;}
+  }  
+```
+
+##### ロータリーエンコーダ
+```cpp
+#include <RotaryEncoder.h>
+
+// void setup() 内
+  // setup the rotary encoder functionality
+  encoder = new RotaryEncoder(rotA, rotB, RotaryEncoder::LatchMode::FOUR3);
+  
+  // register interrupt routine
+  attachInterrupt(digitalPinToInterrupt(rotA), checkPosition, CHANGE);
+  attachInterrupt(digitalPinToInterrupt(rotB), checkPosition, CHANGE);
+
+// void loop() 内
+  encoder->tick(); // just call tick() to check the state.
+  I_set += I_resolution * (int)(encoder->getDirection());
+
+```
+
+ロータリーエンコーダは、割と回転を取りこぼす印象です。エンコーダ自体はALPS ALPINE製で変なメーカーのものではないです。マイコン側のループ速度のせいか、もしくはそもそもエンコーダはこんなものなのかもしれません。とりあえず使用上は問題ありません。
+
+#### OLED
+
+LDのON/OFF、電流値、温度はいつでも見られるようにしたいので、OLEDも取り付けました。I2Cで通信しています。Qt PyにはI2C通信用の信号 (SCL, SDA, VCC, GND) がQwiic端子で出ているので、そこからOLEDに接続します。Qwiic端子の正体はJSTのSHコネクタ（4極）です。秋月でケーブル付きで買えます。
+
+OLEDを使うには画面表示用のライブラリ`Adafruit_SSD1306`、文字列出力用ライブラリ`Adafruit_GFX`が必要です。加えて、フォントライブラリを使っています。このあたりはネットでいろいろ調べ、ライブラリをコピペしつつ何とか使えるようにしたレベルなので、ちゃんと説明できません。。。
+
+``` cpp
+#include <Adafruit_SSD1306.h>
+#include <Adafruit_GFX.h>
+#include <Fonts/FreeSans24pt7b.h>
+#include <Fonts/FreeSerif9pt7b.h>
+```
+
+### 外部入力
+
+電流と温調には外部変調入力端子を用意し、フィードバック制御できるようしてあります。
+
+温調は、まず、レベル合わせをした上でマイコンのADCで読み取り、マイコン内で積分してLDドライバの設定温度をデジタル制御する形にしてみたのですが、まだ試験していません。デジタル制御の方が時定数を大きくしやすいのでやってみました。
+
+## 外観
+
+![](IMG_2092.jpg){width="50%"}
+
+フロントパネルは、なかなかよい感じではないでしょうか。写真の後、テプラでスイッチなどの表示を追加しています。
+
+ファンレスなので、放熱対策にタカチのヒートシンクケースを使ってみましたが、ちょっと大袈裟でした。使ってみて、発熱はさほど気にならないので普通のケースで良かったかもしれません。電源トランス次第ですが、もう少し高さを抑えられたかもしれません。
+
+タクトスイッチは、一方でモードを選んで、もう一方でON/OFFしたりレンジを切り替えたりといった感じです。数値の操作はロータリーエンコーダで行います。
+
+
+## まとめ
+
+フロントパネルで電流のON/OFFと値の操作をするだけですが、とりあえず今のところちゃんと動いています。正直、インターフェイスを作らなかったら操作が面倒でレーザー自体あまり触っていなかったかもしれません。
+
+残る宿題は、
+
+- 付属ACアダプタ使用時のスイッチング雑音の影響を確認
+- 温調と電流のフィードバック制御を確認
+- PC制御とフロントパネル操作の競合の有無を確認
+
+です。
+
+<!-- 
+
+## プログラム
+
+<details>
+
+```cpp
+#include <math.h>
+#include <Bounce2.h>
+#include <RotaryEncoder.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+#include <Fonts/FreeSans24pt7b.h>
+#include <Fonts/FreeSerif9pt7b.h>
+
+#define SCREEN_WIDTH 128 // OLED display width, in pixels
+#define SCREEN_HEIGHT 64 // OLED display height, in pixels
+
+// Declaration for an SSD1306 display connected to I2C (SDA, SCL pins)
+#define OLED_RESET     -1 // Reset pin # (or -1 if sharing Arduino reset pin)
+#define SCREEN_ADDRESS 0x3C ///< See datasheet for Address; 0x3D for 128x64, 0x3C for 128x32
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+
+
+const float B = 3900; // サーミスタB定数;
+const float gain = 10.0; // 温調外部制御のゲイン, 1sあたり~gain(Ω)変化する
+const float Ires[3] = {1.0, 0.1, 0.01}; // LD電流 (設定分解能)
+const float Ilim = 120.0; // LD電流リミット
+const float Rmax = 14000; // 下限温度~17℃
+const float Rmin =  7000; // 上限温度~34℃
+const unsigned long interval = 1000; // 温度積分のインターバル(ms)
+const byte adcRes = 12; // ADCの分解能
+
+// 移動平均回数 (最大100)
+const int nAverage = 50; // 電流値の移動平均回数
+int cnt = 0;
+int i;
+float temp[100]; //移動平均用の配列
+float average; //読み取った信号を移動平均するための変数置き場
+
+// Analog input
+const byte inRext = A0; // 温調フィードバック
+
+// Digital input
+const byte inSel = 1; // LD on/offのスイッチ入力
+const byte inEnt = 3; // T外部制御スイッチ入力
+Bounce debSel = Bounce();
+Bounce debEnt = Bounce();
+const byte rotA = 10; // ロータリーエンコーダのAピン
+const byte rotB =  9; // ロータリーエンコーダのBピン
+
+// A pointer to the dynamic created rotary encoder instance.
+// This will be done in setup()
+RotaryEncoder *encoder = nullptr;
+
+// This interrupt routine will be called on any change of one of the input signals
+void checkPosition(){encoder->tick();} // just call tick() to check the state.
+
+// 変数
+byte statePar = 0; //設定パラメータの状態番号
+byte stateRes = 0; //電流設定分解能の状態番号
+bool stateLD = false; //LD ON/OFF (TrueでON)
+bool stateT = false; //温調外部制御 ON/OFF (TrueでON)
+
+String parm = "Laser OFF"; //表示パラメータ
+char buf[5]; //OLED表示用文字列変数
+bool disp = true; //displayをON/OFFするためのスイッチ
+byte offset = 0;
+
+float Iset, Ract, Rset, Tset; // LD電流 (set), サーミスタ抵抗 (act), サーミスタ抵抗 (set), 設定温度
+int Rext; // 外部温度制御信号
+
+unsigned long prev, curr;
+
+
+//*** 関数の定義 ******************************************************************
+
+// 右揃えの文字列表示
+void drawRightString(const String &buf, int x, int y) {
+    int16_t x1, y1;
+    uint16_t w, h;
+    display.getTextBounds(buf, x, y, &x1, &y1, &w, &h); //calc width of new string
+    display.setCursor(x, y);
+//    Serial.println(w);
+    display.print(buf);
+}
+
+// 書き込みコマンド
+void writeCmd(String cmd) {
+  Serial1.println(cmd);
+  delay(5);
+  while (Serial1.available() > 0) {char t = Serial1.read();} //シリアルバッファのクリア
+}
+
+// 読み込みコマンド
+float readCmd(String cmd) {
+  Serial1.println(cmd);
+  delay(5);
+  if (Serial1.available() > 0) {return Serial1.parseFloat();}
+  else {return 0;}
+  while (Serial1.available() > 0) {char t = Serial1.read();} //シリアルバッファのクリア
+}
+
+
+//*** 初期化 ************************************************
+
+void setup() {                
+  Serial1.begin(115200); //"QT PY SAMD21"のTX,RXピンは"Serial1"が割り当てられている。(USBコネクタは"Serial")
+  Serial1.setTimeout(3000); // Timeout 3秒
+  analogReadResolution(adcRes);
+  prev = 0;
+
+  //*** OLEDの初期化 ***********************************************************
+
+  if(!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
+    for(;;); // Don't proceed, loop forever
+  }
+
+  display.clearDisplay();
+  display.display();
+ 
+  //*** スイッチのデバウンスの設定 ***********************************************
+
+  debSel.attach(inSel, INPUT_PULLUP);
+  debSel.interval(10);
+  debEnt.attach(inEnt, INPUT_PULLUP);
+  debEnt.interval(10);
+
+  //*** レーザーパラメータの初期化 ***********************************************
+
+  delay(4000); // CTL200の起動まで4秒待機
+  Iset = readCmd("ilaser"); // Iset初期値の読み込み
+  Rset = readCmd("rtset"); // Rset初期値の読み込み
+
+  //*** ロータリーエンコーダの初期化 *********************************************
+
+  // setup the rotary encoder functionality
+  encoder = new RotaryEncoder(rotA, rotB, RotaryEncoder::LatchMode::FOUR3);
+  
+  // register interrupt routine
+  attachInterrupt(digitalPinToInterrupt(rotA), checkPosition, CHANGE);
+  attachInterrupt(digitalPinToInterrupt(rotB), checkPosition, CHANGE);
+}
+
+//*** メインループ **************************************************************
+
+void loop() {
+
+  // 操作パラメータの選択
+  debSel.update();
+  if (debSel.fell()) {
+    statePar++;
+    if (statePar >= 5) {statePar = 0;}
+  }
+
+  // 外部温調制御入力を移動平均
+  if (cnt == nAverage) {cnt = 0;}
+  average = 0.0;
+  temp[cnt] = analogRead(inRext);
+  for (i=0; i<nAverage; i++) {
+    average += temp[i];
+  }
+  average = average/nAverage;
+  cnt++;
+
+  // stateT=1 (Temp external)のときはinterval以上経過したら処理を実行
+  if (stateT) {
+    curr = millis(); // 現在時刻の取得
+    if ((curr - prev) >= interval) {
+      Rext = analogRead(inRext);
+      Rset += gain * (interval/500) * (Rext -10 - pow(2,adcRes-1)) / (pow(2,adcRes)-1);//最大入力で、1秒あたり~gain(Ω)変化する。
+      Serial1.println("rtset " + String(Rset, 0));
+      prev = curr; // 現在時刻を前回時刻として保存
+    }
+  }
+  else{
+    prev = millis();
+  }
+
+  // 温度の制限
+  if (Rset >= Rmax) {Rset = Rmax;}
+  else if(Rset <= Rmin) {Rset = Rmin;}
+
+  //*** 状態遷移 *******************************
+  
+  switch (statePar) {
+
+    case 0:  // LD on/off
+    
+      // LD on/offの遷移
+      debEnt.update();
+      if (debEnt.fell()) {
+        stateLD = !stateLD;
+        if (stateLD) {writeCmd("lason 1");}
+        else {writeCmd("lason 0");}
+        }
+        
+      // LD on/off表示
+      if (stateLD) {
+        parm = "Laser";
+        buf[0] = 'O';
+        buf[1] = 'N';
+        buf[2] = ' ';
+        buf[3] = ' ';
+        buf[4] = ' ';
+        offset = 0;
+      }
+      else {
+        parm = "Laser";
+        buf[0] = 'O';
+        buf[1] = 'F';
+        buf[2] = 'F';
+        buf[3] = ' ';
+        buf[4] = ' ';
+        offset = 0;
+      }
+
+      disp = true;
+      break;
+          
+    case 1: // 電流
+
+      // 電流設定分解能の遷移
+      debEnt.update();
+      if (debEnt.fell()) {
+        stateRes++;
+        if (stateRes > 2) {stateRes = 0;}
+      }
+
+      // 電流値の設定
+      encoder->tick(); // just call tick() to check the state.
+      Iset += Ires[stateRes] * (int)(encoder->getDirection());
+      if (Iset < 0.0) {Iset = 0.0;}
+      else if (Iset > Ilim) {Iset = Ilim;}
+      writeCmd("ilaser " + String(Iset, 2));
+
+      // 電流値の表示
+      parm = "I / mA  (" + String(Ires[stateRes], 2) + ")";
+      sprintf(buf,"%4.1f",Iset);//Dueの場合
+      if (round(10*Iset) < 100){offset = 28;}
+      else if (round(10*Iset) < 1000){offset = 14;}
+      else {offset = 0;}
+
+      disp = true;
+      break;
+
+    case 2: // 温度設定
+
+      // 温調外部制御 on/offの遷移
+      debEnt.update();
+      if (debEnt.fell()){stateT = !stateT;}
+
+      // 温度(サーミスタ抵抗)の設定
+      if (stateT) {
+        parm = "Tset/'C  External";
+      }
+      else {
+        parm = "Tset/'C  Internal";
+        encoder->tick(); // just call tick() to check the state.
+        Rset += -20 * (int)(encoder->getDirection());
+        writeCmd("rtset " + String(Rset, 0));
+      }
+      
+
+      // 温度の表示
+      Tset = 1.0/(log(Rset/10000.0)/B + 1/298.15) - 273.15;
+      sprintf(buf,"%4.2f",Tset) ;//Dueの場合
+      if (round(10*Tset) < 100){offset = 14;}
+      else {offset = 0;}
+      
+      disp = true;
+      break;
+
+    case 3: // 実際の温度の表示
+
+      // Tactの読み込み
+      Ract = readCmd("rtact");     
+      Ract = 1.0/(log(Ract/10000.0)/B + 1/298.15) - 273.15; //サーミスタ抵抗(25℃:10kΩ)から温度を計算
+
+      // 温度の表示
+      if (stateT) {parm = "Tact/'C  External";}
+      else {parm = "Tact/'C  Internal";}
+      sprintf(buf,"%4.2f", Ract);//Dueの場合
+      if (round(10*Ract) < 100){offset = 14;}
+      else {offset = 0;}
+
+      disp = true;
+      break;
+
+    case 4: // ディスプレイOFF
+      disp = false;
+      display.clearDisplay();
+      display.display();
+
+      // パラメータ保存
+      debEnt.update();
+      if (debEnt.fell()) {
+        Serial1.println("save"); //パラメータの保存
+        delay(3000);
+        while (Serial1.available() > 0) {char t = Serial1.read();} //バッファクリア
+      }
+
+      break;
+  }
+
+
+//*** OLED表示*****************************************
+
+  if (disp){
+    display.clearDisplay(); // 画面表示のクリア
+    display.setTextSize(1); // テキストサイズを設定
+    display.setTextColor(WHITE); // テキスト色を設定
+
+    display.setFont(&FreeSerif9pt7b); // テキストフォントを設定
+    display.setCursor(0, 12); // テキストの開始位置を設定
+    display.println(parm); // テキストを設定
+
+    display.setFont(&FreeSans24pt7b); // テキストフォントを設定
+    drawRightString(buf, 10+offset, 62); // テキストと開始位置を設定
+    
+    display.display(); // 描画バッファの内容を画面に表示
+  }
+
+}
+```
+
+</details>
+
+ -->

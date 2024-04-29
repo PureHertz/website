@@ -1,0 +1,75 @@
+---
+title: "You Go, We Go"
+License: CC BY-SA
+date: "2024-04-12"
+date-modified: "2024-04-12"
+categories: [Music, Original song]
+image: "thumnail.png"
+toc: false
+---
+
+## Abstract
+
+某研究所のテーマソングのようなイメージで作成。異なる研究分野の融合によって、ともに新しい未来を創造していこうという歌です。
+
+Vocal
+: Miku Hatsune
+
+Music & Lyrics
+: Sho Okubo
+
+License
+: <p xmlns:cc="http://creativecommons.org/ns#" ><a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+<!-- <audio controlslist="nodownload" controls oncontextmenu="return false;">
+   <source src="Colour of the Universe_v1.05.mp3" type="audio/mp3">
+   <p>Your browser does not support the audio element.</p>
+</audio> -->
+
+
+## Play
+
+{{< video https://youtu.be/sGs07M8idkE?si=jBdKFeu-R5vv_wvd width="560" height="315">}}
+
+<script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm43648618/script?w=560&h=315"></script><noscript><a href="https://www.nicovideo.jp/watch/sm43648618">You Go, We Go / 初音ミク</a></noscript>
+
+## Lyrics
+
+あの日見た 明日に僕ら立っている  
+積み上げてきた 昨日で作る塔の上  
+"AI"が紡いだ 言葉が時間を超えても  
+その続きは 君に歌ってほしいんだ
+
+未だ見ぬ海原が Stage  
+波が運んでくる Message  
+縺れ合ういくつもの 糸が解けていく
+
+この世界を変えていくために 僕ら何ができるだろう  
+繋がって生まれる力を 君はもう知っている  
+描いた未来へと続いていく 道はどこにあるのだろう  
+ともに挑み つぎを創る この手を掴んで  
+You go, we go
+
+限りなく 続いていく日々のために  
+限りある 今を繋げて輪にする
+
+全てのことが Dream maker  
+僕らを驚かせる Entertainer  
+選り好みしていたら 置いていかれるだけさ
+
+この世界を変えていくために 僕ら何ができるだろう  
+種をまき花が開いたら 実をつけるまで  
+遠回りで残した足跡は やがて虹を描くだろう  
+ともに挑み つぎを創る この手を離さず  
+You go, we go
+
+この世界を変えていくために 僕ら何ができるだろう  
+繋がって生まれる力で 時計の針は進む  
+描いた未来へと続いていく 道を僕ら並んで歩いていこう  
+もう迷わない 一歩ずつ前へ  
+ともに挑み つぎを創る この手を掴んで  
+You go, we go
+
+さあ、行こう  
+その向こう  
+You go, we go

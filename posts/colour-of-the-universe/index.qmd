@@ -1,0 +1,94 @@
+---
+title: "Colour of the Universe"
+License: CC BY-SA
+date: "2023-06-03"
+date-modified: "2024-02-24"
+categories: [Music, Original song]
+image: "thumnail.jpg"
+toc: false
+---
+
+## Abstract
+
+天体が放つ光のドップラーシフトを利用した天体視線速度測定は、太陽型恒星の周りを公転する系外惑星が初めて発見された際に用いられた手法である。さらに精度を高めることで、地球型系外惑星発見、宇宙加速膨張の直接的実証、基礎物理定数の恒常性検証が可能になると期待されている。
+
+そして現在、光の波長の超高精度な「ものさし」である【光コム】を基準とした、究極的精度の視線速度測定を目指す研究が進められている...
+
+Vocal
+: Miku Hatsune
+
+Music & Lyrics
+: Sho Okubo
+
+License
+: <p xmlns:cc="http://creativecommons.org/ns#" ><a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+<!-- <audio controlslist="nodownload" controls oncontextmenu="return false;">
+   <source src="Colour of the Universe_v1.05.mp3" type="audio/mp3">
+   <p>Your browser does not support the audio element.</p>
+</audio> -->
+
+
+## Play
+
+{{< video https://youtu.be/AwFKwa4n-Ho?si=oMhn8Gkamwnhnswe  width="560" height="315">}}
+
+<script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm42303594/script?w=560&h=315"></script><noscript><a href="https://www.nicovideo.jp/watch/sm42303594">Colour of the Universe / 初音ミク</a></noscript>
+
+
+## Lyrics
+
+Can you hear it?  
+宇宙 [そら] の彼方から届くメッセージ  
+Can you see it?  
+星の鼓動が彩る1ページ
+
+近づくほどに青く 静かに燃える情熱  
+遠ざかるほどに赤く 逢いたいと願う微熱  
+
+100億光年の孤独に 終わりを告げる時が来る  
+混ざりあう全ての色から 答えを掬い上げるのさ  
+Colour of the universe
+
+Can you feel it?  
+加速するほどに広がり続ける世界  
+Can you believe it?  
+本当の形はまだ誰も見たことがない  
+
+おどけ顔の君が残した 奇妙な置き土産  
+その意味を探すように 今夜も空を見上げ  
+
+100億光年の孤独に 終わりを告げるとき時が来る  
+混ざりあう全ての色から 答えを掬い上げるのさ  
+Colour of the universe
+
+決して辿り着けない 遥かなる星雲  
+それでもここから見つけ出せる New horizons
+
+呼ぶ声に導かれて 踏み出す闇の向こう側  
+虹色の瞳で 見つめる先は  
+Colour of the universe
+
+A light in the black night  
+答えは遠くない もう怖くない  
+Like a rainbow in the dark  
+この胸に抱く まだ見ぬ地平を
+
+We can resolve the spectre from the space  
+Searching for the new horizons from this place
+
+That's why we're here  
+降り注ぐ光を集めて  
+It will be near  
+混ざりあう全ての色から  
+君の印をきっと見つけ出すのさ  
+Colour of the universe  
+That's how we'll shine
+
+
+
+## References
+
+- <https://doi.org/10.1364/OE.487279>
+
+

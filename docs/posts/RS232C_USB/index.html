@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-03-17">
 
-<title>PureHertz Laboratory</title>
+<title>PureHertz Laboratory - RS232C-USB変換</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +24,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./common/logo_small.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../common/logo_small.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -83,12 +87,12 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./common/logo_white.png" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../common/logo_white.png" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -98,15 +102,15 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./works.html"> 
+    <a class="nav-link" href="../../works.html"> 
 <span class="menu-text">Works</span></a>
   </li>  
 </ul>
@@ -117,7 +121,38 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">RS232C-USB変換</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">実験装置</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">2024-03-17</p>
+      </div>
+    </div>
+    
+      <div>
+      <div class="quarto-title-meta-heading">Modified</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">2024-03-17</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -125,22 +160,75 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#purehertz-labratory" id="toc-purehertz-labratory" class="nav-link active" data-scroll-target="#purehertz-labratory">PureHertz Labratory</a></li>
+  <li><a href="#rs232cとは" id="toc-rs232cとは" class="nav-link active" data-scroll-target="#rs232cとは">RS232Cとは</a></li>
+  <li><a href="#使用ケーブル" id="toc-使用ケーブル" class="nav-link" data-scroll-target="#使用ケーブル">使用ケーブル</a></li>
+  <li><a href="#ドライバのインストール" id="toc-ドライバのインストール" class="nav-link" data-scroll-target="#ドライバのインストール">ドライバのインストール</a>
+  <ul class="collapse">
+  <li><a href="#ftdi公式サイトからインストーラをダウンロードする方法" id="toc-ftdi公式サイトからインストーラをダウンロードする方法" class="nav-link" data-scroll-target="#ftdi公式サイトからインストーラをダウンロードする方法">FTDI公式サイトからインストーラをダウンロードする方法</a></li>
+  <li><a href="#その他のインストール方法" id="toc-その他のインストール方法" class="nav-link" data-scroll-target="#その他のインストール方法">その他のインストール方法</a></li>
+  </ul></li>
+  <li><a href="#通信の確認" id="toc-通信の確認" class="nav-link" data-scroll-target="#通信の確認">通信の確認</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<section id="purehertz-labratory" class="level1">
-<h1>PureHertz Labratory</h1>
-<p>Website repository of PureHertz.</p>
-<p><a href="https://purehertz.github.io/" class="uri">https://purehertz.github.io/</a></p>
+
+<p>RS232CをUSBに変換し、RS232C対応の装置とPCの間で通信するための手順のメモです。PC側では変換ケーブル（変換用IC）が仮装COMポートとして認識されます。</p>
+<section id="rs232cとは" class="level2">
+<h2 class="anchored" data-anchor-id="rs232cとは">RS232Cとは</h2>
+<p>RS-232C (Recommended Standard 232 version C) とは、電子機器間でシリアル通信を行うための接続規格のひとつです。コンピュータのシリアルポートと周辺機器（プリンター、モデム、スキャナーなど）を接続する仕様として、かつては広く普及していた・・・とのことですが、RS232C搭載の実験装置はまだまだ現役で使われています。</p>
+<p>PC側に装置毎の特別なドライバが不要なので、割と手堅い通信手段だと思います。</p>
+</section>
+<section id="使用ケーブル" class="level2">
+<h2 class="anchored" data-anchor-id="使用ケーブル">使用ケーブル</h2>
+<p>RS232C(D-sub 9ピン)-USB変換ケーブルを使用します。FTDI製のチップを使用したものが一般的です。いろいろなところから購入出来ます。</p>
+<ul>
+<li><a href="https://jp.rs-online.com/web/p/interface-adapters-converters/2206494">RSオンライン</a></li>
+<li><a href="https://www.monotaro.com/g/04184844/">モノタロウ</a></li>
+<li><a href="https://akizukidenshi.com/catalog/g/g108343/">秋月電子</a></li>
+</ul>
+<p>（2024/03/17 確認）</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="RS232C_USB.jpg" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1" title="秋月電子のRS232C-USB変換ケーブル"><img src="RS232C_USB.jpg" class="img-fluid figure-img" style="width:50.0%" alt="秋月電子のRS232C-USB変換ケーブル"></a></p>
+<figcaption>秋月電子のRS232C-USB変換ケーブル</figcaption>
+</figure>
+</div>
+</section>
+<section id="ドライバのインストール" class="level2">
+<h2 class="anchored" data-anchor-id="ドライバのインストール">ドライバのインストール</h2>
+<p>FTDIのチップを使用している場合のドライバのインストール手順は以下の通り。</p>
+<section id="ftdi公式サイトからインストーラをダウンロードする方法" class="level3">
+<h3 class="anchored" data-anchor-id="ftdi公式サイトからインストーラをダウンロードする方法">FTDI公式サイトからインストーラをダウンロードする方法</h3>
+<p>FTDIのウェブサイト &gt; Drivers &gt; <a href="https://ftdichip.com/drivers/vcp-drivers/">VCP-drivers</a> からOSに合わせたドライバを選択します。</p>
+<p>Windowsの場合は、下図の赤丸を付けたリンクからインストーラをダウンロードして実行します。インストール後は再起動が必要なようです。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="FTDI-driver_1.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2" title="（2024/03/17 確認）"><img src="FTDI-driver_1.png" class="img-fluid figure-img" alt="（2024/03/17 確認）"></a></p>
+<figcaption>（2024/03/17 確認）</figcaption>
+</figure>
+</div>
+</section>
+<section id="その他のインストール方法" class="level3">
+<h3 class="anchored" data-anchor-id="その他のインストール方法">その他のインストール方法</h3>
+<p>各装置の制御ソフトウェア等をインストールする際に、一緒にインストールされることがあります。とりあえず、<a href="https://www.arduino.cc/en/software">Arduino IDE</a>を入れるのが手っ取り早かったです。</p>
+<p>RS232C-USB変換ケーブルにインストール用CDが付属している場合は、それでもインストールできます。</p>
+</section>
+</section>
+<section id="通信の確認" class="level2">
+<h2 class="anchored" data-anchor-id="通信の確認">通信の確認</h2>
+<p><a href="https://teratermproject.github.io/">Tera Term</a>などのターミナルソフトを使ってシリアル通信を確認できます。</p>
 
 
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">秋月電子のRS232C-USB変換ケーブル</span>
+<span class="glightbox-desc lightbox-desc-2">（2024/03/17 確認）</span>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -570,6 +658,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","loop":false,"openEffect":"zoom","closeEffect":"zoom","selector":".lightbox"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 

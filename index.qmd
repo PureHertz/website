@@ -4,7 +4,7 @@ title-block-banner: false
 toc: false
 listing: 
   id: new-posts
-  contents: /works/posts
+  contents: /posts
   date-format: iso
   sort: ["date-modified desc", "date desc"]
   type: table

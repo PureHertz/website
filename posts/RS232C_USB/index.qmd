@@ -1,0 +1,55 @@
+---
+title: "RS232C-USB変換"
+date: 2024-03-17
+date-modified: 2024-03-17
+categories: [実験装置]
+image: "/common/electric-board.webp"
+lightbox: true
+---
+
+
+RS232CをUSBに変換し、RS232C対応の装置とPCの間で通信するための手順のメモです。PC側では変換ケーブル（変換用IC）が仮装COMポートとして認識されます。
+
+## RS232Cとは
+
+RS-232C (Recommended Standard 232 version C) とは、電子機器間でシリアル通信を行うための接続規格のひとつです。コンピュータのシリアルポートと周辺機器（プリンター、モデム、スキャナーなど）を接続する仕様として、かつては広く普及していた・・・とのことですが、RS232C搭載の実験装置はまだまだ現役で使われています。
+
+PC側に装置毎の特別なドライバが不要なので、割と手堅い通信手段だと思います。
+
+## 使用ケーブル
+
+RS232C(D-sub 9ピン)-USB変換ケーブルを使用します。FTDI製のチップを使用したものが一般的です。いろいろなところから購入出来ます。
+
+- [RSオンライン](https://jp.rs-online.com/web/p/interface-adapters-converters/2206494)
+- [モノタロウ](https://www.monotaro.com/g/04184844/)
+- [秋月電子](https://akizukidenshi.com/catalog/g/g108343/)
+
+（2024/03/17 確認）
+
+![秋月電子のRS232C-USB変換ケーブル](RS232C_USB.jpg){width=50%}
+
+
+## ドライバのインストール
+
+FTDIのチップを使用している場合のドライバのインストール手順は以下の通り。
+
+### FTDI公式サイトからインストーラをダウンロードする方法
+
+FTDIのウェブサイト > Drivers > [VCP-drivers](https://ftdichip.com/drivers/vcp-drivers/) からOSに合わせたドライバを選択します。
+
+Windowsの場合は、下図の赤丸を付けたリンクからインストーラをダウンロードして実行します。インストール後は再起動が必要なようです。
+
+![（2024/03/17 確認）](FTDI-driver_1.png)
+
+
+
+### その他のインストール方法
+
+各装置の制御ソフトウェア等をインストールする際に、一緒にインストールされることがあります。とりあえず、[Arduino IDE](https://www.arduino.cc/en/software)を入れるのが手っ取り早かったです。
+
+RS232C-USB変換ケーブルにインストール用CDが付属している場合は、それでもインストールできます。
+
+
+## 通信の確認
+
+[Tera Term](https://teratermproject.github.io/)などのターミナルソフトを使ってシリアル通信を確認できます。

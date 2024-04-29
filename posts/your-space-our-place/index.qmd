@@ -1,0 +1,90 @@
+---
+title: "いつもの場所"
+date: "2011-04-20"
+date-modified: "2024-02-24"
+categories: [Music, Original song]
+image: "thumnail.png"
+toc: false
+---
+
+## Abstract
+
+2011年、東日本大震災の直後に作った曲。
+
+震災直後、短期留学先だったドイツからの帰国便の中でメロディーとコードを作りました。歌詞は研究室の先輩にお願いしました。突然の出来事で大切な場所がなくなってしまったとしても、僕らはまた「いつもの場所」を作っていけるという希望を歌っています。
+
+Vocal
+: Len Kagamine
+
+Music
+: Sho Okubo
+
+Lyrics
+: MICCHY
+
+License
+: <p xmlns:cc="http://creativecommons.org/ns#" ><a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+
+<!-- <audio controlslist="nodownload" controls oncontextmenu="return false;">
+   <source src="itsumono-basho.mp3" type="audio/mp3">
+   <p>Your browser does not support the audio element.</p>
+</audio> -->
+
+
+
+## Play
+
+{{< video https://youtu.be/y2ptAipi6to?si=ynemTo7sHhPdtxEU  width="560" height="315">}}
+
+<script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm14214918/script?w=560&h=315"></script><noscript><a href="https://www.nicovideo.jp/watch/sm14214918">【鏡音レン】いつもの場所【オリジナル】</a></noscript>
+
+
+## Lyrics
+
+当たり前だと思っていた景色 疑わなかった日常  
+不意に崩れ去った今を 受け入れたくない気持ちがわきあがる
+
+悲しみに浸りたくなるだろう こんなの夢だと思いたい  
+でもそんなことじゃ 何も始まらない  
+前だけ見つめて 歩いていこうよ
+
+いつもの場所はどこにもないけれど  
+I'm always with you ボクがそばにいよう  
+明けない夜はないのだから  
+手を取り合って生きていこう
+
+
+幼いころから見ていた空 肌に感じていた風  
+すべて流れ去った今が ボクたちの心を押しつぶす
+
+何を恨めばいいのだろう 誰かの所為にしてしまいたい  
+でもそんなことに意味はない だから  
+すべてを受け入れ 進んでいこうよ
+
+いつもの場所はどこにもないけれど  
+I will smile at you ボクが笑いかけよう  
+残酷な今に 逃げたくなるけど  
+未来(あす)を一緒に見にいこう
+
+
+すべてを包む暗い闇も いつか笑い飛ばせるように
+
+
+いつもの場所はどこにもないけれど  
+I will smile at you ボクが笑いかけよう
+
+眠れぬ夜も 泣きたくなる朝も  
+I'm always with you ボクがそばにいよう  
+いつもの場所は壊れてしまったけど  
+「いつもの場所」を作っていこう
+
+また作っていこう
+
+
+You can make new space  
+I will be with you  
+We can make our place  
+It's for you and me
+
+

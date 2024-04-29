@@ -1,0 +1,90 @@
+---
+title: "Goodbye to My Days"
+date: "2010-03-02"
+date-modified: "2024-02-24"
+categories: [Music, Original song]
+image: "thumnail.png"
+toc: false
+---
+
+## Abstract
+
+修士時代、田舎に帰ってしまった同期の友人の心情を想像して作った曲。
+
+歌詞の「ゆっくり生きたいんだ」は、直接は聞いていないのですが実際に友人が口にしていたらしく、とても印象に残ったので使わせてもらいました。私の願望も込みで、最後は希望が残るような終わり方にしています。
+
+Vocal
+: Len Kagamine
+
+Music & Lyrics
+: Sho Okubo
+
+License
+: <p xmlns:cc="http://creativecommons.org/ns#" ><a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+
+<!-- <audio controlslist="nodownload" controls oncontextmenu="return false;">
+   <source src="Gooobye to My Days_v5_4.mp3" type="audio/mp3">
+   <p>Your browser does not support the audio element.</p>
+</audio> -->
+
+## Play
+
+{{< video https://youtu.be/SEgh2vzszPA?si=nlzREjLe7DWnvbbx  width="560" height="315">}}
+
+<script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm9891167/script?w=560&h=315"></script><noscript><a href="https://www.nicovideo.jp/watch/sm9891167">【鏡音レン】Goodbye to My Days【オリジナル】</a></noscript>
+
+
+## Lyrics
+
+降り止まない雨 湿った壁の臭い  
+モニターの光に 力なく揺れる影  
+そこは夢の世界 望むものは何でも手に入る  
+代わりに差し出したのは 今と未来
+
+明るく振る舞っても 夜が孤独になるだけ  
+暗闇に浮かぶのは 見たくないものばかり  
+僕のこの不安に 大した理由なんてないだろう  
+でも確かにつらいんだ Ah…
+
+Goodbye to my days  
+Goodbye to my friends  
+ゆっくり生きたいんだ  
+Goodbye to my dreams and what I believe in  
+全てを失ったとしても
+
+遠く聞こえる声が 夢の終わりを告げる  
+声を上げ嘆いても 現実は何も変わらない  
+僕のこの人生に これからも意味なんてないだろう  
+だからもう逃げ出すんだ Ah…
+
+Goodbye to my days  
+Goodbye to my friends  
+ゆっくり生きたいんだ  
+Goodbye to my dreams and what I believe in  
+全てを失ったとしても
+
+
+雨はもう上がった 風の匂いも柔らか  
+何もない僕だけど まだ一人で立っている  
+これは終わりなのか それとも始まったばかりなのか  
+答えはいつか出るのだろう Uh…
+
+Goodbye to my days  
+Goodbye to my friends  
+ゆっくり生きたいんだ  
+Goodbye to my dreams and what I believe in  
+全てを失ったとしても  
+
+Goodbye to my days  
+Goodbye to my friends  
+ゆっくり生きたいんだ  
+Goodbye to my dreams  
+Goodbye to my love  
+
+ゆっくり ゆっくり 生きたいんだ  
+ゆっくり ゆっくり 答えはいつの日にか
+
+Someday…
+
+
