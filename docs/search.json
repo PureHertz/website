@@ -30,63 +30,63 @@
   {
     "objectID": "works/posts/write_Lattice_FPGA/index.html",
     "href": "works/posts/write_Lattice_FPGA/index.html",
-    "title": "Lattice PFGAの書き込み",
+    "title": "FPGA (MachXO2) の書き込み",
     "section": "",
-    "text": "Lattice SemiconductorのFPGA LCMXO2-256HC (MachXO2シリーズ) は、\nなどの利点があります。日本語資料があまり無いので、書き込んで動かせるようにするまでの一連の手順を解説します。"
+    "text": "Lattice SemiconductorのFPGA LCMXO2-256HC (MachXO2シリーズ) は、以下のような利点があります。\n日本語資料があまり無いので、書き込んで動かせるようにするまでの一連の手順を解説します。"
   },
   {
     "objectID": "works/posts/write_Lattice_FPGA/index.html#はじめに",
     "href": "works/posts/write_Lattice_FPGA/index.html#はじめに",
-    "title": "Lattice PFGAの書き込み",
+    "title": "FPGA (MachXO2) の書き込み",
     "section": "はじめに",
     "text": "はじめに\n\n動作確認環境\n\n\n\n\n環境 1a\n環境 2b\n\n\n\n\nOS\nWindows 11\nWindows 10\n\n\nCPU\nAMD, RIZEN 7 3700X\nIntel, Core i7-3770\n\n\n開発環境\nDiamond v3.12\nDiamond v3.12\n\n\n使用言語\nVerilog HDL\nVerilog HDL\n\n\n書込ケーブル\n\n秋月電子, AE-FT2232\n\n\n\n\na: Verilog HDLの編集とコンパイルまで\nb: Verilog HDLの編集とコンパイル、FPGAへの書き込みまで\n\n\n\n全体の流れ\n\nDiamondのインストール\nライセンス認証\nVerilog HDLファイル (***.v)の作成\n制約ファイル (***.ucf)の作成\n基板との接続\nプログラムの書き込み"
   },
   {
     "objectID": "works/posts/write_Lattice_FPGA/index.html#diamondのインストール",
     "href": "works/posts/write_Lattice_FPGA/index.html#diamondのインストール",
-    "title": "Lattice PFGAの書き込み",
+    "title": "FPGA (MachXO2) の書き込み",
     "section": "Diamondのインストール",
     "text": "Diamondのインストール\nインストーラは、Lattice Diamond設計ソフトウェアのページからDiamond 3.13 64-bit for WindowsなどOSに合わせてダウンロードします。執筆時のバージョンは3.13。\n\n\n\nLattice Diamondのダウンロードページ"
   },
   {
     "objectID": "works/posts/write_Lattice_FPGA/index.html#ライセンス認証",
     "href": "works/posts/write_Lattice_FPGA/index.html#ライセンス認証",
-    "title": "Lattice PFGAの書き込み",
+    "title": "FPGA (MachXO2) の書き込み",
     "section": "ライセンス認証",
     "text": "ライセンス認証\nまず、Latticeのウェブサイトのアカウント作成ページでアカウントを作成し、サインインします。\n次に、Lattice Diamond設計ソフトウェアのページでライセンスを取得をクリックしてページを移動します。さらに、‘’Request Diamond Free License’’の項目からRequest Node-locked Licenseを選択します。\n\n\n\nライセンス認証 1\n\n\n\n\n\nライセンス認証 2\n\n\n‘’Host NIC (physical address)’‘の入力欄に、PCの物理アドレス（MACアドレス）を12文字で入力（-や:は消す）。Windowsの場合は、コマンドプロンプトでipconfig/allと入力することで調べられます。’‘I verify that…’’にチェックを入れ、下の方にあるGenerate Licenseをクリックすることで、ライセンスファイルがメールで送られてきます。\nオプションでいくつかのフリーIPのライセンスも取得できるので、必要がある場合は選択します。私の場合は不要だったのでスルーです。\n\n\n\nライセンス認証 3\n\n\nライセンスファイルlicense.datは、インストールフォルダの中の~\\lscc\\diamond\\3.12\\licenseフォルダなどに置いておきます。Diamondの起動時にライセンスファイルのある場所を聞かれるので、答えると環境変数が設定されます。うまくいかない場合には、手動でシステム変数LM_LICENSE_FILEの値にライセンスファイルのパスを設定。\n\n\n\n\n\n\nWarning\n\n\n\nリモートデスクトップでは、正しい手順を踏んでもライセンスが認証されません。現段階では、Lattice Diamondはリモートデスクトップでは使用できないようです。"
   },
   {
     "objectID": "works/posts/write_Lattice_FPGA/index.html#新規プロジェクトの作成",
     "href": "works/posts/write_Lattice_FPGA/index.html#新規プロジェクトの作成",
-    "title": "Lattice PFGAの書き込み",
+    "title": "FPGA (MachXO2) の書き込み",
     "section": "新規プロジェクトの作成",
     "text": "新規プロジェクトの作成\n\nメニューバーからFile→New→Projectの順に選択するか、スタートページ・ビュー左上部のProjectセクションでNew...を選択。\n指示に従ってデバイス等を選択。プロジェクト生成の際、プロジェクトフォルダは自動生成されないので、あらかじめ作業フォルダを作っておく。\nProjectセクションの入力。\n\nName → プロジェクト名（英数字とアンダースコアのみ可）\nLocation → プロジェクトフォルダの指定\n\nImplementationセクションの入力\n\nName → インプリメンテーション名。デフォルトはimpl1。\n\nソースファイルのインポート。必要なファイル（既存のHDLソースや制約ファイル）を選択する。Copy source to...にチェックを入れておくと、ファイルをプロジェクトフォルダにコピーしてそれをインポートする。ソースファイルのインポートはプロジェクト作成後でも可。\nデバイスの選択。デバイス、スピードグレード、パッケージを選択。プロジェクト作成後でも変更可。\n論理合成ツールの選択。デフォルトはLSE (Lattice Synthesis Engine)。プロジェクト作成後でも変更可。"
   },
   {
     "objectID": "works/posts/write_Lattice_FPGA/index.html#verilog-hdlファイル-.v-の作成",
     "href": "works/posts/write_Lattice_FPGA/index.html#verilog-hdlファイル-.v-の作成",
-    "title": "Lattice PFGAの書き込み",
+    "title": "FPGA (MachXO2) の書き込み",
     "section": "Verilog HDLファイル (***.v) の作成",
     "text": "Verilog HDLファイル (***.v) の作成\nFile Listタブの中のインプリメンテーションファイル名→Input Filesの中に置かれます。ダブルクリックするとエディタが開きます。"
   },
   {
     "objectID": "works/posts/write_Lattice_FPGA/index.html#制約ファイル-.lpf-の作成",
     "href": "works/posts/write_Lattice_FPGA/index.html#制約ファイル-.lpf-の作成",
-    "title": "Lattice PFGAの書き込み",
+    "title": "FPGA (MachXO2) の書き込み",
     "section": "制約ファイル (***.lpf) の作成",
     "text": "制約ファイル (***.lpf) の作成\nFile Listタブの中のインプリメンテーションファイル名→LPF Constraint Filesの中に置かれる。ダブルクリックするとテキストエディタが開く。\nLPF制約ファイルは、Spreadsheet ViewのGUIで各種制約を設定することで書き出せます。ユーザーI/O（RTL記述で宣言されたI/O）のピンアサインをする方法は、以下の通り。\n\nポート名に対してピン番号を指定（Port Assignmentsシートで行う）\nピン番号に対してポート名を指定（Pin Assignmentsシートで行う）"
   },
   {
     "objectID": "works/posts/write_Lattice_FPGA/index.html#基板との接続",
     "href": "works/posts/write_Lattice_FPGA/index.html#基板との接続",
-    "title": "Lattice PFGAの書き込み",
+    "title": "FPGA (MachXO2) の書き込み",
     "section": "基板との接続",
     "text": "基板との接続\n純正のプログラマケーブル (HW-USBN-2B) は高価なので、最低限の機能を秋月電子のUSB-シリアル変換モジュールで実現します。\n\n\n\nHW-USBN-2B\n\n\n\n仕様部材\n\n秋月電子, FT2232D USBシリアル2ch変換モジュール\nUSBケーブル（Type A-mini B）\nブレッドボード\nブレッドボード用ジャンパーワイヤー\n\n\n\n\nAE-FT2232\n\n\n\n\n接続\nAE-FT2232のJTAGのピンアサインは以下の通り。\n\n\n\nAE-FT2232ピン名\n接続先JTAG信号名\n\n\n\n\nVCCIOA\nVCC\n\n\nVCCIOB\nVCC\n\n\nAD0\nTCK\n\n\nAD1\nTDI\n\n\nAD2\nTDO\n\n\nAD3\nTMS\n\n\nGND\nGND\n\n\n\n各信号のプルアップ/プルダウンは接続先の開発ボード/デバイスに合わせます。ここでは、接続先の基板においてTCK、TDI、TDO、TMSが10kΩで3.3 Vにプルアップされているとして、変換モジュール回路上では特に変更しません。\nまた、チャンネルAのロジックVCCには接続先の基板の3.3 Vを使用するとして、JP2Aジャンパーを外してVCCIOAに接続先基板のVCC 3.3 Vを繋ぎます。チャンネルBは使用しませんが、同様にJP2Bジャンパーも外してVCCIOBに接続先基板のVCC 3.3 Vに繋いでおきます。\n主電源にはUSBバスパワー5 Vを使用するので、JP1ジャンパーは取り付けたままにします。\n\n\nドライバのインストール\nFTDIのサイトからドライバを入手。VCP Driversを選択して、OSに対応したドライバをダウンロードして流れに沿ってインストールします。\n※ Windows11 x64の場合、2023/1/8時点でのダウンロードファイル名はCDM212364_Setup.zipでした。\nインストールが完了すると、USBケーブルでPCに接続したときに、デバイスマネージャー上で2つのCOMポートが認識されます。\n\n\nDiamondでの設定\nモジュールのデータシートでは、保証されるTTLレベルの通信速度は最大3 Mbps。一方、Diamondの初期設定は6 Mbpsなので、Programmerウィンドウ右側のProgrmmer Speed Setting部、TCK Divider Settingで周波数を変更します。Use custom Clock Dividerをチェックし、Divider値を任意の値に変更することによって、周波数を下げられます。"
   },
   {
     "objectID": "works/posts/write_Lattice_FPGA/index.html#プログラムの書き込み",
     "href": "works/posts/write_Lattice_FPGA/index.html#プログラムの書き込み",
-    "title": "Lattice PFGAの書き込み",
+    "title": "FPGA (MachXO2) の書き込み",
     "section": "プログラムの書き込み",
     "text": "プログラムの書き込み\n\nコンパイル\n\nProcessタブのExport Filesの下のJEDEC Fileにチェックを入れて、右クリックメニューからRunを実行\nMap Design → Place & Route Design → Export Files の順に実行されて、***.jedファイルが生成される\n\n\n\n生成されたJEDファイルの書き込み\n\nTools → Programmer を開くと、JTAGの接続を聞いてくるので、FTDIのデバイスを選択\nDetect Cable で USB2 - FTUSB-0 (Dual RS232 A Location 0000) の方を選択\nUse custom Clock Divider をチェックし、Divider値を任意の値に設定\n\nUSB-シリアル変換モジュールの仕様上は2以上であればOKですが、試してみたら10分周でようやく書き込めました。ブレッドボードとジャンパーケーブルで接続したのが良くなかったかもしれません。\n\nDevice Family Device File Nameの項目を正しく設定して、プログラムアイコンをクリックしてコンフィグレーション開始\n[Status]が[PASS]となれば完了\n\n\n\n\nLattice Diamondのダウンロードページ\nライセンス認証 1\nライセンス認証 2\nライセンス認証 3\nHW-USBN-2B\nAE-FT2232"
   },
@@ -263,14 +263,14 @@
     "href": "works/index.html",
     "title": "Works",
     "section": "",
-    "text": "Lattice PFGAの書き込み\n\n\n\n\n\n\n電子回路\n\n\nFPGA\n\n\nLattice Semiconductor\n\n\n\n\n\n\n\n\n\n2024-04-28\n\n\n\n\n\n\n\n\n\n\n\n\nYou Go, We Go\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2024-04-12\n\n\n\n\n\n\n\n\n\n\n\n\nPC制御式LDドライバに物理インターフェイスを付けてみた\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\nマイコン\n\n\n\n\n\n\n\n\n\n2024-03-24\n\n\n\n\n\n\n\n\n\n\n\n\nRS232C-USB変換\n\n\n\n\n\n\n実験装置\n\n\n\n\n\n\n\n\n\n2024-03-17\n\n\n\n\n\n\n\n\n\n\n\n\nQuartoでウェブサイトを作ってGitHubで公開する\n\n\n\n\n\n\nウェブサイト\n\n\nQuarto\n\n\nGitHub\n\n\n\n\n\n\n\n\n\n2024-03-10\n\n\n\n\n\n\n\n\n\n\n\n\n共振器コントローラー\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\n光共振器\n\n\n\n\n\n\n\n\n\n2024-03-02\n\n\n\n\n\n\n\n\n\n\n\n\n温度コントローラー\n\n\n\n\n\n\n電子回路\n\n\n温度制御\n\n\n\n\n\n\n\n\n\n2024-03-01\n\n\n\n\n\n\n\n\n\n\n\n\n低雑音アンプ用の電源の中身を見てみる\n\n\n\n\n\n\n電子回路\n\n\n低雑音電源\n\n\n\n\n\n\n\n\n\n2024-02-27\n\n\n\n\n\n\n\n\n\n\n\n\n低速受光器\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\n\n\n\n\n\n\n\n2024-02-23\n\n\n\n\n\n\n\n\n\n\n\n\n三角波発振器（掃引回路）\n\n\n\n\n\n\n電子回路\n\n\n\n\n\n\n\n\n\n2024-02-23\n\n\n\n\n\n\n\n\n\n\n\n\nColour of the Universe\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2023-06-03\n\n\n\n\n\n\n\n\n\n\n\n\nダンス万能説 -Dance Versatileness-\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2011-12-19\n\n\n\n\n\n\n\n\n\n\n\n\nいつもの場所\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2011-04-20\n\n\n\n\n\n\n\n\n\n\n\n\nGoodbye to My Days\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2010-03-02\n\n\n\n\n\n\n\n\n\n\n\n\nRegrets\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2009-08-04\n\n\n\n\n\n\n\n\n\n\n\n\nLIMIT BREAKER!!\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2009-04-21\n\n\n\n\n\n\nNo matching items"
+    "text": "FPGA (MachXO2) の書き込み\n\n\n\n\n\n\n電子回路\n\n\nFPGA\n\n\nLattice Semiconductor\n\n\n\n\n\n\n\n\n\n2024-04-28\n\n\n\n\n\n\n\n\n\n\n\n\nYou Go, We Go\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2024-04-12\n\n\n\n\n\n\n\n\n\n\n\n\nPC制御式LDドライバに物理インターフェイスを付けてみた\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\nマイコン\n\n\n\n\n\n\n\n\n\n2024-03-24\n\n\n\n\n\n\n\n\n\n\n\n\nRS232C-USB変換\n\n\n\n\n\n\n実験装置\n\n\n\n\n\n\n\n\n\n2024-03-17\n\n\n\n\n\n\n\n\n\n\n\n\nQuartoでウェブサイトを作ってGitHubで公開する\n\n\n\n\n\n\nウェブサイト\n\n\nQuarto\n\n\nGitHub\n\n\n\n\n\n\n\n\n\n2024-03-10\n\n\n\n\n\n\n\n\n\n\n\n\n共振器コントローラー\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\n光共振器\n\n\n\n\n\n\n\n\n\n2024-03-02\n\n\n\n\n\n\n\n\n\n\n\n\n温度コントローラー\n\n\n\n\n\n\n電子回路\n\n\n温度制御\n\n\n\n\n\n\n\n\n\n2024-03-01\n\n\n\n\n\n\n\n\n\n\n\n\n低雑音アンプ用の電源の中身を見てみる\n\n\n\n\n\n\n電子回路\n\n\n低雑音電源\n\n\n\n\n\n\n\n\n\n2024-02-27\n\n\n\n\n\n\n\n\n\n\n\n\n低速受光器\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\n\n\n\n\n\n\n\n2024-02-23\n\n\n\n\n\n\n\n\n\n\n\n\n三角波発振器（掃引回路）\n\n\n\n\n\n\n電子回路\n\n\n\n\n\n\n\n\n\n2024-02-23\n\n\n\n\n\n\n\n\n\n\n\n\nColour of the Universe\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2023-06-03\n\n\n\n\n\n\n\n\n\n\n\n\nダンス万能説 -Dance Versatileness-\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2011-12-19\n\n\n\n\n\n\n\n\n\n\n\n\nいつもの場所\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2011-04-20\n\n\n\n\n\n\n\n\n\n\n\n\nGoodbye to My Days\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2010-03-02\n\n\n\n\n\n\n\n\n\n\n\n\nRegrets\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2009-08-04\n\n\n\n\n\n\n\n\n\n\n\n\nLIMIT BREAKER!!\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2009-04-21\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Welcome to PureHertz Laboratory",
     "section": "",
-    "text": "Magic of Frequency —Optics, Electronics, and Music\n\nレーザー物理の研究のために開発・製作した周辺回路・装置\n趣味で制作した楽曲\nその他、研究・趣味に役立つかもしれない情報\n\n\n\n\n\n\nRecent posts\n\n\n\n\n\nTitle\n\n\nDate\n\n\nModified\n\n\n\n\n\n\nLattice PFGAの書き込み\n\n\n2024-04-28\n\n\n2024-04-28\n\n\n\n\nYou Go, We Go\n\n\n2024-04-12\n\n\n2024-04-12\n\n\n\n\nPC制御式LDドライバに物理インターフェイスを付けてみた\n\n\n2024-03-24\n\n\n2024-03-24\n\n\n\n\nRS232C-USB変換\n\n\n2024-03-17\n\n\n2024-03-17\n\n\n\n\nQuartoでウェブサイトを作ってGitHubで公開する\n\n\n2024-03-10\n\n\n2024-03-10\n\n\n\n\n\nNo matching items"
+    "text": "Magic of Frequency —Optics, Electronics, and Music\n\nレーザー物理の研究のために開発・製作した周辺回路・装置\n趣味で制作した楽曲\nその他、研究・趣味に役立つかもしれない情報\n\n\n\n\n\n\nRecent posts\n\n\n\n\n\nTitle\n\n\nDate\n\n\nModified\n\n\n\n\n\n\nFPGA (MachXO2) の書き込み\n\n\n2024-04-28\n\n\n2024-04-28\n\n\n\n\nYou Go, We Go\n\n\n2024-04-12\n\n\n2024-04-12\n\n\n\n\nPC制御式LDドライバに物理インターフェイスを付けてみた\n\n\n2024-03-24\n\n\n2024-03-24\n\n\n\n\nRS232C-USB変換\n\n\n2024-03-17\n\n\n2024-03-17\n\n\n\n\nQuartoでウェブサイトを作ってGitHubで公開する\n\n\n2024-03-10\n\n\n2024-03-10\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about/index.html",
