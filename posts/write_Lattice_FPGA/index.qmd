@@ -1,13 +1,17 @@
 ---
 title: "FPGA (MachXO2) の書き込み"
 date: "2024-04-28"
-date-modified: "2024-04-28"
+date-modified: "2024-06-29"
 categories: [電子回路, FPGA, Lattice Semiconductor]
 image: "/common/electric-board.webp"
 lightbox: true
+
+# UPDATE
+# + 20240629
+#   - 文章校正
 ---
 
-Lattice SemiconductorのFPGA **LCMXO2-256HC** (MachXO2シリーズ) は、以下のような利点があります。
+Lattice SemiconductorのFPGA **LCMXO2-256HC**（MachXO2シリーズ）は、以下のような利点があります。
 
 - 秋月電子で安く購入できる（在庫限りになってしまったが）
 - 外付けのコンフィグレーションROMが不要で、ICひとつで完結する（CPLDのように使える）
@@ -100,7 +104,7 @@ LPF制約ファイルは、`Spreadsheet View`のGUIで各種制約を設定す�
 
 ## 基板との接続
 
-純正のプログラマケーブル (HW-USBN-2B) は高価なので、最低限の機能を秋月電子のUSB-シリアル変換モジュールで実現します。
+純正のプログラマケーブル (HW-USBN-2B) は高価なので、最低限の機能を秋月電子のUSB-Serial変換モジュールで実現します。
 
 ![HW-USBN-2B](Lattice-FPGA-cable.png)
 
@@ -161,6 +165,6 @@ AE-FT2232のJTAGのピンアサインは以下の通り。
 1. `Tools` → `Programmer` を開くと、JTAGの接続を聞いてくるので、FTDIのデバイスを選択
 2. `Detect Cable` で `USB2 - FTUSB-0 (Dual RS232 A Location 0000)` の方を選択
 3. `Use custom Clock Divider` をチェックし、Divider値を任意の値に設定
-   1. USB-シリアル変換モジュールの仕様上は2以上であればOKですが、試してみたら10分周でようやく書き込めました。ブレッドボードとジャンパーケーブルで接続したのが良くなかったかもしれません。
-4. `Device Family` `Device` `File Name`の項目を正しく設定して、プログラムアイコンをクリックしてコンフィグレーション開始
-5. [Status]が[PASS]となれば完了
+   1. USB-Serial変換モジュールの仕様上は2以上であればOKですが、試してみたら10分周でようやく書き込めました。ブレッドボードとジャンパーケーブルで接続したのが良くなかったかもしれません。
+4. `Device Family` `Device` `File Name` の項目を正しく設定して、プログラムアイコンをクリックしてコンフィグレーション開始
+5. `Status` が `PASS` となれば完了

@@ -30,7 +30,9 @@ website:
 format:
   html:
     theme: default
-    margin-bottom: 20px
+    linestretch: 1.7
+    fontsize: 1.0em
+    margin-bottom: 3.0em
     toc: true
     link-external-newwindow: true
     # number-sections: true

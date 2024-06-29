@@ -1,0 +1,82 @@
+---
+title: "Pythonの環境構築"
+date: "2024-06-29"
+date-modified: "2024-06-29"
+# draft: true
+categories: [Python]
+image: "/common/code.jpg"
+lightbox: true
+
+# UPDATE
+# + 20240629
+#   - 初稿完成
+---
+
+Pythonを始めた当初はAnacondaを使って環境構築していましたが、更新が上手くいかなくなったりとよく分からない状態になっていたので、python.org経由の標準的な方法で環境を構築構築しなおしました。以下、その備忘録です。
+
+## インストール
+
+公式サイト <https://www.python.org/> から最新版のインストーラをダウンロードしてインストールします。インストール時に `Add Python 3.x to PATH` にチェックを入れることで、自動的に環境変数にインストールディレクトリが追加され、ターミナルから `python` だけで直接呼び出せるようになります。
+
+通常は `Install Now` を選択してインストールを開始します。インストールするディレクトリを変更するなど、様々なオプションを選ぶときは`Costumize installation`を選択します。
+
+インストールが完了したら、ターミナルから
+
+```
+> python -V
+```
+
+を実行し、パスが通っていることとバージョンを確認します。また、インストール先ディレクトリは環境変数 `PATH` から確認できます。
+
+
+## Pythonのアップデート
+
+<https://www.python.org/> から最新版のインストーラをダウンロードして実行すれば、インストールされているPythonをアップデートできます。
+
+![Pythonのアップデート](python_update.png)
+
+
+## pipのアップデート
+
+Pythonのサードパーティーパッケージは [PyPI](https://pypi.org/) で配布されています。これを管理・インストールするためのツールが**pip**で、アップデートして最新版に更新しておきます。
+
+```ps
+> python -m pip install --upgrade pip
+```
+
+一度実行すると、次回以降は
+
+```ps
+> pip install --upgrade pip
+```
+
+でOKです。パッケージ "xyz" をインストールする場合は
+
+```ps
+> pip install xyz
+```
+
+を実行します。
+
+
+## Spyderのインストール
+
+Pythonのエディタには [Spyder](https://www.spyder-ide.org/) を使用しています。<https://www.spyder-ide.org/> からインストーラをダウンロードして実行します。
+
+Spyderは、自身にPythonパッケージが含まれているために別のPythonをインストールしなくても使えますが、先ほど上でインストールしたPythonを使う方がバージョンやパッケージの管理が楽だと思います。別にインストールしたPythonをSpyderで使うには、上部のメニューバーから`ツール` → `設定` と進み、「以下のPythonインタープリターを使う」を選択した後でPython環境があるディレクトリのPython.exeを選択します。
+
+![Spyderで使用するPythonの変更](spyder_setup.png)
+
+設定を反映するためにSpyderを再起動すると、以下のようなエラーが表示されます。
+
+![Spyderのモジュール不足によるエラー](spyder_error.png)
+
+これは、指定したPython環境にSpyderの実行に必要なモジュールが足りていないためで、
+
+```ps
+> pip install spyder-kernels
+
+> pip install PyQt5
+```
+
+を実行してそれらをインストールします。改めてSpyderを再起動し、エラーが消えていることを確認して下さい。
