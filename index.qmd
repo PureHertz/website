@@ -10,7 +10,7 @@ listing:
   type: table
   table-hover: true
   fields: [title, date, date-modified]
-  max-items: 5
+  max-items: 8
   categories: false
   sort-ui: false
   filter-ui: false
@@ -25,13 +25,17 @@ listing:
 - その他、研究・趣味に役立つかもしれない情報
 
 |
-|
+
+### [Works](works.qmd)
+
+開発、製作、制作した回路、装置、楽曲やその周辺の情報をBlog形式で綴っています。  
+記事がたまってきたら、内容ごとにまとめようかと思っています。
 
 <!-- ::: {.callout-note appearance="simple"}
 2024-03-02: ウェブサイトを公開
 ::: -->
 
-### Recent posts{.unnumbered}
+#### Recent posts{.unnumbered}
 
 ::: {#new-posts}
 :::
