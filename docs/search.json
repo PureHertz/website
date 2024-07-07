@@ -4,7 +4,7 @@
     "href": "works.html",
     "title": "Works",
     "section": "",
-    "text": "Pythonの環境構築\n\n\n\n\n\n\nPython\n\n\n\n\n\n\n\n\n\n2024-06-29\n\n\n\n\n\n\n\n\n\n\n\n\nFPGA (MachXO2) の書き込み\n\n\n\n\n\n\n電子回路\n\n\nFPGA\n\n\nLattice Semiconductor\n\n\n\n\n\n\n\n\n\n2024-04-28\n\n\n\n\n\n\n\n\n\n\n\n\nYou Go, We Go\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2024-04-12\n\n\n\n\n\n\n\n\n\n\n\n\nPC制御式LDドライバに物理インターフェイスを付けてみた\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\nマイコン\n\n\n\n\n\n\n\n\n\n2024-03-24\n\n\n\n\n\n\n\n\n\n\n\n\nRS232C-USB変換\n\n\n\n\n\n\n実験装置\n\n\n\n\n\n\n\n\n\n2024-03-17\n\n\n\n\n\n\n\n\n\n\n\n\nQuartoでウェブサイトを作ってGitHubで公開する\n\n\n\n\n\n\nウェブサイト\n\n\nQuarto\n\n\nGitHub\n\n\n\n\n\n\n\n\n\n2024-03-10\n\n\n\n\n\n\n\n\n\n\n\n\n共振器コントローラー\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\n光共振器\n\n\n\n\n\n\n\n\n\n2024-03-02\n\n\n\n\n\n\n\n\n\n\n\n\n温度コントローラー\n\n\n\n\n\n\n電子回路\n\n\n温度制御\n\n\n\n\n\n\n\n\n\n2024-03-01\n\n\n\n\n\n\n\n\n\n\n\n\n低雑音アンプ用の電源の中身を見てみる\n\n\n\n\n\n\n電子回路\n\n\n低雑音電源\n\n\n\n\n\n\n\n\n\n2024-02-27\n\n\n\n\n\n\n\n\n\n\n\n\n低速受光器\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\n\n\n\n\n\n\n\n2024-02-23\n\n\n\n\n\n\n\n\n\n\n\n\n三角波発振器（掃引回路）\n\n\n\n\n\n\n電子回路\n\n\n\n\n\n\n\n\n\n2024-02-23\n\n\n\n\n\n\n\n\n\n\n\n\nColour of the Universe\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2023-06-03\n\n\n\n\n\n\n\n\n\n\n\n\nダンス万能説 -Dance Versatileness-\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2011-12-19\n\n\n\n\n\n\n\n\n\n\n\n\nいつもの場所\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2011-04-20\n\n\n\n\n\n\n\n\n\n\n\n\nGoodbye to My Days\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2010-03-02\n\n\n\n\n\n\n\n\n\n\n\n\nRegrets\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2009-08-04\n\n\n\n\n\n\n\n\n\n\n\n\nLIMIT BREAKER!!\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2009-04-21\n\n\n\n\n\n\nNo matching items"
+    "text": "CircuitPythonを使えるようにする（KB2040）\n\n\n\n\n\n\nマイコン\n\n\nPython\n\n\n\n\n\n\n\n\n\n2024-07-08\n\n\n\n\n\n\n\n\n\n\n\n\nPythonの環境構築\n\n\n\n\n\n\nPython\n\n\n\n\n\n\n\n\n\n2024-06-29\n\n\n\n\n\n\n\n\n\n\n\n\nFPGA (MachXO2) の書き込み\n\n\n\n\n\n\n電子回路\n\n\nFPGA\n\n\n\n\n\n\n\n\n\n2024-04-28\n\n\n\n\n\n\n\n\n\n\n\n\nYou Go, We Go\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2024-04-12\n\n\n\n\n\n\n\n\n\n\n\n\nPC制御式LDドライバに物理インターフェイスを付けてみた\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\nマイコン\n\n\n\n\n\n\n\n\n\n2024-03-24\n\n\n\n\n\n\n\n\n\n\n\n\nRS232C-USB変換\n\n\n\n\n\n\n実験装置\n\n\n\n\n\n\n\n\n\n2024-03-17\n\n\n\n\n\n\n\n\n\n\n\n\nQuartoでウェブサイトを作ってGitHubで公開する\n\n\n\n\n\n\nウェブサイト\n\n\nQuarto\n\n\nGitHub\n\n\n\n\n\n\n\n\n\n2024-03-10\n\n\n\n\n\n\n\n\n\n\n\n\n共振器コントローラー\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\n光共振器\n\n\n\n\n\n\n\n\n\n2024-03-02\n\n\n\n\n\n\n\n\n\n\n\n\n温度コントローラー\n\n\n\n\n\n\n電子回路\n\n\n温度制御\n\n\n\n\n\n\n\n\n\n2024-03-01\n\n\n\n\n\n\n\n\n\n\n\n\n低雑音アンプ用の電源の中身を見てみる\n\n\n\n\n\n\n電子回路\n\n\n低雑音電源\n\n\n\n\n\n\n\n\n\n2024-02-27\n\n\n\n\n\n\n\n\n\n\n\n\n低速受光器\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\n\n\n\n\n\n\n\n2024-02-23\n\n\n\n\n\n\n\n\n\n\n\n\n三角波発振器（掃引回路）\n\n\n\n\n\n\n電子回路\n\n\n\n\n\n\n\n\n\n2024-02-23\n\n\n\n\n\n\n\n\n\n\n\n\nColour of the Universe\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2023-06-03\n\n\n\n\n\n\n\n\n\n\n\n\nダンス万能説 -Dance Versatileness-\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2011-12-19\n\n\n\n\n\n\n\n\n\n\n\n\nいつもの場所\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2011-04-20\n\n\n\n\n\n\n\n\n\n\n\n\nGoodbye to My Days\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2010-03-02\n\n\n\n\n\n\n\n\n\n\n\n\nRegrets\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2009-08-04\n\n\n\n\n\n\n\n\n\n\n\n\nLIMIT BREAKER!!\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2009-04-21\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/you_go_we_go/index.html",
@@ -270,7 +270,7 @@
     "href": "index.html",
     "title": "Welcome to PureHertz Laboratory",
     "section": "",
-    "text": "Magic of Frequency —Optics, Electronics, and Music\n\nレーザー物理の研究のために開発・製作した周辺回路・装置\n趣味で制作した楽曲\nその他、研究・趣味に役立つかもしれない情報\n\n\n\n\nContents\n\nAbout\n\n当サイトについて\n\nWorks\n\n開発、製作、制作した回路、装置、楽曲やその周辺の情報をBlog形式で綴っています。\n記事がたまってきたら、内容ごとにまとめようかと思っています。\n\n\n\n\nRecent posts\n\n\n\n\n\nTitle\n\n\nDate\n\n\nModified\n\n\n\n\n\n\nPythonの環境構築\n\n\n2024-06-29\n\n\n2024-06-29\n\n\n\n\nFPGA (MachXO2) の書き込み\n\n\n2024-04-28\n\n\n2024-06-29\n\n\n\n\nYou Go, We Go\n\n\n2024-04-12\n\n\n2024-04-12\n\n\n\n\nPC制御式LDドライバに物理インターフェイスを付けてみた\n\n\n2024-03-24\n\n\n2024-03-24\n\n\n\n\nRS232C-USB変換\n\n\n2024-03-17\n\n\n2024-03-17\n\n\n\n\nQuartoでウェブサイトを作ってGitHubで公開する\n\n\n2024-03-10\n\n\n2024-03-10\n\n\n\n\n共振器コントローラー\n\n\n2024-03-02\n\n\n2024-03-02\n\n\n\n\n温度コントローラー\n\n\n2024-03-01\n\n\n2024-03-01\n\n\n\n\n\nNo matching items"
+    "text": "Magic of Frequency —Optics, Electronics, and Music\n\nレーザー物理の研究のために開発・製作した周辺回路・装置\n趣味で制作した楽曲\nその他、研究・趣味に役立つかもしれない情報\n\n\n\n\nContents\n\nAbout\n\n当サイトについて\n\nWorks\n\n開発、製作、制作した回路、装置、楽曲やその周辺の情報をBlog形式で綴っています。\n記事がたまってきたら、内容ごとにまとめようかと思っています。\n\n\n\n\nRecent posts\n\n\n\n\n\nTitle\n\n\nDate\n\n\nModified\n\n\n\n\n\n\nCircuitPythonを使えるようにする（KB2040）\n\n\n2024-07-08\n\n\n2024-07-08\n\n\n\n\nPythonの環境構築\n\n\n2024-06-29\n\n\n2024-06-29\n\n\n\n\nFPGA (MachXO2) の書き込み\n\n\n2024-04-28\n\n\n2024-06-29\n\n\n\n\nYou Go, We Go\n\n\n2024-04-12\n\n\n2024-04-12\n\n\n\n\nPC制御式LDドライバに物理インターフェイスを付けてみた\n\n\n2024-03-24\n\n\n2024-03-24\n\n\n\n\nRS232C-USB変換\n\n\n2024-03-17\n\n\n2024-03-17\n\n\n\n\nQuartoでウェブサイトを作ってGitHubで公開する\n\n\n2024-03-10\n\n\n2024-03-10\n\n\n\n\n共振器コントローラー\n\n\n2024-03-02\n\n\n2024-03-02\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/2024-03-01/index.html",
@@ -586,5 +586,47 @@
     "title": "PureHertz",
     "section": "",
     "text": "本職: レーザー物理の研究者\n学位: 博士（理学）"
+  },
+  {
+    "objectID": "posts/CircuitPython_KB2040/index.html",
+    "href": "posts/CircuitPython_KB2040/index.html",
+    "title": "CircuitPythonを使えるようにする（KB2040）",
+    "section": "",
+    "text": "CircuitPythonを使ってRP2040マイコンボードを動かします。とりあえず、手元にあるKB2040で説明します。"
+  },
+  {
+    "objectID": "posts/CircuitPython_KB2040/index.html#circuitpythonとは",
+    "href": "posts/CircuitPython_KB2040/index.html#circuitpythonとは",
+    "title": "CircuitPythonを使えるようにする（KB2040）",
+    "section": "CircuitPythonとは",
+    "text": "CircuitPythonとは\nCircuitPythonはMicroPythonの派生版で、低価格マイクロコントローラでの実験と教育を簡素化するために設計されています。CircuitPythonをインストールしたマイコンボードは、PC上からは CIRCUITPY という名前のUSBドライブとして認識され、その中にあるファイルをコピーして編集するだけでコードを実装できます。"
+  },
+  {
+    "objectID": "posts/CircuitPython_KB2040/index.html#circuitpythonを使えるようにするための手順",
+    "href": "posts/CircuitPython_KB2040/index.html#circuitpythonを使えるようにするための手順",
+    "title": "CircuitPythonを使えるようにする（KB2040）",
+    "section": "CircuitPythonを使えるようにするための手順",
+    "text": "CircuitPythonを使えるようにするための手順\n\nCircuitPython環境のインストール\nまず、CircuitPythonのUF2ファイルとライブラリファイル群を入手します。UF2ファイルはマイコンボード毎に用意されているので、使用するマイコンボードのUF2ファイルを手に入れて下さい。ライブラリバンドルは、UF2ファイルのバージョンに対応するものをダウンロードします。\n\nマイコンボード毎のUF2ファイル\n\nKB2040用のUF2ファイル\n\nライブラリバンドル（ZIP）\n\nマイコンボードにCircuitPythonをインストールするために、ブートローダーを立ち上げます。KB2040の場合は、BOOT/BOOTSELボタンを押したままRESETボタンを押します。PC上に RPI-RP2 というドライブが現れるまでBOOT/BOOTSELボタンは押し続けて下さい。\n\n\n\nKB2040\n\n\nRPI-RP2 という新しいディスクドライブが表示されます。その中に先ほどダウンロードしたUF2ファイルをドラッグ&ドロップでコピーします。\n\n\n\nRPI-RP2ドライブ\n\n\nそうすると、RPI-RP2 ドライブが消え、CIRCUITPY という新しいディスクドライブが現れます。これでCircuitPythonのインストール完了です。CIRCUITPY ドライブ直下の code.py ファイルを編集・保存することで、マイコンのコードを書き換えることができます。\n\n\n\nCIRCUITPYドライブ\n\n\n\n\n\ncode.pyを編集する\n\n\n\n\nMu Editorのインストール\ncode.py は CIRCUITPY 上で直接編集することもできますが、最初はシリアルコンソールが内蔵されたMu Editorを使用する方が良いです。Mu EditorはPythonで書かれたシンプルなコードエディタで、Windows、Mac OS、Linux、Raspberry Piで動作します。内臓されたシリアルコンソールでボードのシリアル出力からすぐにフィードバックが得られます。\nMu Editorのインストーラを https://codewith.mu からダウンロードします。DownloadページにはInstructionsへのリンクもあるので、適宜確認しながら進めて下さい。\nMu Editorの初回起動時に、“モード”の選択画面が表示されます。今はCircuitPythonを選択して下さい。現在のモードは、ウィンドウの右下の歯車アイコンの隣に表示されます。モードが “Microbit”などと表示されている場合は、左上のモードボタンをクリックし、表示されるダイアログボックスで”CircuitPython”を選択して下さい。\n\n\n\nMu Editorのモード選択\n\n\nCircuitPythonをインストールしたマイコンボードがCIRCUITPYドライブとして接続されていない場合、Mu Editorはボードを接続するまで編集したコードをどこに保存するかを通知してきます。この警告を避けるには、Mu Editorを起動する前にボードを接続し、CIRCUITPYドライブがマウントされていることを確認して下さい。"
+  },
+  {
+    "objectID": "posts/CircuitPython_KB2040/index.html#circuitpythonコードの編集",
+    "href": "posts/CircuitPython_KB2040/index.html#circuitpythonコードの編集",
+    "title": "CircuitPythonを使えるようにする（KB2040）",
+    "section": "CircuitPythonコードの編集",
+    "text": "CircuitPythonコードの編集\n\nCircuitPythonのドキュメント\nCircuitPythonの書き方については、以下を参照してください。\n\nhttps://docs.circuitpython.org/en/latest/docs/\nhttps://learn.adafruit.com/welcome-to-circuitpython\n\n\n\nMu Editorでの編集\nMu Editorの画面は、メニューバー、テキストエディタ、REPLウィンドウ、プロッターウィンドウで構成されています。メニューバーのシリアルアイコンをクリックすると、REPLウィンドウが現れます。EnterキーでREPLモードになり、Ctrl-Dでボードをリセットします。シリアル通信がある場合には、REPLウィンドウに表示されます。プロッターボタンをクリックすると、プロッターが現れます。シリアル通信で数値を受け取ると、プロットしてくれます。テキストエディタでコードを編集し、保存することでマイコンボードがコードをリロードして動き出します。\n\n\n\nMu Editorの画面\n\n\n\n\nテキストエディタでの編集\nちょっとした変更であれば、CIRUITPY ドライブ直下の code.py ファイルをメモ帳などのテキストエディタで開いて編集できます。code.py ファイルを保存すると、マイコンボードがコードをリロードして動き出します。\n\n\nライブラリの使用\nライブラリを使用することで、マイコンボードの多彩な機能を少ない記述で実現できます。最初にダウンロードしたバンドルの中から使用するライブラリをコピーして、CIRCUITPY ドライブの lib フォルダ内に保存することで使えるようになります。ライブラリの詳細は、以下を参照してください。\n\nhttps://learn.adafruit.com/welcome-to-circuitpython/circuitpython-libraries\nhttps://docs.circuitpython.org/projects/bundle/en/latest/"
+  },
+  {
+    "objectID": "posts/CircuitPython_KB2040/index.html#マイコンボードの各端子の名称確認",
+    "href": "posts/CircuitPython_KB2040/index.html#マイコンボードの各端子の名称確認",
+    "title": "CircuitPythonを使えるようにする（KB2040）",
+    "section": "マイコンボードの各端子の名称確認",
+    "text": "マイコンボードの各端子の名称確認\nマイコンボードの入出力端子を使用する場合、あらかじめ決められた端子の名前（D1とかA1とか）を使うと分かりやすいです。（たぶん）マイコンボード毎のUF2ファイルで決められているので、それを確認する必要が出てきます。UF2ファイルの中身を確認するのは大変なので、CircuitPythonのセットアップが上手くいっているかの確認も兼ねて、端子の名前を確認する以下のコードを動かしてみます。\n# CircuitPython Essentials Pin Map Script\n\nimport microcontroller\nimport board\n\nboard_pins = []\nfor pin in dir(microcontroller.pin):\n    if isinstance(getattr(microcontroller.pin, pin), microcontroller.Pin):\n        pins = []\n        for alias in dir(board):\n            if getattr(board, alias) is getattr(microcontroller.pin, pin):\n                pins.append(\"board.{}\".format(alias))\n        if len(pins) &gt; 0:\n            board_pins.append(\" \".join(pins))\nfor pins in sorted(board_pins):\n    print(pins)\n以上のコードをcode.pyに記述して保存するとマイコン上でコードが実行され、マイコンから送られてきた端子名称がREPLウィンドウに表示されます。同じ行に並べて表示された名前は、同じ端子に対してどちらの名前も使えることを意味します。各マイコンボードのPinoutと照らし合わせて確認してみて下さい。\n\nKB2040のPinout"
+  },
+  {
+    "objectID": "posts/CircuitPython_KB2040/index.html#参考",
+    "href": "posts/CircuitPython_KB2040/index.html#参考",
+    "title": "CircuitPythonを使えるようにする（KB2040）",
+    "section": "参考",
+    "text": "参考\n\nAdafruit KB2040 &gt; CircuitPython\nAdafruit CircuitPython API Reference\nAdafruit CircuitPython Library Bundle"
   }
 ]

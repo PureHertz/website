@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://purehertz.github.io/posts/write_Lattice_FPGA/index.html</loc>
-    <lastmod>2024-06-29T06:24:15.373Z</lastmod>
+    <lastmod>2024-07-07T15:21:11.950Z</lastmod>
   </url>
   <url>
     <loc>https://purehertz.github.io/posts/Sweeper/index.html</loc>
@@ -83,5 +83,9 @@
   <url>
     <loc>https://purehertz.github.io/posts/Python_setup/index.html</loc>
     <lastmod>2024-06-29T06:32:26.808Z</lastmod>
+  </url>
+  <url>
+    <loc>https://purehertz.github.io/posts/CircuitPython_KB2040/index.html</loc>
+    <lastmod>2024-07-07T15:28:32.588Z</lastmod>
   </url>
 </urlset>

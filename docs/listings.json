@@ -2,6 +2,7 @@
   {
     "listing": "/works.html",
     "items": [
+      "/posts/CircuitPython_KB2040/index.html",
       "/posts/Python_setup/index.html",
       "/posts/write_Lattice_FPGA/index.html",
       "/posts/you_go_we_go/index.html",
@@ -24,6 +25,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/CircuitPython_KB2040/index.html",
       "/posts/Python_setup/index.html",
       "/posts/write_Lattice_FPGA/index.html",
       "/posts/you_go_we_go/index.html",
