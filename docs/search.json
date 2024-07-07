@@ -242,14 +242,14 @@
     "href": "about.html",
     "title": "PureHertz",
     "section": "",
-    "text": "Name: Akira\nJob: Researcher of Laser Physics\nDegree: Ph.D in Science\n\n\n\n名前: アキラ\n本職: レーザー物理の研究者\n学位: 博士（理学）"
+    "text": "本職: レーザー物理の研究者\n学位: 博士（理学）"
   },
   {
     "objectID": "about.html#profile",
     "href": "about.html#profile",
     "title": "PureHertz",
     "section": "",
-    "text": "Name: Akira\nJob: Researcher of Laser Physics\nDegree: Ph.D in Science\n\n\n\n名前: アキラ\n本職: レーザー物理の研究者\n学位: 博士（理学）"
+    "text": "Name: PureHertz\nJob: Researcher of Laser Physics\nDegree: Ph.D in Science\n\n\n\n名前: PureHertz\n本職: レーザー物理の研究者\n学位: 博士（理学）"
   },
   {
     "objectID": "about.html#このサイトについて",
@@ -263,14 +263,14 @@
     "href": "about.html#その他の楽曲置き場",
     "title": "PureHertz",
     "section": "その他の楽曲置き場",
-    "text": "その他の楽曲置き場\n\nPiapro\nニコニコ動画"
+    "text": "その他の楽曲置き場\n\nPiapro\nニコニコ動画 / NicoNico"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Welcome to PureHertz Laboratory",
     "section": "",
-    "text": "Magic of Frequency —Optics, Electronics, and Music\n\nレーザー物理の研究のために開発・製作した周辺回路・装置\n趣味で制作した楽曲\nその他、研究・趣味に役立つかもしれない情報\n\n\n\n\nWorks\n開発、製作、制作した回路、装置、楽曲やその周辺の情報をBlog形式で綴っています。\n記事がたまってきたら、内容ごとにまとめようかと思っています。\n\n\nRecent posts\n\n\n\n\n\nTitle\n\n\nDate\n\n\nModified\n\n\n\n\n\n\nPythonの環境構築\n\n\n2024-06-29\n\n\n2024-06-29\n\n\n\n\nFPGA (MachXO2) の書き込み\n\n\n2024-04-28\n\n\n2024-06-29\n\n\n\n\nYou Go, We Go\n\n\n2024-04-12\n\n\n2024-04-12\n\n\n\n\nPC制御式LDドライバに物理インターフェイスを付けてみた\n\n\n2024-03-24\n\n\n2024-03-24\n\n\n\n\nRS232C-USB変換\n\n\n2024-03-17\n\n\n2024-03-17\n\n\n\n\nQuartoでウェブサイトを作ってGitHubで公開する\n\n\n2024-03-10\n\n\n2024-03-10\n\n\n\n\n共振器コントローラー\n\n\n2024-03-02\n\n\n2024-03-02\n\n\n\n\n温度コントローラー\n\n\n2024-03-01\n\n\n2024-03-01\n\n\n\n\n\nNo matching items"
+    "text": "Magic of Frequency —Optics, Electronics, and Music\n\nレーザー物理の研究のために開発・製作した周辺回路・装置\n趣味で制作した楽曲\nその他、研究・趣味に役立つかもしれない情報\n\n\n\n\nContents\n\nAbout\n\n当サイトについて\n\nWorks\n\n開発、製作、制作した回路、装置、楽曲やその周辺の情報をBlog形式で綴っています。\n記事がたまってきたら、内容ごとにまとめようかと思っています。\n\n\n\n\nRecent posts\n\n\n\n\n\nTitle\n\n\nDate\n\n\nModified\n\n\n\n\n\n\nPythonの環境構築\n\n\n2024-06-29\n\n\n2024-06-29\n\n\n\n\nFPGA (MachXO2) の書き込み\n\n\n2024-04-28\n\n\n2024-06-29\n\n\n\n\nYou Go, We Go\n\n\n2024-04-12\n\n\n2024-04-12\n\n\n\n\nPC制御式LDドライバに物理インターフェイスを付けてみた\n\n\n2024-03-24\n\n\n2024-03-24\n\n\n\n\nRS232C-USB変換\n\n\n2024-03-17\n\n\n2024-03-17\n\n\n\n\nQuartoでウェブサイトを作ってGitHubで公開する\n\n\n2024-03-10\n\n\n2024-03-10\n\n\n\n\n共振器コントローラー\n\n\n2024-03-02\n\n\n2024-03-02\n\n\n\n\n温度コントローラー\n\n\n2024-03-01\n\n\n2024-03-01\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/2024-03-01/index.html",
@@ -558,5 +558,33 @@
     "title": "Pythonの環境構築",
     "section": "Spyderのインストール",
     "text": "Spyderのインストール\nPythonのエディタには Spyder を使用しています。https://www.spyder-ide.org/ からインストーラをダウンロードして実行します。\nSpyderは、自身にPythonパッケージが含まれているために別のPythonをインストールしなくても使えますが、先ほど上でインストールしたPythonを使う方がバージョンやパッケージの管理が楽だと思います。別にインストールしたPythonをSpyderで使うには、上部のメニューバーからツール → 設定 と進み、「以下のPythonインタープリターを使う」を選択した後でPython環境があるディレクトリのPython.exeを選択します。\n\n\n\nSpyderで使用するPythonの変更\n\n\n設定を反映するためにSpyderを再起動すると、以下のようなエラーが表示されます。\n\n\n\nSpyderのモジュール不足によるエラー\n\n\nこれは、指定したPython環境にSpyderの実行に必要なモジュールが足りていないためで、\n&gt; pip install spyder-kernels\n\n&gt; pip install PyQt5\nを実行してそれらをインストールします。改めてSpyderを再起動し、エラーが消えていることを確認して下さい。\n\n\n\nPythonのアップデート\nSpyderで使用するPythonの変更\nSpyderのモジュール不足によるエラー"
+  },
+  {
+    "objectID": "about.html#プロフィール-profile",
+    "href": "about.html#プロフィール-profile",
+    "title": "PureHertz",
+    "section": "",
+    "text": "Job: Researcher of Laser Physics\nDegree: Ph.D in Science\n\n\n\n\n本職: レーザー物理の研究者\n学位: 博士（理学）"
+  },
+  {
+    "objectID": "about.html#このサイトについて-about-this-site",
+    "href": "about.html#このサイトについて-about-this-site",
+    "title": "PureHertz",
+    "section": "このサイトについて / About this site",
+    "text": "このサイトについて / About this site\n大学学部時代からレーザー物理分野で研究をしています。研究の過程でいろいろな回路や装置を作るうちに、回路作りが趣味になり、必要以上に(?)こだわるようになりました。作った装置には “PureHertz” というブランド名を勝手につけて自己満足しています。\n一方、中学生の頃から作曲・音楽制作を趣味にしており、最近は研究内容をテーマにして曲を作っています。\nせっかく作った作品たち、紹介できるものはこのサイトで紹介していこうと思います。\n\nI have been doing research in the field of laser physics since my undergraduate days. As I built various circuits and devices in the course of my research, circuit building became my hobby and I became more (?) particular about it than necessary. I became obsessed with making circuits. I am self-satisfied with the brand name “PureHertz” that I have given to the devices I have made.\nOn the other hand, I have been composing and creating music since I was in junior high school, and recently I have been composing songs based on the themes of my research.\nI will try to introduce my works on this site as much as I can."
+  },
+  {
+    "objectID": "about.html#その他の楽曲置き場-other-music-strages",
+    "href": "about.html#その他の楽曲置き場-other-music-strages",
+    "title": "PureHertz",
+    "section": "その他の楽曲置き場 / Other music strages",
+    "text": "その他の楽曲置き場 / Other music strages\n\nPiapro\nニコニコ動画 / NicoNico"
+  },
+  {
+    "objectID": "about.html#プロフィール",
+    "href": "about.html#プロフィール",
+    "title": "PureHertz",
+    "section": "",
+    "text": "本職: レーザー物理の研究者\n学位: 博士（理学）"
   }
 ]

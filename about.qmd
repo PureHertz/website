@@ -11,15 +11,15 @@ about:
 toc: false
 ---
 
-## Profile
+## プロフィール
 
--   **Name:** Akira
+<!-- -   **Name:** PureHertz
 -   **Job:** Researcher of Laser Physics
 -   **Degree:** Ph.D in Science
 
-------------------------------------------------------------------------
+------------------------------------------------------------------------ -->
 
--   **名前:** アキラ
+<!-- -   **名前:** PureHertz -->
 -   **本職:** レーザー物理の研究者
 -   **学位:** 博士（理学）
 
@@ -36,4 +36,4 @@ toc: false
 ## その他の楽曲置き場
 
 - [Piapro](https://piapro.jp/imaizumi)
-- [ニコニコ動画](https://www.nicovideo.jp/user/1126839/mylist/75364669) 
+- [ニコニコ動画 / NicoNico](https://www.nicovideo.jp/user/1126839/mylist/75364669) 
