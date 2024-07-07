@@ -4,7 +4,7 @@ date: "2024-07-08"
 date-modified: "2024-07-08"
 # draft: true
 categories: [マイコン, Python]
-image: "KB2004.jpg"
+image: "KB2040.jpg"
 # lightbox: true
 
 # UPDATE
