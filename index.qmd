@@ -16,7 +16,7 @@ listing:
   filter-ui: false
 ---
 
-![](common/title.jpg)
+![Top image](/common/title.jpg)
 
 #### Magic of Frequency  *---Optics, Electronics, and Music*
 
