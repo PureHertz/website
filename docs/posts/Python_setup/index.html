@@ -208,7 +208,7 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 
 
 
-<p>Pythonを始めた当初はAnacondaを使って環境構築していましたが、更新が上手くいかなくなったりとよく分からない状態になっていたので、python.org経由の標準的な方法で環境を構築構築しなおしました。以下、その備忘録です。</p>
+<p>Pythonを始めた当初はAnacondaを使って環境構築していましたが、更新が上手くいかなくなったりとよく分からない状態になっていたので、python.org経由の標準的な方法で環境を構築しなおしました。以下、その備忘録です。</p>
 <section id="インストール" class="level2">
 <h2 class="anchored" data-anchor-id="インストール">インストール</h2>
 <p>公式サイト <a href="https://www.python.org/" class="uri">https://www.python.org/</a> から最新版のインストーラをダウンロードしてインストールします。インストール時に <code>Add Python 3.x to PATH</code> にチェックを入れることで、自動的に環境変数にインストールディレクトリが追加され、ターミナルから <code>python</code> だけで直接呼び出せるようになります。</p>
@@ -356,7 +356,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/purehertz\.github\.io\/");
+      var filterRegex = new RegExp("https:\/\/purehertz\.quarto\.pub\/purehertz-website");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -710,7 +710,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","loop":false,"closeEffect":"zoom","descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","openEffect":"zoom","closeEffect":"zoom","loop":false});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

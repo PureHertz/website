@@ -1,0 +1,173 @@
+---
+title: "Quartoでウェブサイトを作りQuarto Pubで公開する"
+date: "2024-07-15"
+date-modified: "2024-07-15"
+categories: [ウェブサイト, Quarto]
+---
+
+Quartoでウェブサイトを作りQuarto Pubで公開する
+==============================================
+
+以前、簡単にウェブサイトを作成・公開・維持する方法として、QuartoとGitHub Pagesを使った方法を紹介しました。
+
+[Quartoでウェブサイトを作ってGitHubで公開する](/posts/website_quatro_github/)
+
+今回は、Quartoが提供するQuarto Pubで公開する方法も紹介します。GitHubはなぜかGoogle検索にインデックス登録されない状態が続いていたので、全てQuarto Pubに乗り換えてみました。
+
+[Quarto](https://quarto.org)
+: Markdownベースでウェブサイトを作成します。
+
+[Quarto Pub](https://quartopub.com/)
+: Quartoで作ったコンテンツを自由に出版できるサービスです。
+
+![Quarto Pub](quartopub_top.png)
+
+
+## Quartoとは
+
+Quartoとは、拡張Markdown形式データ（拡張子は`.qmd`）を作成し、それを基に[pandoc](https://pandoc.org/)によってHTMLファイル、PDFファイルなど様々な形式に変換して文書を構築するアプリケーションです。[Jupyter notebook](https://jupyter.org/)のように、文書内でコードを実行しその結果を表示することもできます。
+
+Quartoを使ったウェブサイト構築のメリットは以下の通り。
+
+- Markdownで比較的簡単に記述できる。HTMLを編集するのに比べて、更新がだいぶ楽。
+- ブログ形式のサイトも作成できる。
+- テンプレートでもそれなりのデザイン。
+
+
+## ツールのセットアップ
+
+### Quarto
+
+[Quarto](https://quarto.org)ウェブサイトのトップページから`Get Started`ボタンをクリックしてダウンロードサイトに飛びます。OSに合わせたバージョンをインストールします。
+
+
+### Visual Studio Code
+
+Markdownの編集に使います。[VS Code](https://code.visualstudio.com/)ウェブサイトからインストールします。VS Codeを立ち上げ、Quartoの拡張機能 (Extentions) で`Quart`を検索し、インストールします。
+
+Quartoのダウンロードサイトでも手順を解説しているので参考にしてください。
+
+
+### Quarto Pub
+
+[Quarto Pub](https://quartopub.com/)でアカウントを作成します。`Sign Up for Quarto Pub`をクリックしてアカウントを作成してください。
+
+![](quartopub_signup.png)
+
+
+公開されるページのURLは、このとき登録したユーザー名と初回Publish時に設定するウェブサイト名を使って
+
+`https://<user name>.quarto.pub/<site name>`
+
+となります。
+
+
+
+## ウェブサイトの作成
+
+### テンプレートから作成
+
+Quartoのウェブサイトテンプレートを使って作成を始めます。
+
+1. ウェブサイト作成用のフォルダを用意します。
+2. VS Codeを起動して{{< kbd Ctrl-Shift-P >}}でコマンドパレットを開き、`Quarto: Create Project`と入力します。
+3. `Website Project`を選択し、1.で作ったフォルダを選択して`Choose Project Directory`を押します。
+4. フォルダの中に、`index.qmd`や`_qualt.yml`といったテンプレートファイル一式が作られます。
+
+### テンプレートの編集
+
+テンプレートファイルを編集したり、新しいファイルを追加したりしてウェブサイトを作成します。ウェブサイト全体の設定は`_quarto.yml`に記述します。初期状態では
+
+```yaml
+project:
+  type: website
+
+website:
+  title: "<website title>"
+  navbar: #ページナビの設定
+    left: #左詰め
+      - href: index.qmd #1つめのリンク先
+        text: Home #1つ目のリンク先のテキスト（設定しないとリンク先のタイトルが使われる）
+      - about.qmd #2つ目のリンク先
+
+format:
+  html:
+    theme: cosmo #ページデザイン
+    css: styles.css #CSSファイル（使わないなら消してよい）
+    toc: true #ページ内目次のON/OFF（ページごとの設定も可）
+```
+
+となっています。（コメントは筆者の追記）
+
+詳しい作成方法については、[Quatro > Websites](https://quarto.org/docs/websites/)を参照してください。
+
+
+### プレビューとレンダリング
+
+`index.qmd`など作成・編集したファイルを開き、VS Code右上のPreviewボタンをクリックすると、ウェブサイトのプレビューを表示できます。{{< kbd Ctrl-Shift-K >}}でも可能です。
+
+![](quarto_preview.png)
+
+全ページをレンダリングする場合は、
+
+```default
+> quarto render
+```
+
+を実行してください。レンダリングで作成されたファイルはデフォルトでは`/docs/`フォルダに置かれます。
+
+
+## ウェブサイトの公開
+
+### QurtoからのPublish
+
+Webサイト一式をPublishする場合は、Webサイトのホームディレクトリで
+
+```default
+> quarto publish quarto-pub
+```
+
+を実行するだけです。初回はブラウザが開き認証画面が表示されるので認証してください。
+
+ターミナル上では
+
+```default
+? Authorize (Y/n) » 
+? Site name:  » 
+```
+
+と聞かれるので入力してください。認証が終わるとWebサイト一式がレンダリングされます。以上で完了です。GitHubよりもさらに簡単ですね。
+
+公開されるページのURLはユーザー名とサイト名を使って
+
+`https://<user name>.quarto.pub/<site name>`
+
+となります。`<site name>`の部分はQuarto Pubの管理ページ内で変更可能です。また、管理ページ内で`Default site`オプションにチェックを入れて保存すると、
+
+`https://<user name>.quarto.pub/`
+
+でも同じサイトにアクセスできるようになります。
+
+
+### ウェブサイトの更新
+
+ウェブサイトのソースファイル（`.qmd`ファイルなど）をVS Codeで編集した際も、
+
+```default
+> quarto publish quarto-pub
+```
+
+を実行すればOKです。
+
+更新部分だけをレンダリングしてアップロードする場合には、更新した.qmdファイルを{{< kbd Ctrl-Shift-K >}}でプレビューし
+
+```default
+> quarto publish quarto-pub --no-render
+```
+
+を実行することで、追加レンダリングなしでアップロードできます。
+
+## 参考
+
+- [Quatro > Websites](https://quarto.org/docs/websites/)
+- [Quatro > Publishing > Quarto Pub](https://quarto.org/docs/publishing/quarto-pub.html)

@@ -1,87 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://purehertz.github.io/works.html</loc>
+    <loc>https://purehertz.quarto.pub/purehertz-website/works.html</loc>
     <lastmod>2024-07-15T03:19:44.297Z</lastmod>
   </url>
   <url>
-    <loc>https://purehertz.github.io/posts/your-space-our-place/index.html</loc>
+    <loc>https://purehertz.quarto.pub/purehertz-website/posts/your-space-our-place/index.html</loc>
     <lastmod>2024-04-10T23:54:04.219Z</lastmod>
   </url>
   <url>
-    <loc>https://purehertz.github.io/posts/website_quatro_github/index.html</loc>
+    <loc>https://purehertz.quarto.pub/purehertz-website/posts/website_quatro_github/index.html</loc>
     <lastmod>2024-03-17T14:49:26.840Z</lastmod>
   </url>
   <url>
-    <loc>https://purehertz.github.io/posts/SlowPD/index.html</loc>
-    <lastmod>2024-03-16T16:54:54.138Z</lastmod>
-  </url>
-  <url>
-    <loc>https://purehertz.github.io/posts/regrets/index.html</loc>
-    <lastmod>2024-04-10T23:53:53.773Z</lastmod>
-  </url>
-  <url>
-    <loc>https://purehertz.github.io/posts/limit-breaker/index.html</loc>
-    <lastmod>2024-04-10T23:53:46.236Z</lastmod>
-  </url>
-  <url>
-    <loc>https://purehertz.github.io/posts/dance-versatileness/index.html</loc>
-    <lastmod>2024-04-10T23:53:26.933Z</lastmod>
-  </url>
-  <url>
-    <loc>https://purehertz.github.io/posts/CircuitPython_KB2040/index.html</loc>
-    <lastmod>2024-07-07T15:30:32.886Z</lastmod>
-  </url>
-  <url>
-    <loc>https://purehertz.github.io/posts/2024-03-24/index.html</loc>
-    <lastmod>2024-03-24T08:12:38.291Z</lastmod>
-  </url>
-  <url>
-    <loc>https://purehertz.github.io/posts/2024-03-01/index.html</loc>
-    <lastmod>2024-03-16T16:53:27.655Z</lastmod>
-  </url>
-  <url>
-    <loc>https://purehertz.github.io/index.html</loc>
-    <lastmod>2024-07-14T04:54:20.198Z</lastmod>
-  </url>
-  <url>
-    <loc>https://purehertz.github.io/about.html</loc>
-    <lastmod>2024-07-07T14:58:40.972Z</lastmod>
-  </url>
-  <url>
-    <loc>https://purehertz.github.io/posts/2024-02-27/index.html</loc>
-    <lastmod>2024-03-16T16:52:36.800Z</lastmod>
-  </url>
-  <url>
-    <loc>https://purehertz.github.io/posts/2024-03-02/index.html</loc>
-    <lastmod>2024-03-16T16:54:00.788Z</lastmod>
-  </url>
-  <url>
-    <loc>https://purehertz.github.io/posts/colour-of-the-universe/index.html</loc>
-    <lastmod>2024-04-11T23:34:00.318Z</lastmod>
-  </url>
-  <url>
-    <loc>https://purehertz.github.io/posts/goodbye-to-my-days/index.html</loc>
-    <lastmod>2024-04-10T23:53:36.990Z</lastmod>
-  </url>
-  <url>
-    <loc>https://purehertz.github.io/posts/Python_setup/index.html</loc>
-    <lastmod>2024-06-29T06:32:26.808Z</lastmod>
-  </url>
-  <url>
-    <loc>https://purehertz.github.io/posts/RS232C_USB/index.html</loc>
-    <lastmod>2024-03-17T14:47:39.934Z</lastmod>
-  </url>
-  <url>
-    <loc>https://purehertz.github.io/posts/Sweeper/index.html</loc>
+    <loc>https://purehertz.quarto.pub/purehertz-website/posts/Sweeper/index.html</loc>
     <lastmod>2024-03-16T17:01:05.861Z</lastmod>
   </url>
   <url>
-    <loc>https://purehertz.github.io/posts/write_Lattice_FPGA/index.html</loc>
+    <loc>https://purehertz.quarto.pub/purehertz-website/posts/RS232C_USB/index.html</loc>
+    <lastmod>2024-03-17T14:47:39.934Z</lastmod>
+  </url>
+  <url>
+    <loc>https://purehertz.quarto.pub/purehertz-website/posts/Python_setup/index.html</loc>
+    <lastmod>2024-07-15T08:10:31.985Z</lastmod>
+  </url>
+  <url>
+    <loc>https://purehertz.quarto.pub/purehertz-website/posts/goodbye-to-my-days/index.html</loc>
+    <lastmod>2024-04-10T23:53:36.990Z</lastmod>
+  </url>
+  <url>
+    <loc>https://purehertz.quarto.pub/purehertz-website/posts/colour-of-the-universe/index.html</loc>
+    <lastmod>2024-04-11T23:34:00.318Z</lastmod>
+  </url>
+  <url>
+    <loc>https://purehertz.quarto.pub/purehertz-website/posts/2024-03-02/index.html</loc>
+    <lastmod>2024-03-16T16:54:00.788Z</lastmod>
+  </url>
+  <url>
+    <loc>https://purehertz.quarto.pub/purehertz-website/posts/2024-02-27/index.html</loc>
+    <lastmod>2024-03-16T16:52:36.800Z</lastmod>
+  </url>
+  <url>
+    <loc>https://purehertz.quarto.pub/purehertz-website/about.html</loc>
+    <lastmod>2024-07-07T14:58:40.972Z</lastmod>
+  </url>
+  <url>
+    <loc>https://purehertz.quarto.pub/purehertz-website/index.html</loc>
+    <lastmod>2024-07-14T04:54:20.198Z</lastmod>
+  </url>
+  <url>
+    <loc>https://purehertz.quarto.pub/purehertz-website/posts/2024-03-01/index.html</loc>
+    <lastmod>2024-03-16T16:53:27.655Z</lastmod>
+  </url>
+  <url>
+    <loc>https://purehertz.quarto.pub/purehertz-website/posts/2024-03-24/index.html</loc>
+    <lastmod>2024-03-24T08:12:38.291Z</lastmod>
+  </url>
+  <url>
+    <loc>https://purehertz.quarto.pub/purehertz-website/posts/CircuitPython_KB2040/index.html</loc>
+    <lastmod>2024-07-07T15:30:32.886Z</lastmod>
+  </url>
+  <url>
+    <loc>https://purehertz.quarto.pub/purehertz-website/posts/dance-versatileness/index.html</loc>
+    <lastmod>2024-04-10T23:53:26.933Z</lastmod>
+  </url>
+  <url>
+    <loc>https://purehertz.quarto.pub/purehertz-website/posts/limit-breaker/index.html</loc>
+    <lastmod>2024-04-10T23:53:46.236Z</lastmod>
+  </url>
+  <url>
+    <loc>https://purehertz.quarto.pub/purehertz-website/posts/regrets/index.html</loc>
+    <lastmod>2024-04-10T23:53:53.773Z</lastmod>
+  </url>
+  <url>
+    <loc>https://purehertz.quarto.pub/purehertz-website/posts/SlowPD/index.html</loc>
+    <lastmod>2024-03-16T16:54:54.138Z</lastmod>
+  </url>
+  <url>
+    <loc>https://purehertz.quarto.pub/purehertz-website/posts/website_quartopub/index.html</loc>
+    <lastmod>2024-07-15T08:27:36.794Z</lastmod>
+  </url>
+  <url>
+    <loc>https://purehertz.quarto.pub/purehertz-website/posts/write_Lattice_FPGA/index.html</loc>
     <lastmod>2024-07-07T15:21:11.950Z</lastmod>
   </url>
   <url>
-    <loc>https://purehertz.github.io/posts/you_go_we_go/index.html</loc>
+    <loc>https://purehertz.quarto.pub/purehertz-website/posts/you_go_we_go/index.html</loc>
     <lastmod>2024-04-12T11:07:14.931Z</lastmod>
   </url>
 </urlset>
