@@ -3,6 +3,7 @@ title: "Quartoでウェブサイトを作りQuarto Pubで公開する"
 date: "2024-07-15"
 date-modified: "2024-07-15"
 categories: [ウェブサイト, Quarto]
+image: /common/code.jpg
 ---
 
 Quartoでウェブサイトを作りQuarto Pubで公開する
