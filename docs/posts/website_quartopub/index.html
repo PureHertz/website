@@ -194,9 +194,7 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#quartoでウェブサイトを作りquarto-pubで公開する" id="toc-quartoでウェブサイトを作りquarto-pubで公開する" class="nav-link active" data-scroll-target="#quartoでウェブサイトを作りquarto-pubで公開する">Quartoでウェブサイトを作りQuarto Pubで公開する</a>
-  <ul class="collapse">
-  <li><a href="#quartoとは" id="toc-quartoとは" class="nav-link" data-scroll-target="#quartoとは">Quartoとは</a></li>
+  <li><a href="#quartoとは" id="toc-quartoとは" class="nav-link active" data-scroll-target="#quartoとは">Quartoとは</a></li>
   <li><a href="#ツールのセットアップ" id="toc-ツールのセットアップ" class="nav-link" data-scroll-target="#ツールのセットアップ">ツールのセットアップ</a>
   <ul class="collapse">
   <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto">Quarto</a></li>
@@ -215,7 +213,6 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
   <li><a href="#ウェブサイトの更新" id="toc-ウェブサイトの更新" class="nav-link" data-scroll-target="#ウェブサイトの更新">ウェブサイトの更新</a></li>
   </ul></li>
   <li><a href="#参考" id="toc-参考" class="nav-link" data-scroll-target="#参考">参考</a></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
@@ -226,8 +223,6 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 
 
 
-<section id="quartoでウェブサイトを作りquarto-pubで公開する" class="level1">
-<h1>Quartoでウェブサイトを作りQuarto Pubで公開する</h1>
 <p>以前、簡単にウェブサイトを作成・公開・維持する方法として、QuartoとGitHub Pagesを使った方法を紹介しました。</p>
 <p><a href="../..\posts/website_quatro_github/">Quartoでウェブサイトを作ってGitHubで公開する</a></p>
 <p>今回は、Quartoが提供するQuarto Pubで公開する方法も紹介します。GitHubはなぜかGoogle検索にインデックス登録されない状態が続いていたので、全てQuarto Pubに乗り換えてみました。</p>
@@ -356,7 +351,6 @@ Quartoで作ったコンテンツを自由に出版できるサービスです�
 
 
 </section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -451,7 +445,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/purehertz\.github\.io\/");
+      var filterRegex = new RegExp("https:\/\/purehertz\.quarto\.pub\/website");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

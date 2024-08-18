@@ -1,1 +1,1 @@
-Sitemap: https://purehertz.github.io/sitemap.xml
+Sitemap: https://purehertz.quarto.pub/website/sitemap.xml

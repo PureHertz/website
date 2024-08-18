@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-07-15">
+<meta name="dcterms.date" content="2024-08-18">
 
-<title>Quartoでウェブサイトを作りQuarto Pubで公開する – PureHertz Laboratory</title>
+<title>小型マイコンボードで作るシンプルなデジタイザ – PureHertz Laboratory</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -75,8 +75,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="../../site_libs/quarto-contrib/kbd/kbd.js"></script>
-<link href="../../site_libs/quarto-contrib/kbd/kbd.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -157,10 +155,10 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Quartoでウェブサイトを作りQuarto Pubで公開する</h1>
+      <h1 class="title">小型マイコンボードで作るシンプルなデジタイザ</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">ウェブサイト</div>
-                <div class="quarto-category">Quarto</div>
+                <div class="quarto-category">マイコン</div>
+                <div class="quarto-category">電子工作</div>
               </div>
                   </div>
   </div>
@@ -172,10 +170,16 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">2024-07-15</p>
+        <p class="date">2024-08-18</p>
       </div>
     </div>
     
+      <div>
+      <div class="quarto-title-meta-heading">Modified</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">2024-08-18</p>
+      </div>
+    </div>
       
     </div>
     
@@ -188,28 +192,15 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#quartoでウェブサイトを作りquarto-pubで公開する" id="toc-quartoでウェブサイトを作りquarto-pubで公開する" class="nav-link active" data-scroll-target="#quartoでウェブサイトを作りquarto-pubで公開する">Quartoでウェブサイトを作りQuarto Pubで公開する</a>
+  <li><a href="#背景" id="toc-背景" class="nav-link active" data-scroll-target="#背景">背景</a></li>
+  <li><a href="#基本設計" id="toc-基本設計" class="nav-link" data-scroll-target="#基本設計">基本設計</a>
   <ul class="collapse">
-  <li><a href="#quartoとは" id="toc-quartoとは" class="nav-link" data-scroll-target="#quartoとは">Quartoとは</a></li>
-  <li><a href="#ツールのセットアップ" id="toc-ツールのセットアップ" class="nav-link" data-scroll-target="#ツールのセットアップ">ツールのセットアップ</a>
-  <ul class="collapse">
-  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto">Quarto</a></li>
-  <li><a href="#visual-studio-code" id="toc-visual-studio-code" class="nav-link" data-scroll-target="#visual-studio-code">Visual Studio Code</a></li>
-  <li><a href="#quarto-pub" id="toc-quarto-pub" class="nav-link" data-scroll-target="#quarto-pub">Quarto Pub</a></li>
+  <li><a href="#使用部品" id="toc-使用部品" class="nav-link" data-scroll-target="#使用部品">使用部品</a></li>
+  <li><a href="#dプリンタ" id="toc-dプリンタ" class="nav-link" data-scroll-target="#dプリンタ">3Dプリンタ</a></li>
   </ul></li>
-  <li><a href="#ウェブサイトの作成" id="toc-ウェブサイトの作成" class="nav-link" data-scroll-target="#ウェブサイトの作成">ウェブサイトの作成</a>
-  <ul class="collapse">
-  <li><a href="#テンプレートから作成" id="toc-テンプレートから作成" class="nav-link" data-scroll-target="#テンプレートから作成">テンプレートから作成</a></li>
-  <li><a href="#テンプレートの編集" id="toc-テンプレートの編集" class="nav-link" data-scroll-target="#テンプレートの編集">テンプレートの編集</a></li>
-  <li><a href="#プレビューとレンダリング" id="toc-プレビューとレンダリング" class="nav-link" data-scroll-target="#プレビューとレンダリング">プレビューとレンダリング</a></li>
-  </ul></li>
-  <li><a href="#ウェブサイトの公開" id="toc-ウェブサイトの公開" class="nav-link" data-scroll-target="#ウェブサイトの公開">ウェブサイトの公開</a>
-  <ul class="collapse">
-  <li><a href="#qurtoからのpublish" id="toc-qurtoからのpublish" class="nav-link" data-scroll-target="#qurtoからのpublish">QurtoからのPublish</a></li>
-  <li><a href="#ウェブサイトの更新" id="toc-ウェブサイトの更新" class="nav-link" data-scroll-target="#ウェブサイトの更新">ウェブサイトの更新</a></li>
-  </ul></li>
-  <li><a href="#参考" id="toc-参考" class="nav-link" data-scroll-target="#参考">参考</a></li>
-  </ul></li>
+  <li><a href="#組み立て" id="toc-組み立て" class="nav-link" data-scroll-target="#組み立て">組み立て</a></li>
+  <li><a href="#プログラム書き込み" id="toc-プログラム書き込み" class="nav-link" data-scroll-target="#プログラム書き込み">プログラム書き込み</a></li>
+  <li><a href="#実戦投入" id="toc-実戦投入" class="nav-link" data-scroll-target="#実戦投入">実戦投入</a></li>
   </ul>
 </nav>
     </div>
@@ -220,133 +211,153 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 
 
 
-<section id="quartoでウェブサイトを作りquarto-pubで公開する" class="level1">
-<h1>Quartoでウェブサイトを作りQuarto Pubで公開する</h1>
-<p>以前、簡単にウェブサイトを作成・公開・維持する方法として、QuartoとGitHub Pagesを使った方法を紹介しました。</p>
-<p><a href="../..\posts/website_quatro_github/">Quartoでウェブサイトを作ってGitHubで公開する</a></p>
-<p>今回は、Quartoが提供するQuarto Pubで公開する方法も紹介します。GitHubはなぜかGoogle検索にインデックス登録されない状態が続いていたので、全てQuarto Pubに乗り換えてみました。</p>
-<dl>
-<dt><a href="https://quarto.org">Quarto</a></dt>
-<dd>
-Markdownベースでウェブサイトを作成します。
-</dd>
-<dt><a href="https://quartopub.com/">Quarto Pub</a></dt>
-<dd>
-Quartoで作ったコンテンツを自由に出版できるサービスです。
-</dd>
-</dl>
+<p>BNC入力、USB-C出力の簡易デジタイザです。アナログの電圧信号をPCに取り込んでモニタリングするのに使えます。</p>
+<section id="背景" class="level2">
+<h2 class="anchored" data-anchor-id="背景">背景</h2>
+<p>とある研究で、電圧をモニタリングし、その値を使ってPCで何かしらの制御をしようとしていました。当初はロガーを使えないかなと思っていたのですが、調べてみるとロガーは内部メモリにログを保存するのが仕事で、PCと接続して常時電圧値を転送するみたいな使い方は想定されていないようでした。ならば仕方ない、簡易デジタイザ的なものを自作するかとなったわけです。</p>
+</section>
+<section id="基本設計" class="level2">
+<h2 class="anchored" data-anchor-id="基本設計">基本設計</h2>
+<ul>
+<li>ちょっと信号をモニタリングしたい場合に使うことを想定してチャンネル数は1とする</li>
+<li>小型のマイコンボードを使い、付属するADCを使って簡単にアナログ信号を取り込む</li>
+<li>アナログ端子はBNCのプラグにし、各装置のBNC出力端子に直接取り付けられるようにする</li>
+</ul>
+<section id="使用部品" class="level3">
+<h3 class="anchored" data-anchor-id="使用部品">使用部品</h3>
+<p>秋月電子で買ってきました。</p>
+<ul>
+<li>マイコンボード: <a href="https://akizukidenshi.com/catalog/g/g115178/">Seeduino Xiao (SAMD21)</a></li>
+<li>アナログコネクタ: <a href="https://akizukidenshi.com/catalog/g/g100141/">BNCプラグ パネルマウント丸座</a></li>
+</ul>
+<p>回路図は以下の通りです。マイコンへの入力部には3.3 Vのツェナーダイオードを入れて保護しています。そのせいで電圧が高くなってくると正しい値からずれますが、気にしないことにします。</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="quartopub_top.png" class="img-fluid figure-img"></p>
-<figcaption>Quarto Pub</figcaption>
+<p><img src="diagram.png" class="img-fluid figure-img"></p>
+<figcaption>回路図</figcaption>
 </figure>
 </div>
-<section id="quartoとは" class="level2">
-<h2 class="anchored" data-anchor-id="quartoとは">Quartoとは</h2>
-<p>Quartoとは、拡張Markdown形式データ（拡張子は<code>.qmd</code>）を作成し、それを基に<a href="https://pandoc.org/">pandoc</a>によってHTMLファイル、PDFファイルなど様々な形式に変換して文書を構築するアプリケーションです。<a href="https://jupyter.org/">Jupyter notebook</a>のように、文書内でコードを実行しその結果を表示することもできます。</p>
-<p>Quartoを使ったウェブサイト構築のメリットは以下の通り。</p>
+</section>
+<section id="dプリンタ" class="level3">
+<h3 class="anchored" data-anchor-id="dプリンタ">3Dプリンタ</h3>
+<p>筐体は3Dプリンタで作りました。以下の2つのパーツで出来ています。STLファイルを置いておきます。</p>
 <ul>
-<li>Markdownで比較的簡単に記述できる。HTMLを編集するのに比べて、更新がだいぶ楽。</li>
-<li>ブログ形式のサイトも作成できる。</li>
-<li>テンプレートでもそれなりのデザイン。</li>
+<li><a href="BNC-Xiao-MiconBoard-side.stl">BNC-Xiao-MiconBoard-side.stl</a> （マイコンマウント側）</li>
+<li><a href="BNC-Xiao-BNC-side.stl">BNC-Xiao-BNC-side.stl</a> （BNC取り付け側）</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="enclosure_1.png" class="img-fluid figure-img"></p>
+<figcaption>筐体</figcaption>
+</figure>
+</div>
+<p>2つのパーツを固定するのにM2のビットインサートとネジを使います。</p>
+<ul>
+<li>M2 ビットインサート（長さ2 mm程度）</li>
+<li>M2 ネジ</li>
 </ul>
 </section>
-<section id="ツールのセットアップ" class="level2">
-<h2 class="anchored" data-anchor-id="ツールのセットアップ">ツールのセットアップ</h2>
-<section id="quarto" class="level3">
-<h3 class="anchored" data-anchor-id="quarto">Quarto</h3>
-<p><a href="https://quarto.org">Quarto</a>ウェブサイトのトップページから<code>Get Started</code>ボタンをクリックしてダウンロードサイトに飛びます。OSに合わせたバージョンをインストールします。</p>
 </section>
-<section id="visual-studio-code" class="level3">
-<h3 class="anchored" data-anchor-id="visual-studio-code">Visual Studio Code</h3>
-<p>Markdownの編集に使います。<a href="https://code.visualstudio.com/">VS Code</a>ウェブサイトからインストールします。VS Codeを立ち上げ、Quartoの拡張機能 (Extentions) で<code>Quart</code>を検索し、インストールします。</p>
-<p>Quartoのダウンロードサイトでも手順を解説しているので参考にしてください。</p>
-</section>
-<section id="quarto-pub" class="level3">
-<h3 class="anchored" data-anchor-id="quarto-pub">Quarto Pub</h3>
-<p><a href="https://quartopub.com/">Quarto Pub</a>でアカウントを作成します。<code>Sign Up for Quarto Pub</code>をクリックしてアカウントを作成してください。</p>
-<p><img src="quartopub_signup.png" class="img-fluid"></p>
-<p>公開されるページのURLは、このとき登録したユーザー名と初回Publish時に設定するウェブサイト名を使って</p>
-<p><code>https://&lt;user name&gt;.quarto.pub/&lt;site name&gt;</code></p>
-<p>となります。</p>
-</section>
-</section>
-<section id="ウェブサイトの作成" class="level2">
-<h2 class="anchored" data-anchor-id="ウェブサイトの作成">ウェブサイトの作成</h2>
-<section id="テンプレートから作成" class="level3">
-<h3 class="anchored" data-anchor-id="テンプレートから作成">テンプレートから作成</h3>
-<p>Quartoのウェブサイトテンプレートを使って作成を始めます。</p>
+<section id="組み立て" class="level2">
+<h2 class="anchored" data-anchor-id="組み立て">組み立て</h2>
 <ol type="1">
-<li>ウェブサイト作成用のフォルダを用意します。</li>
-<li>VS Codeを起動して<kbd aria-hidden="true">Ctrl-Shift-P</kbd><span class="visually-hidden">Ctrl-Shift-P</span>でコマンドパレットを開き、<code>Quarto: Create Project</code>と入力します。</li>
-<li><code>Website Project</code>を選択し、1.で作ったフォルダを選択して<code>Choose Project Directory</code>を押します。</li>
-<li>フォルダの中に、<code>index.qmd</code>や<code>_qualt.yml</code>といったテンプレートファイル一式が作られます。</li>
+<li>GNDピンと10番ピンにケーブルをはんだ付け</li>
 </ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="simple-digitizer_1.jpg" class="img-fluid figure-img"></p>
+<figcaption>ケーブルのはんだ付け</figcaption>
+</figure>
+</div>
+<ol start="2" type="1">
+<li>BNC、ツェナダイオードなどをはんだ付け</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="simple-digitizer_2.jpg" class="img-fluid figure-img"></p>
+<figcaption>BNC、ツェナーダイオードなどのはんだ付け</figcaption>
+</figure>
+</div>
+<ol start="3" type="1">
+<li>もう一方の筐体パーツにビットインサートを埋め込む</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="enclosure_2.jpg" class="img-fluid figure-img"></p>
+<figcaption>ビットインサートの埋め込み</figcaption>
+</figure>
+</div>
+<ol start="4" type="1">
+<li>はんだ付けした方のパーツを差し込んでねじ止めして完成</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="simple-digitizer_3.jpg" class="img-fluid figure-img"></p>
+<figcaption>完成</figcaption>
+</figure>
+</div>
 </section>
-<section id="テンプレートの編集" class="level3">
-<h3 class="anchored" data-anchor-id="テンプレートの編集">テンプレートの編集</h3>
-<p>テンプレートファイルを編集したり、新しいファイルを追加したりしてウェブサイトを作成します。ウェブサイト全体の設定は<code>_quarto.yml</code>に記述します。初期状態では</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
+<section id="プログラム書き込み" class="level2">
+<h2 class="anchored" data-anchor-id="プログラム書き込み">プログラム書き込み</h2>
+<p>マイコンに書き込むプログラムはArduino IDEで作りました。コードを以下に示します。</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="at">const</span> <span class="dt">int</span> n_ave <span class="op">=</span> <span class="dv">100</span><span class="op">;</span>  <span class="co">// 移動平均回数</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">const</span> <span class="dt">int</span> in <span class="op">=</span> <span class="dv">10</span><span class="op">;</span>  <span class="co">// アナログインプット端子</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"&lt;website title&gt;"</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span><span class="co"> #ページナビの設定</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span><span class="co"> #左詰め</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span><span class="co"> #1つめのリンク先</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span><span class="co"> #1つ目のリンク先のテキスト（設定しないとリンク先のタイトルが使われる）</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> about.qmd</span><span class="co"> #2つ目のリンク先</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> cosmo</span><span class="co"> #ページデザイン</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">css</span><span class="kw">:</span><span class="at"> styles.css</span><span class="co"> #CSSファイル（使わないなら消してよい）</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span><span class="co"> #ページ内目次のON/OFF（ページごとの設定も可）</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>となっています。（コメントは筆者の追記）</p>
-<p>詳しい作成方法については、<a href="https://quarto.org/docs/websites/">Quatro &gt; Websites</a>を参照してください。</p>
-</section>
-<section id="プレビューとレンダリング" class="level3">
-<h3 class="anchored" data-anchor-id="プレビューとレンダリング">プレビューとレンダリング</h3>
-<p><code>index.qmd</code>など作成・編集したファイルを開き、VS Code右上のPreviewボタンをクリックすると、ウェブサイトのプレビューを表示できます。<kbd aria-hidden="true">Ctrl-Shift-K</kbd><span class="visually-hidden">Ctrl-Shift-K</span>でも可能です。</p>
-<p><img src="quarto_preview.png" class="img-fluid"></p>
-<p>全ページをレンダリングする場合は、</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&gt; quarto render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>を実行してください。レンダリングで作成されたファイルはデフォルトでは<code>/docs/</code>フォルダに置かれます。</p>
-</section>
-</section>
-<section id="ウェブサイトの公開" class="level2">
-<h2 class="anchored" data-anchor-id="ウェブサイトの公開">ウェブサイトの公開</h2>
-<section id="qurtoからのpublish" class="level3">
-<h3 class="anchored" data-anchor-id="qurtoからのpublish">QurtoからのPublish</h3>
-<p>Webサイト一式をPublishする場合は、Webサイトのホームディレクトリで</p>
-<pre><code>&gt; quarto publish quarto-pub</code></pre>
-<p>を実行するだけです。初回はブラウザが開き認証画面が表示されるので認証してください。</p>
-<p>ターミナル上では</p>
-<pre class="defaulto"><code>? Authorize (Y/n) » 
-? Site name:  » </code></pre>
-<p>と聞かれるので入力してください。認証が終わるとWebサイト一式がレンダリングされます。以上で完了です。GitHubよりもさらに簡単ですね。</p>
-<p>公開されるページのURLはユーザー名とサイト名を使って</p>
-<p><code>https://&lt;user name&gt;.quarto.pub/&lt;site name&gt;</code></p>
-<p>となります。<code>&lt;site name&gt;</code>の部分はQuarto Pubの管理ページ内で変更可能です。また、管理ページ内で<code>Default site</code>オプションにチェックを入れて保存すると、</p>
-<p><code>https://&lt;user name&gt;.quarto.pub/</code></p>
-<p>でも同じサイトにアクセスできるようになります。</p>
-</section>
-<section id="ウェブサイトの更新" class="level3">
-<h3 class="anchored" data-anchor-id="ウェブサイトの更新">ウェブサイトの更新</h3>
-<p>ウェブサイトのソースファイル（<code>.qmd</code>ファイルなど）をVS Codeで編集した際も、</p>
-<pre><code>&gt; quarto publish quarto-pub</code></pre>
-<p>を実行すればOKです。更新したところだけ再レンダリングする方法もあるのかもしれませんが、今のところ見つけられていません。</p>
-</section>
-</section>
-<section id="参考" class="level2">
-<h2 class="anchored" data-anchor-id="参考">参考</h2>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> cnt <span class="op">=</span> <span class="dv">0</span><span class="op">;</span>  <span class="co">// 移動平均用のカウント値</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="dt">float</span> temp<span class="op">[</span>n_ave<span class="op">];</span>  <span class="co">// 移動平均用の配列</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="dt">float</span> v_ave<span class="op">;</span>  <span class="co">// 読み取り電圧値の移動平均 </span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> setup<span class="op">()</span> <span class="op">{</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  analogReadResolution<span class="op">(</span><span class="dv">12</span><span class="op">);</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  Serial<span class="op">.</span>begin<span class="op">(</span><span class="dv">19200</span><span class="op">);</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> loop<span class="op">()</span> <span class="op">{</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="co">// --- 移動平均 ---</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="op">(</span>cnt <span class="op">==</span> n_ave<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    cnt <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  temp<span class="op">[</span>cnt<span class="op">]</span> <span class="op">=</span> analogRead<span class="op">(</span>in<span class="op">);</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  v_ave <span class="op">=</span> <span class="fl">0.0</span><span class="op">;</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> i<span class="op">=</span><span class="dv">0</span><span class="op">;</span> i<span class="op">&lt;</span>n_ave<span class="op">;</span> i<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    v_ave <span class="op">+=</span> temp<span class="op">[</span>i<span class="op">];</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  v_ave <span class="op">=</span> v_ave<span class="op">/</span>n_ave <span class="op">*</span> <span class="op">(</span><span class="fl">3.3</span><span class="op">/</span><span class="fl">4095.0</span><span class="op">);</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  cnt <span class="op">+=</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  <span class="co">// --- コマンドの処理 ---</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="op">(</span>Serial<span class="op">.</span>available<span class="op">()</span> <span class="op">&gt;</span> <span class="dv">0</span><span class="op">)</span> <span class="op">{</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    String cmd <span class="op">=</span> Serial<span class="op">.</span>readStringUntil<span class="op">(</span><span class="ch">'</span><span class="sc">\n</span><span class="ch">'</span><span class="op">);</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    <span class="co">// --- FETCH ---</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">((</span>cmd <span class="op">==</span> <span class="st">"FETC?"</span><span class="op">)||(</span>cmd <span class="op">==</span> <span class="st">"FETCh?"</span><span class="op">))</span> <span class="op">{</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>      Serial<span class="op">.</span>println<span class="op">(</span>v_ave<span class="op">,</span> <span class="dv">4</span><span class="op">);</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span> <span class="op">{</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>      Serial<span class="op">.</span>println<span class="op">(</span><span class="st">""</span><span class="op">);</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>ポイントは次の通りです。</p>
 <ul>
-<li><a href="https://quarto.org/docs/websites/">Quatro &gt; Websites</a></li>
-<li><a href="https://quarto.org/docs/publishing/quarto-pub.html">Quatro &gt; Publishing &gt; Quarto Pub</a></li>
+<li>SAMD21のADCは12bit対応なので<code>analogReadResolution(12)</code>で設定</li>
+<li><code>analogRead()</code>だけでなく、念のため移動平均をとって出力</li>
+<li>COMポート経由でPCから<code>FETC?</code>または<code>FETCh?</code>と送ると電圧値を返す（SPCIコマンドっぽく）</li>
 </ul>
-
-
 </section>
+<section id="実戦投入" class="level2">
+<h2 class="anchored" data-anchor-id="実戦投入">実戦投入</h2>
+<p>早速、実験系に投入しました。光パワーを受光器で測定してモニタリングしています。筐体の中でマイコンボードのLEDが光っているのが見えて、想定外にいい感じです。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="simple-digitizer_4.jpg" class="img-fluid figure-img"></p>
+<figcaption>実線投入</figcaption>
+</figure>
+</div>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -442,7 +453,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/purehertz\.github\.io\/");
+      var filterRegex = new RegExp("https:\/\/purehertz\.quarto\.pub\/website");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

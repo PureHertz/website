@@ -6,8 +6,6 @@ categories: [ウェブサイト, Quarto]
 image: /common/code.jpg
 ---
 
-Quartoでウェブサイトを作りQuarto Pubで公開する
-==============================================
 
 以前、簡単にウェブサイトを作成・公開・維持する方法として、QuartoとGitHub Pagesを使った方法を紹介しました。
 

@@ -1,0 +1,125 @@
+---
+title: "小型マイコンボードで作るシンプルなデジタイザ"
+date: "2024-08-18"
+date-modified: "2024-08-18"
+categories: [マイコン, 電子工作]
+image: simple-digitizer_3.jpg
+---
+
+BNC入力、USB-C出力の簡易デジタイザです。アナログの電圧信号をPCに取り込んでモニタリングするのに使えます。
+
+## 背景
+
+とある研究で、電圧をモニタリングし、その値を使ってPCで何かしらの制御をしようとしていました。当初はロガーを使えないかなと思っていたのですが、調べてみるとロガーは内部メモリにログを保存するのが仕事で、PCと接続して常時電圧値を転送するみたいな使い方は想定されていないようでした。ならば仕方ない、簡易デジタイザ的なものを自作するかとなったわけです。
+
+## 基本設計
+
+- ちょっと信号をモニタリングしたい場合に使うことを想定してチャンネル数は1とする
+- 小型のマイコンボードを使い、付属するADCを使って簡単にアナログ信号を取り込む
+- アナログ端子はBNCのプラグにし、各装置のBNC出力端子に直接取り付けられるようにする
+
+### 使用部品
+
+秋月電子で買ってきました。
+
+- マイコンボード: [Seeduino Xiao (SAMD21)](https://akizukidenshi.com/catalog/g/g115178/)
+- アナログコネクタ: [BNCプラグ パネルマウント丸座](https://akizukidenshi.com/catalog/g/g100141/)
+
+回路図は以下の通りです。マイコンへの入力部には3.3 Vのツェナーダイオードを入れて保護しています。そのせいで電圧が高くなってくると正しい値からずれますが、気にしないことにします。
+
+![回路図](diagram.png)
+
+### 3Dプリンタ
+
+筐体は3Dプリンタで作りました。以下の2つのパーツで出来ています。STLファイルを置いておきます。
+
+- [BNC-Xiao-MiconBoard-side.stl](BNC-Xiao-MiconBoard-side.stl) （マイコンマウント側）
+- [BNC-Xiao-BNC-side.stl](BNC-Xiao-BNC-side.stl) （BNC取り付け側）
+
+![筐体](enclosure_1.png)
+
+2つのパーツを固定するのにM2のビットインサートとネジを使います。
+
+- M2 ビットインサート（長さ2 mm程度）
+- M2 ネジ
+
+
+## 組み立て
+
+1. GNDピンと10番ピンにケーブルをはんだ付け
+
+![ケーブルのはんだ付け](simple-digitizer_1.jpg)
+
+2. BNC、ツェナダイオードなどをはんだ付け
+
+![BNC、ツェナーダイオードなどのはんだ付け](simple-digitizer_2.jpg)
+
+3. もう一方の筐体パーツにビットインサートを埋め込む
+
+![ビットインサートの埋め込み](enclosure_2.jpg)
+
+4. はんだ付けした方のパーツを差し込んでねじ止めして完成
+
+![完成](simple-digitizer_3.jpg)
+
+
+## プログラム書き込み
+
+マイコンに書き込むプログラムはArduino IDEで作りました。コードを以下に示します。
+
+```cpp
+const int n_ave = 100;  // 移動平均回数
+const int in = 10;  // アナログインプット端子
+
+int cnt = 0;  // 移動平均用のカウント値
+float temp[n_ave];  // 移動平均用の配列
+float v_ave;  // 読み取り電圧値の移動平均 
+
+
+void setup() {
+  analogReadResolution(12);
+  Serial.begin(19200);
+}
+
+
+void loop() {
+  // --- 移動平均 ---
+  if (cnt == n_ave) {
+    cnt = 0;
+  }
+  temp[cnt] = analogRead(in);
+  v_ave = 0.0;
+  for (int i=0; i<n_ave; i++) {
+    v_ave += temp[i];
+  }
+  v_ave = v_ave/n_ave * (3.3/4095.0);
+  cnt += 1;
+  
+  // --- コマンドの処理 ---
+  if (Serial.available() > 0) {
+    String cmd = Serial.readStringUntil('\n');
+    
+    // --- FETCH ---
+    if ((cmd == "FETC?")||(cmd == "FETCh?")) {
+      Serial.println(v_ave, 4);
+    }
+    else {
+      Serial.println("");
+    }
+  }
+}
+```
+
+ポイントは次の通りです。
+
+- SAMD21のADCは12bit対応なので`analogReadResolution(12)`で設定
+- `analogRead()`だけでなく、念のため移動平均をとって出力
+- COMポート経由でPCから`FETC?`または`FETCh?`と送ると電圧値を返す（SPCIコマンドっぽく）
+
+
+## 実戦投入
+
+早速、実験系に投入しました。光パワーを受光器で測定してモニタリングしています。筐体の中でマイコンボードのLEDが光っているのが見えて、想定外にいい感じです。
+
+![実線投入](simple-digitizer_4.jpg)
+

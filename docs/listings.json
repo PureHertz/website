@@ -2,6 +2,7 @@
   {
     "listing": "/works.html",
     "items": [
+      "/posts/simple-digitizer/index.html",
       "/posts/website_quartopub/index.html",
       "/posts/CircuitPython_KB2040/index.html",
       "/posts/Python_setup/index.html",
@@ -26,6 +27,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/simple-digitizer/index.html",
       "/posts/website_quartopub/index.html",
       "/posts/CircuitPython_KB2040/index.html",
       "/posts/Python_setup/index.html",
