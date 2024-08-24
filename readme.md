@@ -3,4 +3,4 @@ PureHertz Labratory
 
  Website repository of PureHertz.
 
-<https://purehertz.github.io/>
+<https://purehertz.quarto.pub/>
