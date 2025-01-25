@@ -283,7 +283,8 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <p>通信時の注意点は以下の通り。</p>
 <ul>
 <li>tinySAとの書き込み/読み取りは、終端文字<strong>LF</strong> (<code>\r\n</code>)</li>
-<li>複数行にわたる場合は、各行末に終端文字を持つ</li>
+<li>読み取り文字列が複数行にわたる場合は、各行末に終端文字を持つ</li>
+<li>最終行は<code>ch&gt;</code>で終わる。<code>ch&gt;</code>は半角スペースで終わっており、その後ろには終端文字はない。</li>
 </ul>
 <p>以下、代表的なコマンドの解説です。</p>
 <section id="rbw" class="level3">
@@ -291,9 +292,16 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <p>RBWを設定します。</p>
 <ul>
 <li><p>使用法:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>rbw {value}\r\n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p><code>{value}</code>: RBWの値。<code>auto</code>か3-600の数値（kHz単位）を入力</p></li>
-<li><p>応答: 入力と同じコマンド</p></li>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>rbw {value}\r\n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><code>{value}</code>: RBWの値。<code>auto</code>か3-600の数値（kHz単位）を入力</li>
+</ul></li>
+<li><p>応答:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>rbw {value}\r\n</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>ch<span class="op">&gt;</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><code>ch&gt;</code>は半角スペースで終わっており、その後ろには終端文字はない</li>
+</ul></li>
 </ul>
 </section>
 <section id="resume" class="level3">
@@ -301,8 +309,13 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <p>tinySAの掃引を再開します。</p>
 <ul>
 <li><p>使用法:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>resume\r\n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>応答: 入力と同じコマンド</p></li>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>resume\r\n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>応答:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>resume\r\n</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>ch<span class="op">&gt;</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><code>ch&gt;</code>は半角スペースで終わっており、その後ろには終端文字はない</li>
+</ul></li>
 </ul>
 </section>
 <section id="frequencies" class="level3">
@@ -310,17 +323,17 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <p>最後の掃引で使った周波数軸の値を出力します。</p>
 <ul>
 <li><p>使用法:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>frequencies\r\n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>frequencies\r\n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>応答:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>frequencies\r\n</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">0</span>]\r\n</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">1</span>]\r\n</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">2</span>]\r\n</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>...</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>ch<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>frequencies\r\n</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">0</span>]\r\n</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">1</span>]\r\n</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">2</span>]\r\n</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>...</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>ch<span class="op">&gt;</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li><code>f[n]</code>: 周波数配列 （Hz単位）</li>
-<li>最終行の<code>ch&gt;</code>の後ろには終端文字がない</li>
+<li><code>ch&gt;</code>は半角スペースで終わっており、その後ろには終端文字はない</li>
 </ul></li>
 </ul>
 </section>
@@ -335,7 +348,7 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 </div>
 <ul>
 <li><p>使用法:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>scanraw {start(Hz)} {stop(Hz)} [points] [option]\r\n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>scanraw {start(Hz)} {stop(Hz)} [points] [option]\r\n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li><code>{start(Hz)}</code>: 開始周波数（Hz単位）。<code>500k</code>, <code>10M</code>など接頭辞も使える。</li>
 <li><code>{stop(Hz)}</code>: 停止周波数（Hz単位）</li>
@@ -343,11 +356,11 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <li><code>[option]</code>: 出力データに合わせて以下の和を入力する。1: buffered, 2: continuous。今のところ効果がよく分からず、<code>0</code>にしている。</li>
 </ul></li>
 <li><p>応答例:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>scanraw {start(Hz)} {stop(Hz)} [points] <span class="dv">0</span>\r\n</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>{x[MSB0][LSB0]x[MSB1][LSB1]x[MSB2][LSB2]...}ch<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>scanraw {start(Hz)} {stop(Hz)} [points] <span class="dv">0</span>\r\n</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>{x[MSB0][LSB0]x[MSB1][LSB1]x[MSB2][LSB2]...}ch<span class="op">&gt;</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li>出力データ文字列は<code>{}</code>で囲まれており、その後<code>ch&gt;</code>で終わる</li>
-<li><code>cn&gt;</code>で終わった後には終端文字がない</li>
+<li><code>ch&gt;</code>は半角スペースで終わっており、その後ろには終端文字はない</li>
 <li><code>{}</code>の中の各データ点は<code>x[MSBn][LSBn]</code>の繰り返しで表される
 <ul>
 <li><code>[MSBn]</code>: n番目データの最上位バイト</li>
@@ -356,8 +369,8 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 </ul></li>
 </ul></li>
 <li><p>2バイトデータを符号なし整数で表示したものを<strong>d</strong>とすると、測定値<strong>y</strong>（dBm単位）は以下のように計算できる</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> d<span class="op">/</span><span class="dv">32</span> <span class="op">-</span> <span class="dv">128</span>  <span class="co"># for tinySA</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> d<span class="op">/</span><span class="dv">32</span> <span class="op">-</span> <span class="dv">172</span>  <span class="co"># for tinySA Ultra</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> d<span class="op">/</span><span class="dv">32</span> <span class="op">-</span> <span class="dv">128</span>  <span class="co"># for tinySA</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> d<span class="op">/</span><span class="dv">32</span> <span class="op">-</span> <span class="dv">172</span>  <span class="co"># for tinySA Ultra</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ul>
 </section>
 <section id="scan" class="level3">
@@ -365,7 +378,7 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <p>掃引を実行し、オプションで測定データを出力します。</p>
 <ul>
 <li><p>使用法:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>scan {start(Hz)} {stop(Hz)} [points] [outmask]\r\n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>scan {start(Hz)} {stop(Hz)} [points] [outmask]\r\n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li><code>{start(Hz)}</code>: 開始周波数（Hz単位）。<code>500k</code>, <code>10M</code>など接頭辞も使える。</li>
 <li><code>{stop(Hz)}</code>: 停止周波数（Hz単位）</li>
@@ -373,17 +386,17 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <li><code>[outmask]</code>: 出力したいデータに合わせて以下の和を入力する。1: 周波数, 2: 測定値, 4: 保存値。周波数と測定値の場合は<code>3</code>。</li>
 </ul></li>
 <li><p>応答例:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode ps code-with-copy"><code class="sourceCode postscript"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>scan {start<span class="st">(Hz)</span>} {<span class="kw">stop</span><span class="st">(Hz)</span>} [points] <span class="dv">3</span>\r\n</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">0</span>] y[<span class="dv">0</span>] <span class="fl">0.000000000</span>\r\n</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">1</span>] y[<span class="dv">1</span>] <span class="fl">0.000000000</span>\r\n</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">2</span>] y[<span class="dv">2</span>] <span class="fl">0.000000000</span>\r\n</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>...</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>ch&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>scan {start(Hz)} {stop(Hz)} [points] <span class="dv">3</span>\r\n</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">0</span>] y[<span class="dv">0</span>] <span class="fl">0.000000000</span>\r\n</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">1</span>] y[<span class="dv">1</span>] <span class="fl">0.000000000</span>\r\n</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">2</span>] y[<span class="dv">2</span>] <span class="fl">0.000000000</span>\r\n</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>...</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>ch<span class="op">&gt;</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li><code>f[n]</code>: 周波数配列（Hz単位）</li>
 <li><code>y[n]</code>: 測定値配列（dBm単位）</li>
 <li>なぜか<code>y[n]</code>の隣に<code>0.000000000</code>が並ぶ。理由不明。</li>
-<li>最終行の<code>ch&gt;</code>の後ろには終端文字がない</li>
+<li><code>ch&gt;</code>は半角スペースで終わっており、その後ろには終端文字はない</li>
 </ul></li>
 </ul>
 <p>scanでデータを取得すると、下図のように取得に失敗するデータ点があるので、PCでのデータ取得には使えません。</p>
@@ -399,7 +412,7 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <p>設定した周波数における信号レベルを測定し、出力します。<strong>scan</strong>の上位版と思えば良いです。ただし、<strong>scan</strong>, <strong>scanraw</strong>に比べて読み出しの時間がかかります。</p>
 <ul>
 <li><p>使用法:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>hop {start(Hz)} {stop(Hz)} {step(Hz) <span class="op">|</span> points} [outmask]\r\n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>hop {start(Hz)} {stop(Hz)} {step(Hz) <span class="op">|</span> points} [outmask]\r\n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li><code>{start(Hz)}</code>: 開始周波数（Hz単位）。<code>500k</code>, <code>10M</code>など接頭辞も使える。</li>
 <li><code>{stop(Hz)}</code>: 停止周波数（Hz単位）</li>
@@ -407,23 +420,32 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <li><code>[outmask]</code>: 出力したいデータに合わせて以下の和を入力する。1: 周波数, 2: 測定値。</li>
 </ul></li>
 <li><p>応答例:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>hop {start(Hz)} {stop(Hz)} <span class="dv">450</span> <span class="dv">3</span>\r\n</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">0</span>] y[<span class="dv">0</span>]\r\n</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">1</span>] y[<span class="dv">1</span>]\r\n</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">2</span>] y[<span class="dv">2</span>]\r\n</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>...</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>ch<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>hop {start(Hz)} {stop(Hz)} <span class="dv">450</span> <span class="dv">3</span>\r\n</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">0</span>] y[<span class="dv">0</span>]\r\n</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">1</span>] y[<span class="dv">1</span>]\r\n</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">2</span>] y[<span class="dv">2</span>]\r\n</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>...</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>ch<span class="op">&gt;</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li><code>f[n]</code>: 周波数配列（Hz単位）</li>
 <li><code>y[n]</code>: 測定値配列（dBm単位）</li>
-<li>最終行の<code>ch&gt;</code>の後ろには終端文字がない</li>
+<li><code>ch&gt;</code>は半角スペースで終わっており、その後ろには終端文字はない</li>
 </ul></li>
 </ul>
 </section>
 </section>
 <section id="tinysaのlabview-vi" class="level2">
 <h2 class="anchored" data-anchor-id="tinysaのlabview-vi">tinySAのLabVIEW VI</h2>
-<p>鋭意制作中…</p>
+<p>最低限のデータ取得動作ができるようにVIを作ってみました。</p>
+<ul>
+<li><a href="tinySA_pc-control\tinySA_20250125.zip">tinySA_20250125.zip</a>
+<ul>
+<li>scanraw.vi（レベルデータ取得）</li>
+<li>frequencies.vi（周波数データ取得）</li>
+<li>rbw.vi（RBW設定）</li>
+<li>attenuate.vi（減衰器設定）</li>
+</ul></li>
+</ul>
 </section>
 <section id="参考資料" class="level2">
 <h2 class="anchored" data-anchor-id="参考資料">参考資料</h2>
