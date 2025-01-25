@@ -1,6 +1,4 @@
 - source: project
   quarto-pub:
     - id: 5266212c-695e-4f28-ad98-7fa2b02d3c19
-      url: 'https://purehertz.quarto.pub/website'
-    - id: ebdc0d7f-6802-4029-8212-cc2c868f9155
-      url: 'https://purehertz.quarto.pub/purehertz-laboratory'
+      url: https://purehertz.quarto.pub/website

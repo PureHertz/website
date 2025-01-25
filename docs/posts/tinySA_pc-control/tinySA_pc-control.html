@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-02-23">
+<meta name="dcterms.date" content="2025-01-25">
 
-<title>三角波発振器（掃引回路） – PureHertz Laboratory</title>
+<title>tinySA UltraのPC制御 – PureHertz Laboratory</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -41,6 +75,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-a8d7d8aa728f666225d77f3f7660c970.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,35 +115,6 @@ gtag('js', new Date());
 gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -150,7 +158,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">三角波発振器（掃引回路）</h1>
+      <h1 class="title">tinySA UltraのPC制御</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">電子回路</div>
               </div>
@@ -164,14 +172,14 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">2024-02-23</p>
+        <p class="date">2025-01-25</p>
       </div>
     </div>
     
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">2024-02-23</p>
+        <p class="date-modified">2025-01-25</p>
       </div>
     </div>
       
@@ -186,7 +194,23 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#回路概要" id="toc-回路概要" class="nav-link active" data-scroll-target="#回路概要">回路概要</a></li>
+  <li><a href="#tinysa概要" id="toc-tinysa概要" class="nav-link active" data-scroll-target="#tinysa概要">tinySA概要</a></li>
+  <li><a href="#pcとの接続" id="toc-pcとの接続" class="nav-link" data-scroll-target="#pcとの接続">PCとの接続</a>
+  <ul class="collapse">
+  <li><a href="#tinysa側の設定" id="toc-tinysa側の設定" class="nav-link" data-scroll-target="#tinysa側の設定">tinySA側の設定</a></li>
+  <li><a href="#ホスト側の設定" id="toc-ホスト側の設定" class="nav-link" data-scroll-target="#ホスト側の設定">ホスト側の設定</a></li>
+  </ul></li>
+  <li><a href="#tinysaのコマンド制御" id="toc-tinysaのコマンド制御" class="nav-link" data-scroll-target="#tinysaのコマンド制御">tinySAのコマンド制御</a>
+  <ul class="collapse">
+  <li><a href="#rbw" id="toc-rbw" class="nav-link" data-scroll-target="#rbw">rbw</a></li>
+  <li><a href="#resume" id="toc-resume" class="nav-link" data-scroll-target="#resume">resume</a></li>
+  <li><a href="#frequencies" id="toc-frequencies" class="nav-link" data-scroll-target="#frequencies">frequencies</a></li>
+  <li><a href="#scanraw" id="toc-scanraw" class="nav-link" data-scroll-target="#scanraw">scanraw</a></li>
+  <li><a href="#scan" id="toc-scan" class="nav-link" data-scroll-target="#scan">scan</a></li>
+  <li><a href="#hop-ultraのみ" id="toc-hop-ultraのみ" class="nav-link" data-scroll-target="#hop-ultraのみ">hop (Ultraのみ)</a></li>
+  </ul></li>
+  <li><a href="#tinysaのlabview-vi" id="toc-tinysaのlabview-vi" class="nav-link" data-scroll-target="#tinysaのlabview-vi">tinySAのLabVIEW VI</a></li>
+  <li><a href="#参考資料" id="toc-参考資料" class="nav-link" data-scroll-target="#参考資料">参考資料</a></li>
   </ul>
 </nav>
     </div>
@@ -197,34 +221,227 @@ window.Quarto = {
 
 
 
-<p>三角波と矩形波を出力する低速発振回路です。 三角波は掃引信号として、矩形波はそのトリガー信号として、さまざまな装置で便利に使用できます。</p>
-<section id="回路概要" class="level2">
-<h2 class="anchored" data-anchor-id="回路概要">回路概要</h2>
+<!-- tinySAのPC制御
+============== -->
+<p>少し前に話題になった手のひらサイズの格安スペアナtinySA<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>。 懇意にしているメーカーの方が使っているのを見せていただき、自分も欲しくなって手に入れました。</p>
+<p>我々の研究では、それなりに高性能なスペアナが必要となる測定とは別に、適当な性能のスペアナで十分な用途（位相同期のモニタなど）も多く、そういった用途にちょうど良いのではないかと思います。 特に、遠隔地に置く装置の位相同期モニタにはいろいろ事務的な面でも都合がよいだろうと思っています。</p>
+<p>ここでは、tinySAのPC制御法について簡単にまとめます。</p>
+<section id="tinysa概要" class="level2">
+<h2 class="anchored" data-anchor-id="tinysa概要">tinySA概要</h2>
+<p>tinySA Ultraの仕様は以下の通り。</p>
+<ul>
+<li>サイズ: 74 mm x 123 mm x 23 mm</li>
+<li>周波数範囲: 100 kHz-800 MHz, (Ultra mode 6 GHz)</li>
+<li>RBW: 200 Hz-850 kHz</li>
+<li>ディスプレイ: 4 inch TFT (480x320)</li>
+<li>USBインターフェイス: USB type-C</li>
+<li>カードスロット: microSD</li>
+<li>オーディオ出力: 3.5 mmプラグ端子</li>
+<li>電源: USB 5V, バッテリ（2時間）</li>
+</ul>
+<p>詳細情報は<a href="https://tinysa.org/wiki/pmwiki.php">公式サイト</a>を参照してください。</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><img src="Sweeper_1.svg" class="img-fluid figure-img" style="width:80.0%"></p>
-<figcaption>回路図</figcaption>
+<p><a href="tinySA_pc-control/tinySA_1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="tinySA パッケージ"><img src="tinySA_pc-control/tinySA_1.jpg" class="img-fluid figure-img" alt="tinySA パッケージ"></a></p>
+<figcaption>tinySA パッケージ</figcaption>
 </figure>
 </div>
-<p>2回路入りのOPアンプU1を使用し、U1Aをシュミットトリガー回路として、U1Bを積分回路として動作させます。シュミットトリガーから矩形波が出力され、その出力を積分して三角波を作ります。三角波がシュミットトリガーのスレッショルドを超えると、シュミットトリガーの出力電圧が反転します。</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="tinySA_pc-control/tinySA_2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="tinySA 開封"><img src="tinySA_pc-control/tinySA_2.jpg" class="img-fluid figure-img" alt="tinySA 開封"></a></p>
+<figcaption>tinySA 開封</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="tinySA_pc-control/tinySA_beat.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="tinySA ビート信号"><img src="tinySA_pc-control/tinySA_beat.jpg" class="img-fluid figure-img" alt="tinySA ビート信号"></a></p>
+<figcaption>tinySA ビート信号</figcaption>
+</figure>
+</div>
+</section>
+<section id="pcとの接続" class="level2">
+<h2 class="anchored" data-anchor-id="pcとの接続">PCとの接続</h2>
+<section id="tinysa側の設定" class="level3">
+<h3 class="anchored" data-anchor-id="tinysa側の設定">tinySA側の設定</h3>
+<p>メニューを開いて [CONFIG] &gt; [MORE] &gt; [CONNECTION] で設定可能。</p>
 <ul>
-<li>発振動作をするための条件は R1 &gt; R2</li>
-<li>R4に比べてR3の値を小さくすると、出力電圧が小さくなる</li>
-<li>R1とR2の値は近い方が良い</li>
-<li>OPアンプはTL082あたりが丁度良い</li>
-<li>R4とR5は矩形波出力の振幅を抑えるための分圧回路（周波数にも影響するので注意）</li>
+<li>[USB]を選択</li>
+<li>[SERIAL SPEED]でbaud rateを設定（初期設定は115200）</li>
 </ul>
-<p>発振周波数は、以下の式で計算できます。</p>
-<p><span class="math display">\[
-f=\frac{1}{4CR_3}\frac{R_1}{R_2}\frac{R_5}{R_4+R_5}
-\]</span></p>
-<p>ここで、RV1の半固定抵抗も含めてR3と考え、R4がR3より十分小さいとする。</p>
-<p>オペアンプには2回路入りで安定なオペアンプを使用するのが良いです。ここでは安価でユニティゲイン安定のTL082を使用しています。</p>
+</section>
+<section id="ホスト側の設定" class="level3">
+<h3 class="anchored" data-anchor-id="ホスト側の設定">ホスト側の設定</h3>
+<p>tinySAをPCにUSB接続すると、シリアルポートとして認識される。 COM番号を確認してシリアルポート（のbaud rate）を設定する。</p>
+</section>
+</section>
+<section id="tinysaのコマンド制御" class="level2">
+<h2 class="anchored" data-anchor-id="tinysaのコマンド制御">tinySAのコマンド制御</h2>
+<p>tinySAの制御コマンドは公式サイトを参照してください。</p>
+<ul>
+<li><a href="https://tinysa.org/wiki/pmwiki.php?n=Main.USBInterface">tinySA USB interface</a></li>
+</ul>
+<p>通信時の注意点は以下の通り。</p>
+<ul>
+<li>tinySAとの書き込み/読み取りは、終端文字<strong>LF</strong> (<code>\r\n</code>)</li>
+<li>複数行にわたる場合は、各行末に終端文字を持つ</li>
+</ul>
+<p>以下、代表的なコマンドの解説です。</p>
+<section id="rbw" class="level3">
+<h3 class="anchored" data-anchor-id="rbw">rbw</h3>
+<p>RBWを設定します。</p>
+<ul>
+<li><p>使用法:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>rbw {value}\r\n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p><code>{value}</code>: RBWの値。<code>auto</code>か3-600の数値（kHz単位）を入力</p></li>
+<li><p>応答: 入力と同じコマンド</p></li>
+</ul>
+</section>
+<section id="resume" class="level3">
+<h3 class="anchored" data-anchor-id="resume">resume</h3>
+<p>tinySAの掃引を再開します。</p>
+<ul>
+<li><p>使用法:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>resume\r\n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>応答: 入力と同じコマンド</p></li>
+</ul>
+</section>
+<section id="frequencies" class="level3">
+<h3 class="anchored" data-anchor-id="frequencies">frequencies</h3>
+<p>最後の掃引で使った周波数軸の値を出力します。</p>
+<ul>
+<li><p>使用法:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>frequencies\r\n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>応答:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>frequencies\r\n</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">0</span>]\r\n</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">1</span>]\r\n</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">2</span>]\r\n</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>...</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>ch<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><code>f[n]</code>: 周波数配列 （Hz単位）</li>
+<li>最終行の<code>ch&gt;</code>の後ろには終端文字がない</li>
+</ul></li>
+</ul>
+</section>
+<section id="scanraw" class="level3">
+<h3 class="anchored" data-anchor-id="scanraw">scanraw</h3>
+<p>掃引を実行し、バイナリデータを出力します。後述する<strong>scan</strong>のようにデータ転送の失敗がなく、<strong>hop</strong>のように遅くないので、PCでのデータ取得には最も適しています。</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="tinySA_pc-control/labview_scanraw.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="scanrawで取得した30 MHz校正用信号のスペクトル"><img src="tinySA_pc-control/labview_scanraw.png" class="img-fluid figure-img" alt="scanrawで取得した30 MHz校正用信号のスペクトル"></a></p>
+<figcaption>scanrawで取得した30 MHz校正用信号のスペクトル</figcaption>
+</figure>
+</div>
+<ul>
+<li><p>使用法:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>scanraw {start(Hz)} {stop(Hz)} [points] [option]\r\n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><code>{start(Hz)}</code>: 開始周波数（Hz単位）。<code>500k</code>, <code>10M</code>など接頭辞も使える。</li>
+<li><code>{stop(Hz)}</code>: 停止周波数（Hz単位）</li>
+<li><code>[points]</code>: データ点数</li>
+<li><code>[option]</code>: 出力データに合わせて以下の和を入力する。1: buffered, 2: continuous。今のところ効果がよく分からず、<code>0</code>にしている。</li>
+</ul></li>
+<li><p>応答例:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>scanraw {start(Hz)} {stop(Hz)} [points] <span class="dv">0</span>\r\n</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>{x[MSB0][LSB0]x[MSB1][LSB1]x[MSB2][LSB2]...}ch<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>出力データ文字列は<code>{}</code>で囲まれており、その後<code>ch&gt;</code>で終わる</li>
+<li><code>cn&gt;</code>で終わった後には終端文字がない</li>
+<li><code>{}</code>の中の各データ点は<code>x[MSBn][LSBn]</code>の繰り返しで表される
+<ul>
+<li><code>[MSBn]</code>: n番目データの最上位ビット</li>
+<li><code>[LSBn]</code>: n番目データの最下位ビット</li>
+<li><code>x</code>を区切り文字にして2 byteのデータをリトルエディアン形式で表現している</li>
+</ul></li>
+</ul></li>
+<li><p>2 byteデータを整数で表示したものを<strong>d</strong>とすると、測定値<strong>y</strong>（dBm単位）は以下のように計算できる</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> d<span class="op">/</span><span class="dv">32</span> <span class="op">-</span> <span class="dv">128</span>  <span class="co"># for tinySA</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> d<span class="op">/</span><span class="dv">32</span> <span class="op">-</span> <span class="dv">172</span>  <span class="co"># for tinySA Ultra</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+</section>
+<section id="scan" class="level3">
+<h3 class="anchored" data-anchor-id="scan">scan</h3>
+<p>掃引を実行し、オプションで測定データを出力します。</p>
+<ul>
+<li><p>使用法:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>scan {start(Hz)} {stop(Hz)} [points] [outmask]\r\n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><code>{start(Hz)}</code>: 開始周波数（Hz単位）。<code>500k</code>, <code>10M</code>など接頭辞も使える。</li>
+<li><code>{stop(Hz)}</code>: 停止周波数（Hz単位）</li>
+<li><code>[points]</code>: データ点数（Ultraの場合、最大450）</li>
+<li><code>[outmask]</code>: 出力したいデータに合わせて以下の和を入力する。1: 周波数, 2: 測定値, 4: 保存値。周波数と測定値の場合は<code>3</code>。</li>
+</ul></li>
+<li><p>応答例:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode ps code-with-copy"><code class="sourceCode postscript"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>scan {start<span class="st">(Hz)</span>} {<span class="kw">stop</span><span class="st">(Hz)</span>} [points] <span class="dv">3</span>\r\n</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">0</span>] y[<span class="dv">0</span>] <span class="fl">0.000000000</span>\r\n</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">1</span>] y[<span class="dv">1</span>] <span class="fl">0.000000000</span>\r\n</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">2</span>] y[<span class="dv">2</span>] <span class="fl">0.000000000</span>\r\n</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>...</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>ch&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><code>f[n]</code>: 周波数配列（Hz単位）</li>
+<li><code>y[n]</code>: 測定値配列（dBm単位）</li>
+<li>なぜか<code>y[n]</code>の隣に<code>0.000000000</code>が並ぶ。理由不明。</li>
+<li>最終行の<code>ch&gt;</code>の後ろには終端文字がない</li>
+</ul></li>
+</ul>
+<p>scanでデータを取得すると、下図のように取得に失敗するデータ点があるので、PCでのデータ取得には使えません。</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="tinySA_pc-control/labview_scan.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="scanで取得した30 MHz校正用信号のスペクトル"><img src="tinySA_pc-control/labview_scan.png" class="img-fluid figure-img" alt="scanで取得した30 MHz校正用信号のスペクトル"></a></p>
+<figcaption>scanで取得した30 MHz校正用信号のスペクトル</figcaption>
+</figure>
+</div>
+</section>
+<section id="hop-ultraのみ" class="level3">
+<h3 class="anchored" data-anchor-id="hop-ultraのみ">hop (Ultraのみ)</h3>
+<p>設定した周波数における信号レベルを測定し、出力します。<strong>scan</strong>の上位版と思えば良いです。ただし、<strong>scan</strong>, <strong>scanraw</strong>に比べて読み出しの時間がかかります。</p>
+<ul>
+<li><p>使用法:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>hop {start(Hz)} {stop(Hz)} {step(Hz) <span class="op">|</span> points} [outmask]\r\n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><code>{start(Hz)}</code>: 開始周波数（Hz単位）。<code>500k</code>, <code>10M</code>など接頭辞も使える。</li>
+<li><code>{stop(Hz)}</code>: 停止周波数（Hz単位）</li>
+<li><code>{step(HZ) | points}</code>: ステップ周波数（Hz単位）またはデータ点数を入力。数値が450以下の場合はデータ点数と認識され、450を超えるとステップ周波数と認識される。</li>
+<li><code>[outmask]</code>: 出力したいデータに合わせて以下の和を入力する。1: 周波数, 2: 測定値。</li>
+</ul></li>
+<li><p>応答例:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>hop {start(Hz)} {stop(Hz)} <span class="dv">450</span> <span class="dv">3</span>\r\n</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">0</span>] y[<span class="dv">0</span>]\r\n</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">1</span>] y[<span class="dv">1</span>]\r\n</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>f[<span class="dv">2</span>] y[<span class="dv">2</span>]\r\n</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>...</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>ch<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><code>f[n]</code>: 周波数配列（Hz単位）</li>
+<li><code>y[n]</code>: 測定値配列（dBm単位）</li>
+<li>最終行の<code>ch&gt;</code>の後ろには終端文字がない</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="tinysaのlabview-vi" class="level2">
+<h2 class="anchored" data-anchor-id="tinysaのlabview-vi">tinySAのLabVIEW VI</h2>
+<p>鋭意制作中…</p>
+</section>
+<section id="参考資料" class="level2">
+<h2 class="anchored" data-anchor-id="参考資料">参考資料</h2>
+<ul>
+<li><a href="https://tinysa.org/wiki/pmwiki.php?n=Main.USBInterface">tinySA USB interface</a></li>
+<li><a href="http://athome.kaashoek.com/tinySA/python/">tinySA用のPythonライブラリ</a></li>
+</ul>
 
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>話題になったのはnanoVNAの方かも<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -654,7 +871,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p>Built with <a href="https://quarto.org/">Quarto</a></p>
 </div>   
     <div class="nav-footer-center">
-<p>©2025, PureHertz</p>
+<p>©2024, PureHertz</p>
 </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
@@ -668,6 +885,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

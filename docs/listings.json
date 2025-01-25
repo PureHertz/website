@@ -2,6 +2,7 @@
   {
     "listing": "/works.html",
     "items": [
+      "/posts/tinySA_pc-control/index.html",
       "/posts/simple-digitizer/index.html",
       "/posts/website_quartopub/index.html",
       "/posts/CircuitPython_KB2040/index.html",
@@ -27,6 +28,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/tinySA_pc-control/index.html",
       "/posts/simple-digitizer/index.html",
       "/posts/website_quartopub/index.html",
       "/posts/CircuitPython_KB2040/index.html",

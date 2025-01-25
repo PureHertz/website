@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.54">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -71,10 +71,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a8d7d8aa728f666225d77f3f7660c970.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -158,7 +158,7 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
       <h1 class="title">小型マイコンボードで作るシンプルなデジタイザ</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">マイコン</div>
-                <div class="quarto-category">電子工作</div>
+                <div class="quarto-category">電子回路</div>
               </div>
                   </div>
   </div>
@@ -177,7 +177,7 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">2024-08-18</p>
+        <p class="date-modified">2024-08-30</p>
       </div>
     </div>
       
@@ -201,6 +201,7 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
   <li><a href="#組み立て" id="toc-組み立て" class="nav-link" data-scroll-target="#組み立て">組み立て</a></li>
   <li><a href="#プログラム書き込み" id="toc-プログラム書き込み" class="nav-link" data-scroll-target="#プログラム書き込み">プログラム書き込み</a></li>
   <li><a href="#実戦投入" id="toc-実戦投入" class="nav-link" data-scroll-target="#実戦投入">実戦投入</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference">Reference</a></li>
   </ul>
 </nav>
     </div>
@@ -231,7 +232,7 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <li>アナログコネクタ: <a href="https://akizukidenshi.com/catalog/g/g100141/">BNCプラグ パネルマウント丸座</a></li>
 </ul>
 <p>回路図は以下の通りです。マイコンへの入力部には3.3 Vのツェナーダイオードを入れて保護しています。そのせいで電圧が高くなってくると正しい値からずれますが、気にしないことにします。</p>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><img src="diagram.png" class="img-fluid figure-img"></p>
 <figcaption>回路図</figcaption>
@@ -242,12 +243,12 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <h3 class="anchored" data-anchor-id="dプリンタ">3Dプリンタ</h3>
 <p>筐体は3Dプリンタで作りました。以下の2つのパーツで出来ています。STLファイルを置いておきます。</p>
 <ul>
-<li><a href="BNC-Xiao-MiconBoard-side.stl">BNC-Xiao-MiconBoard-side.stl</a> （マイコンマウント側）</li>
-<li><a href="BNC-Xiao-BNC-side.stl">BNC-Xiao-BNC-side.stl</a> （BNC取り付け側）</li>
+<li><a href="https://github.com/PureHertz/Simple-digitizer/blob/main/BNC-Xiao-MiconBoard-side.stl">BNC-Xiao-MiconBoard-side.stl</a> （マイコンマウント側）</li>
+<li><a href="https://github.com/PureHertz/Simple-digitizer/blob/main/BNC-Xiao-BNC-side.stl">BNC-Xiao-BNC-side.stl</a> （BNC取り付け側）</li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><img src="enclosure_1.png" class="img-fluid figure-img"></p>
+<p><img src="enclosure_1.png" class="img-fluid figure-img" width="600"></p>
 <figcaption>筐体</figcaption>
 </figure>
 </div>
@@ -263,36 +264,36 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <ol type="1">
 <li>GNDピンと10番ピンにケーブルをはんだ付け</li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><img src="simple-digitizer_1.jpg" class="img-fluid figure-img"></p>
+<p><img src="simple-digitizer_1.jpg" class="img-fluid figure-img" width="600"></p>
 <figcaption>ケーブルのはんだ付け</figcaption>
 </figure>
 </div>
 <ol start="2" type="1">
 <li>BNC、ツェナダイオードなどをはんだ付け</li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><img src="simple-digitizer_2.jpg" class="img-fluid figure-img"></p>
+<p><img src="simple-digitizer_2.jpg" class="img-fluid figure-img" width="600"></p>
 <figcaption>BNC、ツェナーダイオードなどのはんだ付け</figcaption>
 </figure>
 </div>
 <ol start="3" type="1">
 <li>もう一方の筐体パーツにビットインサートを埋め込む</li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><img src="enclosure_2.jpg" class="img-fluid figure-img"></p>
+<p><img src="enclosure_2.jpg" class="img-fluid figure-img" width="600"></p>
 <figcaption>ビットインサートの埋め込み</figcaption>
 </figure>
 </div>
 <ol start="4" type="1">
 <li>はんだ付けした方のパーツを差し込んでねじ止めして完成</li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><img src="simple-digitizer_3.jpg" class="img-fluid figure-img"></p>
+<p><img src="simple-digitizer_3.jpg" class="img-fluid figure-img" width="600"></p>
 <figcaption>完成</figcaption>
 </figure>
 </div>
@@ -350,12 +351,16 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <section id="実戦投入" class="level2">
 <h2 class="anchored" data-anchor-id="実戦投入">実戦投入</h2>
 <p>早速、実験系に投入しました。光パワーを受光器で測定してモニタリングしています。筐体の中でマイコンボードのLEDが光っているのが見えて、想定外にいい感じです。</p>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><img src="simple-digitizer_4.jpg" class="img-fluid figure-img"></p>
+<p><img src="simple-digitizer_4.jpg" class="img-fluid figure-img" width="600"></p>
 <figcaption>実戦投入</figcaption>
 </figure>
 </div>
+</section>
+<section id="reference" class="level2">
+<h2 class="anchored" data-anchor-id="reference">Reference</h2>
+<p><a href="https://github.com/PureHertz/Simple-digitizer">GitHubリポジトリ</a></p>
 
 
 </section>
@@ -443,8 +448,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -560,7 +563,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -793,7 +795,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p>Built with <a href="https://quarto.org/">Quarto</a></p>
 </div>   
     <div class="nav-footer-center">
-<p>©2024, PureHertz</p>
+<p>©2025, PureHertz</p>
 </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">

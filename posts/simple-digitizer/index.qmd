@@ -1,8 +1,8 @@
 ---
 title: "小型マイコンボードで作るシンプルなデジタイザ"
 date: "2024-08-18"
-date-modified: "2024-08-18"
-categories: [マイコン, 電子工作]
+date-modified: "2024-08-30"
+categories: [マイコン, 電子回路]
 image: simple-digitizer_3.jpg
 ---
 
@@ -33,10 +33,10 @@ BNC入力、USB-C出力の簡易デジタイザです。アナログの電圧信
 
 筐体は3Dプリンタで作りました。以下の2つのパーツで出来ています。STLファイルを置いておきます。
 
-- [BNC-Xiao-MiconBoard-side.stl](BNC-Xiao-MiconBoard-side.stl) （マイコンマウント側）
-- [BNC-Xiao-BNC-side.stl](BNC-Xiao-BNC-side.stl) （BNC取り付け側）
+- [BNC-Xiao-MiconBoard-side.stl](https://github.com/PureHertz/Simple-digitizer/blob/main/BNC-Xiao-MiconBoard-side.stl) （マイコンマウント側）
+- [BNC-Xiao-BNC-side.stl](https://github.com/PureHertz/Simple-digitizer/blob/main/BNC-Xiao-BNC-side.stl) （BNC取り付け側）
 
-![筐体](enclosure_1.png)
+![筐体](enclosure_1.png){width=600}
 
 2つのパーツを固定するのにM2のビットインサートとネジを使います。
 
@@ -48,19 +48,19 @@ BNC入力、USB-C出力の簡易デジタイザです。アナログの電圧信
 
 1. GNDピンと10番ピンにケーブルをはんだ付け
 
-![ケーブルのはんだ付け](simple-digitizer_1.jpg)
+![ケーブルのはんだ付け](simple-digitizer_1.jpg){width=600}
 
 2. BNC、ツェナダイオードなどをはんだ付け
 
-![BNC、ツェナーダイオードなどのはんだ付け](simple-digitizer_2.jpg)
+![BNC、ツェナーダイオードなどのはんだ付け](simple-digitizer_2.jpg){width=600}
 
 3. もう一方の筐体パーツにビットインサートを埋め込む
 
-![ビットインサートの埋め込み](enclosure_2.jpg)
+![ビットインサートの埋め込み](enclosure_2.jpg){width=600}
 
 4. はんだ付けした方のパーツを差し込んでねじ止めして完成
 
-![完成](simple-digitizer_3.jpg)
+![完成](simple-digitizer_3.jpg){width=600}
 
 
 ## プログラム書き込み
@@ -121,5 +121,9 @@ void loop() {
 
 早速、実験系に投入しました。光パワーを受光器で測定してモニタリングしています。筐体の中でマイコンボードのLEDが光っているのが見えて、想定外にいい感じです。
 
-![実戦投入](simple-digitizer_4.jpg)
+![実戦投入](simple-digitizer_4.jpg){width=600}
 
+
+## Reference
+
+[GitHubリポジトリ](https://github.com/PureHertz/Simple-digitizer)

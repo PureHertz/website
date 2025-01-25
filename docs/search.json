@@ -4,84 +4,140 @@
     "href": "works.html",
     "title": "Works",
     "section": "",
-    "text": "小型マイコンボードで作るシンプルなデジタイザ\n\n\n\n\n\n\nマイコン\n\n\n電子工作\n\n\n\n\n\n\n\n\n\n2024-08-18\n\n\n\n\n\n\n\n\n\n\n\n\nQuartoでウェブサイトを作りQuarto Pubで公開する\n\n\n\n\n\n\nウェブサイト\n\n\nQuarto\n\n\n\n\n\n\n\n\n\n2024-07-15\n\n\n\n\n\n\n\n\n\n\n\n\nCircuitPythonを使えるようにする（KB2040）\n\n\n\n\n\n\nマイコン\n\n\nPython\n\n\n\n\n\n\n\n\n\n2024-07-08\n\n\n\n\n\n\n\n\n\n\n\n\nPythonの環境構築\n\n\n\n\n\n\nPython\n\n\n\n\n\n\n\n\n\n2024-06-29\n\n\n\n\n\n\n\n\n\n\n\n\nFPGA (MachXO2) の書き込み\n\n\n\n\n\n\n電子回路\n\n\nFPGA\n\n\n\n\n\n\n\n\n\n2024-04-28\n\n\n\n\n\n\n\n\n\n\n\n\nYou Go, We Go\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2024-04-12\n\n\n\n\n\n\n\n\n\n\n\n\nPC制御式LDドライバに物理インターフェイスを付けてみた\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\nマイコン\n\n\n\n\n\n\n\n\n\n2024-03-24\n\n\n\n\n\n\n\n\n\n\n\n\nRS232C-USB変換\n\n\n\n\n\n\n実験装置\n\n\n\n\n\n\n\n\n\n2024-03-17\n\n\n\n\n\n\n\n\n\n\n\n\nQuartoでウェブサイトを作ってGitHubで公開する\n\n\n\n\n\n\nウェブサイト\n\n\nQuarto\n\n\nGitHub\n\n\n\n\n\n\n\n\n\n2024-03-10\n\n\n\n\n\n\n\n\n\n\n\n\n共振器コントローラー\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\n光共振器\n\n\n\n\n\n\n\n\n\n2024-03-02\n\n\n\n\n\n\n\n\n\n\n\n\n温度コントローラー\n\n\n\n\n\n\n電子回路\n\n\n温度制御\n\n\n\n\n\n\n\n\n\n2024-03-01\n\n\n\n\n\n\n\n\n\n\n\n\n低雑音アンプ用の電源の中身を見てみる\n\n\n\n\n\n\n電子回路\n\n\n低雑音電源\n\n\n\n\n\n\n\n\n\n2024-02-27\n\n\n\n\n\n\n\n\n\n\n\n\n低速受光器\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\n\n\n\n\n\n\n\n2024-02-23\n\n\n\n\n\n\n\n\n\n\n\n\n三角波発振器（掃引回路）\n\n\n\n\n\n\n電子回路\n\n\n\n\n\n\n\n\n\n2024-02-23\n\n\n\n\n\n\n\n\n\n\n\n\nColour of the Universe\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2023-06-03\n\n\n\n\n\n\n\n\n\n\n\n\nダンス万能説 -Dance Versatileness-\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2011-12-19\n\n\n\n\n\n\n\n\n\n\n\n\nいつもの場所\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2011-04-20\n\n\n\n\n\n\n\n\n\n\n\n\nGoodbye to My Days\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2010-03-02\n\n\n\n\n\n\n\n\n\n\n\n\nRegrets\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2009-08-04\n\n\n\n\n\n\n\n\n\n\n\n\nLIMIT BREAKER!!\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2009-04-21\n\n\n\n\n\n\nNo matching items"
+    "text": "tinySA UltraのPC制御\n\n\n\n\n\n\n電子回路\n\n\n\n\n\n\n\n\n\n2025-01-25\n\n\n\n\n\n\n\n\n\n\n\n\n小型マイコンボードで作るシンプルなデジタイザ\n\n\n\n\n\n\nマイコン\n\n\n電子回路\n\n\n\n\n\n\n\n\n\n2024-08-18\n\n\n\n\n\n\n\n\n\n\n\n\nQuartoでウェブサイトを作りQuarto Pubで公開する\n\n\n\n\n\n\nウェブサイト\n\n\nQuarto\n\n\n\n\n\n\n\n\n\n2024-07-15\n\n\n\n\n\n\n\n\n\n\n\n\nCircuitPythonを使えるようにする（KB2040）\n\n\n\n\n\n\nマイコン\n\n\nPython\n\n\n\n\n\n\n\n\n\n2024-07-08\n\n\n\n\n\n\n\n\n\n\n\n\nPythonの環境構築\n\n\n\n\n\n\nPython\n\n\n\n\n\n\n\n\n\n2024-06-29\n\n\n\n\n\n\n\n\n\n\n\n\nFPGA (MachXO2) の書き込み\n\n\n\n\n\n\n電子回路\n\n\nFPGA\n\n\n\n\n\n\n\n\n\n2024-04-28\n\n\n\n\n\n\n\n\n\n\n\n\nYou Go, We Go\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2024-04-12\n\n\n\n\n\n\n\n\n\n\n\n\nPC制御式LDドライバに物理インターフェイスを付けてみた\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\nマイコン\n\n\n\n\n\n\n\n\n\n2024-03-24\n\n\n\n\n\n\n\n\n\n\n\n\nRS232C-USB変換\n\n\n\n\n\n\n実験装置\n\n\n\n\n\n\n\n\n\n2024-03-17\n\n\n\n\n\n\n\n\n\n\n\n\nQuartoでウェブサイトを作ってGitHubで公開する\n\n\n\n\n\n\nウェブサイト\n\n\nQuarto\n\n\nGitHub\n\n\n\n\n\n\n\n\n\n2024-03-10\n\n\n\n\n\n\n\n\n\n\n\n\n共振器コントローラー\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\n光共振器\n\n\n\n\n\n\n\n\n\n2024-03-02\n\n\n\n\n\n\n\n\n\n\n\n\n温度コントローラー\n\n\n\n\n\n\n電子回路\n\n\n温度制御\n\n\n\n\n\n\n\n\n\n2024-03-01\n\n\n\n\n\n\n\n\n\n\n\n\n低雑音アンプ用の電源の中身を見てみる\n\n\n\n\n\n\n電子回路\n\n\n低雑音電源\n\n\n\n\n\n\n\n\n\n2024-02-27\n\n\n\n\n\n\n\n\n\n\n\n\n低速受光器\n\n\n\n\n\n\n電子回路\n\n\nレーザー\n\n\n\n\n\n\n\n\n\n2024-02-23\n\n\n\n\n\n\n\n\n\n\n\n\n三角波発振器（掃引回路）\n\n\n\n\n\n\n電子回路\n\n\n\n\n\n\n\n\n\n2024-02-23\n\n\n\n\n\n\n\n\n\n\n\n\nColour of the Universe\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2023-06-03\n\n\n\n\n\n\n\n\n\n\n\n\nダンス万能説 -Dance Versatileness-\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2011-12-19\n\n\n\n\n\n\n\n\n\n\n\n\nいつもの場所\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2011-04-20\n\n\n\n\n\n\n\n\n\n\n\n\nGoodbye to My Days\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2010-03-02\n\n\n\n\n\n\n\n\n\n\n\n\nRegrets\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2009-08-04\n\n\n\n\n\n\n\n\n\n\n\n\nLIMIT BREAKER!!\n\n\n\n\n\n\nMusic\n\n\nOriginal song\n\n\n\n\n\n\n\n\n\n2009-04-21\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/your-space-our-place/index.html",
-    "href": "posts/your-space-our-place/index.html",
-    "title": "いつもの場所",
+    "objectID": "posts/you_go_we_go/index.html",
+    "href": "posts/you_go_we_go/index.html",
+    "title": "You Go, We Go",
     "section": "",
-    "text": "2011年、東日本大震災の直後に作った曲。\n震災直後、短期留学先だったドイツからの帰国便の中でメロディーとコードを作りました。歌詞は研究室の先輩にお願いしました。突然の出来事で大切な場所がなくなってしまったとしても、僕らはまた「いつもの場所」を作っていけるという希望を歌っています。\n\nVocal\n\nLen Kagamine\n\nMusic\n\nSho Okubo\n\nLyrics\n\nMICCHY\n\nLicense"
+    "text": "某研究所のテーマソングのようなイメージで作成。異なる研究分野の融合によって、ともに新しい未来を創造していこうという歌です。\n\nVocal\n\nMiku Hatsune\n\nMusic & Lyrics\n\nSho Okubo\n\nLicense"
   },
   {
-    "objectID": "posts/your-space-our-place/index.html#abstract",
-    "href": "posts/your-space-our-place/index.html#abstract",
-    "title": "いつもの場所",
+    "objectID": "posts/you_go_we_go/index.html#abstract",
+    "href": "posts/you_go_we_go/index.html#abstract",
+    "title": "You Go, We Go",
     "section": "",
-    "text": "2011年、東日本大震災の直後に作った曲。\n震災直後、短期留学先だったドイツからの帰国便の中でメロディーとコードを作りました。歌詞は研究室の先輩にお願いしました。突然の出来事で大切な場所がなくなってしまったとしても、僕らはまた「いつもの場所」を作っていけるという希望を歌っています。\n\nVocal\n\nLen Kagamine\n\nMusic\n\nSho Okubo\n\nLyrics\n\nMICCHY\n\nLicense"
+    "text": "某研究所のテーマソングのようなイメージで作成。異なる研究分野の融合によって、ともに新しい未来を創造していこうという歌です。\n\nVocal\n\nMiku Hatsune\n\nMusic & Lyrics\n\nSho Okubo\n\nLicense"
   },
   {
-    "objectID": "posts/your-space-our-place/index.html#play",
-    "href": "posts/your-space-our-place/index.html#play",
-    "title": "いつもの場所",
+    "objectID": "posts/you_go_we_go/index.html#play",
+    "href": "posts/you_go_we_go/index.html#play",
+    "title": "You Go, We Go",
     "section": "Play",
-    "text": "Play\n\n\n\n【鏡音レン】いつもの場所【オリジナル】"
+    "text": "Play\n\n\n\nYou Go, We Go / 初音ミク"
   },
   {
-    "objectID": "posts/your-space-our-place/index.html#lyrics",
-    "href": "posts/your-space-our-place/index.html#lyrics",
-    "title": "いつもの場所",
+    "objectID": "posts/you_go_we_go/index.html#lyrics",
+    "href": "posts/you_go_we_go/index.html#lyrics",
+    "title": "You Go, We Go",
     "section": "Lyrics",
-    "text": "Lyrics\n当たり前だと思っていた景色 疑わなかった日常\n不意に崩れ去った今を 受け入れたくない気持ちがわきあがる\n悲しみに浸りたくなるだろう こんなの夢だと思いたい\nでもそんなことじゃ 何も始まらない\n前だけ見つめて 歩いていこうよ\nいつもの場所はどこにもないけれど\nI’m always with you ボクがそばにいよう\n明けない夜はないのだから\n手を取り合って生きていこう\n幼いころから見ていた空 肌に感じていた風\nすべて流れ去った今が ボクたちの心を押しつぶす\n何を恨めばいいのだろう 誰かの所為にしてしまいたい\nでもそんなことに意味はない だから\nすべてを受け入れ 進んでいこうよ\nいつもの場所はどこにもないけれど\nI will smile at you ボクが笑いかけよう\n残酷な今に 逃げたくなるけど\n未来(あす)を一緒に見にいこう\nすべてを包む暗い闇も いつか笑い飛ばせるように\nいつもの場所はどこにもないけれど\nI will smile at you ボクが笑いかけよう\n眠れぬ夜も 泣きたくなる朝も\nI’m always with you ボクがそばにいよう\nいつもの場所は壊れてしまったけど\n「いつもの場所」を作っていこう\nまた作っていこう\nYou can make new space\nI will be with you\nWe can make our place\nIt’s for you and me"
+    "text": "Lyrics\nあの日見た 明日に僕ら立っている\n積み上げてきた 昨日で作る塔の上\n“AI”が紡いだ 言葉が時間を超えても\nその続きは 君に歌ってほしいんだ\n未だ見ぬ海原が Stage\n波が運んでくる Message\n縺れ合ういくつもの 糸が解けていく\nこの世界を変えていくために 僕ら何ができるだろう\n繋がって生まれる力を 君はもう知っている\n描いた未来へと続いていく 道はどこにあるのだろう\nともに挑み つぎを創る この手を掴んで\nYou go, we go\n限りなく 続いていく日々のために\n限りある 今を繋げて輪にする\n全てのことが Dream maker\n僕らを驚かせる Entertainer\n選り好みしていたら 置いていかれるだけさ\nこの世界を変えていくために 僕ら何ができるだろう\n種をまき花が開いたら 実をつけるまで\n遠回りで残した足跡は やがて虹を描くだろう\nともに挑み つぎを創る この手を離さず\nYou go, we go\nこの世界を変えていくために 僕ら何ができるだろう\n繋がって生まれる力で 時計の針は進む\n描いた未来へと続いていく 道を僕ら並んで歩いていこう\nもう迷わない 一歩ずつ前へ\nともに挑み つぎを創る この手を掴んで\nYou go, we go\nさあ、行こう\nその向こう\nYou go, we go"
   },
   {
-    "objectID": "posts/website_quatro_github/index.html",
-    "href": "posts/website_quatro_github/index.html",
-    "title": "Quartoでウェブサイトを作ってGitHubで公開する",
+    "objectID": "posts/write_Lattice_FPGA/index.html",
+    "href": "posts/write_Lattice_FPGA/index.html",
+    "title": "FPGA (MachXO2) の書き込み",
     "section": "",
-    "text": "簡単にウェブサイトを作成・公開・維持する方法はないかと模索していたところ、QuartoとGitHub Pagesを使った方法にたどり着きました。これなら楽そうと思い、10年くらい手つかずだった個人ウェブサイトを刷新しました。ここでは、備忘録も兼ねて手順を簡単に解説します。"
+    "text": "Lattice SemiconductorのFPGA LCMXO2-256HC（MachXO2シリーズ）は、以下のような利点があります。\n日本語資料があまり無いので、書き込んで動かせるようにするまでの一連の手順を解説します。"
   },
   {
-    "objectID": "posts/website_quatro_github/index.html#quartoとは",
-    "href": "posts/website_quatro_github/index.html#quartoとは",
-    "title": "Quartoでウェブサイトを作ってGitHubで公開する",
+    "objectID": "posts/write_Lattice_FPGA/index.html#はじめに",
+    "href": "posts/write_Lattice_FPGA/index.html#はじめに",
+    "title": "FPGA (MachXO2) の書き込み",
+    "section": "はじめに",
+    "text": "はじめに\n\n動作確認環境\n\n\n\n\n環境 1a\n環境 2b\n\n\n\n\nOS\nWindows 11\nWindows 10\n\n\nCPU\nAMD, RIZEN 7 3700X\nIntel, Core i7-3770\n\n\n開発環境\nDiamond v3.12\nDiamond v3.12\n\n\n使用言語\nVerilog HDL\nVerilog HDL\n\n\n書込ケーブル\n\n秋月電子, AE-FT2232\n\n\n\n\na: Verilog HDLの編集とコンパイルまで\nb: Verilog HDLの編集とコンパイル、FPGAへの書き込みまで\n\n\n\n全体の流れ\n\nDiamondのインストール\nライセンス認証\nVerilog HDLファイル (***.v)の作成\n制約ファイル (***.ucf)の作成\n基板との接続\nプログラムの書き込み"
+  },
+  {
+    "objectID": "posts/write_Lattice_FPGA/index.html#diamondのインストール",
+    "href": "posts/write_Lattice_FPGA/index.html#diamondのインストール",
+    "title": "FPGA (MachXO2) の書き込み",
+    "section": "Diamondのインストール",
+    "text": "Diamondのインストール\nインストーラは、Lattice Diamond設計ソフトウェアのページからDiamond 3.13 64-bit for WindowsなどOSに合わせてダウンロードします。執筆時のバージョンは3.13。\n\n\n\nLattice Diamondのダウンロードページ"
+  },
+  {
+    "objectID": "posts/write_Lattice_FPGA/index.html#ライセンス認証",
+    "href": "posts/write_Lattice_FPGA/index.html#ライセンス認証",
+    "title": "FPGA (MachXO2) の書き込み",
+    "section": "ライセンス認証",
+    "text": "ライセンス認証\nまず、Latticeのウェブサイトのアカウント作成ページでアカウントを作成し、サインインします。\n次に、Lattice Diamond設計ソフトウェアのページでライセンスを取得をクリックしてページを移動します。さらに、‘’Request Diamond Free License’’の項目からRequest Node-locked Licenseを選択します。\n\n\n\nライセンス認証 1\n\n\n\n\n\nライセンス認証 2\n\n\n‘’Host NIC (physical address)’‘の入力欄に、PCの物理アドレス（MACアドレス）を12文字で入力（-や:は消す）。Windowsの場合は、コマンドプロンプトでipconfig/allと入力することで調べられます。’‘I verify that…’’にチェックを入れ、下の方にあるGenerate Licenseをクリックすることで、ライセンスファイルがメールで送られてきます。\nオプションでいくつかのフリーIPのライセンスも取得できるので、必要がある場合は選択します。私の場合は不要だったのでスルーです。\n\n\n\nライセンス認証 3\n\n\nライセンスファイルlicense.datは、インストールフォルダの中の~\\lscc\\diamond\\3.12\\licenseフォルダなどに置いておきます。Diamondの起動時にライセンスファイルのある場所を聞かれるので、答えると環境変数が設定されます。うまくいかない場合には、手動でシステム変数LM_LICENSE_FILEの値にライセンスファイルのパスを設定。\n\n\n\n\n\n\nWarning\n\n\n\nリモートデスクトップでは、正しい手順を踏んでもライセンスが認証されません。現段階では、Lattice Diamondはリモートデスクトップでは使用できないようです。"
+  },
+  {
+    "objectID": "posts/write_Lattice_FPGA/index.html#新規プロジェクトの作成",
+    "href": "posts/write_Lattice_FPGA/index.html#新規プロジェクトの作成",
+    "title": "FPGA (MachXO2) の書き込み",
+    "section": "新規プロジェクトの作成",
+    "text": "新規プロジェクトの作成\n\nメニューバーからFile→New→Projectの順に選択するか、スタートページ・ビュー左上部のProjectセクションでNew...を選択。\n指示に従ってデバイス等を選択。プロジェクト生成の際、プロジェクトフォルダは自動生成されないので、あらかじめ作業フォルダを作っておく。\nProjectセクションの入力。\n\nName → プロジェクト名（英数字とアンダースコアのみ可）\nLocation → プロジェクトフォルダの指定\n\nImplementationセクションの入力\n\nName → インプリメンテーション名。デフォルトはimpl1。\n\nソースファイルのインポート。必要なファイル（既存のHDLソースや制約ファイル）を選択する。Copy source to...にチェックを入れておくと、ファイルをプロジェクトフォルダにコピーしてそれをインポートする。ソースファイルのインポートはプロジェクト作成後でも可。\nデバイスの選択。デバイス、スピードグレード、パッケージを選択。プロジェクト作成後でも変更可。\n論理合成ツールの選択。デフォルトはLSE (Lattice Synthesis Engine)。プロジェクト作成後でも変更可。"
+  },
+  {
+    "objectID": "posts/write_Lattice_FPGA/index.html#verilog-hdlファイル-.v-の作成",
+    "href": "posts/write_Lattice_FPGA/index.html#verilog-hdlファイル-.v-の作成",
+    "title": "FPGA (MachXO2) の書き込み",
+    "section": "Verilog HDLファイル (***.v) の作成",
+    "text": "Verilog HDLファイル (***.v) の作成\nFile Listタブの中のインプリメンテーションファイル名→Input Filesの中に置かれます。ダブルクリックするとエディタが開きます。"
+  },
+  {
+    "objectID": "posts/write_Lattice_FPGA/index.html#制約ファイル-.lpf-の作成",
+    "href": "posts/write_Lattice_FPGA/index.html#制約ファイル-.lpf-の作成",
+    "title": "FPGA (MachXO2) の書き込み",
+    "section": "制約ファイル (***.lpf) の作成",
+    "text": "制約ファイル (***.lpf) の作成\nFile Listタブの中のインプリメンテーションファイル名→LPF Constraint Filesの中に置かれる。ダブルクリックするとテキストエディタが開く。\nLPF制約ファイルは、Spreadsheet ViewのGUIで各種制約を設定することで書き出せます。ユーザーI/O（RTL記述で宣言されたI/O）のピンアサインをする方法は、以下の通り。\n\nポート名に対してピン番号を指定（Port Assignmentsシートで行う）\nピン番号に対してポート名を指定（Pin Assignmentsシートで行う）"
+  },
+  {
+    "objectID": "posts/write_Lattice_FPGA/index.html#基板との接続",
+    "href": "posts/write_Lattice_FPGA/index.html#基板との接続",
+    "title": "FPGA (MachXO2) の書き込み",
+    "section": "基板との接続",
+    "text": "基板との接続\n純正のプログラマケーブル (HW-USBN-2B) は高価なので、最低限の機能を秋月電子のUSB-Serial変換モジュールで実現します。\n\n\n\nHW-USBN-2B\n\n\n\n仕様部材\n\n秋月電子, FT2232D USBシリアル2ch変換モジュール\nUSBケーブル（Type A-mini B）\nブレッドボード\nブレッドボード用ジャンパーワイヤー\n\n\n\n\nAE-FT2232\n\n\n\n\n接続\nAE-FT2232のJTAGのピンアサインは以下の通り。\n\n\n\nAE-FT2232ピン名\n接続先JTAG信号名\n\n\n\n\nVCCIOA\nVCC\n\n\nVCCIOB\nVCC\n\n\nAD0\nTCK\n\n\nAD1\nTDI\n\n\nAD2\nTDO\n\n\nAD3\nTMS\n\n\nGND\nGND\n\n\n\n各信号のプルアップ/プルダウンは接続先の開発ボード/デバイスに合わせます。ここでは、接続先の基板においてTCK、TDI、TDO、TMSが10kΩで3.3 Vにプルアップされているとして、変換モジュール回路上では特に変更しません。\nまた、チャンネルAのロジックVCCには接続先の基板の3.3 Vを使用するとして、JP2Aジャンパーを外してVCCIOAに接続先基板のVCC 3.3 Vを繋ぎます。チャンネルBは使用しませんが、同様にJP2Bジャンパーも外してVCCIOBに接続先基板のVCC 3.3 Vに繋いでおきます。\n主電源にはUSBバスパワー5 Vを使用するので、JP1ジャンパーは取り付けたままにします。\n\n\nドライバのインストール\nFTDIのサイトからドライバを入手。VCP Driversを選択して、OSに対応したドライバをダウンロードして流れに沿ってインストールします。\n※ Windows11 x64の場合、2023/1/8時点でのダウンロードファイル名はCDM212364_Setup.zipでした。\nインストールが完了すると、USBケーブルでPCに接続したときに、デバイスマネージャー上で2つのCOMポートが認識されます。\n\n\nDiamondでの設定\nモジュールのデータシートでは、保証されるTTLレベルの通信速度は最大3 Mbps。一方、Diamondの初期設定は6 Mbpsなので、Programmerウィンドウ右側のProgrmmer Speed Setting部、TCK Divider Settingで周波数を変更します。Use custom Clock Dividerをチェックし、Divider値を任意の値に変更することによって、周波数を下げられます。"
+  },
+  {
+    "objectID": "posts/write_Lattice_FPGA/index.html#プログラムの書き込み",
+    "href": "posts/write_Lattice_FPGA/index.html#プログラムの書き込み",
+    "title": "FPGA (MachXO2) の書き込み",
+    "section": "プログラムの書き込み",
+    "text": "プログラムの書き込み\n\nコンパイル\n\nProcessタブのExport Filesの下のJEDEC Fileにチェックを入れて、右クリックメニューからRunを実行\nMap Design → Place & Route Design → Export Files の順に実行されて、***.jedファイルが生成される\n\n\n\n生成されたJEDファイルの書き込み\n\nTools → Programmer を開くと、JTAGの接続を聞いてくるので、FTDIのデバイスを選択\nDetect Cable で USB2 - FTUSB-0 (Dual RS232 A Location 0000) の方を選択\nUse custom Clock Divider をチェックし、Divider値を任意の値に設定\n\nUSB-Serial変換モジュールの仕様上は2以上であればOKですが、試してみたら10分周でようやく書き込めました。ブレッドボードとジャンパーケーブルで接続したのが良くなかったかもしれません。\n\nDevice Family Device File Name の項目を正しく設定して、プログラムアイコンをクリックしてコンフィグレーション開始\nStatus が PASS となれば完了"
+  },
+  {
+    "objectID": "posts/website_quartopub/index.html",
+    "href": "posts/website_quartopub/index.html",
+    "title": "Quartoでウェブサイトを作りQuarto Pubで公開する",
+    "section": "",
+    "text": "以前、簡単にウェブサイトを作成・公開・維持する方法として、QuartoとGitHub Pagesを使った方法を紹介しました。\nQuartoでウェブサイトを作ってGitHubで公開する\n今回は、Quartoが提供するQuarto Pubで公開する方法も紹介します。GitHubはなぜかGoogle検索にインデックス登録されない状態が続いていたので、全てQuarto Pubに乗り換えてみました。"
+  },
+  {
+    "objectID": "posts/website_quartopub/index.html#quartoとは",
+    "href": "posts/website_quartopub/index.html#quartoとは",
+    "title": "Quartoでウェブサイトを作りQuarto Pubで公開する",
     "section": "Quartoとは",
     "text": "Quartoとは\nQuartoとは、拡張Markdown形式データ（拡張子は.qmd）を作成し、それを基にpandocによってHTMLファイル、PDFファイルなど様々な形式に変換して文書を構築するアプリケーションです。Jupyter notebookのように、文書内でコードを実行しその結果を表示することもできます。\nQuartoを使ったウェブサイト構築のメリットは以下の通り。\n\nMarkdownで比較的簡単に記述できる。HTMLを編集するのに比べて、更新がだいぶ楽。\nブログ形式のサイトも作成できる。\nテンプレートでもそれなりのデザイン。"
   },
   {
-    "objectID": "posts/website_quatro_github/index.html#ツールのセットアップ",
-    "href": "posts/website_quatro_github/index.html#ツールのセットアップ",
-    "title": "Quartoでウェブサイトを作ってGitHubで公開する",
+    "objectID": "posts/website_quartopub/index.html#ツールのセットアップ",
+    "href": "posts/website_quartopub/index.html#ツールのセットアップ",
+    "title": "Quartoでウェブサイトを作りQuarto Pubで公開する",
     "section": "ツールのセットアップ",
-    "text": "ツールのセットアップ\n\nQuarto\nQuartoウェブサイトのトップページからGet Startedボタンをクリックしてダウンロードサイトに飛びます。OSに合わせたバージョンをインストールします。\n\n\nVisual Studio Code\nMarkdownの編集、GitHubとの連携に使います。VS Codeウェブサイトからインストールします。\nVS Codeを立ち上げ、Quartoの拡張機能 (Extentions) でQuartを検索し、インストールします。\nQuartoのダウンロードサイトでも手順を解説しているので参考にしてください。\n\n\nGit\n更新の管理とGitHubへのアップロードに使います。VS Codeと連携して使います。まず、GitウェブサイトからOSに合わせてインストールします。\n\nChoosing the default editor used by Gitでは、VS Codeを選択します。\nAdjusting the name of the initial branch in new repositoriesでは、初期ブランチ名をどうするか選択します。GitHubは “main” を採用しているのでOverride the deault branch name for new repositoriesを選択し、初期ブランチ名にmainと入力します。\n\nあとはデフォルトの設定で良いかと思います。変更する場合は各自調べてください。\n\n\nGitHub\nGitHubでアカウントを作成します。\nアカウントを作ったら、ウェブサイト公開用のリポジトリを作成します。このとき、リポジトリ名を&lt;username&gt;.github.ioとすると、ウェブサイトURLは\nhttps://&lt;Username&gt;.github.io/\nになります。"
+    "text": "ツールのセットアップ\n\nQuarto\nQuartoウェブサイトのトップページからGet Startedボタンをクリックしてダウンロードサイトに飛びます。OSに合わせたバージョンをインストールします。\n\n\nVisual Studio Code\nMarkdownの編集に使います。VS Codeウェブサイトからインストールします。VS Codeを立ち上げ、Quartoの拡張機能 (Extentions) でQuartを検索し、インストールします。\nQuartoのダウンロードサイトでも手順を解説しているので参考にしてください。\n\n\nQuarto Pub\nQuarto Pubでアカウントを作成します。Sign Up for Quarto Pubをクリックしてアカウントを作成してください。\n\n公開されるページのURLは、このとき登録したユーザー名と初回Publish時に設定するウェブサイト名を使って\nhttps://&lt;user name&gt;.quarto.pub/&lt;site name&gt;\nとなります。"
   },
   {
-    "objectID": "posts/website_quatro_github/index.html#ウェブサイトの作成",
-    "href": "posts/website_quatro_github/index.html#ウェブサイトの作成",
-    "title": "Quartoでウェブサイトを作ってGitHubで公開する",
+    "objectID": "posts/website_quartopub/index.html#ウェブサイトの作成",
+    "href": "posts/website_quartopub/index.html#ウェブサイトの作成",
+    "title": "Quartoでウェブサイトを作りQuarto Pubで公開する",
     "section": "ウェブサイトの作成",
-    "text": "ウェブサイトの作成\n\nテンプレートから作成\nQuartoのウェブサイトテンプレートを使って作成を始めます。\n\nウェブサイト作成用のフォルダを用意します。\nVS Codeを起動してCtrl-Shift-PCtrl-Shift-Pでコマンドパレットを開き、Quarto: Create Projectと入力します。\nWebsite Projectを選択し、1.で作ったフォルダを選択してChoose Project Directoryを押します。\nフォルダの中に、index.qmdや_qualt.ymlといったテンプレートファイル一式が作られます。\n\n\n\nテンプレートの編集\nテンプレートファイルを編集したり、新しいファイルを追加したりしてウェブサイトを作成していきます。ウェブサイト全体の設定は_quarto.ymlに記述します。初期状態では\nproject:\n  type: website\n\nwebsite:\n  title: \"&lt;website title&gt;\"\n  navbar: #ページナビの設定\n    left: #左詰め\n      - href: index.qmd #1つめのリンク先\n        text: Home #1つ目のリンク先のテキスト（設定しないとリンク先のタイトルが使われる）\n      - about.qmd #2つ目のリンク先\n\nformat:\n  html:\n    theme: cosmo #ページデザイン\n    css: styles.css #CSSファイル（使わないなら消してよい）\n    toc: true #ページ内目次のON/OFF（ページごとの設定も可）\nとなっています。（コメントは筆者の追記）\n詳しい作成方法については、Quatro &gt; Websitesを参照してください。\n\n\nプレビューとレンダリング\nindex.qmdなど作成・編集したファイルを開き、VS Code右上のPreviewボタンをクリックすると、ウェブサイトのプレビューを表示できます。Ctrl-Shift-KCtrl-Shift-Kでも可能です。\n\n全ページをレンダリングする場合は、\n&gt; quarto render\nを実行してください。\nレンダリングで作成されたファイルは/Docs/フォルダに置かれます。ウェブサイトを公開する際は、このフォルダを指定します。"
+    "text": "ウェブサイトの作成\n\nテンプレートから作成\nQuartoのウェブサイトテンプレートを使って作成を始めます。\n\nウェブサイト作成用のフォルダを用意します。\nVS Codeを起動してCtrl-Shift-PCtrl-Shift-Pでコマンドパレットを開き、Quarto: Create Projectと入力します。\nWebsite Projectを選択し、1.で作ったフォルダを選択してChoose Project Directoryを押します。\nフォルダの中に、index.qmdや_qualt.ymlといったテンプレートファイル一式が作られます。\n\n\n\nテンプレートの編集\nテンプレートファイルを編集したり、新しいファイルを追加したりしてウェブサイトを作成します。ウェブサイト全体の設定は_quarto.ymlに記述します。初期状態では\nproject:\n  type: website\n\nwebsite:\n  title: \"&lt;website title&gt;\"\n  navbar: #ページナビの設定\n    left: #左詰め\n      - href: index.qmd #1つめのリンク先\n        text: Home #1つ目のリンク先のテキスト（設定しないとリンク先のタイトルが使われる）\n      - about.qmd #2つ目のリンク先\n\nformat:\n  html:\n    theme: cosmo #ページデザイン\n    css: styles.css #CSSファイル（使わないなら消してよい）\n    toc: true #ページ内目次のON/OFF（ページごとの設定も可）\nとなっています。（コメントは筆者の追記）\n詳しい作成方法については、Quatro &gt; Websitesを参照してください。\n\n\nプレビューとレンダリング\nindex.qmdなど作成・編集したファイルを開き、VS Code右上のPreviewボタンをクリックすると、ウェブサイトのプレビューを表示できます。Ctrl-Shift-KCtrl-Shift-Kでも可能です。\n\n全ページをレンダリングする場合は、\n&gt; quarto render\nを実行してください。レンダリングで作成されたファイルはデフォルトでは/docs/フォルダに置かれます。"
   },
   {
-    "objectID": "posts/website_quatro_github/index.html#ウェブサイトの公開",
-    "href": "posts/website_quatro_github/index.html#ウェブサイトの公開",
-    "title": "Quartoでウェブサイトを作ってGitHubで公開する",
+    "objectID": "posts/website_quartopub/index.html#ウェブサイトの公開",
+    "href": "posts/website_quartopub/index.html#ウェブサイトの公開",
+    "title": "Quartoでウェブサイトを作りQuarto Pubで公開する",
     "section": "ウェブサイトの公開",
-    "text": "ウェブサイトの公開\n\nGitのリポジトリ作成とGitHubとの連携\nフォルダのリポジトリ登録とGitHubへの公開を同時に行います。\nVS CodeのSoruce Controlをクリックし、GitHubに公開をクリックします。\n\nGitHubへのサインインを求められるので、許可をクリックしてブラウザからGitHubにサインインし、Authorize-Visual-Studio-Codeをクリックし、VS CodeとGitHubを連携させます。\n\nVS Codeに戻り、Publish to GitHub public repositoryを選択し、リポジトリに含めるファイルを選択してOKをクリックします1。これで、Gitリポジトリの作成とGitHubリモートリポジトリ登録が完了しました。\n\n\nGitHub Pagesの設定\nGitHubのリポジトリページで、リポジトリメニューからSettingsページに飛びます。Pagesの項目で、Branchをmain、フォルダをdocsに設定し、Saveをクリックします。しばらく待ち、https://&lt;Username&gt;.github.io/にアクセスして公開されたウェブサイトを確認してください。\n\n\n\nウェブサイトの更新\nウェブサイトのソースファイル（.qmdファイルなど）をVS Codeで編集した際は、\n\nプレビューかレンダリング2でHTMLを更新\nVS CodeのSoruce Controlから変更の横の+ボタンをクリックして、変更を”add”\nコミットメッセージを記入してコミットをクリックしローカルリポジトリに”commit”\n“変更の同期”をクリックしてGitHubに”push”\n\nで更新できます。"
+    "text": "ウェブサイトの公開\n\nQurtoからのPublish\nWebサイト一式をPublishする場合は、Webサイトのホームディレクトリで\n&gt; quarto publish quarto-pub\nを実行するだけです。初回はブラウザが開き認証画面が表示されるので認証してください。\nターミナル上では\n? Authorize (Y/n) » \n? Site name:  » \nと聞かれるので入力してください。認証が終わるとWebサイト一式がレンダリングされます。以上で完了です。GitHubよりもさらに簡単ですね。\n公開されるページのURLはユーザー名とサイト名を使って\nhttps://&lt;user name&gt;.quarto.pub/&lt;site name&gt;\nとなります。&lt;site name&gt;の部分はQuarto Pubの管理ページ内で変更可能です。また、管理ページ内でDefault siteオプションにチェックを入れて保存すると、\nhttps://&lt;user name&gt;.quarto.pub/\nでも同じサイトにアクセスできるようになります。\n\n\nウェブサイトの更新\nウェブサイトのソースファイル（.qmdファイルなど）をVS Codeで編集した際も、\n&gt; quarto publish quarto-pub\nを実行すればOKです。\n更新部分だけをレンダリングしてアップロードする場合には、更新した.qmdファイルをCtrl-Shift-KCtrl-Shift-Kでプレビューし\n&gt; quarto publish quarto-pub --no-render\nを実行することで、追加レンダリングなしでアップロードできます。"
   },
   {
-    "objectID": "posts/website_quatro_github/index.html#参考",
-    "href": "posts/website_quatro_github/index.html#参考",
-    "title": "Quartoでウェブサイトを作ってGitHubで公開する",
+    "objectID": "posts/website_quartopub/index.html#参考",
+    "href": "posts/website_quartopub/index.html#参考",
+    "title": "Quartoでウェブサイトを作りQuarto Pubで公開する",
     "section": "参考",
-    "text": "参考\n\nQuatro &gt; Websites\n気軽にウェブサイト"
-  },
-  {
-    "objectID": "posts/website_quatro_github/index.html#footnotes",
-    "href": "posts/website_quatro_github/index.html#footnotes",
-    "title": "Quartoでウェブサイトを作ってGitHubで公開する",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nこの方法では、ソースファイルもGitHubリポジトリ上で公開されます。ソースファイルを非公開にするには、.gitignoreファイルを設定します。↩︎\nプレビューの場合は、編集中のページのみがレンダリングされるようです。プレビュー内のリンクをクリックすると、開かれたページもレンダリングされるようです。↩︎"
+    "text": "参考\n\nQuatro &gt; Websites\nQuatro &gt; Publishing &gt; Quarto Pub"
   },
   {
     "objectID": "posts/Sweeper/index.html",
@@ -138,6 +194,13 @@
     "title": "小型マイコンボードで作るシンプルなデジタイザ",
     "section": "実戦投入",
     "text": "実戦投入\n早速、実験系に投入しました。光パワーを受光器で測定してモニタリングしています。筐体の中でマイコンボードのLEDが光っているのが見えて、想定外にいい感じです。\n\n\n\n実戦投入"
+  },
+  {
+    "objectID": "posts/simple-digitizer/index.html#reference",
+    "href": "posts/simple-digitizer/index.html#reference",
+    "title": "小型マイコンボードで作るシンプルなデジタイザ",
+    "section": "Reference",
+    "text": "Reference\nGitHubリポジトリ"
   },
   {
     "objectID": "posts/regrets/index.html",
@@ -333,7 +396,7 @@
     "href": "index.html",
     "title": "Welcome to PureHertz Laboratory",
     "section": "",
-    "text": "Magic of Frequency —Optics, Electronics, and Music\n\nレーザー物理の研究のために開発・製作した周辺回路・装置\n趣味で制作した楽曲\nその他、研究・趣味に役立つかもしれない情報\n\n\n\n\nContents\n\nAbout\n\n当サイトについて\n\nWorks\n\n開発、製作、制作した回路、装置、楽曲やその周辺の情報をBlog形式で綴っています。\n記事がたまってきたら、内容ごとにまとめようかと思っています。\n\n\n\n\nRecent posts\n\n\n\n\n\nTitle\n\n\nDate\n\n\nModified\n\n\n\n\n\n\n小型マイコンボードで作るシンプルなデジタイザ\n\n\n2024-08-18\n\n\n2024-08-18\n\n\n\n\nQuartoでウェブサイトを作りQuarto Pubで公開する\n\n\n2024-07-15\n\n\n2024-07-15\n\n\n\n\nCircuitPythonを使えるようにする（KB2040）\n\n\n2024-07-08\n\n\n2024-07-08\n\n\n\n\nPythonの環境構築\n\n\n2024-06-29\n\n\n2024-06-29\n\n\n\n\nFPGA (MachXO2) の書き込み\n\n\n2024-04-28\n\n\n2024-06-29\n\n\n\n\nYou Go, We Go\n\n\n2024-04-12\n\n\n2024-04-12\n\n\n\n\nPC制御式LDドライバに物理インターフェイスを付けてみた\n\n\n2024-03-24\n\n\n2024-03-24\n\n\n\n\nRS232C-USB変換\n\n\n2024-03-17\n\n\n2024-03-17\n\n\n\n\n\nNo matching items"
+    "text": "Magic of Frequency —Optics, Electronics, and Music\n\nレーザー物理の研究のために開発・製作した周辺回路・装置\n趣味で制作した楽曲\nその他、研究・趣味に役立つかもしれない情報\n\n\n\n\nContents\n\nAbout\n\n当サイトについて\n\nWorks\n\n開発、製作、制作した回路、装置、楽曲やその周辺の情報をBlog形式で綴っています。\n記事がたまってきたら、内容ごとにまとめようかと思っています。\n\n\n\n\nRecent posts\n\n\n\n\n\nTitle\n\n\nDate\n\n\nModified\n\n\n\n\n\n\ntinySA UltraのPC制御\n\n\n2025-01-25\n\n\n2025-01-25\n\n\n\n\n小型マイコンボードで作るシンプルなデジタイザ\n\n\n2024-08-18\n\n\n2024-08-30\n\n\n\n\nQuartoでウェブサイトを作りQuarto Pubで公開する\n\n\n2024-07-15\n\n\n2024-07-15\n\n\n\n\nCircuitPythonを使えるようにする（KB2040）\n\n\n2024-07-08\n\n\n2024-07-08\n\n\n\n\nPythonの環境構築\n\n\n2024-06-29\n\n\n2024-06-29\n\n\n\n\nFPGA (MachXO2) の書き込み\n\n\n2024-04-28\n\n\n2024-06-29\n\n\n\n\nYou Go, We Go\n\n\n2024-04-12\n\n\n2024-04-12\n\n\n\n\nPC制御式LDドライバに物理インターフェイスを付けてみた\n\n\n2024-03-24\n\n\n2024-03-24\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -546,136 +609,136 @@
     "text": "回路概要\nDC測定用ですが、数10 kHz程度の帯域はあるので光チョッパーにも対応できます。適切に部品を選べば、適当な市販受光器よりも高性能が実現できます。\n回路図は下記の通りです。ごく普通のトランスインピーダンスアンプです。実際にはIC3のボルテージフォロワは実装せず、IC4の出力から直接R6を介してSMAコネクタに接続しています。\n\n\nフォトダイオード: InGaAs (Hamamatsu, G12180)\nオペアンプ: LMP7701\nトランスインピーダンス: 10 kΩ\n電源コネクタ: M8コネクタ 3極\n\nトランスインピーダンスアンプには、入力バイアス電流の小さなFET入力のオペアンプを使用するのが定石です。今回は入力オフセット電圧も小さなLMP7701を使用し、低オフセットを実現しています。\nフィードバック抵抗には、温度ドリフトの小さなアルファエレクトロニクス製の抵抗を使用しています。交換して電流電圧変換係数を変えられるようになっています。\n電源コネクタは、NewportやThorlabsと共通のM8コネクタです。同じ電源を使用できます。"
   },
   {
-    "objectID": "posts/website_quartopub/index.html",
-    "href": "posts/website_quartopub/index.html",
-    "title": "Quartoでウェブサイトを作りQuarto Pubで公開する",
+    "objectID": "posts/tinySA_pc-control/index.html",
+    "href": "posts/tinySA_pc-control/index.html",
+    "title": "tinySA UltraのPC制御",
     "section": "",
-    "text": "以前、簡単にウェブサイトを作成・公開・維持する方法として、QuartoとGitHub Pagesを使った方法を紹介しました。\nQuartoでウェブサイトを作ってGitHubで公開する\n今回は、Quartoが提供するQuarto Pubで公開する方法も紹介します。GitHubはなぜかGoogle検索にインデックス登録されない状態が続いていたので、全てQuarto Pubに乗り換えてみました。"
+    "text": "少し前に話題になった手のひらサイズの格安スペアナtinySA1。 懇意にしているメーカーの方が使っているのを見せていただき、自分も欲しくなって手に入れました。\n我々の研究では、それなりに高性能なスペアナが必要となる測定とは別に、適当な性能のスペアナで十分な用途（位相同期のモニタなど）も多く、そういった用途にちょうど良いのではないかと思います。 特に、遠隔地に置く装置の位相同期モニタにはいろいろ事務的な面でも都合がよいだろうと思っています。\nここでは、tinySAのPC制御法について簡単にまとめます。"
   },
   {
-    "objectID": "posts/website_quartopub/index.html#quartoとは",
-    "href": "posts/website_quartopub/index.html#quartoとは",
-    "title": "Quartoでウェブサイトを作りQuarto Pubで公開する",
+    "objectID": "posts/tinySA_pc-control/index.html#tinysa概要",
+    "href": "posts/tinySA_pc-control/index.html#tinysa概要",
+    "title": "tinySA UltraのPC制御",
+    "section": "tinySA概要",
+    "text": "tinySA概要\ntinySA Ultraの仕様は以下の通り。\n\nサイズ: 74 mm x 123 mm x 23 mm\n周波数範囲: 100 kHz-800 MHz, (Ultra mode 6 GHz)\nRBW: 200 Hz-850 kHz\nディスプレイ: 4 inch TFT (480x320)\nUSBインターフェイス: USB type-C\nカードスロット: microSD\nオーディオ出力: 3.5 mmプラグ端子\n電源: USB 5V, バッテリ（2時間）\n\n詳細情報は公式サイトを参照してください。\n\n\n\ntinySA パッケージ\n\n\n\n\n\ntinySA 開封\n\n\n\n\n\ntinySA ビート信号"
+  },
+  {
+    "objectID": "posts/tinySA_pc-control/index.html#pcとの接続",
+    "href": "posts/tinySA_pc-control/index.html#pcとの接続",
+    "title": "tinySA UltraのPC制御",
+    "section": "PCとの接続",
+    "text": "PCとの接続\n\ntinySA側の設定\nメニューを開いて [CONFIG] &gt; [MORE] &gt; [CONNECTION] で設定可能。\n\n[USB]を選択\n[SERIAL SPEED]でbaud rateを設定（初期設定は115200）\n\n\n\nホスト側の設定\ntinySAをPCにUSB接続すると、シリアルポートとして認識される。 COM番号を確認してシリアルポート（のbaud rate）を設定する。"
+  },
+  {
+    "objectID": "posts/tinySA_pc-control/index.html#tinysaのコマンド制御",
+    "href": "posts/tinySA_pc-control/index.html#tinysaのコマンド制御",
+    "title": "tinySA UltraのPC制御",
+    "section": "tinySAのコマンド制御",
+    "text": "tinySAのコマンド制御\ntinySAの制御コマンドは公式サイトを参照してください。\n\ntinySA USB interface\n\n通信時の注意点は以下の通り。\n\ntinySAとの書き込み/読み取りは、終端文字LF (\\r\\n)\n複数行にわたる場合は、各行末に終端文字を持つ\n\n以下、代表的なコマンドの解説です。\n\nrbw\nRBWを設定します。\n\n使用法:\nrbw {value}\\r\\n\n{value}: RBWの値。autoか3-600の数値（kHz単位）を入力\n応答: 入力と同じコマンド\n\n\n\nresume\ntinySAの掃引を再開します。\n\n使用法:\nresume\\r\\n\n応答: 入力と同じコマンド\n\n\n\nfrequencies\n最後の掃引で使った周波数軸の値を出力します。\n\n使用法:\nfrequencies\\r\\n\n応答:\nfrequencies\\r\\n\nf[0]\\r\\n\nf[1]\\r\\n\nf[2]\\r\\n\n...\nch&gt;\n\nf[n]: 周波数配列 （Hz単位）\n最終行のch&gt;の後ろには終端文字がない\n\n\n\n\nscanraw\n掃引を実行し、バイナリデータを出力します。後述するscanのようにデータ転送の失敗がなく、hopのように遅くないので、PCでのデータ取得には最も適しています。\n\n\n\nscanrawで取得した30 MHz校正用信号のスペクトル\n\n\n\n使用法:\nscanraw {start(Hz)} {stop(Hz)} [points] [option]\\r\\n\n\n{start(Hz)}: 開始周波数（Hz単位）。500k, 10Mなど接頭辞も使える。\n{stop(Hz)}: 停止周波数（Hz単位）\n[points]: データ点数\n[option]: 出力データに合わせて以下の和を入力する。1: buffered, 2: continuous。今のところ効果がよく分からず、0にしている。\n\n応答例:\nscanraw {start(Hz)} {stop(Hz)} [points] 0\\r\\n\n{x[MSB0][LSB0]x[MSB1][LSB1]x[MSB2][LSB2]...}ch&gt;\n\n出力データ文字列は{}で囲まれており、その後ch&gt;で終わる\ncn&gt;で終わった後には終端文字がない\n{}の中の各データ点はx[MSBn][LSBn]の繰り返しで表される\n\n[MSBn]: n番目データの最上位ビット\n[LSBn]: n番目データの最下位ビット\nxを区切り文字にして2 byteのデータをリトルエディアン形式で表現している\n\n\n2 byteデータを整数で表示したものをdとすると、測定値y（dBm単位）は以下のように計算できる\ny = d/32 - 128  # for tinySA\ny = d/32 - 172  # for tinySA Ultra\n\n\n\nscan\n掃引を実行し、オプションで測定データを出力します。\n\n使用法:\nscan {start(Hz)} {stop(Hz)} [points] [outmask]\\r\\n\n\n{start(Hz)}: 開始周波数（Hz単位）。500k, 10Mなど接頭辞も使える。\n{stop(Hz)}: 停止周波数（Hz単位）\n[points]: データ点数（Ultraの場合、最大450）\n[outmask]: 出力したいデータに合わせて以下の和を入力する。1: 周波数, 2: 測定値, 4: 保存値。周波数と測定値の場合は3。\n\n応答例:\nscan {start(Hz)} {stop(Hz)} [points] 3\\r\\n\nf[0] y[0] 0.000000000\\r\\n\nf[1] y[1] 0.000000000\\r\\n\nf[2] y[2] 0.000000000\\r\\n\n...\nch&gt;\n\nf[n]: 周波数配列（Hz単位）\ny[n]: 測定値配列（dBm単位）\nなぜかy[n]の隣に0.000000000が並ぶ。理由不明。\n最終行のch&gt;の後ろには終端文字がない\n\n\nscanでデータを取得すると、下図のように取得に失敗するデータ点があるので、PCでのデータ取得には使えません。\n\n\n\nscanで取得した30 MHz校正用信号のスペクトル\n\n\n\n\nhop (Ultraのみ)\n設定した周波数における信号レベルを測定し、出力します。scanの上位版と思えば良いです。ただし、scan, scanrawに比べて読み出しの時間がかかります。\n\n使用法:\nhop {start(Hz)} {stop(Hz)} {step(Hz) | points} [outmask]\\r\\n\n\n{start(Hz)}: 開始周波数（Hz単位）。500k, 10Mなど接頭辞も使える。\n{stop(Hz)}: 停止周波数（Hz単位）\n{step(HZ) | points}: ステップ周波数（Hz単位）またはデータ点数を入力。数値が450以下の場合はデータ点数と認識され、450を超えるとステップ周波数と認識される。\n[outmask]: 出力したいデータに合わせて以下の和を入力する。1: 周波数, 2: 測定値。\n\n応答例:\nhop {start(Hz)} {stop(Hz)} 450 3\\r\\n\nf[0] y[0]\\r\\n\nf[1] y[1]\\r\\n\nf[2] y[2]\\r\\n\n...\nch&gt;\n\nf[n]: 周波数配列（Hz単位）\ny[n]: 測定値配列（dBm単位）\n最終行のch&gt;の後ろには終端文字がない"
+  },
+  {
+    "objectID": "posts/tinySA_pc-control/index.html#tinysaのlabview-vi",
+    "href": "posts/tinySA_pc-control/index.html#tinysaのlabview-vi",
+    "title": "tinySA UltraのPC制御",
+    "section": "tinySAのLabVIEW VI",
+    "text": "tinySAのLabVIEW VI\n鋭意制作中…"
+  },
+  {
+    "objectID": "posts/tinySA_pc-control/index.html#参考資料",
+    "href": "posts/tinySA_pc-control/index.html#参考資料",
+    "title": "tinySA UltraのPC制御",
+    "section": "参考資料",
+    "text": "参考資料\n\ntinySA USB interface\ntinySA用のPythonライブラリ"
+  },
+  {
+    "objectID": "posts/tinySA_pc-control/index.html#footnotes",
+    "href": "posts/tinySA_pc-control/index.html#footnotes",
+    "title": "tinySA UltraのPC制御",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\n話題になったのはnanoVNAの方かも↩︎"
+  },
+  {
+    "objectID": "posts/website_quatro_github/index.html",
+    "href": "posts/website_quatro_github/index.html",
+    "title": "Quartoでウェブサイトを作ってGitHubで公開する",
+    "section": "",
+    "text": "簡単にウェブサイトを作成・公開・維持する方法はないかと模索していたところ、QuartoとGitHub Pagesを使った方法にたどり着きました。これなら楽そうと思い、10年くらい手つかずだった個人ウェブサイトを刷新しました。ここでは、備忘録も兼ねて手順を簡単に解説します。"
+  },
+  {
+    "objectID": "posts/website_quatro_github/index.html#quartoとは",
+    "href": "posts/website_quatro_github/index.html#quartoとは",
+    "title": "Quartoでウェブサイトを作ってGitHubで公開する",
     "section": "Quartoとは",
     "text": "Quartoとは\nQuartoとは、拡張Markdown形式データ（拡張子は.qmd）を作成し、それを基にpandocによってHTMLファイル、PDFファイルなど様々な形式に変換して文書を構築するアプリケーションです。Jupyter notebookのように、文書内でコードを実行しその結果を表示することもできます。\nQuartoを使ったウェブサイト構築のメリットは以下の通り。\n\nMarkdownで比較的簡単に記述できる。HTMLを編集するのに比べて、更新がだいぶ楽。\nブログ形式のサイトも作成できる。\nテンプレートでもそれなりのデザイン。"
   },
   {
-    "objectID": "posts/website_quartopub/index.html#ツールのセットアップ",
-    "href": "posts/website_quartopub/index.html#ツールのセットアップ",
-    "title": "Quartoでウェブサイトを作りQuarto Pubで公開する",
+    "objectID": "posts/website_quatro_github/index.html#ツールのセットアップ",
+    "href": "posts/website_quatro_github/index.html#ツールのセットアップ",
+    "title": "Quartoでウェブサイトを作ってGitHubで公開する",
     "section": "ツールのセットアップ",
-    "text": "ツールのセットアップ\n\nQuarto\nQuartoウェブサイトのトップページからGet Startedボタンをクリックしてダウンロードサイトに飛びます。OSに合わせたバージョンをインストールします。\n\n\nVisual Studio Code\nMarkdownの編集に使います。VS Codeウェブサイトからインストールします。VS Codeを立ち上げ、Quartoの拡張機能 (Extentions) でQuartを検索し、インストールします。\nQuartoのダウンロードサイトでも手順を解説しているので参考にしてください。\n\n\nQuarto Pub\nQuarto Pubでアカウントを作成します。Sign Up for Quarto Pubをクリックしてアカウントを作成してください。\n\n公開されるページのURLは、このとき登録したユーザー名と初回Publish時に設定するウェブサイト名を使って\nhttps://&lt;user name&gt;.quarto.pub/&lt;site name&gt;\nとなります。"
+    "text": "ツールのセットアップ\n\nQuarto\nQuartoウェブサイトのトップページからGet Startedボタンをクリックしてダウンロードサイトに飛びます。OSに合わせたバージョンをインストールします。\n\n\nVisual Studio Code\nMarkdownの編集、GitHubとの連携に使います。VS Codeウェブサイトからインストールします。\nVS Codeを立ち上げ、Quartoの拡張機能 (Extentions) でQuartを検索し、インストールします。\nQuartoのダウンロードサイトでも手順を解説しているので参考にしてください。\n\n\nGit\n更新の管理とGitHubへのアップロードに使います。VS Codeと連携して使います。まず、GitウェブサイトからOSに合わせてインストールします。\n\nChoosing the default editor used by Gitでは、VS Codeを選択します。\nAdjusting the name of the initial branch in new repositoriesでは、初期ブランチ名をどうするか選択します。GitHubは “main” を採用しているのでOverride the deault branch name for new repositoriesを選択し、初期ブランチ名にmainと入力します。\n\nあとはデフォルトの設定で良いかと思います。変更する場合は各自調べてください。\n\n\nGitHub\nGitHubでアカウントを作成します。\nアカウントを作ったら、ウェブサイト公開用のリポジトリを作成します。このとき、リポジトリ名を&lt;username&gt;.github.ioとすると、ウェブサイトURLは\nhttps://&lt;Username&gt;.github.io/\nになります。"
   },
   {
-    "objectID": "posts/website_quartopub/index.html#ウェブサイトの作成",
-    "href": "posts/website_quartopub/index.html#ウェブサイトの作成",
-    "title": "Quartoでウェブサイトを作りQuarto Pubで公開する",
+    "objectID": "posts/website_quatro_github/index.html#ウェブサイトの作成",
+    "href": "posts/website_quatro_github/index.html#ウェブサイトの作成",
+    "title": "Quartoでウェブサイトを作ってGitHubで公開する",
     "section": "ウェブサイトの作成",
-    "text": "ウェブサイトの作成\n\nテンプレートから作成\nQuartoのウェブサイトテンプレートを使って作成を始めます。\n\nウェブサイト作成用のフォルダを用意します。\nVS Codeを起動してCtrl-Shift-PCtrl-Shift-Pでコマンドパレットを開き、Quarto: Create Projectと入力します。\nWebsite Projectを選択し、1.で作ったフォルダを選択してChoose Project Directoryを押します。\nフォルダの中に、index.qmdや_qualt.ymlといったテンプレートファイル一式が作られます。\n\n\n\nテンプレートの編集\nテンプレートファイルを編集したり、新しいファイルを追加したりしてウェブサイトを作成します。ウェブサイト全体の設定は_quarto.ymlに記述します。初期状態では\nproject:\n  type: website\n\nwebsite:\n  title: \"&lt;website title&gt;\"\n  navbar: #ページナビの設定\n    left: #左詰め\n      - href: index.qmd #1つめのリンク先\n        text: Home #1つ目のリンク先のテキスト（設定しないとリンク先のタイトルが使われる）\n      - about.qmd #2つ目のリンク先\n\nformat:\n  html:\n    theme: cosmo #ページデザイン\n    css: styles.css #CSSファイル（使わないなら消してよい）\n    toc: true #ページ内目次のON/OFF（ページごとの設定も可）\nとなっています。（コメントは筆者の追記）\n詳しい作成方法については、Quatro &gt; Websitesを参照してください。\n\n\nプレビューとレンダリング\nindex.qmdなど作成・編集したファイルを開き、VS Code右上のPreviewボタンをクリックすると、ウェブサイトのプレビューを表示できます。Ctrl-Shift-KCtrl-Shift-Kでも可能です。\n\n全ページをレンダリングする場合は、\n&gt; quarto render\nを実行してください。レンダリングで作成されたファイルはデフォルトでは/docs/フォルダに置かれます。"
+    "text": "ウェブサイトの作成\n\nテンプレートから作成\nQuartoのウェブサイトテンプレートを使って作成を始めます。\n\nウェブサイト作成用のフォルダを用意します。\nVS Codeを起動してCtrl-Shift-PCtrl-Shift-Pでコマンドパレットを開き、Quarto: Create Projectと入力します。\nWebsite Projectを選択し、1.で作ったフォルダを選択してChoose Project Directoryを押します。\nフォルダの中に、index.qmdや_qualt.ymlといったテンプレートファイル一式が作られます。\n\n\n\nテンプレートの編集\nテンプレートファイルを編集したり、新しいファイルを追加したりしてウェブサイトを作成していきます。ウェブサイト全体の設定は_quarto.ymlに記述します。初期状態では\nproject:\n  type: website\n\nwebsite:\n  title: \"&lt;website title&gt;\"\n  navbar: #ページナビの設定\n    left: #左詰め\n      - href: index.qmd #1つめのリンク先\n        text: Home #1つ目のリンク先のテキスト（設定しないとリンク先のタイトルが使われる）\n      - about.qmd #2つ目のリンク先\n\nformat:\n  html:\n    theme: cosmo #ページデザイン\n    css: styles.css #CSSファイル（使わないなら消してよい）\n    toc: true #ページ内目次のON/OFF（ページごとの設定も可）\nとなっています。（コメントは筆者の追記）\n詳しい作成方法については、Quatro &gt; Websitesを参照してください。\n\n\nプレビューとレンダリング\nindex.qmdなど作成・編集したファイルを開き、VS Code右上のPreviewボタンをクリックすると、ウェブサイトのプレビューを表示できます。Ctrl-Shift-KCtrl-Shift-Kでも可能です。\n\n全ページをレンダリングする場合は、\n&gt; quarto render\nを実行してください。\nレンダリングで作成されたファイルは/Docs/フォルダに置かれます。ウェブサイトを公開する際は、このフォルダを指定します。"
   },
   {
-    "objectID": "posts/website_quartopub/index.html#ウェブサイトの公開",
-    "href": "posts/website_quartopub/index.html#ウェブサイトの公開",
-    "title": "Quartoでウェブサイトを作りQuarto Pubで公開する",
+    "objectID": "posts/website_quatro_github/index.html#ウェブサイトの公開",
+    "href": "posts/website_quatro_github/index.html#ウェブサイトの公開",
+    "title": "Quartoでウェブサイトを作ってGitHubで公開する",
     "section": "ウェブサイトの公開",
-    "text": "ウェブサイトの公開\n\nQurtoからのPublish\nWebサイト一式をPublishする場合は、Webサイトのホームディレクトリで\n&gt; quarto publish quarto-pub\nを実行するだけです。初回はブラウザが開き認証画面が表示されるので認証してください。\nターミナル上では\n? Authorize (Y/n) » \n? Site name:  » \nと聞かれるので入力してください。認証が終わるとWebサイト一式がレンダリングされます。以上で完了です。GitHubよりもさらに簡単ですね。\n公開されるページのURLはユーザー名とサイト名を使って\nhttps://&lt;user name&gt;.quarto.pub/&lt;site name&gt;\nとなります。&lt;site name&gt;の部分はQuarto Pubの管理ページ内で変更可能です。また、管理ページ内でDefault siteオプションにチェックを入れて保存すると、\nhttps://&lt;user name&gt;.quarto.pub/\nでも同じサイトにアクセスできるようになります。\n\n\nウェブサイトの更新\nウェブサイトのソースファイル（.qmdファイルなど）をVS Codeで編集した際も、\n&gt; quarto publish quarto-pub\nを実行すればOKです。\n更新部分だけをレンダリングしてアップロードする場合には、更新した.qmdファイルをCtrl-Shift-KCtrl-Shift-Kでプレビューし\n&gt; quarto publish quarto-pub --no-render\nを実行することで、追加レンダリングなしでアップロードできます。"
+    "text": "ウェブサイトの公開\n\nGitのリポジトリ作成とGitHubとの連携\nフォルダのリポジトリ登録とGitHubへの公開を同時に行います。\nVS CodeのSoruce Controlをクリックし、GitHubに公開をクリックします。\n\nGitHubへのサインインを求められるので、許可をクリックしてブラウザからGitHubにサインインし、Authorize-Visual-Studio-Codeをクリックし、VS CodeとGitHubを連携させます。\n\nVS Codeに戻り、Publish to GitHub public repositoryを選択し、リポジトリに含めるファイルを選択してOKをクリックします1。これで、Gitリポジトリの作成とGitHubリモートリポジトリ登録が完了しました。\n\n\nGitHub Pagesの設定\nGitHubのリポジトリページで、リポジトリメニューからSettingsページに飛びます。Pagesの項目で、Branchをmain、フォルダをdocsに設定し、Saveをクリックします。しばらく待ち、https://&lt;Username&gt;.github.io/にアクセスして公開されたウェブサイトを確認してください。\n\n\n\nウェブサイトの更新\nウェブサイトのソースファイル（.qmdファイルなど）をVS Codeで編集した際は、\n\nプレビューかレンダリング2でHTMLを更新\nVS CodeのSoruce Controlから変更の横の+ボタンをクリックして、変更を”add”\nコミットメッセージを記入してコミットをクリックしローカルリポジトリに”commit”\n“変更の同期”をクリックしてGitHubに”push”\n\nで更新できます。"
   },
   {
-    "objectID": "posts/website_quartopub/index.html#参考",
-    "href": "posts/website_quartopub/index.html#参考",
-    "title": "Quartoでウェブサイトを作りQuarto Pubで公開する",
+    "objectID": "posts/website_quatro_github/index.html#参考",
+    "href": "posts/website_quatro_github/index.html#参考",
+    "title": "Quartoでウェブサイトを作ってGitHubで公開する",
     "section": "参考",
-    "text": "参考\n\nQuatro &gt; Websites\nQuatro &gt; Publishing &gt; Quarto Pub"
+    "text": "参考\n\nQuatro &gt; Websites\n気軽にウェブサイト"
   },
   {
-    "objectID": "posts/write_Lattice_FPGA/index.html",
-    "href": "posts/write_Lattice_FPGA/index.html",
-    "title": "FPGA (MachXO2) の書き込み",
+    "objectID": "posts/website_quatro_github/index.html#footnotes",
+    "href": "posts/website_quatro_github/index.html#footnotes",
+    "title": "Quartoでウェブサイトを作ってGitHubで公開する",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nこの方法では、ソースファイルもGitHubリポジトリ上で公開されます。ソースファイルを非公開にするには、.gitignoreファイルを設定します。↩︎\nプレビューの場合は、編集中のページのみがレンダリングされるようです。プレビュー内のリンクをクリックすると、開かれたページもレンダリングされるようです。↩︎"
+  },
+  {
+    "objectID": "posts/your-space-our-place/index.html",
+    "href": "posts/your-space-our-place/index.html",
+    "title": "いつもの場所",
     "section": "",
-    "text": "Lattice SemiconductorのFPGA LCMXO2-256HC（MachXO2シリーズ）は、以下のような利点があります。\n日本語資料があまり無いので、書き込んで動かせるようにするまでの一連の手順を解説します。"
+    "text": "2011年、東日本大震災の直後に作った曲。\n震災直後、短期留学先だったドイツからの帰国便の中でメロディーとコードを作りました。歌詞は研究室の先輩にお願いしました。突然の出来事で大切な場所がなくなってしまったとしても、僕らはまた「いつもの場所」を作っていけるという希望を歌っています。\n\nVocal\n\nLen Kagamine\n\nMusic\n\nSho Okubo\n\nLyrics\n\nMICCHY\n\nLicense"
   },
   {
-    "objectID": "posts/write_Lattice_FPGA/index.html#はじめに",
-    "href": "posts/write_Lattice_FPGA/index.html#はじめに",
-    "title": "FPGA (MachXO2) の書き込み",
-    "section": "はじめに",
-    "text": "はじめに\n\n動作確認環境\n\n\n\n\n環境 1a\n環境 2b\n\n\n\n\nOS\nWindows 11\nWindows 10\n\n\nCPU\nAMD, RIZEN 7 3700X\nIntel, Core i7-3770\n\n\n開発環境\nDiamond v3.12\nDiamond v3.12\n\n\n使用言語\nVerilog HDL\nVerilog HDL\n\n\n書込ケーブル\n\n秋月電子, AE-FT2232\n\n\n\n\na: Verilog HDLの編集とコンパイルまで\nb: Verilog HDLの編集とコンパイル、FPGAへの書き込みまで\n\n\n\n全体の流れ\n\nDiamondのインストール\nライセンス認証\nVerilog HDLファイル (***.v)の作成\n制約ファイル (***.ucf)の作成\n基板との接続\nプログラムの書き込み"
-  },
-  {
-    "objectID": "posts/write_Lattice_FPGA/index.html#diamondのインストール",
-    "href": "posts/write_Lattice_FPGA/index.html#diamondのインストール",
-    "title": "FPGA (MachXO2) の書き込み",
-    "section": "Diamondのインストール",
-    "text": "Diamondのインストール\nインストーラは、Lattice Diamond設計ソフトウェアのページからDiamond 3.13 64-bit for WindowsなどOSに合わせてダウンロードします。執筆時のバージョンは3.13。\n\n\n\nLattice Diamondのダウンロードページ"
-  },
-  {
-    "objectID": "posts/write_Lattice_FPGA/index.html#ライセンス認証",
-    "href": "posts/write_Lattice_FPGA/index.html#ライセンス認証",
-    "title": "FPGA (MachXO2) の書き込み",
-    "section": "ライセンス認証",
-    "text": "ライセンス認証\nまず、Latticeのウェブサイトのアカウント作成ページでアカウントを作成し、サインインします。\n次に、Lattice Diamond設計ソフトウェアのページでライセンスを取得をクリックしてページを移動します。さらに、‘’Request Diamond Free License’’の項目からRequest Node-locked Licenseを選択します。\n\n\n\nライセンス認証 1\n\n\n\n\n\nライセンス認証 2\n\n\n‘’Host NIC (physical address)’‘の入力欄に、PCの物理アドレス（MACアドレス）を12文字で入力（-や:は消す）。Windowsの場合は、コマンドプロンプトでipconfig/allと入力することで調べられます。’‘I verify that…’’にチェックを入れ、下の方にあるGenerate Licenseをクリックすることで、ライセンスファイルがメールで送られてきます。\nオプションでいくつかのフリーIPのライセンスも取得できるので、必要がある場合は選択します。私の場合は不要だったのでスルーです。\n\n\n\nライセンス認証 3\n\n\nライセンスファイルlicense.datは、インストールフォルダの中の~\\lscc\\diamond\\3.12\\licenseフォルダなどに置いておきます。Diamondの起動時にライセンスファイルのある場所を聞かれるので、答えると環境変数が設定されます。うまくいかない場合には、手動でシステム変数LM_LICENSE_FILEの値にライセンスファイルのパスを設定。\n\n\n\n\n\n\nWarning\n\n\n\nリモートデスクトップでは、正しい手順を踏んでもライセンスが認証されません。現段階では、Lattice Diamondはリモートデスクトップでは使用できないようです。"
-  },
-  {
-    "objectID": "posts/write_Lattice_FPGA/index.html#新規プロジェクトの作成",
-    "href": "posts/write_Lattice_FPGA/index.html#新規プロジェクトの作成",
-    "title": "FPGA (MachXO2) の書き込み",
-    "section": "新規プロジェクトの作成",
-    "text": "新規プロジェクトの作成\n\nメニューバーからFile→New→Projectの順に選択するか、スタートページ・ビュー左上部のProjectセクションでNew...を選択。\n指示に従ってデバイス等を選択。プロジェクト生成の際、プロジェクトフォルダは自動生成されないので、あらかじめ作業フォルダを作っておく。\nProjectセクションの入力。\n\nName → プロジェクト名（英数字とアンダースコアのみ可）\nLocation → プロジェクトフォルダの指定\n\nImplementationセクションの入力\n\nName → インプリメンテーション名。デフォルトはimpl1。\n\nソースファイルのインポート。必要なファイル（既存のHDLソースや制約ファイル）を選択する。Copy source to...にチェックを入れておくと、ファイルをプロジェクトフォルダにコピーしてそれをインポートする。ソースファイルのインポートはプロジェクト作成後でも可。\nデバイスの選択。デバイス、スピードグレード、パッケージを選択。プロジェクト作成後でも変更可。\n論理合成ツールの選択。デフォルトはLSE (Lattice Synthesis Engine)。プロジェクト作成後でも変更可。"
-  },
-  {
-    "objectID": "posts/write_Lattice_FPGA/index.html#verilog-hdlファイル-.v-の作成",
-    "href": "posts/write_Lattice_FPGA/index.html#verilog-hdlファイル-.v-の作成",
-    "title": "FPGA (MachXO2) の書き込み",
-    "section": "Verilog HDLファイル (***.v) の作成",
-    "text": "Verilog HDLファイル (***.v) の作成\nFile Listタブの中のインプリメンテーションファイル名→Input Filesの中に置かれます。ダブルクリックするとエディタが開きます。"
-  },
-  {
-    "objectID": "posts/write_Lattice_FPGA/index.html#制約ファイル-.lpf-の作成",
-    "href": "posts/write_Lattice_FPGA/index.html#制約ファイル-.lpf-の作成",
-    "title": "FPGA (MachXO2) の書き込み",
-    "section": "制約ファイル (***.lpf) の作成",
-    "text": "制約ファイル (***.lpf) の作成\nFile Listタブの中のインプリメンテーションファイル名→LPF Constraint Filesの中に置かれる。ダブルクリックするとテキストエディタが開く。\nLPF制約ファイルは、Spreadsheet ViewのGUIで各種制約を設定することで書き出せます。ユーザーI/O（RTL記述で宣言されたI/O）のピンアサインをする方法は、以下の通り。\n\nポート名に対してピン番号を指定（Port Assignmentsシートで行う）\nピン番号に対してポート名を指定（Pin Assignmentsシートで行う）"
-  },
-  {
-    "objectID": "posts/write_Lattice_FPGA/index.html#基板との接続",
-    "href": "posts/write_Lattice_FPGA/index.html#基板との接続",
-    "title": "FPGA (MachXO2) の書き込み",
-    "section": "基板との接続",
-    "text": "基板との接続\n純正のプログラマケーブル (HW-USBN-2B) は高価なので、最低限の機能を秋月電子のUSB-Serial変換モジュールで実現します。\n\n\n\nHW-USBN-2B\n\n\n\n仕様部材\n\n秋月電子, FT2232D USBシリアル2ch変換モジュール\nUSBケーブル（Type A-mini B）\nブレッドボード\nブレッドボード用ジャンパーワイヤー\n\n\n\n\nAE-FT2232\n\n\n\n\n接続\nAE-FT2232のJTAGのピンアサインは以下の通り。\n\n\n\nAE-FT2232ピン名\n接続先JTAG信号名\n\n\n\n\nVCCIOA\nVCC\n\n\nVCCIOB\nVCC\n\n\nAD0\nTCK\n\n\nAD1\nTDI\n\n\nAD2\nTDO\n\n\nAD3\nTMS\n\n\nGND\nGND\n\n\n\n各信号のプルアップ/プルダウンは接続先の開発ボード/デバイスに合わせます。ここでは、接続先の基板においてTCK、TDI、TDO、TMSが10kΩで3.3 Vにプルアップされているとして、変換モジュール回路上では特に変更しません。\nまた、チャンネルAのロジックVCCには接続先の基板の3.3 Vを使用するとして、JP2Aジャンパーを外してVCCIOAに接続先基板のVCC 3.3 Vを繋ぎます。チャンネルBは使用しませんが、同様にJP2Bジャンパーも外してVCCIOBに接続先基板のVCC 3.3 Vに繋いでおきます。\n主電源にはUSBバスパワー5 Vを使用するので、JP1ジャンパーは取り付けたままにします。\n\n\nドライバのインストール\nFTDIのサイトからドライバを入手。VCP Driversを選択して、OSに対応したドライバをダウンロードして流れに沿ってインストールします。\n※ Windows11 x64の場合、2023/1/8時点でのダウンロードファイル名はCDM212364_Setup.zipでした。\nインストールが完了すると、USBケーブルでPCに接続したときに、デバイスマネージャー上で2つのCOMポートが認識されます。\n\n\nDiamondでの設定\nモジュールのデータシートでは、保証されるTTLレベルの通信速度は最大3 Mbps。一方、Diamondの初期設定は6 Mbpsなので、Programmerウィンドウ右側のProgrmmer Speed Setting部、TCK Divider Settingで周波数を変更します。Use custom Clock Dividerをチェックし、Divider値を任意の値に変更することによって、周波数を下げられます。"
-  },
-  {
-    "objectID": "posts/write_Lattice_FPGA/index.html#プログラムの書き込み",
-    "href": "posts/write_Lattice_FPGA/index.html#プログラムの書き込み",
-    "title": "FPGA (MachXO2) の書き込み",
-    "section": "プログラムの書き込み",
-    "text": "プログラムの書き込み\n\nコンパイル\n\nProcessタブのExport Filesの下のJEDEC Fileにチェックを入れて、右クリックメニューからRunを実行\nMap Design → Place & Route Design → Export Files の順に実行されて、***.jedファイルが生成される\n\n\n\n生成されたJEDファイルの書き込み\n\nTools → Programmer を開くと、JTAGの接続を聞いてくるので、FTDIのデバイスを選択\nDetect Cable で USB2 - FTUSB-0 (Dual RS232 A Location 0000) の方を選択\nUse custom Clock Divider をチェックし、Divider値を任意の値に設定\n\nUSB-Serial変換モジュールの仕様上は2以上であればOKですが、試してみたら10分周でようやく書き込めました。ブレッドボードとジャンパーケーブルで接続したのが良くなかったかもしれません。\n\nDevice Family Device File Name の項目を正しく設定して、プログラムアイコンをクリックしてコンフィグレーション開始\nStatus が PASS となれば完了"
-  },
-  {
-    "objectID": "posts/you_go_we_go/index.html",
-    "href": "posts/you_go_we_go/index.html",
-    "title": "You Go, We Go",
+    "objectID": "posts/your-space-our-place/index.html#abstract",
+    "href": "posts/your-space-our-place/index.html#abstract",
+    "title": "いつもの場所",
     "section": "",
-    "text": "某研究所のテーマソングのようなイメージで作成。異なる研究分野の融合によって、ともに新しい未来を創造していこうという歌です。\n\nVocal\n\nMiku Hatsune\n\nMusic & Lyrics\n\nSho Okubo\n\nLicense"
+    "text": "2011年、東日本大震災の直後に作った曲。\n震災直後、短期留学先だったドイツからの帰国便の中でメロディーとコードを作りました。歌詞は研究室の先輩にお願いしました。突然の出来事で大切な場所がなくなってしまったとしても、僕らはまた「いつもの場所」を作っていけるという希望を歌っています。\n\nVocal\n\nLen Kagamine\n\nMusic\n\nSho Okubo\n\nLyrics\n\nMICCHY\n\nLicense"
   },
   {
-    "objectID": "posts/you_go_we_go/index.html#abstract",
-    "href": "posts/you_go_we_go/index.html#abstract",
-    "title": "You Go, We Go",
-    "section": "",
-    "text": "某研究所のテーマソングのようなイメージで作成。異なる研究分野の融合によって、ともに新しい未来を創造していこうという歌です。\n\nVocal\n\nMiku Hatsune\n\nMusic & Lyrics\n\nSho Okubo\n\nLicense"
-  },
-  {
-    "objectID": "posts/you_go_we_go/index.html#play",
-    "href": "posts/you_go_we_go/index.html#play",
-    "title": "You Go, We Go",
+    "objectID": "posts/your-space-our-place/index.html#play",
+    "href": "posts/your-space-our-place/index.html#play",
+    "title": "いつもの場所",
     "section": "Play",
-    "text": "Play\n\n\n\nYou Go, We Go / 初音ミク"
+    "text": "Play\n\n\n\n【鏡音レン】いつもの場所【オリジナル】"
   },
   {
-    "objectID": "posts/you_go_we_go/index.html#lyrics",
-    "href": "posts/you_go_we_go/index.html#lyrics",
-    "title": "You Go, We Go",
+    "objectID": "posts/your-space-our-place/index.html#lyrics",
+    "href": "posts/your-space-our-place/index.html#lyrics",
+    "title": "いつもの場所",
     "section": "Lyrics",
-    "text": "Lyrics\nあの日見た 明日に僕ら立っている\n積み上げてきた 昨日で作る塔の上\n“AI”が紡いだ 言葉が時間を超えても\nその続きは 君に歌ってほしいんだ\n未だ見ぬ海原が Stage\n波が運んでくる Message\n縺れ合ういくつもの 糸が解けていく\nこの世界を変えていくために 僕ら何ができるだろう\n繋がって生まれる力を 君はもう知っている\n描いた未来へと続いていく 道はどこにあるのだろう\nともに挑み つぎを創る この手を掴んで\nYou go, we go\n限りなく 続いていく日々のために\n限りある 今を繋げて輪にする\n全てのことが Dream maker\n僕らを驚かせる Entertainer\n選り好みしていたら 置いていかれるだけさ\nこの世界を変えていくために 僕ら何ができるだろう\n種をまき花が開いたら 実をつけるまで\n遠回りで残した足跡は やがて虹を描くだろう\nともに挑み つぎを創る この手を離さず\nYou go, we go\nこの世界を変えていくために 僕ら何ができるだろう\n繋がって生まれる力で 時計の針は進む\n描いた未来へと続いていく 道を僕ら並んで歩いていこう\nもう迷わない 一歩ずつ前へ\nともに挑み つぎを創る この手を掴んで\nYou go, we go\nさあ、行こう\nその向こう\nYou go, we go"
+    "text": "Lyrics\n当たり前だと思っていた景色 疑わなかった日常\n不意に崩れ去った今を 受け入れたくない気持ちがわきあがる\n悲しみに浸りたくなるだろう こんなの夢だと思いたい\nでもそんなことじゃ 何も始まらない\n前だけ見つめて 歩いていこうよ\nいつもの場所はどこにもないけれど\nI’m always with you ボクがそばにいよう\n明けない夜はないのだから\n手を取り合って生きていこう\n幼いころから見ていた空 肌に感じていた風\nすべて流れ去った今が ボクたちの心を押しつぶす\n何を恨めばいいのだろう 誰かの所為にしてしまいたい\nでもそんなことに意味はない だから\nすべてを受け入れ 進んでいこうよ\nいつもの場所はどこにもないけれど\nI will smile at you ボクが笑いかけよう\n残酷な今に 逃げたくなるけど\n未来(あす)を一緒に見にいこう\nすべてを包む暗い闇も いつか笑い飛ばせるように\nいつもの場所はどこにもないけれど\nI will smile at you ボクが笑いかけよう\n眠れぬ夜も 泣きたくなる朝も\nI’m always with you ボクがそばにいよう\nいつもの場所は壊れてしまったけど\n「いつもの場所」を作っていこう\nまた作っていこう\nYou can make new space\nI will be with you\nWe can make our place\nIt’s for you and me"
+  },
+  {
+    "objectID": "README-Okubo-Surface2.html",
+    "href": "README-Okubo-Surface2.html",
+    "title": "PureHertz Labratory",
+    "section": "",
+    "text": "PureHertz Labratory\nWebsite repository of PureHertz.\nhttps://purehertz.github.io/"
   }
 ]

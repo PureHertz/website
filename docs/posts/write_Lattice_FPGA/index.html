@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.54">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a8d7d8aa728f666225d77f3f7660c970.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -259,7 +259,7 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <section id="diamondのインストール" class="level2">
 <h2 class="anchored" data-anchor-id="diamondのインストール">Diamondのインストール</h2>
 <p>インストーラは、<a href="https://www.latticesemi.com/ja-JP/Products/DesignSoftwareAndIP/FPGAandLDS/LatticeDiamond">Lattice Diamond設計ソフトウェアのページ</a>から<code>Diamond 3.13 64-bit for Windows</code>などOSに合わせてダウンロードします。執筆時のバージョンは3.13。</p>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><a href="Lattice-FPGA_1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Lattice Diamondのダウンロードページ"><img src="Lattice-FPGA_1.png" class="img-fluid figure-img" alt="Lattice Diamondのダウンロードページ"></a></p>
 <figcaption>Lattice Diamondのダウンロードページ</figcaption>
@@ -270,13 +270,13 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="ライセンス認証">ライセンス認証</h2>
 <p>まず、Latticeのウェブサイトの<a href="https://www.latticesemi.com/Accounts/AccountRegister">アカウント作成ページ</a>でアカウントを作成し、サインインします。</p>
 <p>次に、<a href="https://www.latticesemi.com/ja-JP/Products/DesignSoftwareAndIP/FPGAandLDS/LatticeDiamond">Lattice Diamond設計ソフトウェアのページ</a>で<code>ライセンスを取得</code>をクリックしてページを移動します。さらに、‘’Request Diamond Free License’’の項目から<code>Request Node-locked License</code>を選択します。</p>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><a href="Lattice-FPGA_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="ライセンス認証 1"><img src="Lattice-FPGA_2.png" class="img-fluid figure-img" alt="ライセンス認証 1"></a></p>
 <figcaption>ライセンス認証 1</figcaption>
 </figure>
 </div>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><a href="Lattice-FPGA_3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="ライセンス認証 2"><img src="Lattice-FPGA_3.png" class="img-fluid figure-img" alt="ライセンス認証 2"></a></p>
 <figcaption>ライセンス認証 2</figcaption>
@@ -284,7 +284,7 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 </div>
 <p>‘’Host NIC (physical address)’‘の入力欄に、PCの物理アドレス（MACアドレス）を12文字で入力（<code>-</code>や<code>:</code>は消す）。Windowsの場合は、コマンドプロンプトで<code>ipconfig/all</code>と入力することで調べられます。’‘I verify that…’’にチェックを入れ、下の方にある<code>Generate License</code>をクリックすることで、ライセンスファイルがメールで送られてきます。</p>
 <p>オプションでいくつかのフリーIPのライセンスも取得できるので、必要がある場合は選択します。私の場合は不要だったのでスルーです。</p>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><a href="Lattice-FPGA_4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="ライセンス認証 3"><img src="Lattice-FPGA_4.png" class="img-fluid figure-img" alt="ライセンス認証 3"></a></p>
 <figcaption>ライセンス認証 3</figcaption>
@@ -340,7 +340,7 @@ Warning
 <section id="基板との接続" class="level2">
 <h2 class="anchored" data-anchor-id="基板との接続">基板との接続</h2>
 <p>純正のプログラマケーブル (HW-USBN-2B) は高価なので、最低限の機能を秋月電子のUSB-Serial変換モジュールで実現します。</p>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><a href="Lattice-FPGA-cable.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="HW-USBN-2B"><img src="Lattice-FPGA-cable.png" class="img-fluid figure-img" alt="HW-USBN-2B"></a></p>
 <figcaption>HW-USBN-2B</figcaption>
@@ -354,7 +354,7 @@ Warning
 <li>ブレッドボード</li>
 <li>ブレッドボード用ジャンパーワイヤー</li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><a href="Lattice-FPGA-cable_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="AE-FT2232"><img src="Lattice-FPGA-cable_2.png" class="img-fluid figure-img" alt="AE-FT2232"></a></p>
 <figcaption>AE-FT2232</figcaption>
@@ -526,8 +526,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -643,7 +641,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -876,7 +873,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p>Built with <a href="https://quarto.org/">Quarto</a></p>
 </div>   
     <div class="nav-footer-center">
-<p>©2024, PureHertz</p>
+<p>©2025, PureHertz</p>
 </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
@@ -890,7 +887,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom","loop":false});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

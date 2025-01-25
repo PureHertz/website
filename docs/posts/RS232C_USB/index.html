@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.54">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a8d7d8aa728f666225d77f3f7660c970.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -193,7 +193,7 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <li><a href="https://akizukidenshi.com/catalog/g/g108343/">秋月電子</a></li>
 </ul>
 <p>（2024/03/17 確認）</p>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><a href="RS232C_USB.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="秋月電子のRS232C-USB変換ケーブル"><img src="RS232C_USB.jpg" class="img-fluid figure-img" style="width:50.0%" alt="秋月電子のRS232C-USB変換ケーブル"></a></p>
 <figcaption>秋月電子のRS232C-USB変換ケーブル</figcaption>
@@ -207,7 +207,7 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <h3 class="anchored" data-anchor-id="ftdi公式サイトからインストーラをダウンロードする方法">FTDI公式サイトからインストーラをダウンロードする方法</h3>
 <p>FTDIのウェブサイト &gt; Drivers &gt; <a href="https://ftdichip.com/drivers/vcp-drivers/">VCP-drivers</a> からOSに合わせたドライバを選択します。</p>
 <p>Windowsの場合は、下図の赤丸を付けたリンクからインストーラをダウンロードして実行します。インストール後は再起動が必要なようです。</p>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><a href="FTDI-driver_1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="（2024/03/17 確認）"><img src="FTDI-driver_1.png" class="img-fluid figure-img" alt="（2024/03/17 確認）"></a></p>
 <figcaption>（2024/03/17 確認）</figcaption>
@@ -310,8 +310,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -427,7 +425,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -660,7 +657,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p>Built with <a href="https://quarto.org/">Quarto</a></p>
 </div>   
     <div class="nav-footer-center">
-<p>©2024, PureHertz</p>
+<p>©2025, PureHertz</p>
 </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
@@ -674,7 +671,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","loop":false,"closeEffect":"zoom","descPosition":"bottom","selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
