@@ -350,12 +350,12 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <li><code>cn&gt;</code>で終わった後には終端文字がない</li>
 <li><code>{}</code>の中の各データ点は<code>x[MSBn][LSBn]</code>の繰り返しで表される
 <ul>
-<li><code>[MSBn]</code>: n番目データの最上位ビット</li>
-<li><code>[LSBn]</code>: n番目データの最下位ビット</li>
-<li><code>x</code>を区切り文字にして2 byteのデータをリトルエディアン形式で表現している</li>
+<li><code>[MSBn]</code>: n番目データの最上位バイト</li>
+<li><code>[LSBn]</code>: n番目データの最下位バイト</li>
+<li><code>x</code>を区切り文字にして2バイトのデータをリトルエディアン形式で表現している</li>
 </ul></li>
 </ul></li>
-<li><p>2 byteデータを整数で表示したものを<strong>d</strong>とすると、測定値<strong>y</strong>（dBm単位）は以下のように計算できる</p>
+<li><p>2バイトデータを符号なし整数で表示したものを<strong>d</strong>とすると、測定値<strong>y</strong>（dBm単位）は以下のように計算できる</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> d<span class="op">/</span><span class="dv">32</span> <span class="op">-</span> <span class="dv">128</span>  <span class="co"># for tinySA</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> d<span class="op">/</span><span class="dv">32</span> <span class="op">-</span> <span class="dv">172</span>  <span class="co"># for tinySA Ultra</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ul>
