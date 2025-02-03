@@ -75,9 +75,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-a8d7d8aa728f666225d77f3f7660c970.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -179,7 +176,7 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">2025-01-25</p>
+        <p class="date-modified">2025-02-03</p>
       </div>
     </div>
       
@@ -242,19 +239,19 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <p>詳細情報は<a href="https://tinysa.org/wiki/pmwiki.php">公式サイト</a>を参照してください。</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><a href="tinySA_pc-control/tinySA_1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="tinySA パッケージ"><img src="tinySA_pc-control/tinySA_1.jpg" class="img-fluid figure-img" alt="tinySA パッケージ"></a></p>
+<p><img src="tinySA_pc-control/tinySA_1.jpg" class="img-fluid figure-img"></p>
 <figcaption>tinySA パッケージ</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><a href="tinySA_pc-control/tinySA_2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="tinySA 開封"><img src="tinySA_pc-control/tinySA_2.jpg" class="img-fluid figure-img" alt="tinySA 開封"></a></p>
+<p><img src="tinySA_pc-control/tinySA_2.jpg" class="img-fluid figure-img"></p>
 <figcaption>tinySA 開封</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><a href="tinySA_pc-control/tinySA_beat.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="tinySA ビート信号"><img src="tinySA_pc-control/tinySA_beat.jpg" class="img-fluid figure-img" alt="tinySA ビート信号"></a></p>
+<p><img src="tinySA_pc-control/tinySA_beat.jpg" class="img-fluid figure-img"></p>
 <figcaption>tinySA ビート信号</figcaption>
 </figure>
 </div>
@@ -342,7 +339,7 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <p>掃引を実行し、バイナリデータを出力します。後述する<strong>scan</strong>のようにデータ転送の失敗がなく、<strong>hop</strong>のように遅くないので、PCでのデータ取得には最も適しています。</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><a href="tinySA_pc-control/labview_scanraw.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="scanrawで取得した30 MHz校正用信号のスペクトル"><img src="tinySA_pc-control/labview_scanraw.png" class="img-fluid figure-img" alt="scanrawで取得した30 MHz校正用信号のスペクトル"></a></p>
+<p><img src="tinySA_pc-control/labview_scanraw.png" class="img-fluid figure-img"></p>
 <figcaption>scanrawで取得した30 MHz校正用信号のスペクトル</figcaption>
 </figure>
 </div>
@@ -365,7 +362,7 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <ul>
 <li><code>[MSBn]</code>: n番目データの最上位バイト</li>
 <li><code>[LSBn]</code>: n番目データの最下位バイト</li>
-<li><code>x</code>を区切り文字にして2バイトのデータをリトルエディアン形式で表現している</li>
+<li><code>x</code>を区切り文字にして2バイトのデータをリトルエディアン<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>形式で表現している</li>
 </ul></li>
 </ul></li>
 <li><p>2バイトデータを符号なし整数で表示したものを<strong>d</strong>とすると、測定値<strong>y</strong>（dBm単位）は以下のように計算できる</p>
@@ -402,14 +399,14 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 <p>scanでデータを取得すると、下図のように取得に失敗するデータ点があるので、PCでのデータ取得には使えません。</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><a href="tinySA_pc-control/labview_scan.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="scanで取得した30 MHz校正用信号のスペクトル"><img src="tinySA_pc-control/labview_scan.png" class="img-fluid figure-img" alt="scanで取得した30 MHz校正用信号のスペクトル"></a></p>
+<p><img src="tinySA_pc-control/labview_scan.png" class="img-fluid figure-img"></p>
 <figcaption>scanで取得した30 MHz校正用信号のスペクトル</figcaption>
 </figure>
 </div>
 </section>
 <section id="hop-ultraのみ" class="level3">
 <h3 class="anchored" data-anchor-id="hop-ultraのみ">hop (Ultraのみ)</h3>
-<p>設定した周波数における信号レベルを測定し、出力します。<strong>scan</strong>の上位版と思えば良いです。ただし、<strong>scan</strong>, <strong>scanraw</strong>に比べて読み出しの時間がかかります。</p>
+<p>設定した周波数における信号レベルを測定し、出力します。<strong>scan</strong>の上位版と思えば良いです。ただし、<strong>scan</strong>, <strong>scanraw</strong>に比べて読み出しに時間がかかります。</p>
 <ul>
 <li><p>使用法:</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>hop {start(Hz)} {stop(Hz)} {step(Hz) <span class="op">|</span> points} [outmask]\r\n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -462,6 +459,7 @@ gtag('config', 'G-WS9ZCFP70B', { 'anonymize_ip': true});
 
 <ol>
 <li id="fn1"><p>話題になったのはnanoVNAの方かも<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>LabVIEWだとリトルエディアンで上手く読み取れるが、この並びはビッグエディアンのような気もする。まだよく理解していないですね。<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -907,38 +905,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
 
 
 
